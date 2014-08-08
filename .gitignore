@@ -19,3 +19,6 @@
 *.exe
 *.out
 *.app
+
+#Otros que no deben de subir
+*.cache
