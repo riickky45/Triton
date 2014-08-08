@@ -6,11 +6,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using CSL;
+
 namespace Acuanet
 {
     public partial class FormaRegistro : Form
     {
 
+        CS461_HL_API reader = new CS461_HL_API();
         
 
         public FormaRegistro()
