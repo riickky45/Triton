@@ -32,7 +32,7 @@ namespace Acuanet
         {
             if (reader.connect() == false)
             {
-                System.Console.WriteLine("Error no posible conexion");
+                System.Console.WriteLine("Error no posible la conexion");
                 return false;
             }
 
@@ -73,7 +73,7 @@ namespace Acuanet
 
             if (reader.setOperProfile_TxPowers(profile) == false)
             {
-                System.Console.WriteLine("No es posible configurar el perfil de operacion");
+                System.Console.WriteLine("No es posible configurar el perfil de operación");
                 return false;
             }
 

@@ -45,14 +45,29 @@ namespace Acuanet
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form4 miForm2 = new Form4();
-            miForm2.Show();
+            Form4 miForm4 = new Form4();
+            miForm4.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             Form5 miForm3 = new Form5();
             miForm3.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

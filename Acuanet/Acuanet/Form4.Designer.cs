@@ -69,7 +69,7 @@
             this.groupBox1.Size = new System.Drawing.Size(396, 106);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Categorias acuales";
+            this.groupBox1.Text = "Categorias actuales";
             // 
             // comboBox1
             // 

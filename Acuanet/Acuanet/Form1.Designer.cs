@@ -209,6 +209,7 @@
             this.button8.Text = "Encender Antena";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -224,6 +225,7 @@
             this.button7.Text = " Arrancar Oleada";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox5
             // 
@@ -311,6 +313,7 @@
             this.button11.Text = "Revisar Status ";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form1
             // 

@@ -48,7 +48,8 @@ C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.Propert
 C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.pdb
-C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csprojResolveAssemblyReference.cache
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe.CodeAnalysisLog.xml
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe.lastcodeanalysissucceeded
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form1.resources
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaRegistro.resources
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form3.resources

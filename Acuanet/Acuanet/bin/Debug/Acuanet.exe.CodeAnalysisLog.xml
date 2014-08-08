@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe">
+   <Modules>
+    <Module Name="acuanet.exe">
+     <Namespaces>
+      <Namespace Name="Acuanet">
+       <Types>
+        <Type Name="InsertaLecturaE" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#insertaLecturaL()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="InsertaLecturaE.cs" Line="32">The query string passed to 'MySqlCommand.MySqlCommand(string, MySqlConnection)' in 'InsertaLecturaE.insertaLecturaL()' could contain the following variables 'd.t', 'd.t'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ModParticipante" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'ModParticipante' because it creates members of the following IDisposable types: 'MySqlConnection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ActualizaP(Acuanet.Participante)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="ModParticipante.cs" Line="64">The query string passed to 'MySqlCommand.MySqlCommand(string, MySqlConnection)' in 'ModParticipante.ActualizaP(Participante)' could contain the following variables 'p.nombre', 'p.id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#crearP(Acuanet.Participante)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="ModParticipante.cs" Line="53">The query string passed to 'MySqlCommand.MySqlCommand(string, MySqlConnection)' in 'ModParticipante.crearP(Participante)' could contain the following variables 'p.nombre', 'p.snumero'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CSL">
+       <Types>
+        <Type Name="CS461_HL_API" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#runIO_output(System.Int32,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Provide correct arguments to formatting methods" Category="Microsoft.Usage" CheckId="CA2241" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="DependsOnFix">
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="CS461_HL_API.cs" Line="2898">Method 'CS461_HL_API.runIO_output(int, int, string)' calls 'string.Format(string, object, object, object)' and does not provide a format item for argument "1, 2, 3". The provided format string is: '"&amp;mode=check"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShowWaitCursor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'ShowWaitCursor' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="CS461_HL_API.cs" Line="4639">Modify 'ShowWaitCursor.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TrustedServer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AcceptCallback(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-08-08 23:48:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet" File="CS461_HL_API.cs" Line="3842">Object 'client' can be disposed more than once in method 'TrustedServer.AcceptCallback(IAsyncResult)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 3842</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 3842</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>Implement IDisposable correctly</Name>
+   <Description>All IDisposable types should implement the Dispose pattern correctly.</Description>
+   <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+   <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Provide correct arguments to formatting methods" Category="Microsoft.Usage" CheckId="CA2241">
+   <Name>Provide correct arguments to formatting methods</Name>
+   <Description>Provide the correct number of arguments to String.Format calls.</Description>
+   <Resolution Name="MissingFormatItem">Method {0} calls {1} and does not provide a format item for argument {2}. The provided format string is: '{3}'</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182361.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
