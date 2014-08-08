@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InsertaLecturaE.cs" />
     <Compile Include="CS461_HL_API.cs" />
+    <Compile Include="Lectura.cs" />
     <Compile Include="ModParticipante.cs" />
     <Compile Include="Participante.cs" />
     <Compile Include="Form1.cs">
