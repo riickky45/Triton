@@ -13,16 +13,16 @@ namespace Acuanet
     public partial class FormaRegistro : Form
     {
 
-        CS461_HL_API reader;
-        TrustedServer server;
+        CS461_HL_API reader= new CS461_HL_API();
+        TrustedServer server = new TrustedServer();
+        LecConfigXML cxml = new LecConfigXML();
 
         //constructor
         public FormaRegistro()
         {
-
-            reader = new CS461_HL_API();
-            server = new TrustedServer();
-            setupReader();
+            
+           
+            //setupReader();
 
             InitializeComponent();
         }
@@ -56,7 +56,7 @@ namespace Acuanet
             profile.modulation_profile = "Profile0";
             profile.population = 10;
             profile.session_no = 1;
-            profile.ant1_power = "30.00";
+            profile.ant1_power = cxml.Text("CS461/Reader/Antennas/Ant1/Power", "30.00");
             profile.ant2_power = "30.00";
             profile.ant3_power = "30.00";
             profile.ant4_power = "30.00";
