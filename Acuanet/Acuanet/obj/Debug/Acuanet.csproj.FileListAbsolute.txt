@@ -46,15 +46,3 @@ C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.Form4.r
 C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.Form5.resources
 C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.Properties.Resources.resources
 C:\Users\Ricardo Sanchez\Dropbox\ricky\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.pdb
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csprojResolveAssemblyReference.cache
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form1.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaRegistro.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form3.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form4.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form5.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Properties.Resources.resources
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache

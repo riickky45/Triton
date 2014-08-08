@@ -46,7 +46,7 @@ namespace Acuanet
         }
         #endregion
 
-
+        //metodo para consultar una propiedad de Texto
         public string Text(string key, string defaultValue)
         {
             node = doc.SelectSingleNode(key);
@@ -56,6 +56,7 @@ namespace Acuanet
                 return node.InnerText;
         }
 
+        //metodo para consultar una propiedad Entera (Int16)
         public int Int16(string key, int defaultValue)
         {
             int i;
@@ -72,6 +73,7 @@ namespace Acuanet
             return i;
         }
 
+        //metodo para consulta una propiedad booleana
         public bool Boolean(string key, bool defaultValue)
         {
             node = doc.SelectSingleNode(key);
@@ -89,6 +91,7 @@ namespace Acuanet
 
         }
 
+        //metodo para poner un valor a una propiedad 
         public bool Set(string key, string value)
         {
             node = doc.SelectSingleNode(key);
@@ -97,6 +100,7 @@ namespace Acuanet
             return true;
         }
 
+        //metodo para salva el archivo de configuracion
         public void Save()
         {
             doc.Save(path);
