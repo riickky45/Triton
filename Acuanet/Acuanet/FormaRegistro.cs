@@ -32,7 +32,7 @@ namespace Acuanet
         {
             if (reader.connect() == false)
             {
-                System.Console.WriteLine("Error no posible la conexion");
+                System.Console.WriteLine("Error no posible la conexión");
                 return false;
             }
 
@@ -178,6 +178,7 @@ namespace Acuanet
                 TAG t = (TAG)e.rxTag;
                 //esta salida deberia de mostrar el tag y el tiempo (que es un int)
                 System.Console.WriteLine("Tag Recibido Evento recepcion:" + t.TagOrigId+" Tiempo:"+t.Time);
+                MessageBox("Tag Recibido Evento recepcion:" + t.TagOrigId+" Tiempo:"+t.Time);
 
             }
             else
