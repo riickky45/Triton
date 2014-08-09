@@ -19,7 +19,10 @@
 *.exe
 *.out
 *.app
+*.application
 
 #Otros que no deben de subir
 *.cache
 *.Cache
+*.suo
+*.manifest
