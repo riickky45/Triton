@@ -13,27 +13,28 @@ namespace Acuanet
     class InsertaLecturaE
     {
         private List<Lectura> aLectura;
-        private string strConnect;
+        private string strConexion;
         private int evento_id;
 
-        public InsertaLecturaE(List<Lectura> aLectura,string strConnect,int evento_id)
+        //constructor
+        public InsertaLecturaE(List<Lectura> aLectura,string strConexion,int evento_id)
         {
             this.aLectura = aLectura;
-            this.strConnect=strConnect;
+            this.strConexion=strConexion;
             this.evento_id=evento_id;
         }
 
         //metodo que inserta el array de lectura en la BD
         protected void insertaLecturaL()
         {
-            //string strConnect = "server=127.0.0.1;uid=root;pwd=XXXXXXX;database=YYYYYY";
+            
 
-            MySqlConnection dbConn = new MySqlConnection(strConnect);
+            MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
             foreach (Lectura d in aLectura)
-            {
-                string sql = "INSERT INTO TTTTTT (valor,id_tag) VALUES (" + d.t.ToString() + ",'" + d.t + "')";
+            {               
+                string sql = "INSERT INTO TTTTTT (evento_id,id_tag,fecha_hora,milis) VALUES (" + d.t.ToString() + ",'" + d.t.ApiTimeStampUTC + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
             }
