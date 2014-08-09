@@ -100,7 +100,7 @@ namespace Acuanet
             return true;
         }
 
-        //metodo para salva el archivo de configuracion
+        //metodo para guarda el archivo de configuracion
         public void Save()
         {
             doc.Save(path);
