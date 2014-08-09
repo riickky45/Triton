@@ -71,7 +71,7 @@
 
   <BD>
     <SBD_ip>127.0.0.1</SBD_ip>
-    <SBD_dbn>ntriton</SBD_dbn>
+    <SBD_dbn>ntritondb</SBD_dbn>
     <SBD_usuario>root</SBD_usuario>
     <SBD_passwd>xalf10873</SBD_passwd>
   </BD>
