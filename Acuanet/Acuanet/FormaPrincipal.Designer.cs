@@ -38,7 +38,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnEAntena = new System.Windows.Forms.Button();
             this.btnOleada = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
@@ -186,7 +186,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.button8);
+            this.groupBox4.Controls.Add(this.btnEAntena);
             this.groupBox4.Controls.Add(this.btnOleada);
             this.groupBox4.Location = new System.Drawing.Point(212, 128);
             this.groupBox4.Name = "groupBox4";
@@ -195,21 +195,21 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Arrancar Competencia";
             // 
-            // button8
+            // btnEAntena
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Image = global::Acuanet.Properties.Resources.transmit_blue1;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(22, 64);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 39);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Encender Antena";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnEAntena.FlatAppearance.BorderSize = 0;
+            this.btnEAntena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEAntena.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEAntena.Image = global::Acuanet.Properties.Resources.transmit_blue1;
+            this.btnEAntena.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEAntena.Location = new System.Drawing.Point(22, 64);
+            this.btnEAntena.Name = "btnEAntena";
+            this.btnEAntena.Size = new System.Drawing.Size(168, 39);
+            this.btnEAntena.TabIndex = 2;
+            this.btnEAntena.Text = "Encender Antena";
+            this.btnEAntena.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEAntena.UseVisualStyleBackColor = true;
+            this.btnEAntena.Click += new System.EventHandler(this.btnEAntena_Click);
             // 
             // btnOleada
             // 
@@ -315,7 +315,7 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // Form1
+            // FormaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -329,7 +329,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "FormaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acuanet";
             this.groupBox1.ResumeLayout(false);
@@ -354,7 +354,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnEAntena;
         private System.Windows.Forms.Button btnOleada;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button10;

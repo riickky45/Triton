@@ -69,6 +69,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormaPrincipal1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormaPrincipal.resx</DependentUpon>
+    </Compile>
     <Compile Include="OleadaR.cs" />
     <Compile Include="LecConfigXML.cs" />
     <Compile Include="InsertaLecturaE.cs" />

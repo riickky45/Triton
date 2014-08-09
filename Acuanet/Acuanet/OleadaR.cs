@@ -16,7 +16,7 @@ namespace Acuanet
         TrustedServer server = new TrustedServer();
         LecConfigXML cxml = new LecConfigXML();
 
-
+        List<Lectura> lLec = new List<Lectura>();
         
 
         public OleadaR()
@@ -26,7 +26,14 @@ namespace Acuanet
         }
 
 
+        public bool prendeAntena()
+        {
+
+            return true;
+        }
+
         public bool iniciaCaptura(){
+
 
             return true;
         }
@@ -193,7 +200,7 @@ namespace Acuanet
             }
             else
             {
-                System.Console.WriteLine("Tag Receive Event received: None");
+                
             }
         }
 

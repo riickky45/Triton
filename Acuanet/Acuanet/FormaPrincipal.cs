@@ -10,6 +10,9 @@ namespace Acuanet
 {
     public partial class FormaPrincipal : Form
     {
+
+        OleadaR oleada = new OleadaR();
+
         public FormaPrincipal()
         {
             InitializeComponent();
@@ -60,7 +63,7 @@ namespace Acuanet
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btnEAntena_Click(object sender, EventArgs e)
         {
 
         }
