@@ -29,6 +29,7 @@ namespace Acuanet
 
             //string strConnect = "server=127.0.0.1;uid=root;pwd=XXXXXXX;database=YYYYYY";
 
+
             MySqlConnection dbConn = new MySqlConnection(strConnect);
             dbConn.Open();
 
