@@ -36,11 +36,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.text_nombre = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_numero = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_club = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_direccion = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -122,7 +122,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 17);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Dirrecion :";
+            this.label7.Text = "Dirreción :";
             // 
             // text_nombre
             // 
@@ -132,12 +132,12 @@
             this.text_nombre.TabIndex = 9;
             this.text_nombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txt_numero
             // 
-            this.textBox2.Location = new System.Drawing.Point(78, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
-            this.textBox2.TabIndex = 10;
+            this.txt_numero.Location = new System.Drawing.Point(78, 45);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(260, 20);
+            this.txt_numero.TabIndex = 10;
             // 
             // textBox3
             // 
@@ -146,12 +146,12 @@
             this.textBox3.Size = new System.Drawing.Size(260, 20);
             this.textBox3.TabIndex = 11;
             // 
-            // textBox4
+            // txt_club
             // 
-            this.textBox4.Location = new System.Drawing.Point(79, 143);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(260, 20);
-            this.textBox4.TabIndex = 12;
+            this.txt_club.Location = new System.Drawing.Point(79, 143);
+            this.txt_club.Name = "txt_club";
+            this.txt_club.Size = new System.Drawing.Size(260, 20);
+            this.txt_club.TabIndex = 12;
             // 
             // textBox5
             // 
@@ -160,12 +160,12 @@
             this.textBox5.Size = new System.Drawing.Size(260, 20);
             this.textBox5.TabIndex = 13;
             // 
-            // textBox6
+            // txt_direccion
             // 
-            this.textBox6.Location = new System.Drawing.Point(78, 214);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(260, 20);
-            this.textBox6.TabIndex = 14;
+            this.txt_direccion.Location = new System.Drawing.Point(78, 214);
+            this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.Size = new System.Drawing.Size(260, 20);
+            this.txt_direccion.TabIndex = 14;
             // 
             // comboBox1
             // 
@@ -210,11 +210,11 @@
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txt_direccion);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txt_club);
             this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txt_numero);
             this.groupBox1.Controls.Add(this.text_nombre);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -313,11 +313,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox text_nombre;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_club;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
