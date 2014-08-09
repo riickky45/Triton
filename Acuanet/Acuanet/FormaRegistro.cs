@@ -217,6 +217,9 @@ namespace Acuanet
 
             //se asignana los valores 
             par.nombre = text_nombre.Text;
+            par.snumero = txt_numero.Text;
+            par.sclub = txt_club.Text;
+            par.direcc = txt_direccion.Text;
 
             //se prepara la conexion a la BD
             ModParticipante modp = new ModParticipante();
