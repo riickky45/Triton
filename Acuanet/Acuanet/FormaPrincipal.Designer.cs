@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class Form1
+    partial class FormaPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnOleada = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -187,7 +187,7 @@
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.button8);
-            this.groupBox4.Controls.Add(this.button7);
+            this.groupBox4.Controls.Add(this.btnOleada);
             this.groupBox4.Location = new System.Drawing.Point(212, 128);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(232, 119);
@@ -211,21 +211,21 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button7
+            // btnOleada
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = global::Acuanet.Properties.Resources.flag_2;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(22, 19);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(168, 39);
-            this.button7.TabIndex = 1;
-            this.button7.Text = " Arrancar Oleada";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnOleada.FlatAppearance.BorderSize = 0;
+            this.btnOleada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOleada.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOleada.Image = global::Acuanet.Properties.Resources.flag_2;
+            this.btnOleada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOleada.Location = new System.Drawing.Point(22, 19);
+            this.btnOleada.Name = "btnOleada";
+            this.btnOleada.Size = new System.Drawing.Size(168, 39);
+            this.btnOleada.TabIndex = 1;
+            this.btnOleada.Text = " Arrancar Oleada";
+            this.btnOleada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOleada.UseVisualStyleBackColor = true;
+            this.btnOleada.Click += new System.EventHandler(this.btnOleada_Click);
             // 
             // groupBox5
             // 
@@ -355,7 +355,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnOleada;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;

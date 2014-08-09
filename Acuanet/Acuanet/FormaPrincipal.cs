@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
-    public partial class Form1 : Form
+    public partial class FormaPrincipal : Form
     {
-        public Form1()
+        public FormaPrincipal()
         {
             InitializeComponent();
         }
@@ -65,7 +65,7 @@ namespace Acuanet
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnOleada_Click(object sender, EventArgs e)
         {
 
         }
