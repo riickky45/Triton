@@ -26,10 +26,14 @@ namespace Acuanet
         //metodo que inserta el array de lectura en la BD
         protected void insertaLecturaL()
         {
+<<<<<<< HEAD
 
             //string strConnect = "server=127.0.0.1;uid=root;pwd=XXXXXXX;database=YYYYYY";
 
 
+=======
+            //string strConnect = "server=127.0.0.1;uid=root;pwd=XXXXXXX;database=YYYYYY";
+>>>>>>> origin/master
             MySqlConnection dbConn = new MySqlConnection(strConnect);
             dbConn.Open();
 
