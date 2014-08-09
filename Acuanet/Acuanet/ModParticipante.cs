@@ -12,10 +12,10 @@ namespace Acuanet
         MySqlConnection dbConn;
 
         //crea la conexion y prepara para operaciones sobre los usuarios
-        public ModParticipante()
+        public ModParticipante(string strConexion)
         {
-            string strConnect = "server=127.0.0.1;uid=root;pwd=XXXXXXXX;database=ntritondb";
-            dbConn = new MySqlConnection(strConnect);
+                       
+            dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
         }

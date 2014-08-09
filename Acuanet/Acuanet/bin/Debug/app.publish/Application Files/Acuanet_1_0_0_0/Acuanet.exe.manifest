@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Acuanet.exe" version="1.0.0.0" publicKeyToken="6cd8fc441143c83b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Acuanet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Acuanet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.8.3.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Acuanet.exe" size="833536">
+      <assemblyIdentity name="Acuanet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YAjmCXGPrjMY3nx4ORagnSlG9mU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="config.xml" size="2080" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yGIwaXy4T94ZRTbDGkKLDQq6cjA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=alfonso-PC\alfonso" issuerKeyHash="034c514a1aff4bac3d5db8087c8ef23504d00894" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UzJUByBZvLlVh8zX1iCo38o35WY=</DigestValue></Reference></SignedInfo><SignatureValue>sut5lYlRIVRHtgNFP+/hHrCpIofb0oPG0ISzvM5UC2vmod08I/qMXSbCx2g02bCrO7bo0TB9is3aLv9VHmT2RedU9vXDVrq50vt6TK1xB661OkRN7DtVH4Pcmdpjrc17iDVqP+xvh4u1Yz1SqA35L9/AE6Us9F1d36Ha4c3Gs1o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tdlkK/Nh5xqOhFBPuHKxfdtTaq6G766ki5AsLF7g1P6V1F42urYY28D2OVYcMp7DlhHIOARQG0jjVtNBIA+hfSQZqIJVCtMIy/EcA5L+bgx+z2Q4pc+HmPOMwP2qk7kVZzeKubuia6wuFFN8wu33b3KDRLUSyP76YUrhbc3CaRE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="66e537cadfa820d6d7cc8755b9bc592007543253" Description="" Url=""><as:assemblyIdentity name="Acuanet.exe" version="1.0.0.0" publicKeyToken="6cd8fc441143c83b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=alfonso-PC\alfonso</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lViR3s4A7Qlx8s3qEdrr+ABAd4w=</DigestValue></Reference></SignedInfo><SignatureValue>otFuIHKd8aACeLvQLlkdUcjaIg9D/ksXxlLVVL4WEXFKNqJH/laui4IWEpPJCLag6AnxhB9WcL75CUn/GNPklfKMWYH4RBluEolo1t0s/F0ZtF1E9QnJ8KlsFSoHc64QavmuEH6GiYnzXkvLtXfG6wXHJBVdipCiqVdjv4QdUR8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tdlkK/Nh5xqOhFBPuHKxfdtTaq6G766ki5AsLF7g1P6V1F42urYY28D2OVYcMp7DlhHIOARQG0jjVtNBIA+hfSQZqIJVCtMIy/EcA5L+bgx+z2Q4pc+HmPOMwP2qk7kVZzeKubuia6wuFFN8wu33b3KDRLUSyP76YUrhbc3CaRE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQQ9jmWezlm4FBLBT/JFcqmzANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQAYQBsAGYAbwBuAHMAbwAtAFAAQwBcAGEAbABmAG8AbgBzAG8wHhcNMTQwODA5MTU1NzAxWhcNMTUwODA5MjE1NzAxWjAvMS0wKwYDVQQDHiQAYQBsAGYAbwBuAHMAbwAtAFAAQwBcAGEAbABmAG8AbgBzAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALXZZCvzYecajoRQT7hysX3bU2quhu+upIuQLCxe4NT+ldReNrq2GNvA9jlWHDKew5YRyDgEUBtI41bTQSAPoX0kGaiCVQrTCMvxHAOS/m4Mfs9kOKXPh5jzjMD9qpO5FWc3irm7omusLhRTfMLt929yg0S1Esj++mFK4W3NwmkRAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAPsMUBqe4Rv4r0GGGuxJlE5hJ4ogz1t6wNzLfjYNfBUYwT5KlZvBSwtXF+tKrHV7Wqzpgl7mJ4ACTzSFtbx1jpIjEjGa19yPfmUHqBAfgHyAw0UscjoKBIIE6XavfN5nGCOTzszWIJZDLg2fgCcdJXAup2LqskMa/HU76sNl0PRI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

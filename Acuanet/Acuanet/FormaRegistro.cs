@@ -13,15 +13,15 @@ namespace Acuanet
     public partial class FormaRegistro : Form
     {
 
-        CS461_HL_API reader= new CS461_HL_API();
+        CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
         LecConfigXML cxml = new LecConfigXML();
 
         //constructor
         public FormaRegistro()
         {
-            
-           
+
+
             //setupReader();
 
             InitializeComponent();
@@ -177,7 +177,7 @@ namespace Acuanet
             {
                 TAG t = (TAG)e.rxTag;
                 //esta salida deberia de mostrar el tag y el tiempo (que es un int)
-                System.Console.WriteLine("Tag Recibido Evento recepcion:" + t.TagOrigId+" Tiempo:"+t.Time);
+                System.Console.WriteLine("Tag Recibido Evento recepcion:" + t.TagOrigId + " Tiempo:" + t.Time);
                 //MessageBox("Tag Recibido Evento recepcion:" + t.TagOrigId+" Tiempo:"+t.Time);
 
             }
@@ -223,7 +223,12 @@ namespace Acuanet
             par.direcc = txt_direccion.Text;
 
             //se prepara la conexion a la BD
-            ModParticipante modp = new ModParticipante();
+            string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
+                + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
+                + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
+                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
+            //MessageBox.Show(strConexion);
+            ModParticipante modp = new ModParticipante(strConexion);
 
             //se crea el particiapante
             modp.crearP(par);

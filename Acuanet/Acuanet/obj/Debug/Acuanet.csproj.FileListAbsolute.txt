@@ -57,3 +57,7 @@ C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Prope
 C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache
 C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
 C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe.manifest
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.application
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe.manifest
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.application
