@@ -18,26 +18,30 @@ namespace Acuanet
 
         List<Lectura> lLec = new List<Lectura>();
         
+        int oleada_id;
 
-        public OleadaR()
+
+        public OleadaR(int oleada_id)
         {
             // incia los servicios de la antena
 
         }
 
-
+        //metodo para prender antena
         public bool prendeAntena()
         {
 
             return true;
         }
 
+        //metodo que inicia captura
         public bool iniciaCaptura(){
 
 
             return true;
         }
 
+        //metodo que finaliza captura
         public bool finalizaCaptura(){
 
 
@@ -73,10 +77,10 @@ namespace Acuanet
             profile.modulation_profile = "Profile0";
             profile.population = 10;
             profile.session_no = 1;
-            profile.ant1_power = cxml.Text("CS461/Reader/Antennas/Ant1/Power", "30.00");
-            profile.ant2_power = "30.00";
-            profile.ant3_power = "30.00";
-            profile.ant4_power = "30.00";
+            profile.ant1_power = cxml.Text("ACUANET/Reader/Antennas/Ant1/Power", "30.00");
+            profile.ant2_power = cxml.Text("ACUANET/Reader/Antennas/Ant2/Power", "30.00");
+            profile.ant3_power = cxml.Text("ACUANET/Reader/Antennas/Ant3/Power", "30.00");
+            profile.ant4_power = cxml.Text("ACUANET/Reader/Antennas/Ant4/Power", "30.00");
             profile.ant1_enable = true;
             profile.ant2_enable = false;
             profile.ant3_enable = false;
@@ -99,7 +103,7 @@ namespace Acuanet
             SERVER_INFO svr = new SERVER_INFO();
             svr.id = "AccessControlDemoServer";
             svr.desc = "Access Control Demo Server";
-            svr.ip = "0.0.0.0"; //aqui debe ir el ip de la maquina que escucha
+            svr.ip = cxml.Text("","192.168.0.254");
             svr.server_port = "9090";
             svr.mode = "Listening Port on Server Side";
             svr.enable = true;
