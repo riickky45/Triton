@@ -21,7 +21,7 @@ namespace Acuanet
         int oleada_id;
 
 
-        public OleadaR(int oleada_id)
+        public OleadaR()
         {
             // incia los servicios de la antena
 
