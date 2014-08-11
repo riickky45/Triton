@@ -11,7 +11,7 @@ nombre varchar(512),
 numero varchar(256),
 id_categoria int,	
 rama char(1),
-id_pic varchar(256),
+id_tag varchar(512),
 direccion text,
 club varchar(512)
 
@@ -43,10 +43,10 @@ nombre varchar(1024)
 
 
 
-create table pics(
+create table tags(
 
 	id SERIAL,
-	id_pic varchar(512),
+	id_tag varchar(512),
 	id_oleada int,
 	fecha_hora date,
 	milis int

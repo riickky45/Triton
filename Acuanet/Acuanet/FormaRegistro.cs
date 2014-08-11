@@ -203,6 +203,7 @@ namespace Acuanet
                 //esta salida deberia de mostrar el tag y el tiempo (que es un int)
                 // System.Console.WriteLine("Tag Recibido Evento recepcion:" + tag.TagOrigId + " Tiempo:" + tag.Time);
                 sTag = tag.TagOrigId;
+                labelCodigoP.Text = sTag;
                 MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
             }
@@ -235,7 +236,7 @@ namespace Acuanet
 
 
         //este metodo recupera los datos y los manda a insertar a la BD
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAgegarR_Click(object sender, EventArgs e)
         {
 
             //se crea el participante "en memoria"
@@ -305,6 +306,8 @@ namespace Acuanet
             }
 
         }
+
+       
 
 
     }
