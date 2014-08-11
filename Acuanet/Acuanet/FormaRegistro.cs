@@ -22,10 +22,33 @@ namespace Acuanet
         {
 
 
-            //setupReader();
+
 
             InitializeComponent();
+
         }
+
+
+        private void formaRegistro_Load(object sender, EventArgs e)
+        {
+            cargaConfiguracion();
+
+            Application.DoEvents();
+
+            if (reader.connect())
+            {
+                setupReader();
+            }
+            else
+            {
+
+            }
+            Application.DoEvents();
+
+            server.TagReceiveEvent += new TagReceiveEventHandler(this.AccessControl_TagReceiveEvent);
+        }
+
+
 
         //configurador del lector y la antena 
         private bool setupReader()
@@ -56,10 +79,10 @@ namespace Acuanet
             profile.modulation_profile = "Profile0";
             profile.population = 10;
             profile.session_no = 1;
-            profile.ant1_power = cxml.Text("CS461/Reader/Antennas/Ant1/Power", "30.00");
-            profile.ant2_power = "30.00";
-            profile.ant3_power = "30.00";
-            profile.ant4_power = "30.00";
+            profile.ant1_power = cxml.Text("ACUANET/Reader/Antennas/Ant1/Power", "30.00");
+            profile.ant2_power = cxml.Text("ACUANET/Reader/Antennas/Ant2/Power", "30.00");
+            profile.ant3_power = cxml.Text("ACUANET/Reader/Antennas/Ant3/Power", "30.00");
+            profile.ant4_power = cxml.Text("ACUANET/Reader/Antennas/Ant4/Power", "30.00");
             profile.ant1_enable = true;
             profile.ant2_enable = false;
             profile.ant3_enable = false;
@@ -175,10 +198,10 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                TAG t = (TAG)e.rxTag;
+                TAG tag = (TAG)e.rxTag;
                 //esta salida deberia de mostrar el tag y el tiempo (que es un int)
-                System.Console.WriteLine("Tag Recibido Evento recepcion:" + t.TagOrigId + " Tiempo:" + t.Time);
-                //MessageBox("Tag Recibido Evento recepcion:" + t.TagOrigId+" Tiempo:"+t.Time);
+                // System.Console.WriteLine("Tag Recibido Evento recepcion:" + tag.TagOrigId + " Tiempo:" + tag.Time);
+                MessageBox.Show("Tag Recibido Evento recepcion:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
             }
             else
@@ -234,5 +257,35 @@ namespace Acuanet
             modp.crearP(par);
 
         }
+
+
+
+
+        private void cargaConfiguracion()
+        {
+            lock (this)
+            {
+                reader.login_name = cxml.Text("ACUANET/Reader/Login/Name", "root");
+                reader.login_password = cxml.Text("ACUANET/Reader/Login/Password", "csl2006");
+                reader.http_timeout = cxml.Int16("ACUANET/SocketTimeout/Http", 30000);
+                reader.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                reader.setURI(cxml.Text("ACUANET/Reader/URI", "http://192.168.25.208/"));
+
+                server.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                try
+                {
+                    server.tcp_port = int.Parse(cxml.Text("ACUANET/Application/ServerPort", "9090"));
+                }
+                catch
+                {
+                    server.tcp_port = 9090;
+                }
+            }
+        }
+
+
     }
+
+
+
 }

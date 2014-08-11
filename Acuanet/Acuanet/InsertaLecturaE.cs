@@ -14,30 +14,54 @@ namespace Acuanet
     {
         private List<Lectura> aLectura;
         private string strConexion;
-        private int evento_id;
+        private int id_oleada;
+        private TAG t;
 
         //constructor
         public InsertaLecturaE(List<Lectura> aLectura,string strConexion,int evento_id)
         {
             this.aLectura = aLectura;
             this.strConexion=strConexion;
-            this.evento_id=evento_id;
+            this.id_oleada=evento_id;
         }
 
-        //metodo que inserta el array de lectura en la BD
-        protected void insertaLecturaL()
-        {
-            
 
+        public InsertaLecturaE(TAG t, int id_oleada, string strConexion)
+        {
+            this.t = t;
+            this.id_oleada = id_oleada;
+            this.strConexion = strConexion;
+        }
+
+
+        //metodo que inserta el array de lectura en la BD
+        public void insertaLecturaL()
+        {
+           
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
             foreach (Lectura d in aLectura)
             {               
-                string sql = "INSERT INTO TTTTTT (evento_id,id_tag,fecha_hora,milis) VALUES (" + d.t.ToString() + ",'" + d.t.ApiTimeStampUTC + "')";
+                string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" + d.t.ToString() + ",'" + d.t.ApiTimeStampUTC + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
             }
+            dbConn.Close();
+            dbConn = null;
+        }
+
+
+        //metodo que inserta un solo tag en la BD
+        public void insertaTag()
+        {
+            MySqlConnection dbConn = new MySqlConnection(strConexion);
+            dbConn.Open();
+
+            string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" +id_oleada+",'"+ t.ToString() + "','" + t.ApiTimeStampUTC + "',"+t.ApiTimeStampUTC.Millisecond+")";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
+
             dbConn.Close();
             dbConn = null;
         }

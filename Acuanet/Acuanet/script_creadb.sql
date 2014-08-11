@@ -46,7 +46,7 @@ nombre varchar(1024)
 create table pics(
 
 	id SERIAL,
-	id_pic varchar(256),
+	id_pic varchar(512),
 	id_oleada int,
 	fecha_hora date,
 	milis int

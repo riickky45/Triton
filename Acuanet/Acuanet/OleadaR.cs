@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Acuanet
 {
@@ -18,11 +19,19 @@ namespace Acuanet
 
         List<Lectura> lLec = new List<Lectura>();
         
-        int oleada_id;
+        int id_oleada;
+        string strConexion;
 
-
+        //constructor
         public OleadaR()
         {
+            id_oleada = 0;
+            //prepara la conexion a la BD
+            string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
+                + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
+                + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
+                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
+
             // incia los servicios de la antena
 
         }
@@ -30,11 +39,12 @@ namespace Acuanet
         //metodo para prender antena
         public bool prendeAntena()
         {
-
+            setupReader();
+            server.TagReceiveEvent += new TagReceiveEventHandler(this.AccessControl_TagReceiveEvent);
             return true;
         }
 
-        //metodo que inicia captura
+        //metodo que inicia captura 
         public bool iniciaCaptura(){
 
 
@@ -196,10 +206,14 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                TAG t = (TAG)e.rxTag;
-                //esta salida deberia de mostrar el tag y el tiempo (que es un int)
-                
-                MessageBox.Show("Tag Recibido Evento recepción:" + t.TagOrigId+" Tiempo:"+t.Time);
+                TAG tag = (TAG)e.rxTag;
+                //esta salida deberia de mostrar el tag y el tiempo (que es un int)              
+                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId+" Tiempo:"+tag.Time);
+
+                // se crea la clase que hace el trabajo de insertar lectura
+                InsertaLecturaE inlec = new InsertaLecturaE(tag, id_oleada, strConexion);
+                Thread T = new Thread(inlec.insertaTag);
+                T.Start();
 
             }
             else
