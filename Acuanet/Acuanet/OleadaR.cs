@@ -27,7 +27,7 @@ namespace Acuanet
         {
             id_oleada = 0;
             //prepara la conexion a la BD
-            string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
+           strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
                 + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
                 + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
                 + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");

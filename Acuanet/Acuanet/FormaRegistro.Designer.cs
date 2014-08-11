@@ -47,10 +47,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEncenderA = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.Load += new System.EventHandler(this.formaRegistro_Load);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -246,19 +245,20 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnEncenderA
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Acuanet.Properties.Resources.transmit_blue;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(17, 419);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 26);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Encender Antena";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEncenderA.FlatAppearance.BorderSize = 0;
+            this.btnEncenderA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEncenderA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEncenderA.Image = global::Acuanet.Properties.Resources.transmit_blue;
+            this.btnEncenderA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEncenderA.Location = new System.Drawing.Point(17, 419);
+            this.btnEncenderA.Name = "btnEncenderA";
+            this.btnEncenderA.Size = new System.Drawing.Size(157, 26);
+            this.btnEncenderA.TabIndex = 19;
+            this.btnEncenderA.Text = "Encender Antena";
+            this.btnEncenderA.UseVisualStyleBackColor = true;
+            this.btnEncenderA.Click += new System.EventHandler(this.btnEncenderA_Click);
             // 
             // button1
             // 
@@ -291,11 +291,12 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEncenderA);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Name = "FormaRegistro";
             this.Text = "Registro de Participantes";
+            this.Load += new System.EventHandler(this.formaRegistro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -323,7 +324,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEncenderA;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
