@@ -13,7 +13,8 @@ id_categoria int,
 rama char(1),
 id_tag varchar(512),
 direccion text,
-club varchar(512)
+club varchar(512),
+email varchar(512)
 
 );
 

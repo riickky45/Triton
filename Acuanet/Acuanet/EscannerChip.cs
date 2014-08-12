@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
-    public partial class Form5 : Form
+    public partial class EscannerChip : Form
     {
-        public Form5()
+        public EscannerChip()
         {
             InitializeComponent();
         }

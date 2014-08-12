@@ -9,7 +9,7 @@ namespace Acuanet
     //Clase para guardar una lectura de un tag en un evento, este posee toda la información necesaria
     class Lectura
     {
-        public TAG t;
+        public TAG tag;
 
     }
 }

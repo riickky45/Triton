@@ -39,7 +39,7 @@
             this.txt_numero = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txt_club = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -153,12 +153,12 @@
             this.txt_club.Size = new System.Drawing.Size(260, 20);
             this.txt_club.TabIndex = 12;
             // 
-            // textBox5
+            // txt_email
             // 
-            this.textBox5.Location = new System.Drawing.Point(64, 180);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(260, 20);
-            this.textBox5.TabIndex = 13;
+            this.txt_email.Location = new System.Drawing.Point(64, 180);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(260, 20);
+            this.txt_email.TabIndex = 13;
             // 
             // txt_direccion
             // 
@@ -211,7 +211,7 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txt_direccion);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_club);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.txt_numero);
@@ -318,7 +318,7 @@
         private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox txt_club;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox1;

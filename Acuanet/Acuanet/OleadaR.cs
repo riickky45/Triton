@@ -210,7 +210,7 @@ namespace Acuanet
                 //esta salida deberia de mostrar el tag y el tiempo (que es un int)              
                 MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId+" Tiempo:"+tag.Time);
 
-                // se crea la clase que hace el trabajo de insertar lectura
+                // se crea la clase que hace el trabajo de insertar lectura en multihilo
                 InsertaLecturaE inlec = new InsertaLecturaE(tag, id_oleada, strConexion);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();

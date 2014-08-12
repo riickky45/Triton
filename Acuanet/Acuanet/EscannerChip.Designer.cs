@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class Form5
+    partial class EscannerChip
     {
         /// <summary>
         /// Required designer variable.

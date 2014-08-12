@@ -247,6 +247,7 @@ namespace Acuanet
             par.snumero = txt_numero.Text;
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
+            par.email = txt_email.Text;
             par.id_tag = sTag;
 
             //se prepara la conexion a la BD

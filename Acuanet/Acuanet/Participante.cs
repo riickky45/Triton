@@ -12,5 +12,9 @@ namespace Acuanet
         public string sclub;
         public string id_tag;
         public string direcc;
+        public string sexo;
+        public string categoria;
+        public string email;
+
     }
 }

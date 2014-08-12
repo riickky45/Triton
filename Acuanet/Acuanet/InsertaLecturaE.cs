@@ -25,7 +25,7 @@ namespace Acuanet
             this.id_oleada=evento_id;
         }
 
-
+        //constructor
         public InsertaLecturaE(TAG t, int id_oleada, string strConexion)
         {
             this.t = t;
@@ -43,7 +43,7 @@ namespace Acuanet
 
             foreach (Lectura d in aLectura)
             {               
-                string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" + d.t.ToString() + ",'" + d.t.ApiTimeStampUTC + "')";
+                string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" + d.tag.ToString() + ",'" + d.tag.ApiTimeStampUTC + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
             }
