@@ -30,6 +30,22 @@ namespace Acuanet
             {
             }
         }
+
+        public LecConfigXML(string sarchivo)
+        {
+
+            path = Application.StartupPath + "\\"+sarchivo;
+            doc = new XmlDataDocument();
+
+            try
+            {
+                doc.Load(path);
+                element = doc.DocumentElement;
+            }
+            catch
+            {
+            }
+        }
         #endregion
 
 

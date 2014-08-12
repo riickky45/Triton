@@ -36,6 +36,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_categoria = new System.Windows.Forms.Label();
+            this.lbl_id_tag = new System.Windows.Forms.Label();
+            this.lbl_numero = new System.Windows.Forms.Label();
+            this.lbl_nombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +91,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 21);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Numero :";
+            this.label5.Text = "Número :";
             // 
             // label6
             // 
@@ -97,7 +101,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 21);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Categoria :";
+            this.label6.Text = "Categoría :";
             // 
             // label7
             // 
@@ -118,12 +122,52 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // Form5
+            // lbl_categoria
+            // 
+            this.lbl_categoria.AutoSize = true;
+            this.lbl_categoria.Location = new System.Drawing.Point(543, 403);
+            this.lbl_categoria.Name = "lbl_categoria";
+            this.lbl_categoria.Size = new System.Drawing.Size(54, 13);
+            this.lbl_categoria.TabIndex = 10;
+            this.lbl_categoria.Text = "Categoría";
+            // 
+            // lbl_id_tag
+            // 
+            this.lbl_id_tag.AutoSize = true;
+            this.lbl_id_tag.Location = new System.Drawing.Point(543, 283);
+            this.lbl_id_tag.Name = "lbl_id_tag";
+            this.lbl_id_tag.Size = new System.Drawing.Size(26, 13);
+            this.lbl_id_tag.TabIndex = 11;
+            this.lbl_id_tag.Text = "Tag";
+            // 
+            // lbl_numero
+            // 
+            this.lbl_numero.AutoSize = true;
+            this.lbl_numero.Location = new System.Drawing.Point(543, 241);
+            this.lbl_numero.Name = "lbl_numero";
+            this.lbl_numero.Size = new System.Drawing.Size(44, 13);
+            this.lbl_numero.TabIndex = 12;
+            this.lbl_numero.Text = "Número";
+            // 
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Location = new System.Drawing.Point(543, 203);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.TabIndex = 13;
+            this.lbl_nombre.Text = "Nombre";
+            // 
+            // EscannerChip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(995, 593);
+            this.Controls.Add(this.lbl_nombre);
+            this.Controls.Add(this.lbl_numero);
+            this.Controls.Add(this.lbl_id_tag);
+            this.Controls.Add(this.lbl_categoria);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -132,8 +176,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form5";
+            this.Name = "EscannerChip";
             this.Text = "Scanner Codigos ";
+            this.Load += new System.EventHandler(this.escanerChip_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,6 +195,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_categoria;
+        private System.Windows.Forms.Label lbl_id_tag;
+        private System.Windows.Forms.Label lbl_numero;
+        private System.Windows.Forms.Label lbl_nombre;
 
     }
 }

@@ -13,11 +13,9 @@ namespace Acuanet
 
         //crea la conexion y prepara para operaciones sobre los usuarios
         public ModParticipante(string strConexion)
-        {
-                       
+        {                       
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
-
         }
 
 
@@ -28,6 +26,29 @@ namespace Acuanet
             //codigo que conecta y query para recuperar participante por id
 
             string sql = "SELECT nombre,id,numero FROM participante WHERE id=" + id;
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                par.nombre = rdr.GetString(0);
+                par.id = System.Convert.ToInt32(rdr.GetString(1));
+                par.snumero = rdr.GetString(2);
+
+            }
+            rdr.Close();
+
+            return par;
+        }
+
+        //metodo que recupera el participante por su tag
+        public Participante recuperaPxTag(string stag_id)
+        {
+            Participante par = new Participante();
+
+            //codigo que conecta y query para recuperar participante por id
+
+            string sql = "SELECT nombre,id,numero FROM participante WHERE id_tag='" + stag_id+"'";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
