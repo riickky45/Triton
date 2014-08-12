@@ -54,8 +54,8 @@ namespace Acuanet
 
         private void button9_Click(object sender, EventArgs e)
         {
-            EscannerChip miForm3 = new EscannerChip();
-            miForm3.Show();
+            EscannerChip miFormEC = new EscannerChip();
+            miFormEC.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
