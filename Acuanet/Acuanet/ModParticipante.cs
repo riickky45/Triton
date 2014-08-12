@@ -19,7 +19,7 @@ namespace Acuanet
         }
 
 
-        public Participante recuperaP(int id)
+        public Participante recuperaPxId(int id)
         {
             Participante par = new Participante();
 
@@ -46,7 +46,7 @@ namespace Acuanet
         {
             Participante par = new Participante();
 
-            //codigo que conecta y query para recuperar participante por id
+            //codigo que conecta y query para recuperar participante por id_tag
 
             string sql = "SELECT nombre,id,numero FROM participante WHERE id_tag='" + stag_id+"'";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);

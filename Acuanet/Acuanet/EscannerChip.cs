@@ -29,7 +29,7 @@ namespace Acuanet
 
         private void escanerChip_Load(object sender, EventArgs e)
         {
-            cargaConfiguracion();
+            cargaConfig();
 
 
             strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -47,7 +47,7 @@ namespace Acuanet
             }
             else
             {
-                MessageBox.Show("Problemas en la configuracion de la antena");
+                MessageBox.Show("Problemas en la configuración de la antena","Problema",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             Application.DoEvents();
 
@@ -55,7 +55,7 @@ namespace Acuanet
         }
 
         //Metodo que carga la configuracion inicial de la antena
-        private void cargaConfiguracion()
+        private void cargaConfig()
         {
             lock (this)
             {
