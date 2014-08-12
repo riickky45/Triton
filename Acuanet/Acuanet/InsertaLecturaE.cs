@@ -58,7 +58,7 @@ namespace Acuanet
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-            string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" +id_oleada+",'"+ t.ToString() + "','" + t.ApiTimeStampUTC + "',"+t.ApiTimeStampUTC.Millisecond+")";
+            string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" +id_oleada+",'"+ t.TagOrigId + "','" + t.ApiTimeStampUTC + "',"+t.ApiTimeStampUTC.Millisecond+")";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 

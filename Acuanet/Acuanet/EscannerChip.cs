@@ -47,7 +47,7 @@ namespace Acuanet
             }
             else
             {
-                MessageBox.Show("Problemas en la configuración de la antena","Problema",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Problemas en la configuración de la antena", "Problema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             Application.DoEvents();
 
@@ -227,15 +227,14 @@ namespace Acuanet
             if (e.rxTag != null)
             {
                 TAG tag = (TAG)e.rxTag;
-                
-                
+
                 MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
                 this.lbl_id_tag.Text = tag.TagOrigId;
 
-               Participante par= modP.recuperaPxTag(tag.TagOrigId);
+                Participante par = modP.recuperaPxTag(tag.TagOrigId);
 
-               this.lbl_nombre.Text = par.nombre;
+                this.lbl_nombre.Text = par.nombre;
 
             }
             else
@@ -250,6 +249,6 @@ namespace Acuanet
 
         }
 
-       
+
     }
 }
