@@ -294,14 +294,14 @@ namespace Acuanet
 
             if (!bantenaE)
             {
-                //reader.purgeAllTags();
-                //server.Start();
+                reader.purgeAllTags();
+                server.Start();
                 bantenaE = true;
                 btnEncenderA.Text = "Apagar Antena";
             }
             else
             {
-               // server.Stop();
+               server.Stop();
                 bantenaE = false;
                 btnEncenderA.Text = "Encender Antena";
             }

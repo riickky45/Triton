@@ -11,7 +11,7 @@ namespace Acuanet
     public partial class FormaPrincipal : Form
     {
 
-        OleadaR oleada = new OleadaR();
+        //OleadaR oleada = new OleadaR();
 
         public FormaPrincipal()
         {
