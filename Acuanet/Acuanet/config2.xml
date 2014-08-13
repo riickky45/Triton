@@ -2,7 +2,7 @@
 <ACUANET>
   <Reader>
     <Model>CS461-2</Model>
-    <URI>http://192.168.26.177/</URI>
+    <URI>http://192.168.25.248/</URI>
     <Login>
       <Name>root</Name>
       <Password>csl2006</Password>

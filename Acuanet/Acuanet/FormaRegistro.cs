@@ -111,12 +111,13 @@ namespace Acuanet
             svr.server_port = cxml.Text("ACUANET/Application/ServerPort", "9090");
             svr.mode = "Listening Port on Server Side";
             svr.enable = true;
+            
 
             if (reader.setServerID(svr) == false)
             {
                 if (reader.modServerID(svr) == false)
                 {
-                    System.Console.WriteLine("Problema al configurar el servidor de confianza");
+                    MessageBox.Show("Problema al configurar el servidor de confianza");
                     return false;
                 }
             }
@@ -139,7 +140,7 @@ namespace Acuanet
                 trigger.mode = "Read Any Tags";     //For firmware 2.0.9, 2.0.10
                 if (reader.addTriggeringLogic(trigger) == false)
                 {
-                    System.Console.WriteLine("Problema al configurar la logica del disparador");
+                    MessageBox.Show("Problema al configurar la logica del disparador");
                     return false;
                 }
             }
@@ -209,7 +210,7 @@ namespace Acuanet
             }
             else
             {
-                System.Console.WriteLine("Tag Receive Event received: None");
+               MessageBox.Show("Tag Receive Event received: None");
             }
         }
 

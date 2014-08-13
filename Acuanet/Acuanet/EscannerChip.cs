@@ -44,6 +44,7 @@ namespace Acuanet
             if (reader.connect())
             {
                 setupReader();
+                server.Start();
             }
             else
             {
