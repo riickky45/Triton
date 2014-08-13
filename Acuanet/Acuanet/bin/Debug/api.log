@@ -1,36 +1,36 @@
-13/08/2014 11:47:23 a.m.|http://192.168.25.248/API?command=isOnline&session_id=
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=isOnline&session_id=
 
-13/08/2014 11:47:23 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:18 p.m.|<?xml version="1.0"?>
 <CSL><Command>isOnline</Command><Error code="-102" msg="Error: Session ID not correct! Please try logout and login again." /></CSL>
 
-13/08/2014 11:47:23 a.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
 
-13/08/2014 11:47:23 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:18 p.m.|<?xml version="1.0"?>
 <CSL><Command>login</Command><Error alreadyLoginIP="192.168.25.1" alreadyLoginUser="root" code="-10" msg="Error: Only one user can login the system at the same time! Another User root has already logged-in the system (by browser or API command) at location 192.168.25.1. Please logout the other user and retry login." /></CSL>
 
-13/08/2014 11:47:23 a.m.|http://192.168.25.248/API?command=forceLogout&username=root&password=csl2006
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=forceLogout&username=root&password=csl2006
 
-13/08/2014 11:47:24 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:18 p.m.|<?xml version="1.0"?>
 <CSL><Command>forceLogout</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:24 a.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
 
-13/08/2014 11:47:24 a.m.|<?xml version="1.0"?>
-<CSL><Command>login</Command><Ack>OK: session_id=49f13a82</Ack></CSL>
+13/08/2014 06:28:18 p.m.|<?xml version="1.0"?>
+<CSL><Command>login</Command><Ack>OK: session_id=6a0843e0</Ack></CSL>
 
-13/08/2014 11:47:24 a.m.|http://192.168.25.248/API?command=getAccessMode&session_id=49f13a82
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=getAccessMode&session_id=6a0843e0
 
-13/08/2014 11:47:24 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:18 p.m.|<?xml version="1.0"?>
 <CSL><Command>getAccessMode</Command><Access mode="1" name="High Level HTTP API Mode" /></CSL>
 
-13/08/2014 11:47:24 a.m.|http://192.168.25.248/API?command=isOnline&session_id=49f13a82
+13/08/2014 06:28:18 p.m.|http://192.168.25.248/API?command=isOnline&session_id=6a0843e0
 
-13/08/2014 11:47:24 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:19 p.m.|<?xml version="1.0"?>
 <CSL><Command>isOnline</Command><Ack>OK: Online,CS461.</Ack></CSL>
 
-13/08/2014 11:47:24 a.m.|http://192.168.25.248/API?command=listEvent&session_id=49f13a82
+13/08/2014 06:28:19 p.m.|http://192.168.25.248/API?command=listEvent&session_id=6a0843e0
 
-13/08/2014 11:47:24 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:19 p.m.|<?xml version="1.0"?>
 <CSL>
 <Command>listEvent</Command>
 <EventMode mode="0" />
@@ -42,94 +42,94 @@
 </EventList>
 </CSL>
 
-13/08/2014 11:47:24 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=49f13a82&event_id=DemoEvent&enable=false
+13/08/2014 06:28:19 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=6a0843e0&event_id=DemoEvent&enable=false
 
-13/08/2014 11:47:26 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:20 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:26 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=49f13a82&event_id=PosDemoEvent&enable=false
+13/08/2014 06:28:20 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=6a0843e0&event_id=PosDemoEvent&enable=false
 
-13/08/2014 11:47:27 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:21 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:27 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=49f13a82&event_id=AccessControlDemoEvent&enable=false
+13/08/2014 06:28:21 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=6a0843e0&event_id=AccessControlDemoEvent&enable=false
 
-13/08/2014 11:47:27 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:22 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:27 a.m.|http://192.168.25.248/API?command=setOperProfile&session_id=49f13a82&profile_id=Default Profile&captureMode=Time Window&duplicateEliminationTime=1000&modulationProfile=Profile0&populationEst=20&sessionNo=1&antennaPort=1&enable=true&triggerMethod=Polling Trigger by Client&transmitPower1=30.00&&transmitPower2=30.00&transmitPower3=30.00&transmitPower4=30.00&antennaPortScheme=true&tagModel=NXP&memoryBank=Bank0
+13/08/2014 06:28:22 p.m.|http://192.168.25.248/API?command=setOperProfile&session_id=6a0843e0&profile_id=Default Profile&captureMode=Time Window&duplicateEliminationTime=500&modulationProfile=Profile0&populationEst=32&sessionNo=1&antennaPort=1&enable=true&triggerMethod=Autonomous Time Trigger&transmitPower1=30.00&&transmitPower2=30.00&transmitPower3=30.00&transmitPower4=30.00&antennaPortScheme=false&tagModel=NXP&memoryBank=Bank0
 
-13/08/2014 11:47:27 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:22 p.m.|<?xml version="1.0"?>
 <CSL><Command>setOperProfile</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:27 a.m.|http://192.168.25.248/API?command=setServerID&session_id=49f13a82&server_id=AccessControlDemoServer&desc=Access Control Demo Server&server_ip=192.168.25.1&server_port=9090&enable=true&reader_ip=&mode=Listening Port on Server Side
+13/08/2014 06:28:22 p.m.|http://192.168.25.248/API?command=setServerID&session_id=6a0843e0&server_id=AccessControlDemoServer&desc=Access Control Demo Server&server_ip=192.168.25.1&server_port=9092&enable=true&reader_ip=&mode=Listening Port on Server Side
 
-13/08/2014 11:47:28 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:22 p.m.|<?xml version="1.0"?>
 <CSL><Command>setServerID</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:28 a.m.|http://192.168.25.248/API?command=delTriggeringLogic&session_id=49f13a82&logic_id=AccessControlDemoLogic
+13/08/2014 06:28:22 p.m.|http://192.168.25.248/API?command=delTriggeringLogic&session_id=6a0843e0&logic_id=AccessControlDemoLogic
 
-13/08/2014 11:47:28 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:22 p.m.|<?xml version="1.0"?>
 <CSL><Command>delTriggeringLogic</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:28 a.m.|http://192.168.25.248/API?command=addTriggeringLogic&session_id=49f13a82&logic_id=AccessControlDemoLogic&desc=Access Control Demo&mode=Read Any Tags (any ID, 1 trigger per tag)&capture_point=1&logic=
+13/08/2014 06:28:22 p.m.|http://192.168.25.248/API?command=addTriggeringLogic&session_id=6a0843e0&logic_id=AccessControlDemoLogic&desc=Access Control Demo&mode=Read Any Tags (any ID, 1 trigger per tag)&capture_point=1&logic=
 
-13/08/2014 11:47:28 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:23 p.m.|<?xml version="1.0"?>
 <CSL><Command>addTriggeringLogic</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:28 a.m.|http://192.168.25.248/API?command=delResultantAction&session_id=49f13a82&action_id=AccessControlDemoAction
+13/08/2014 06:28:23 p.m.|http://192.168.25.248/API?command=delResultantAction&session_id=6a0843e0&action_id=AccessControlDemoAction
 
-13/08/2014 11:47:28 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:23 p.m.|<?xml version="1.0"?>
 <CSL><Command>delResultantAction</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:28 a.m.|http://192.168.25.248/API?command=addResultantAction&session_id=49f13a82&action_id=AccessControlDemoAction&desc=Access Control Demo&action_mode=Batch Alert to Server&server_id=AccessControlDemoServer&report_id=Default Report
+13/08/2014 06:28:23 p.m.|http://192.168.25.248/API?command=addResultantAction&session_id=6a0843e0&action_id=AccessControlDemoAction&desc=Access Control Demo&action_mode=Instant Alert to Server&server_id=AccessControlDemoServer&report_id=Default Report
 
-13/08/2014 11:47:29 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:23 p.m.|<?xml version="1.0"?>
 <CSL><Command>addResultantAction</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:29 a.m.|http://192.168.25.248/API?command=delEvent&session_id=49f13a82&event_id=AccessControlDemoEvent
+13/08/2014 06:28:23 p.m.|http://192.168.25.248/API?command=delEvent&session_id=6a0843e0&event_id=AccessControlDemoEvent
 
-13/08/2014 11:47:29 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:23 p.m.|<?xml version="1.0"?>
 <CSL><Command>delEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:47:29 a.m.|http://192.168.25.248/API?command=addEvent&session_id=49f13a82&event_id=AccessControlDemoEvent&desc=Access Control Demo&triggering_logic=AccessControlDemoLogic&operProfile_id=Default Profile&resultant_action=AccessControlDemoAction&event_log=false&enable=true&inventoryEnablingTrigger=Always On&inventoryDisablingTrigger=Never Stop
+13/08/2014 06:28:23 p.m.|http://192.168.25.248/API?command=addEvent&session_id=6a0843e0&event_id=AccessControlDemoEvent&desc=Access Control Demo&triggering_logic=AccessControlDemoLogic&operProfile_id=Default Profile&resultant_action=AccessControlDemoAction&event_log=false&enable=true&inventoryEnablingTrigger=Always On&inventoryDisablingTrigger=Never Stop
 
-13/08/2014 11:47:30 a.m.|<?xml version="1.0"?>
+13/08/2014 06:28:24 p.m.|<?xml version="1.0"?>
 <CSL><Command>addEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:48:59 a.m.|http://192.168.25.248/API?command=isOnline&session_id=
+13/08/2014 06:32:35 p.m.|http://192.168.25.248/API?command=isOnline&session_id=
 
-13/08/2014 11:48:59 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:35 p.m.|<?xml version="1.0"?>
 <CSL><Command>isOnline</Command><Error code="-102" msg="Error: Session ID not correct! Please try logout and login again." /></CSL>
 
-13/08/2014 11:48:59 a.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+13/08/2014 06:32:35 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
 
-13/08/2014 11:48:59 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:35 p.m.|<?xml version="1.0"?>
 <CSL><Command>login</Command><Error alreadyLoginIP="192.168.25.1" alreadyLoginUser="root" code="-10" msg="Error: Only one user can login the system at the same time! Another User root has already logged-in the system (by browser or API command) at location 192.168.25.1. Please logout the other user and retry login." /></CSL>
 
-13/08/2014 11:48:59 a.m.|http://192.168.25.248/API?command=forceLogout&username=root&password=csl2006
+13/08/2014 06:32:35 p.m.|http://192.168.25.248/API?command=forceLogout&username=root&password=csl2006
 
-13/08/2014 11:48:59 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:35 p.m.|<?xml version="1.0"?>
 <CSL><Command>forceLogout</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:48:59 a.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+13/08/2014 06:32:35 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
 
-13/08/2014 11:49:00 a.m.|<?xml version="1.0"?>
-<CSL><Command>login</Command><Ack>OK: session_id=83051424</Ack></CSL>
+13/08/2014 06:32:35 p.m.|<?xml version="1.0"?>
+<CSL><Command>login</Command><Ack>OK: session_id=034ae5ee</Ack></CSL>
 
-13/08/2014 11:49:00 a.m.|http://192.168.25.248/API?command=getAccessMode&session_id=83051424
+13/08/2014 06:32:35 p.m.|http://192.168.25.248/API?command=getAccessMode&session_id=034ae5ee
 
-13/08/2014 11:49:00 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:36 p.m.|<?xml version="1.0"?>
 <CSL><Command>getAccessMode</Command><Access mode="1" name="High Level HTTP API Mode" /></CSL>
 
-13/08/2014 11:49:00 a.m.|http://192.168.25.248/API?command=isOnline&session_id=83051424
+13/08/2014 06:32:36 p.m.|http://192.168.25.248/API?command=isOnline&session_id=034ae5ee
 
-13/08/2014 11:49:00 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:36 p.m.|<?xml version="1.0"?>
 <CSL><Command>isOnline</Command><Ack>OK: Online,CS461.</Ack></CSL>
 
-13/08/2014 11:49:00 a.m.|http://192.168.25.248/API?command=listEvent&session_id=83051424
+13/08/2014 06:32:36 p.m.|http://192.168.25.248/API?command=listEvent&session_id=034ae5ee
 
-13/08/2014 11:49:00 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:36 p.m.|<?xml version="1.0"?>
 <CSL>
 <Command>listEvent</Command>
 <EventMode mode="0" />
@@ -141,58 +141,162 @@
 </EventList>
 </CSL>
 
-13/08/2014 11:49:00 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=83051424&event_id=DemoEvent&enable=false
+13/08/2014 06:32:36 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=034ae5ee&event_id=DemoEvent&enable=false
 
-13/08/2014 11:49:01 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:37 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:01 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=83051424&event_id=PosDemoEvent&enable=false
+13/08/2014 06:32:37 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=034ae5ee&event_id=PosDemoEvent&enable=false
 
-13/08/2014 11:49:02 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:38 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:02 a.m.|http://192.168.25.248/API?command=enableEvent&session_id=83051424&event_id=AccessControlDemoEvent&enable=false
+13/08/2014 06:32:38 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=034ae5ee&event_id=AccessControlDemoEvent&enable=false
 
-13/08/2014 11:49:02 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:39 p.m.|<?xml version="1.0"?>
 <CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:02 a.m.|http://192.168.25.248/API?command=setOperProfile&session_id=83051424&profile_id=Default Profile&captureMode=Time Window&duplicateEliminationTime=1000&modulationProfile=Profile0&populationEst=20&sessionNo=1&antennaPort=1&enable=true&triggerMethod=Polling Trigger by Client&transmitPower1=30.00&&transmitPower2=30.00&transmitPower3=30.00&transmitPower4=30.00&antennaPortScheme=true&tagModel=NXP&memoryBank=Bank0
+13/08/2014 06:32:39 p.m.|http://192.168.25.248/API?command=setOperProfile&session_id=034ae5ee&profile_id=Default Profile&captureMode=Time Window&duplicateEliminationTime=500&modulationProfile=Profile0&populationEst=32&sessionNo=1&antennaPort=1&enable=true&triggerMethod=Autonomous Time Trigger&transmitPower1=30.00&&transmitPower2=30.00&transmitPower3=30.00&transmitPower4=30.00&antennaPortScheme=false&tagModel=NXP&memoryBank=Bank0
 
-13/08/2014 11:49:03 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:39 p.m.|<?xml version="1.0"?>
 <CSL><Command>setOperProfile</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:03 a.m.|http://192.168.25.248/API?command=setServerID&session_id=83051424&server_id=AccessControlDemoServer&desc=Access Control Demo Server&server_ip=192.168.25.1&server_port=9090&enable=true&reader_ip=&mode=Listening Port on Server Side
+13/08/2014 06:32:39 p.m.|http://192.168.25.248/API?command=setServerID&session_id=034ae5ee&server_id=AccessControlDemoServer&desc=Access Control Demo Server&server_ip=192.168.25.1&server_port=9092&enable=true&reader_ip=&mode=Listening Port on Server Side
 
-13/08/2014 11:49:03 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:39 p.m.|<?xml version="1.0"?>
 <CSL><Command>setServerID</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:03 a.m.|http://192.168.25.248/API?command=delTriggeringLogic&session_id=83051424&logic_id=AccessControlDemoLogic
+13/08/2014 06:32:39 p.m.|http://192.168.25.248/API?command=delTriggeringLogic&session_id=034ae5ee&logic_id=AccessControlDemoLogic
 
-13/08/2014 11:49:03 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:39 p.m.|<?xml version="1.0"?>
 <CSL><Command>delTriggeringLogic</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:03 a.m.|http://192.168.25.248/API?command=addTriggeringLogic&session_id=83051424&logic_id=AccessControlDemoLogic&desc=Access Control Demo&mode=Read Any Tags (any ID, 1 trigger per tag)&capture_point=1&logic=
+13/08/2014 06:32:39 p.m.|http://192.168.25.248/API?command=addTriggeringLogic&session_id=034ae5ee&logic_id=AccessControlDemoLogic&desc=Access Control Demo&mode=Read Any Tags (any ID, 1 trigger per tag)&capture_point=1&logic=
 
-13/08/2014 11:49:04 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:39 p.m.|<?xml version="1.0"?>
 <CSL><Command>addTriggeringLogic</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:04 a.m.|http://192.168.25.248/API?command=delResultantAction&session_id=83051424&action_id=AccessControlDemoAction
+13/08/2014 06:32:39 p.m.|http://192.168.25.248/API?command=delResultantAction&session_id=034ae5ee&action_id=AccessControlDemoAction
 
-13/08/2014 11:49:04 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:40 p.m.|<?xml version="1.0"?>
 <CSL><Command>delResultantAction</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:04 a.m.|http://192.168.25.248/API?command=addResultantAction&session_id=83051424&action_id=AccessControlDemoAction&desc=Access Control Demo&action_mode=Batch Alert to Server&server_id=AccessControlDemoServer&report_id=Default Report
+13/08/2014 06:32:40 p.m.|http://192.168.25.248/API?command=addResultantAction&session_id=034ae5ee&action_id=AccessControlDemoAction&desc=Access Control Demo&action_mode=Instant Alert to Server&server_id=AccessControlDemoServer&report_id=Default Report
 
-13/08/2014 11:49:04 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:40 p.m.|<?xml version="1.0"?>
 <CSL><Command>addResultantAction</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:04 a.m.|http://192.168.25.248/API?command=delEvent&session_id=83051424&event_id=AccessControlDemoEvent
+13/08/2014 06:32:40 p.m.|http://192.168.25.248/API?command=delEvent&session_id=034ae5ee&event_id=AccessControlDemoEvent
 
-13/08/2014 11:49:05 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:40 p.m.|<?xml version="1.0"?>
 <CSL><Command>delEvent</Command><Ack>OK:</Ack></CSL>
 
-13/08/2014 11:49:05 a.m.|http://192.168.25.248/API?command=addEvent&session_id=83051424&event_id=AccessControlDemoEvent&desc=Access Control Demo&triggering_logic=AccessControlDemoLogic&operProfile_id=Default Profile&resultant_action=AccessControlDemoAction&event_log=false&enable=true&inventoryEnablingTrigger=Always On&inventoryDisablingTrigger=Never Stop
+13/08/2014 06:32:40 p.m.|http://192.168.25.248/API?command=addEvent&session_id=034ae5ee&event_id=AccessControlDemoEvent&desc=Access Control Demo&triggering_logic=AccessControlDemoLogic&operProfile_id=Default Profile&resultant_action=AccessControlDemoAction&event_log=false&enable=true&inventoryEnablingTrigger=Always On&inventoryDisablingTrigger=Never Stop
 
-13/08/2014 11:49:05 a.m.|<?xml version="1.0"?>
+13/08/2014 06:32:41 p.m.|<?xml version="1.0"?>
+<CSL><Command>addEvent</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:32:45 p.m.|http://192.168.25.248/API?command=startInventory&session_id=034ae5ee&mode=purgeAllTags
+
+13/08/2014 06:32:45 p.m.|<?xml version="1.0"?>
+<CSL><Command>startInventory</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:38:58 p.m.|http://192.168.25.248/API?command=isOnline&session_id=
+
+13/08/2014 06:38:58 p.m.|<?xml version="1.0"?>
+<CSL><Command>isOnline</Command><Error code="-102" msg="Error: Session ID not correct! Please try logout and login again." /></CSL>
+
+13/08/2014 06:38:58 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+
+13/08/2014 06:38:58 p.m.|<?xml version="1.0"?>
+<CSL><Command>login</Command><Error alreadyLoginIP="192.168.25.1" alreadyLoginUser="root" code="-10" msg="Error: Only one user can login the system at the same time! Another User root has already logged-in the system (by browser or API command) at location 192.168.25.1. Please logout the other user and retry login." /></CSL>
+
+13/08/2014 06:38:58 p.m.|http://192.168.25.248/API?command=forceLogout&username=root&password=csl2006
+
+13/08/2014 06:38:58 p.m.|<?xml version="1.0"?>
+<CSL><Command>forceLogout</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:38:58 p.m.|http://192.168.25.248/API?command=login&username=root&password=csl2006
+
+13/08/2014 06:38:58 p.m.|<?xml version="1.0"?>
+<CSL><Command>login</Command><Ack>OK: session_id=e78dc33e</Ack></CSL>
+
+13/08/2014 06:38:58 p.m.|http://192.168.25.248/API?command=getAccessMode&session_id=e78dc33e
+
+13/08/2014 06:38:59 p.m.|<?xml version="1.0"?>
+<CSL><Command>getAccessMode</Command><Access mode="1" name="High Level HTTP API Mode" /></CSL>
+
+13/08/2014 06:38:59 p.m.|http://192.168.25.248/API?command=isOnline&session_id=e78dc33e
+
+13/08/2014 06:38:59 p.m.|<?xml version="1.0"?>
+<CSL><Command>isOnline</Command><Ack>OK: Online,CS461.</Ack></CSL>
+
+13/08/2014 06:38:59 p.m.|http://192.168.25.248/API?command=listEvent&session_id=e78dc33e
+
+13/08/2014 06:38:59 p.m.|<?xml version="1.0"?>
+<CSL>
+<Command>listEvent</Command>
+<EventMode mode="0" />
+<AutomaticConfigure desc="automatic configure CSLEvent for DSPI" enable="true" />
+<EventList>
+<event desc="Event Demo" enable="false" event_id="DemoEvent" event_log="false" exclusivity="Non-exclusive" inventoryDisablingAction="NONE" inventoryDisablingTrigger="Never Stop" inventoryEnablingAction="NONE" inventoryEnablingTrigger="Always On" operProfile_id="Default Profile" resultant_action="DemoAction" triggering_logic="DemoTrigger" />
+<event desc="POS Demo" enable="false" event_id="PosDemoEvent" event_log="false" exclusivity="" inventoryDisablingAction="" inventoryDisablingTrigger="Never Stop" inventoryEnablingAction="" inventoryEnablingTrigger="Always On" operProfile_id="Default Profile" resultant_action="PosDemoAction" triggering_logic="PosDemoLogic" />
+<event desc="Access Control Demo" enable="true" event_id="AccessControlDemoEvent" event_log="false" exclusivity="Exclusive" inventoryDisablingAction="NONE" inventoryDisablingTrigger="Never Stop" inventoryEnablingAction="NONE" inventoryEnablingTrigger="Always On" operProfile_id="Default Profile" resultant_action="AccessControlDemoAction" triggering_logic="AccessControlDemoLogic" />
+</EventList>
+</CSL>
+
+13/08/2014 06:38:59 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=e78dc33e&event_id=DemoEvent&enable=false
+
+13/08/2014 06:39:00 p.m.|<?xml version="1.0"?>
+<CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:00 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=e78dc33e&event_id=PosDemoEvent&enable=false
+
+13/08/2014 06:39:01 p.m.|<?xml version="1.0"?>
+<CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:01 p.m.|http://192.168.25.248/API?command=enableEvent&session_id=e78dc33e&event_id=AccessControlDemoEvent&enable=false
+
+13/08/2014 06:39:01 p.m.|<?xml version="1.0"?>
+<CSL><Command>enableEvent</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:01 p.m.|http://192.168.25.248/API?command=setOperProfile&session_id=e78dc33e&profile_id=Default Profile&captureMode=Time Window&duplicateEliminationTime=500&modulationProfile=Profile0&populationEst=32&sessionNo=1&antennaPort=1&enable=true&triggerMethod=Autonomous Time Trigger&transmitPower1=30.00&&transmitPower2=30.00&transmitPower3=30.00&transmitPower4=30.00&antennaPortScheme=false&tagModel=NXP&memoryBank=Bank0
+
+13/08/2014 06:39:02 p.m.|<?xml version="1.0"?>
+<CSL><Command>setOperProfile</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:02 p.m.|http://192.168.25.248/API?command=setServerID&session_id=e78dc33e&server_id=AccessControlDemoServer&desc=Access Control Demo Server&server_ip=192.168.25.1&server_port=9092&enable=true&reader_ip=&mode=Listening Port on Server Side
+
+13/08/2014 06:39:02 p.m.|<?xml version="1.0"?>
+<CSL><Command>setServerID</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:02 p.m.|http://192.168.25.248/API?command=delTriggeringLogic&session_id=e78dc33e&logic_id=AccessControlDemoLogic
+
+13/08/2014 06:39:02 p.m.|<?xml version="1.0"?>
+<CSL><Command>delTriggeringLogic</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:02 p.m.|http://192.168.25.248/API?command=addTriggeringLogic&session_id=e78dc33e&logic_id=AccessControlDemoLogic&desc=Access Control Demo&mode=Read Any Tags (any ID, 1 trigger per tag)&capture_point=1&logic=
+
+13/08/2014 06:39:03 p.m.|<?xml version="1.0"?>
+<CSL><Command>addTriggeringLogic</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:03 p.m.|http://192.168.25.248/API?command=delResultantAction&session_id=e78dc33e&action_id=AccessControlDemoAction
+
+13/08/2014 06:39:03 p.m.|<?xml version="1.0"?>
+<CSL><Command>delResultantAction</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:03 p.m.|http://192.168.25.248/API?command=addResultantAction&session_id=e78dc33e&action_id=AccessControlDemoAction&desc=Access Control Demo&action_mode=Instant Alert to Server&server_id=AccessControlDemoServer&report_id=Default Report
+
+13/08/2014 06:39:03 p.m.|<?xml version="1.0"?>
+<CSL><Command>addResultantAction</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:03 p.m.|http://192.168.25.248/API?command=delEvent&session_id=e78dc33e&event_id=AccessControlDemoEvent
+
+13/08/2014 06:39:03 p.m.|<?xml version="1.0"?>
+<CSL><Command>delEvent</Command><Ack>OK:</Ack></CSL>
+
+13/08/2014 06:39:03 p.m.|http://192.168.25.248/API?command=addEvent&session_id=e78dc33e&event_id=AccessControlDemoEvent&desc=Access Control Demo&triggering_logic=AccessControlDemoLogic&operProfile_id=Default Profile&resultant_action=AccessControlDemoAction&event_log=false&enable=true&inventoryEnablingTrigger=Always On&inventoryDisablingTrigger=Never Stop
+
+13/08/2014 06:39:04 p.m.|<?xml version="1.0"?>
 <CSL><Command>addEvent</Command><Ack>OK:</Ack></CSL>
 
