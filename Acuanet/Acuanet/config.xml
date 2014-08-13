@@ -68,4 +68,13 @@
     <ServerPort>9092</ServerPort>
     <LocalIP>192.168.25.1</LocalIP>
   </Application>
+
+  <BD>
+    <SBD_ip>127.0.0.1</SBD_ip>
+    <SDB_port>3306</SDB_port>
+    <SBD_bdn>ntritondb</SBD_bdn>
+    <SBD_usuario>root</SBD_usuario>
+    <SBD_passwd>xalf123</SBD_passwd>
+  </BD>
+  
 </ACUANET>
