@@ -74,7 +74,7 @@
     <SDB_port>3306</SDB_port>
     <SBD_bdn>ntritondb</SBD_bdn>
     <SBD_usuario>root</SBD_usuario>
-    <SBD_passwd>xalf123</SBD_passwd>
+    <SBD_passwd></SBD_passwd>
   </BD>
   
 </ACUANET>

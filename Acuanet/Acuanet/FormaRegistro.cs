@@ -205,7 +205,7 @@ namespace Acuanet
                 // System.Console.WriteLine("Tag Recibido Evento recepcion:" + tag.TagOrigId + " Tiempo:" + tag.Time);
                 sTag = tag.TagOrigId;
                 labelCodigoP.Text = sTag;
-                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
+                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo: " + tag.Time + " ms " + tag.ApiTimeStampUTC.Millisecond);
 
             }
             else

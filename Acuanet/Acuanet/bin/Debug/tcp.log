@@ -72,3 +72,1133 @@ cmd=tagEndNtf
 
 13/08/2014 06:40:28 p.m.|Wait for client...
 
+13/08/2014 07:33:03 p.m.|Wait for client...
+
+13/08/2014 07:33:04 p.m.|Wait for client...
+
+13/08/2014 07:33:04 p.m.|Connected from 192.168.25.248:1227. 1 active clients
+
+13/08/2014 07:33:06 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030220253011ED&rssi=-72&time=949286328&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=214695
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:18 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:19 p.m.|Connected from 192.168.25.248:1228. 1 active clients
+
+13/08/2014 07:33:19 p.m.|Wait for client...
+
+13/08/2014 07:33:21 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030220253011ED&rssi=-72&time=949286342&cnt=1&bank0=Failed: other reader error&freq=995&PC=3000&usec=497835
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:24 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:25 p.m.|Connected from 192.168.25.248:1229. 1 active clients
+
+13/08/2014 07:33:25 p.m.|Wait for client...
+
+13/08/2014 07:33:26 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030220253011ED&rssi=-70&time=949286348&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=363114
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:36 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:37 p.m.|Connected from 192.168.25.248:1230. 1 active clients
+
+13/08/2014 07:33:37 p.m.|Wait for client...
+
+13/08/2014 07:33:39 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030220253011ED&rssi=-71&time=949286360&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=420690
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:41 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:42 p.m.|Connected from 192.168.25.248:1231. 1 active clients
+
+13/08/2014 07:33:42 p.m.|Wait for client...
+
+13/08/2014 07:33:43 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030220129090B5&rssi=-72&time=949286364&cnt=1&bank0=Failed: other reader error&freq=1215&PC=3000&usec=813801
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:46 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:46 p.m.|Connected from 192.168.25.248:1232. 1 active clients
+
+13/08/2014 07:33:46 p.m.|Wait for client...
+
+13/08/2014 07:33:48 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E20020840103029926800BE4&rssi=-69&time=949286369&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=862406
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:52 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:52 p.m.|Connected from 192.168.25.248:1233. 1 active clients
+
+13/08/2014 07:33:52 p.m.|Wait for client...
+
+13/08/2014 07:33:53 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192710074F&rssi=-64&time=949286374&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=875737
+cmd=tagEndNtf
+
+
+13/08/2014 07:33:56 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:33:56 p.m.|Connected from 192.168.25.248:1234. 1 active clients
+
+13/08/2014 07:33:56 p.m.|Wait for client...
+
+13/08/2014 07:34:01 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:34:01 p.m.|Connected from 192.168.25.248:1235. 1 active clients
+
+13/08/2014 07:34:01 p.m.|Wait for client...
+
+13/08/2014 07:34:02 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:34:04 p.m.|Connected from 192.168.25.248:1236. 1 active clients
+
+13/08/2014 07:34:04 p.m.|Wait for client...
+
+13/08/2014 07:34:09 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192710074F&rssi=-63&time=949286391&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=224800
+cmd=tagEndNtf
+
+
+13/08/2014 07:34:19 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:34:20 p.m.|Connected from 192.168.25.248:1237. 1 active clients
+
+13/08/2014 07:34:20 p.m.|Wait for client...
+
+13/08/2014 07:34:20 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302202470181F&rssi=-66&time=949286402&cnt=1&bank0=Failed: other reader error&freq=1245&PC=3000&usec=196890
+cmd=tagEndNtf
+
+
+13/08/2014 07:34:27 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:34:28 p.m.|Connected from 192.168.25.248:1238. 1 active clients
+
+13/08/2014 07:34:28 p.m.|Wait for client...
+
+13/08/2014 07:34:29 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E20020840103022026700BE7&rssi=-64&time=949286410&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=595693
+cmd=tagEndNtf
+
+
+13/08/2014 07:34:35 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:34:35 p.m.|Connected from 192.168.25.248:1239. 1 active clients
+
+13/08/2014 07:34:35 p.m.|Wait for client...
+
+13/08/2014 07:39:57 p.m.|Wait for client...
+
+13/08/2014 07:39:57 p.m.|Wait for client...
+
+13/08/2014 07:39:57 p.m.|Connected from 192.168.25.248:1364. 1 active clients
+
+13/08/2014 07:39:58 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-68&time=949286739&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=915795
+cmd=tagEndNtf
+
+
+13/08/2014 07:39:58 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:39:59 p.m.|Connected from 192.168.25.248:1365. 1 active clients
+
+13/08/2014 07:39:59 p.m.|Wait for client...
+
+13/08/2014 07:39:59 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-62&time=949286741&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=005532
+cmd=tagEndNtf
+
+
+13/08/2014 07:39:59 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:00 p.m.|Connected from 192.168.25.248:1366. 1 active clients
+
+13/08/2014 07:40:00 p.m.|Wait for client...
+
+13/08/2014 07:40:01 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286743&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=211214
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:01 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:02 p.m.|Connected from 192.168.25.248:1367. 1 active clients
+
+13/08/2014 07:40:02 p.m.|Wait for client...
+
+13/08/2014 07:40:03 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-67&time=949286744&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=680995
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:03 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:03 p.m.|Connected from 192.168.25.248:1368. 1 active clients
+
+13/08/2014 07:40:03 p.m.|Wait for client...
+
+13/08/2014 07:40:04 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-63&time=949286745&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=806733
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:04 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:05 p.m.|Connected from 192.168.25.248:1369. 1 active clients
+
+13/08/2014 07:40:05 p.m.|Wait for client...
+
+13/08/2014 07:40:06 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-69&time=949286747&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=943659
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:06 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:07 p.m.|Connected from 192.168.25.248:1370. 1 active clients
+
+13/08/2014 07:40:07 p.m.|Wait for client...
+
+13/08/2014 07:40:09 p.m.|stop client connection. 1 active client.
+
+13/08/2014 07:40:09 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:09 p.m.|Accept Connection Error
+
+13/08/2014 07:40:13 p.m.|Wait for client...
+
+13/08/2014 07:40:14 p.m.|Wait for client...
+
+13/08/2014 07:40:14 p.m.|Connected from 192.168.25.248:1373. 1 active clients
+
+13/08/2014 07:40:14 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286755&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=986177
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:14 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:15 p.m.|Connected from 192.168.25.248:1374. 1 active clients
+
+13/08/2014 07:40:15 p.m.|Wait for client...
+
+13/08/2014 07:40:16 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-71&time=949286758&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=064620
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:16 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:17 p.m.|Connected from 192.168.25.248:1375. 1 active clients
+
+13/08/2014 07:40:17 p.m.|Wait for client...
+
+13/08/2014 07:40:18 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286759&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=335753
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:18 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:18 p.m.|Connected from 192.168.25.248:1376. 1 active clients
+
+13/08/2014 07:40:18 p.m.|Wait for client...
+
+13/08/2014 07:40:19 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-63&time=949286761&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=369745
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:20 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:20 p.m.|Wait for client...
+
+13/08/2014 07:40:20 p.m.|Connected from 192.168.25.248:1377. 1 active clients
+
+13/08/2014 07:40:21 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-68&time=949286762&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=697255
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:21 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:22 p.m.|Connected from 192.168.25.248:1378. 1 active clients
+
+13/08/2014 07:40:22 p.m.|Wait for client...
+
+13/08/2014 07:40:22 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286764&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=076706
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:22 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:23 p.m.|Connected from 192.168.25.248:1379. 1 active clients
+
+13/08/2014 07:40:23 p.m.|Wait for client...
+
+13/08/2014 07:40:24 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-58&time=949286765&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=519837
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:24 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:24 p.m.|Connected from 192.168.25.248:1380. 1 active clients
+
+13/08/2014 07:40:24 p.m.|Wait for client...
+
+13/08/2014 07:40:25 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-65&time=949286767&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=021397
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:25 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:26 p.m.|Connected from 192.168.25.248:1381. 1 active clients
+
+13/08/2014 07:40:26 p.m.|Wait for client...
+
+13/08/2014 07:40:27 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286768&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=401594
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:27 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:27 p.m.|Connected from 192.168.25.248:1382. 1 active clients
+
+13/08/2014 07:40:27 p.m.|Wait for client...
+
+13/08/2014 07:40:28 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-65&time=949286769&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=841020
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:28 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:29 p.m.|Connected from 192.168.25.248:1383. 1 active clients
+
+13/08/2014 07:40:29 p.m.|Wait for client...
+
+13/08/2014 07:40:30 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-66&time=949286771&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=337807
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:30 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:30 p.m.|Wait for client...
+
+13/08/2014 07:40:30 p.m.|Connected from 192.168.25.248:1384. 1 active clients
+
+13/08/2014 07:40:31 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286772&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=715405
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:31 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:31 p.m.|Connected from 192.168.25.248:1385. 1 active clients
+
+13/08/2014 07:40:31 p.m.|Wait for client...
+
+13/08/2014 07:40:32 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-60&time=949286774&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=158279
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:32 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:33 p.m.|Connected from 192.168.25.248:1386. 1 active clients
+
+13/08/2014 07:40:33 p.m.|Wait for client...
+
+13/08/2014 07:40:34 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286775&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=663410
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:34 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:35 p.m.|Wait for client...
+
+13/08/2014 07:40:35 p.m.|Connected from 192.168.25.248:1387. 1 active clients
+
+13/08/2014 07:40:35 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286777&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=041442
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:35 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:36 p.m.|Connected from 192.168.25.248:1388. 1 active clients
+
+13/08/2014 07:40:36 p.m.|Wait for client...
+
+13/08/2014 07:40:37 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286778&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=476955
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:37 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:37 p.m.|Connected from 192.168.25.248:1389. 1 active clients
+
+13/08/2014 07:40:37 p.m.|Wait for client...
+
+13/08/2014 07:40:38 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286779&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=979643
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:38 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:39 p.m.|Connected from 192.168.25.248:1390. 1 active clients
+
+13/08/2014 07:40:39 p.m.|Wait for client...
+
+13/08/2014 07:40:40 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286781&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=366915
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:40 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:40 p.m.|Wait for client...
+
+13/08/2014 07:40:40 p.m.|Connected from 192.168.25.248:1391. 1 active clients
+
+13/08/2014 07:40:41 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-67&time=949286782&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=810367
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:41 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:42 p.m.|Connected from 192.168.25.248:1392. 1 active clients
+
+13/08/2014 07:40:42 p.m.|Wait for client...
+
+13/08/2014 07:40:42 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286784&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=312949
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:42 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:43 p.m.|Connected from 192.168.25.248:1393. 1 active clients
+
+13/08/2014 07:40:43 p.m.|Wait for client...
+
+13/08/2014 07:40:44 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286785&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=691704
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:44 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:44 p.m.|Connected from 192.168.25.248:1394. 1 active clients
+
+13/08/2014 07:40:44 p.m.|Wait for client...
+
+13/08/2014 07:40:45 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-62&time=949286787&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=128275
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:45 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:46 p.m.|Connected from 192.168.25.248:1395. 1 active clients
+
+13/08/2014 07:40:46 p.m.|Wait for client...
+
+13/08/2014 07:40:47 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-62&time=949286788&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=638947
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:47 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:48 p.m.|Connected from 192.168.25.248:1396. 1 active clients
+
+13/08/2014 07:40:48 p.m.|Wait for client...
+
+13/08/2014 07:40:48 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-62&time=949286790&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=006429
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:48 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:49 p.m.|Connected from 192.168.25.248:1397. 1 active clients
+
+13/08/2014 07:40:49 p.m.|Wait for client...
+
+13/08/2014 07:40:50 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286791&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=447390
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:50 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:50 p.m.|Connected from 192.168.25.248:1398. 1 active clients
+
+13/08/2014 07:40:50 p.m.|Wait for client...
+
+13/08/2014 07:40:51 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-66&time=949286792&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=949030
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:51 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:52 p.m.|Connected from 192.168.25.248:1399. 1 active clients
+
+13/08/2014 07:40:52 p.m.|Wait for client...
+
+13/08/2014 07:40:53 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-60&time=949286794&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=326580
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:53 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:53 p.m.|Wait for client...
+
+13/08/2014 07:40:53 p.m.|Connected from 192.168.25.248:1400. 1 active clients
+
+13/08/2014 07:40:54 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286795&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=766692
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:54 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:55 p.m.|Connected from 192.168.25.248:1401. 1 active clients
+
+13/08/2014 07:40:55 p.m.|Wait for client...
+
+13/08/2014 07:40:55 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286797&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=267098
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:55 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:56 p.m.|Connected from 192.168.25.248:1402. 1 active clients
+
+13/08/2014 07:40:56 p.m.|Wait for client...
+
+13/08/2014 07:40:57 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286798&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=648700
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:57 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:57 p.m.|Connected from 192.168.25.248:1403. 1 active clients
+
+13/08/2014 07:40:57 p.m.|Wait for client...
+
+13/08/2014 07:40:58 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-60&time=949286800&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=086367
+cmd=tagEndNtf
+
+
+13/08/2014 07:40:58 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:40:59 p.m.|Connected from 192.168.25.248:1404. 1 active clients
+
+13/08/2014 07:40:59 p.m.|Wait for client...
+
+13/08/2014 07:41:00 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286801&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=590471
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:00 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:01 p.m.|Connected from 192.168.25.248:1405. 1 active clients
+
+13/08/2014 07:41:01 p.m.|Wait for client...
+
+13/08/2014 07:41:01 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-65&time=949286802&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=974000
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:01 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:02 p.m.|Connected from 192.168.25.248:1406. 1 active clients
+
+13/08/2014 07:41:02 p.m.|Wait for client...
+
+13/08/2014 07:41:03 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-59&time=949286804&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=410164
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:03 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:03 p.m.|Connected from 192.168.25.248:1407. 1 active clients
+
+13/08/2014 07:41:03 p.m.|Wait for client...
+
+13/08/2014 07:41:04 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-60&time=949286805&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=914575
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:04 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:05 p.m.|Connected from 192.168.25.248:1408. 1 active clients
+
+13/08/2014 07:41:05 p.m.|Wait for client...
+
+13/08/2014 07:41:05 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286807&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=287010
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:05 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:07 p.m.|Connected from 192.168.25.248:1409. 1 active clients
+
+13/08/2014 07:41:07 p.m.|Wait for client...
+
+13/08/2014 07:41:07 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-63&time=949286809&cnt=1&bank0=0000000000000000&freq=1055&PC=3000&usec=274736
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:07 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:08 p.m.|Connected from 192.168.25.248:1410. 1 active clients
+
+13/08/2014 07:41:08 p.m.|Wait for client...
+
+13/08/2014 07:41:09 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-59&time=949286810&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=646373
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:09 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:10 p.m.|Connected from 192.168.25.248:1411. 1 active clients
+
+13/08/2014 07:41:10 p.m.|Wait for client...
+
+13/08/2014 07:41:10 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-58&time=949286812&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=151218
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:10 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:11 p.m.|Wait for client...
+
+13/08/2014 07:41:11 p.m.|Connected from 192.168.25.248:1412. 1 active clients
+
+13/08/2014 07:41:12 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-58&time=949286813&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=586507
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:12 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:12 p.m.|Connected from 192.168.25.248:1413. 1 active clients
+
+13/08/2014 07:41:12 p.m.|Wait for client...
+
+13/08/2014 07:41:13 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-65&time=949286814&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=971867
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:13 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:14 p.m.|Wait for client...
+
+13/08/2014 07:41:14 p.m.|Connected from 192.168.25.248:1414. 1 active clients
+
+13/08/2014 07:41:15 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-66&time=949286816&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=473552
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:15 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:15 p.m.|Connected from 192.168.25.248:1415. 1 active clients
+
+13/08/2014 07:41:15 p.m.|Wait for client...
+
+13/08/2014 07:41:16 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286817&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=906833
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:16 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:17 p.m.|Connected from 192.168.25.248:1416. 1 active clients
+
+13/08/2014 07:41:17 p.m.|Wait for client...
+
+13/08/2014 07:41:17 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-67&time=949286819&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=293066
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:17 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:18 p.m.|Connected from 192.168.25.248:1417. 1 active clients
+
+13/08/2014 07:41:18 p.m.|Wait for client...
+
+13/08/2014 07:41:19 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286820&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=787830
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:19 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:20 p.m.|Connected from 192.168.25.248:1418. 1 active clients
+
+13/08/2014 07:41:20 p.m.|Wait for client...
+
+13/08/2014 07:41:20 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-60&time=949286822&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=228958
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:20 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:21 p.m.|Connected from 192.168.25.248:1419. 1 active clients
+
+13/08/2014 07:41:21 p.m.|Wait for client...
+
+13/08/2014 07:41:22 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-59&time=949286823&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=610645
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:22 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:23 p.m.|Connected from 192.168.25.248:1420. 1 active clients
+
+13/08/2014 07:41:23 p.m.|Wait for client...
+
+13/08/2014 07:41:23 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286825&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=113852
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:23 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:24 p.m.|Connected from 192.168.25.248:1421. 1 active clients
+
+13/08/2014 07:41:24 p.m.|Wait for client...
+
+13/08/2014 07:41:25 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286826&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=546866
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:25 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:25 p.m.|Connected from 192.168.25.248:1422. 1 active clients
+
+13/08/2014 07:41:25 p.m.|Wait for client...
+
+13/08/2014 07:41:26 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286827&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=926778
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:26 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:27 p.m.|Connected from 192.168.25.248:1423. 1 active clients
+
+13/08/2014 07:41:27 p.m.|Wait for client...
+
+13/08/2014 07:41:28 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-62&time=949286829&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=915122
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:28 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:29 p.m.|Connected from 192.168.25.248:1424. 1 active clients
+
+13/08/2014 07:41:29 p.m.|Wait for client...
+
+13/08/2014 07:41:29 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-61&time=949286831&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=285480
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:29 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:30 p.m.|Connected from 192.168.25.248:1425. 1 active clients
+
+13/08/2014 07:41:30 p.m.|Wait for client...
+
+13/08/2014 07:41:31 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286832&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=788287
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:31 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:32 p.m.|Connected from 192.168.25.248:1426. 1 active clients
+
+13/08/2014 07:41:32 p.m.|Wait for client...
+
+13/08/2014 07:41:33 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286834&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=650101
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:33 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:34 p.m.|Connected from 192.168.25.248:1427. 1 active clients
+
+13/08/2014 07:41:34 p.m.|Wait for client...
+
+13/08/2014 07:41:34 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286836&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=147504
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:34 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:35 p.m.|Connected from 192.168.25.248:1428. 1 active clients
+
+13/08/2014 07:41:35 p.m.|Wait for client...
+
+13/08/2014 07:41:36 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286837&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=534335
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:36 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:36 p.m.|Connected from 192.168.25.248:1429. 1 active clients
+
+13/08/2014 07:41:36 p.m.|Wait for client...
+
+13/08/2014 07:41:37 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286838&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=968258
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:37 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:38 p.m.|Connected from 192.168.25.248:1430. 1 active clients
+
+13/08/2014 07:41:38 p.m.|Wait for client...
+
+13/08/2014 07:41:39 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286840&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=468841
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:39 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:39 p.m.|Connected from 192.168.25.248:1431. 1 active clients
+
+13/08/2014 07:41:39 p.m.|Wait for client...
+
+13/08/2014 07:41:40 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-63&time=949286841&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=856450
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:40 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:41 p.m.|Connected from 192.168.25.248:1432. 1 active clients
+
+13/08/2014 07:41:41 p.m.|Wait for client...
+
+13/08/2014 07:41:41 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286843&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=299706
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:41 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:42 p.m.|Connected from 192.168.25.248:1433. 1 active clients
+
+13/08/2014 07:41:42 p.m.|Wait for client...
+
+13/08/2014 07:41:43 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286844&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=795912
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:43 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:44 p.m.|Connected from 192.168.25.248:1434. 1 active clients
+
+13/08/2014 07:41:44 p.m.|Wait for client...
+
+13/08/2014 07:41:44 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949286846&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=177413
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:44 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:41:45 p.m.|Wait for client...
+
+13/08/2014 07:41:45 p.m.|Connected from 192.168.25.248:1435. 1 active clients
+
+13/08/2014 07:41:46 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286847&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=623608
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:49 p.m.|Connected from 192.168.25.248:1436. 2 active clients
+
+13/08/2014 07:41:49 p.m.|Wait for client...
+
+13/08/2014 07:41:49 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286850&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=886822
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:52 p.m.|Connected from 192.168.25.248:1437. 3 active clients
+
+13/08/2014 07:41:52 p.m.|Wait for client...
+
+13/08/2014 07:41:52 p.m.|No data read, remote disconnect?, 2 active clients
+
+13/08/2014 07:41:52 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-62&time=949286853&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=864482
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:53 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286854&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=388922
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949286854&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=875017
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:55 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-59&time=949286855&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=350304
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-62&time=949286855&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=835166
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286856&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=312515
+cmd=tagEndNtf
+
+
+13/08/2014 07:41:57 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-59&time=949286856&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=786058
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949286857&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=273797
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-63&time=949286857&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=754232
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286858&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=227745
+cmd=tagEndNtf
+
+
+13/08/2014 07:42:07 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-58&time=949286858&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=705888
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-64&time=949286859&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=189924
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286859&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=669823
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-59&time=949286860&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=148088
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture
+
+13/08/2014 07:42:15 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949286860&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=626777
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-71&time=949286861&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=105869
+cmd=tagEndNtf
+
+
+13/08/2014 07:42:23 p.m.|No data read, remote disconnect?, 1 active clients
+
+13/08/2014 07:42:24 p.m.|Connected from 192.168.25.248:1438. 2 active clients
+
+13/08/2014 07:42:24 p.m.|Wait for client...
+
+13/08/2014 07:42:24 p.m.|No data read, remote disconnect?, 1 active clients
+
+13/08/2014 07:42:25 p.m.|Wait for client...
+
+13/08/2014 07:42:25 p.m.|Connected from 192.168.25.248:1439. 2 active clients
+
+13/08/2014 07:42:25 p.m.|No data read, remote disconnect?, 1 active clients
+
+13/08/2014 07:42:27 p.m.|Wait for client...
+
+13/08/2014 07:42:27 p.m.|Connected from 192.168.25.248:1440. 2 active clients
+
+13/08/2014 07:42:43 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-60&time=949286904&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=838863
+cmd=tagEndNtf
+
+
+13/08/2014 07:42:46 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-51&time=949286905&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=302550
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-58&time=949286905&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=783689
+cmd=tagEndNtf
+
+
+13/08/2014 07:47:57 p.m.|Wait for client...
+
+13/08/2014 07:47:58 p.m.|Wait for client...
+
+13/08/2014 07:47:58 p.m.|Connected from 192.168.25.248:1544. 1 active clients
+
+13/08/2014 07:47:59 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-67&time=949287220&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=996036
+cmd=tagEndNtf
+
+
+13/08/2014 07:47:59 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:47:59 p.m.|Connected from 192.168.25.248:1545. 1 active clients
+
+13/08/2014 07:47:59 p.m.|Wait for client...
+
+13/08/2014 07:48:00 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-64&time=949287222&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=088135
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:00 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:48:01 p.m.|Connected from 192.168.25.248:1546. 1 active clients
+
+13/08/2014 07:48:01 p.m.|Wait for client...
+
+13/08/2014 07:48:02 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-57&time=949287223&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=527778
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:02 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:48:03 p.m.|Connected from 192.168.25.248:1547. 1 active clients
+
+13/08/2014 07:48:03 p.m.|Wait for client...
+
+13/08/2014 07:48:03 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-66&time=949287225&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=033699
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:03 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:48:04 p.m.|Connected from 192.168.25.248:1548. 1 active clients
+
+13/08/2014 07:48:04 p.m.|Wait for client...
+
+13/08/2014 07:48:04 p.m.|stop client connection. 1 active client.
+
+13/08/2014 07:48:04 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:48:04 p.m.|Accept Connection Error
+
+13/08/2014 07:48:06 p.m.|Wait for client...
+
+13/08/2014 07:48:08 p.m.|Connected from 192.168.25.248:1550. 1 active clients
+
+13/08/2014 07:48:08 p.m.|Wait for client...
+
+13/08/2014 07:48:09 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-65&time=949287230&cnt=1&bank0=0000000000000000&freq=1335&PC=3000&usec=665807
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:09 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:48:09 p.m.|Wait for client...
+
+13/08/2014 07:48:09 p.m.|Connected from 192.168.25.248:1551. 1 active clients
+
+13/08/2014 07:48:15 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:48:15 p.m.|Connected from 192.168.25.248:1552. 1 active clients
+
+13/08/2014 07:48:15 p.m.|Wait for client...
+
+13/08/2014 07:48:16 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:48:19 p.m.|Connected from 192.168.25.248:1553. 1 active clients
+
+13/08/2014 07:48:19 p.m.|Wait for client...
+
+13/08/2014 07:48:20 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-66&time=949287241&cnt=1&bank0=Failed: CRC error&freq=1235&PC=3000&usec=991038
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:22 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-68&time=949287243&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=472981
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:23 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949287243&cnt=1&bank0=0000000000000000&freq=1335&PC=3000&usec=907754
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:23 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-66&time=949287244&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=865576
+cmd=tagEndNtf
+
+
+13/08/2014 07:48:24 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-66&time=949287245&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=347916
+cmd=tagEndNtf
+
+
+13/08/2014 07:49:03 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:49:03 p.m.|Connected from 192.168.25.248:1554. 1 active clients
+
+13/08/2014 07:49:03 p.m.|Wait for client...
+
+13/08/2014 07:49:04 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 07:49:07 p.m.|Connected from 192.168.25.248:1555. 1 active clients
+
+13/08/2014 07:49:07 p.m.|Wait for client...
+
+13/08/2014 07:49:20 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-73&time=949287301&cnt=1&bank0=Failed: other reader error&freq=1145&PC=3000&usec=767074
+cmd=tagEndNtf
+
+
+13/08/2014 07:49:24 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-66&time=949287302&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=096938
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-63&time=949287302&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=529803
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-70&time=949287303&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=011568
+cmd=tagEndNtf
+
+
+13/08/2014 07:51:44 p.m.|Wait for client...
+
+13/08/2014 07:51:45 p.m.|Wait for client...
+
+13/08/2014 07:51:45 p.m.|Connected from 192.168.25.248:1594. 1 active clients
+
+13/08/2014 07:51:47 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-61&time=949287448&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=887824
+cmd=tagEndNtf
+
+
+13/08/2014 07:51:47 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:51:47 p.m.|Connected from 192.168.25.248:1595. 1 active clients
+
+13/08/2014 07:51:47 p.m.|Wait for client...
+
+13/08/2014 07:51:48 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-67&time=949287450&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=005813
+cmd=tagEndNtf
+
+
+13/08/2014 07:51:48 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:51:49 p.m.|Wait for client...
+
+13/08/2014 07:51:49 p.m.|Connected from 192.168.25.248:1596. 1 active clients
+
+13/08/2014 07:51:50 p.m.|stop client connection. 1 active client.
+
+13/08/2014 07:51:50 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:51:50 p.m.|Accept Connection Error
+
+13/08/2014 07:51:51 p.m.|Wait for client...
+
+13/08/2014 07:51:51 p.m.|Connected from 192.168.25.248:1597. 1 active clients
+
+13/08/2014 07:51:51 p.m.|Wait for client...
+
+13/08/2014 07:51:52 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-49&time=949287453&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=900531
+cmd=tagEndNtf
+
+
+13/08/2014 07:51:52 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:51:53 p.m.|Connected from 192.168.25.248:1598. 1 active clients
+
+13/08/2014 07:51:53 p.m.|Wait for client...
+
+13/08/2014 07:51:54 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-50&time=949287455&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=281944
+cmd=tagEndNtf
+
+
+13/08/2014 07:51:54 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:51:54 p.m.|Connected from 192.168.25.248:1599. 1 active clients
+
+13/08/2014 07:51:54 p.m.|Wait for client...
+
+13/08/2014 07:51:57 p.m.|stop client connection. 1 active client.
+
+13/08/2014 07:51:57 p.m.|Accept Connection Error
+
+13/08/2014 07:51:57 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:52:13 p.m.|Wait for client...
+
+13/08/2014 07:52:13 p.m.|Wait for client...
+
+13/08/2014 07:52:13 p.m.|Connected from 192.168.25.248:1608. 1 active clients
+
+13/08/2014 07:52:14 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-71&time=949287476&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=191749
+cmd=tagEndNtf
+
+
+13/08/2014 07:52:17 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:52:18 p.m.|Connected from 192.168.25.248:1609. 1 active clients
+
+13/08/2014 07:52:18 p.m.|Wait for client...
+
+13/08/2014 07:52:19 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030218150078AE&rssi=-71&time=949287480&cnt=1&bank0=Failed: other reader error&freq=915&PC=3000&usec=344787
+cmd=tagEndNtf
+
+
+13/08/2014 07:52:20 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:52:21 p.m.|Connected from 192.168.25.248:1610. 1 active clients
+
+13/08/2014 07:52:21 p.m.|Wait for client...
+
+13/08/2014 07:52:25 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030218150078AE&rssi=-71&time=949287486&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=391959
+cmd=tagEndNtf
+
+
+13/08/2014 07:52:34 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 07:52:35 p.m.|Connected from 192.168.25.248:1611. 1 active clients
+
+13/08/2014 07:52:35 p.m.|Wait for client...
+

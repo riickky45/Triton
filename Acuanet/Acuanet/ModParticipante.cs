@@ -69,7 +69,7 @@ namespace Acuanet
         {
             //codigo que se conecta y query de insercion
 
-            string sql = "INSERT INTO participante (nombre,numero) VALUES ('" + p.nombre + "','" + p.snumero + "')";
+            string sql = "INSERT INTO participante (nombre,numero,id_tag) VALUES ('" + p.nombre + "','" + p.snumero + "','"+p.id_tag+"')";
             System.Console.WriteLine(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
