@@ -15,7 +15,7 @@ namespace Acuanet
     {
         CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
-        LecConfigXML cxml = new LecConfigXML();
+        LecConfigXML cxml;
 
         List<Lectura> lLec = new List<Lectura>();
         
@@ -26,6 +26,9 @@ namespace Acuanet
         public OleadaR()
         {
             id_oleada = 0;
+            //cargamos la configuracion adecuada
+            cxml = new LecConfigXML("config_oleada.xml");
+
             //prepara la conexion a la BD
            strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
                 + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
@@ -40,14 +43,15 @@ namespace Acuanet
         //metodo para prender antena
         public bool prendeAntena()
         {
-            
+            reader.purgeAllTags();
+            server.Start();
             return true;
         }
 
         //metodo que inicia captura 
         public bool iniciaCaptura(){
 
-
+            server.Stop();
             return true;
         }
 
