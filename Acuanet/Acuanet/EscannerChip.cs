@@ -251,12 +251,12 @@ namespace Acuanet
         }
 
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
+
+        private void escanerChip_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            server.Stop();
+        }
 
 
     }

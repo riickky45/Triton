@@ -179,6 +179,7 @@
             this.Name = "EscannerChip";
             this.Text = "Scanner Codigos ";
             this.Load += new System.EventHandler(this.escanerChip_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.escanerChip_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

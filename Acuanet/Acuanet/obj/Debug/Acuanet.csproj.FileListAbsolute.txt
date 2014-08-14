@@ -63,4 +63,3 @@ C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuan
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csprojResolveAssemblyReference.cache
-C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb
