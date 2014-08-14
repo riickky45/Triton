@@ -1202,3 +1202,65 @@ cmd=tagEndNtf
 
 13/08/2014 07:52:35 p.m.|Wait for client...
 
+13/08/2014 09:32:36 p.m.|Wait for client...
+
+13/08/2014 09:32:37 p.m.|Wait for client...
+
+13/08/2014 09:32:37 p.m.|Connected from 192.168.25.248:1040. 1 active clients
+
+13/08/2014 09:32:40 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030220129090B5&rssi=-60&time=949293502&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=001904
+cmd=tagEndNtf
+
+
+13/08/2014 09:32:40 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 09:32:41 p.m.|Connected from 192.168.25.248:1041. 1 active clients
+
+13/08/2014 09:32:41 p.m.|Wait for client...
+
+13/08/2014 09:33:16 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 09:33:17 p.m.|Connected from 192.168.25.248:1042. 1 active clients
+
+13/08/2014 09:33:17 p.m.|Wait for client...
+
+13/08/2014 09:33:17 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 09:33:20 p.m.|Connected from 192.168.25.248:1043. 1 active clients
+
+13/08/2014 09:33:20 p.m.|Wait for client...
+
+13/08/2014 09:33:23 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 09:33:23 p.m.|Connected from 192.168.25.248:1044. 1 active clients
+
+13/08/2014 09:33:23 p.m.|Wait for client...
+
+13/08/2014 09:33:24 p.m.|No data read, remote disconnect?, 0 active clients
+
+13/08/2014 09:33:26 p.m.|Connected from 192.168.25.248:1045. 1 active clients
+
+13/08/2014 09:33:26 p.m.|Wait for client...
+
+13/08/2014 09:33:54 p.m.|Wait for client...
+
+13/08/2014 09:33:55 p.m.|Wait for client...
+
+13/08/2014 09:33:55 p.m.|Connected from 192.168.25.248:1061. 1 active clients
+
+13/08/2014 09:33:58 p.m.|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030220129090B5&rssi=-71&time=949293579&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=868149
+cmd=tagEndNtf
+
+
+13/08/2014 09:34:16 p.m.|Receive data Error. 0 active clients
+
+13/08/2014 09:34:17 p.m.|Wait for client...
+
+13/08/2014 09:34:17 p.m.|Connected from 192.168.25.248:1062. 1 active clients
+
+13/08/2014 09:34:21 p.m.|stop client connection. 1 active client.
+
+13/08/2014 09:34:22 p.m.|Accept Connection Error
+
+13/08/2014 09:34:22 p.m.|Receive data Error. 0 active clients
+

@@ -37,7 +37,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.text_nombre = new System.Windows.Forms.TextBox();
             this.txt_numero = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_prueba = new System.Windows.Forms.TextBox();
             this.txt_club = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_direccion = new System.Windows.Forms.TextBox();
@@ -139,12 +139,12 @@
             this.txt_numero.Size = new System.Drawing.Size(260, 20);
             this.txt_numero.TabIndex = 10;
             // 
-            // textBox3
+            // txt_prueba
             // 
-            this.textBox3.Location = new System.Drawing.Point(78, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(260, 20);
-            this.textBox3.TabIndex = 11;
+            this.txt_prueba.Location = new System.Drawing.Point(78, 108);
+            this.txt_prueba.Name = "txt_prueba";
+            this.txt_prueba.Size = new System.Drawing.Size(260, 20);
+            this.txt_prueba.TabIndex = 11;
             // 
             // txt_club
             // 
@@ -213,7 +213,7 @@
             this.groupBox1.Controls.Add(this.txt_direccion);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_club);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_prueba);
             this.groupBox1.Controls.Add(this.txt_numero);
             this.groupBox1.Controls.Add(this.text_nombre);
             this.groupBox1.Controls.Add(this.label7);
@@ -316,7 +316,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox text_nombre;
         private System.Windows.Forms.TextBox txt_numero;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_prueba;
         private System.Windows.Forms.TextBox txt_club;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_direccion;
