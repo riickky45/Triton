@@ -248,7 +248,7 @@ namespace Acuanet
             }
             else
             {
-                System.Console.WriteLine("Tag Receive Event received: None");
+                //System.Console.WriteLine("Tag Receive Event received: None");
             }
         }
 
