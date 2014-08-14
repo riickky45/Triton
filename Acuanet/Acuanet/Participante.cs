@@ -15,6 +15,8 @@ namespace Acuanet
         public string sexo;
         public string categoria;
         public string email;
+        public string prueba;
+        public string pais;
 
     }
 }

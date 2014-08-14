@@ -249,7 +249,9 @@ namespace Acuanet
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
             par.email = txt_email.Text;
+            par.prueba = txt_prueba.Text;
             par.id_tag = sTag;
+            par.pais = txt_pais.Text;
 
             //se prepara la conexion a la BD
             string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
