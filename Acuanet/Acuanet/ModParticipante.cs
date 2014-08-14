@@ -25,7 +25,7 @@ namespace Acuanet
 
             //codigo que conecta y query para recuperar participante por id
 
-            string sql = "SELECT nombre,id,numero FROM participante WHERE id=" + id;
+            string sql = "SELECT nombre,id,numero,id_tag FROM participante WHERE id=" + id;
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -34,6 +34,7 @@ namespace Acuanet
                 par.nombre = rdr.GetString(0);
                 par.id = System.Convert.ToInt32(rdr.GetString(1));
                 par.snumero = rdr.GetString(2);
+                par.id_tag=rdr.GetString(3);
 
             }
             rdr.Close();

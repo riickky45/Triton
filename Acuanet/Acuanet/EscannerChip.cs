@@ -69,7 +69,7 @@ namespace Acuanet
                 reader.login_password = cxml.Text("ACUANET/Reader/Login/Password", "csl2006");
                 reader.http_timeout = cxml.Int16("ACUANET/SocketTimeout/Http", 30000);
                 reader.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
-                reader.setURI(cxml.Text("ACUANET/Reader/URI", "http://192.168.25.208/"));
+                reader.setURI(cxml.Text("ACUANET/Reader/URI", "http://192.168.25.248/"));
 
                 server.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
                 try
@@ -140,7 +140,7 @@ namespace Acuanet
             SERVER_INFO svr = new SERVER_INFO();
             svr.id = "AccessControlDemoServer";
             svr.desc = "Access Control Demo Server";
-            svr.ip = cxml.Text("ACUANET/Application/LocalIP", "0.0.0.0");
+            svr.ip = cxml.Text("ACUANET/Application/LocalIP", "192.168.25.1");
             svr.server_port = cxml.Text("ACUANET/Application/ServerPort", "9090");
             svr.mode = "Listening Port on Server Side";
             svr.enable = true;
@@ -236,12 +236,12 @@ namespace Acuanet
 
                 MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-                //this.lbl_id_tag.Text = tag.TagOrigId;
-                this.textBox1.Text = tag.TagOrigId;
+                this.lbl_id_tag.Text = tag.TagOrigId;
+                
 
                 Participante par = modP.recuperaPxTag(tag.TagOrigId);
 
-                //this.lbl_nombre.Text = par.nombre;
+                this.lbl_nombre.Text = par.nombre;
 
             }
             else
