@@ -40,7 +40,6 @@
             this.lbl_id_tag = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,21 +158,12 @@
             this.lbl_nombre.TabIndex = 13;
             this.lbl_nombre.Text = "Nombre";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(601, 280);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
-           
-            // 
             // EscannerChip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(995, 593);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_numero);
             this.Controls.Add(this.lbl_id_tag);
@@ -209,7 +199,6 @@
         private System.Windows.Forms.Label lbl_id_tag;
         private System.Windows.Forms.Label lbl_numero;
         private System.Windows.Forms.Label lbl_nombre;
-        private System.Windows.Forms.TextBox textBox1;
 
     }
 }

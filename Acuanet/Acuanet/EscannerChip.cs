@@ -48,6 +48,7 @@ namespace Acuanet
             if (reader.connect())
             {
                 setupReader();
+                reader.purgeAllTags();
                 server.Start();
             }
             else

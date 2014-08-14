@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ACUANET>
   <Reader>
-    <Model>CS461-2</Model>
+    <Model>ACUANET-2</Model>
     <URI>http://192.168.25.248/</URI>
     <Login>
       <Name>root</Name>
@@ -14,9 +14,9 @@
     <TagIC>NXP</TagIC>
     <AdditionalMemoryBank>Bank0</AdditionalMemoryBank>
     <DuplicationElimination>
-      <Method>Polling Trigger by Client</Method>
-      <Time>1000</Time>
-      <AntennaPortScheme>true</AntennaPortScheme>
+      <Method>Autonomous Time Trigger</Method>
+      <Time>500</Time>
+      <AntennaPortScheme>false</AntennaPortScheme>
     </DuplicationElimination>
     <ReceiveSensitivity>Maximum sensitivity</ReceiveSensitivity>
     <Antennas>
@@ -65,8 +65,8 @@
   </SocketTimeout>
   <Application>
     <LogLevel>Verbose</LogLevel>
-    <ServerPort>9090</ServerPort>
-    <LocalIP>192.168.26.210</LocalIP>
+    <ServerPort>9092</ServerPort>
+    <LocalIP>192.168.25.1</LocalIP>
   </Application>
 
   <BD>
@@ -74,9 +74,7 @@
     <SDB_port>3306</SDB_port>
     <SBD_bdn>ntritondb</SBD_bdn>
     <SBD_usuario>root</SBD_usuario>
-    <SBD_passwd>xalf123</SBD_passwd>
+    <SBD_passwd></SBD_passwd>
   </BD>
-
-
 
 </ACUANET>
