@@ -69,6 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.cs" />
+    <Compile Include="ModCategoria.cs" />
     <Compile Include="OleadaR.cs" />
     <Compile Include="LecConfigXML.cs" />
     <Compile Include="InsertaLecturaE.cs" />
