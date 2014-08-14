@@ -4,7 +4,7 @@ CREATE DATABASE ntritondb;
 
 use ntritondb;
 
-
+-- Tabla de Participantes
 CREATE TABLE participante(
 id SERIAL,
 nombre varchar(512),
@@ -18,14 +18,14 @@ email varchar(512),
 sexo char(1)
 );
 
-
+-- Tabla Catalogo de Categorias
 CREATE TABLE categoria(
 id SERIAL,
 nombre varchar(512),	
 descripcion text
 );
 
-
+-- Tabla de resultados finales
 create table resultado(
 id SERIAL,
 id_categoria int,
@@ -34,25 +34,20 @@ tiempo varchar(256)
 
 );
 
-
+-- Tabla definicion de Oleada
 CREATE TABLE oleada(
 id SERIAL,
 nombre varchar(1024)
 );
 
 
-
-
-
+-- Tabla general de datos
 create table tags(
-
 	id SERIAL,
 	id_tag varchar(512),
 	id_oleada int,
 	fecha_hora date,
 	milis int
-
-
 );
 
 
