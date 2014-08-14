@@ -85,6 +85,7 @@ namespace Acuanet
 
 
         //configurador del lector y la antena 
+        #region Configurador Reader
         private bool setupReader()
         {
             if (reader.connect() == false)
@@ -226,6 +227,7 @@ namespace Acuanet
 
             return true;
         }
+        #endregion
 
         //Metodo para interceptar el evento de llegada de un tag
         public void AccessControl_TagReceiveEvent(object sender, TagReceiveEventArgs e)
