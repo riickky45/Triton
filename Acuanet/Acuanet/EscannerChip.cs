@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+using System.Net;
+using System.IO;
+
 using CSL;
 
 namespace Acuanet
@@ -44,6 +48,7 @@ namespace Acuanet
             if (reader.connect())
             {
                 setupReader();
+                server.Start();
             }
             else
             {
@@ -125,7 +130,7 @@ namespace Acuanet
 
             if (reader.setOperProfile_TxPowers(profile) == false)
             {
-                System.Console.WriteLine("No es posible configurar el perfil de operación");
+                MessageBox.Show("No es posible configurar el perfil de operación");
                 return false;
             }
 
@@ -143,7 +148,7 @@ namespace Acuanet
             {
                 if (reader.modServerID(svr) == false)
                 {
-                    System.Console.WriteLine("Problema al configurar el servidor de confianza");
+                    MessageBox.Show("Problema al configurar el servidor de confianza");
                     return false;
                 }
             }
@@ -166,7 +171,7 @@ namespace Acuanet
                 trigger.mode = "Read Any Tags";     //For firmware 2.0.9, 2.0.10
                 if (reader.addTriggeringLogic(trigger) == false)
                 {
-                    System.Console.WriteLine("Problema al configurar la logica del disparador");
+                    MessageBox.Show("Problema al configurar la logica del disparador");
                     return false;
                 }
             }
@@ -230,11 +235,12 @@ namespace Acuanet
 
                 MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-                this.lbl_id_tag.Text = tag.TagOrigId;
+                //this.lbl_id_tag.Text = tag.TagOrigId;
+                this.textBox1.Text = tag.TagOrigId;
 
                 Participante par = modP.recuperaPxTag(tag.TagOrigId);
 
-                this.lbl_nombre.Text = par.nombre;
+                //this.lbl_nombre.Text = par.nombre;
 
             }
             else
@@ -248,6 +254,8 @@ namespace Acuanet
         {
 
         }
+
+       
 
 
     }
