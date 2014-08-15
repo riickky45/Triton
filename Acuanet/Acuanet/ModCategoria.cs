@@ -66,8 +66,7 @@ namespace Acuanet
         {
             //codigo que se conecta y query de insercion
 
-            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";
-            System.Console.WriteLine(sql);
+            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";            
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
