@@ -16,7 +16,7 @@ namespace Acuanet
             dbConn.Open();
         }
 
-
+        //Obtiene el listado de las categorias en formato List
         public List<Categoria> obtenCategorias()
         {
             List<Categoria> lcat = new List<Categoria>();
@@ -40,7 +40,7 @@ namespace Acuanet
             return lcat;
         }
 
-
+        //Obtiene una sola Categoria en objeto recuperado por su ID
         public Categoria obtenCategoriaxId(int id)
         {
             Categoria cat = new Categoria();
