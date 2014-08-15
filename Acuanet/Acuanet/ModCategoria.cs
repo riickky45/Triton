@@ -61,10 +61,16 @@ namespace Acuanet
             return cat;
         }
 
-        public bool creaCategoria(Categoria c)
+        
+        public void creaCategoria(Categoria c)
         {
+            //codigo que se conecta y query de insercion
 
-            return true;
+            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";
+            System.Console.WriteLine(sql);
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
+
         }
 
 
