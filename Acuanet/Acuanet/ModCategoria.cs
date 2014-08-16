@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -72,6 +73,27 @@ namespace Acuanet
 
         }
 
+
+        public DataTable obtenDTC(){
+
+            string sql = "SELECT nombre,id,descripcion FROM categoria ORDER BY nombre ";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                Categoria cat = new Categoria();
+                cat.nombre = rdr.GetString(0);
+                cat.id = System.Convert.ToInt32(rdr.GetString(1));
+                cat.desc = rdr.GetString(2);
+
+                
+
+            }
+            rdr.Close();
+
+            return null;
+        }
 
         ~ModCategoria()
         {

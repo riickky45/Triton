@@ -41,7 +41,7 @@
             this.txt_club = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_direccion = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cB_categoria = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -167,13 +167,13 @@
             this.txt_direccion.Size = new System.Drawing.Size(260, 20);
             this.txt_direccion.TabIndex = 14;
             // 
-            // comboBox1
+            // cB_categoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 77);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cB_categoria.FormattingEnabled = true;
+            this.cB_categoria.Location = new System.Drawing.Point(87, 77);
+            this.cB_categoria.Name = "cB_categoria";
+            this.cB_categoria.Size = new System.Drawing.Size(157, 21);
+            this.cB_categoria.TabIndex = 15;
             // 
             // checkBox1
             // 
@@ -209,7 +209,7 @@
             // 
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cB_categoria);
             this.groupBox1.Controls.Add(this.txt_direccion);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_club);
@@ -320,7 +320,7 @@
         private System.Windows.Forms.TextBox txt_club;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_direccion;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cB_categoria;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label8;
