@@ -98,7 +98,10 @@ namespace Acuanet
 
         ~ModCategoria()
         {
-            dbConn.Close();
+            if (dbConn != null)
+            {
+                dbConn.Close();
+            }
             dbConn = null;
         }
 

@@ -48,7 +48,8 @@ create table tags(
 	id_tag varchar(512),
 	id_oleada int,
 	fecha_hora date,
-	milis int
+	milis int,
+	lectura_v bool
 );
 
 
