@@ -37,11 +37,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_categoria = new System.Windows.Forms.Label();
-            this.lbl_id_tag = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.lbl_pais = new System.Windows.Forms.Label();
             this.lbl_prueba = new System.Windows.Forms.Label();
+            this.lbl_id_tag = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,56 +127,62 @@
             // lbl_categoria
             // 
             this.lbl_categoria.AutoSize = true;
-            this.lbl_categoria.Location = new System.Drawing.Point(543, 403);
+            this.lbl_categoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_categoria.Location = new System.Drawing.Point(529, 396);
             this.lbl_categoria.Name = "lbl_categoria";
-            this.lbl_categoria.Size = new System.Drawing.Size(54, 13);
+            this.lbl_categoria.Size = new System.Drawing.Size(78, 20);
             this.lbl_categoria.TabIndex = 10;
             this.lbl_categoria.Text = "Categoría";
-            // 
-            // lbl_id_tag
-            // 
-            this.lbl_id_tag.AutoSize = true;
-            this.lbl_id_tag.Location = new System.Drawing.Point(543, 283);
-            this.lbl_id_tag.Name = "lbl_id_tag";
-            this.lbl_id_tag.Size = new System.Drawing.Size(26, 13);
-            this.lbl_id_tag.TabIndex = 11;
-            this.lbl_id_tag.Text = "Tag";
             // 
             // lbl_numero
             // 
             this.lbl_numero.AutoSize = true;
-            this.lbl_numero.Location = new System.Drawing.Point(543, 241);
+            this.lbl_numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_numero.Location = new System.Drawing.Point(529, 235);
             this.lbl_numero.Name = "lbl_numero";
-            this.lbl_numero.Size = new System.Drawing.Size(44, 13);
+            this.lbl_numero.Size = new System.Drawing.Size(65, 20);
             this.lbl_numero.TabIndex = 12;
             this.lbl_numero.Text = "Número";
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(543, 203);
+            this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(530, 196);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.Size = new System.Drawing.Size(65, 20);
             this.lbl_nombre.TabIndex = 13;
             this.lbl_nombre.Text = "Nombre";
             // 
             // lbl_pais
             // 
             this.lbl_pais.AutoSize = true;
-            this.lbl_pais.Location = new System.Drawing.Point(546, 325);
+            this.lbl_pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pais.Location = new System.Drawing.Point(529, 318);
             this.lbl_pais.Name = "lbl_pais";
-            this.lbl_pais.Size = new System.Drawing.Size(29, 13);
+            this.lbl_pais.Size = new System.Drawing.Size(39, 20);
             this.lbl_pais.TabIndex = 14;
             this.lbl_pais.Text = "País";
             // 
             // lbl_prueba
             // 
             this.lbl_prueba.AutoSize = true;
-            this.lbl_prueba.Location = new System.Drawing.Point(546, 367);
+            this.lbl_prueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prueba.Location = new System.Drawing.Point(529, 357);
             this.lbl_prueba.Name = "lbl_prueba";
-            this.lbl_prueba.Size = new System.Drawing.Size(41, 13);
+            this.lbl_prueba.Size = new System.Drawing.Size(60, 20);
             this.lbl_prueba.TabIndex = 15;
             this.lbl_prueba.Text = "Prueba";
+            // 
+            // lbl_id_tag
+            // 
+            this.lbl_id_tag.AutoSize = true;
+            this.lbl_id_tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id_tag.Location = new System.Drawing.Point(529, 275);
+            this.lbl_id_tag.Name = "lbl_id_tag";
+            this.lbl_id_tag.Size = new System.Drawing.Size(52, 25);
+            this.lbl_id_tag.TabIndex = 16;
+            this.lbl_id_tag.Text = "Tag";
             // 
             // EscannerChip
             // 
@@ -184,11 +190,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(995, 593);
+            this.Controls.Add(this.lbl_id_tag);
             this.Controls.Add(this.lbl_prueba);
             this.Controls.Add(this.lbl_pais);
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_numero);
-            this.Controls.Add(this.lbl_id_tag);
             this.Controls.Add(this.lbl_categoria);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
@@ -219,11 +225,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_categoria;
-        private System.Windows.Forms.Label lbl_id_tag;
         private System.Windows.Forms.Label lbl_numero;
         private System.Windows.Forms.Label lbl_nombre;
         private System.Windows.Forms.Label lbl_pais;
         private System.Windows.Forms.Label lbl_prueba;
+        private System.Windows.Forms.Label lbl_id_tag;
 
     }
 }

@@ -22,7 +22,7 @@ namespace Acuanet
 
         string strConexion;
         ModParticipante modP;
-
+        Object guiLock = new Object();
 
 
         public EscannerChip()
@@ -83,24 +83,34 @@ namespace Acuanet
             }
         }
 
+        delegate void actualizaPantalla_Delegate(TAG tag);
 
         // metodo para actualizar la pantalla con los datos del usuario parte de un tag y recupera la informacion desde la BD 
         // incluye proteccion de un solo hilo (uno solo pinta completamente la pantalla un hilo)
         private void actualizaPantalla(TAG tag)
         {
-            lock (this)
-            {
-                if (lbl_id_tag.Text.Equals(tag.TagOrigId) == false)
-                {
-                    MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-                    Participante par = modP.recuperaPxTag(tag.TagOrigId);
-                    this.lbl_id_tag.Text = tag.TagOrigId;
-                    this.lbl_nombre.Text = par.nombre;
-                    this.lbl_numero.Text = par.snumero;
-                    this.lbl_categoria.Text = par.categoria;
-                    this.lbl_pais.Text = par.pais;
-                    this.lbl_prueba.Text = par.prueba;
+            if (InvokeRequired)
+            {
+                actualizaPantalla_Delegate task = new actualizaPantalla_Delegate(actualizaPantalla);
+                BeginInvoke(task, new object[] { tag });
+            }
+            else
+            {
+                lock (guiLock)
+                {
+                    if (lbl_id_tag.Text.Equals(tag.TagOrigId) == false)
+                    {
+                        MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
+
+                        Participante par = modP.recuperaPxTag(tag.TagOrigId);
+                        this.lbl_id_tag.Text = tag.TagOrigId;
+                        this.lbl_nombre.Text = par.nombre;
+                        this.lbl_numero.Text = par.snumero;
+                        this.lbl_categoria.Text = par.categoria;
+                        this.lbl_pais.Text = par.pais;
+                        this.lbl_prueba.Text = par.prueba;
+                    }
                 }
             }
         }
