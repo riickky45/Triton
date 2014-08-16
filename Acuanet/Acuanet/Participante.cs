@@ -14,6 +14,7 @@ namespace Acuanet
         public string direcc;
         public string sexo;
         public string categoria;
+        public int id_categoria;
         public string email;
         public string prueba;
         public string pais;

@@ -49,7 +49,7 @@ namespace Acuanet
 
             //codigo que conecta y query para recuperar participante por id_tag
 
-            string sql = "SELECT nombre,id,numero FROM participante WHERE id_tag='" + stag_id+"'";
+            string sql = "SELECT participante.nombre,participante.id,numero,pais,sexo,email,direccion,id_tag,prueba,club, categroria.nombre as categroria FROM participante,categoria WHERE id_tag='"+stag_id+"' AND participante.id_categoria=categoria.id_categoria ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -58,6 +58,14 @@ namespace Acuanet
                 par.nombre = rdr.GetString(0);
                 par.id = System.Convert.ToInt32(rdr.GetString(1));
                 par.snumero = rdr.GetString(2);
+                par.pais=rdr.GetString(3);
+                par.sexo=rdr.GetString(4);
+                par.email=rdr.GetString(5);
+                par.direccion=rdr.GetString(6);
+                par.id_tag=rdr.GetString(7);
+                par.prueba=rdr.GetString(8);
+                par.club=rdr.GetString(9);
+                par.categoria=rdr.GetString(10);
 
             }
             rdr.Close();
@@ -66,17 +74,19 @@ namespace Acuanet
         }
 
 
+        //metodo que inserta - crea un participante en la BD
         public void crearP(Participante p)
         {
             //codigo que se conecta y query de insercion
 
-            string sql = "INSERT INTO participante (nombre,numero,prueba,club,direccion,id_tag) VALUES ('" + p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "')";
+            string sql = "INSERT INTO participante (nombre,numero,prueba,club,direccion,id_tag,pais,sexo,email) VALUES ('" + 
+                p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "','"+p.pais+"','"+p.sexo+"','"+p.email+"')";
             System.Console.WriteLine(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
-
         }
+
 
         public void ActualizaP(Participante p)
         {
