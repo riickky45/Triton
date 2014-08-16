@@ -72,7 +72,7 @@
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Numero :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+           
             // 
             // label3
             // 
@@ -130,7 +130,7 @@
             this.text_nombre.Name = "text_nombre";
             this.text_nombre.Size = new System.Drawing.Size(260, 20);
             this.text_nombre.TabIndex = 9;
-            this.text_nombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // txt_numero
             // 

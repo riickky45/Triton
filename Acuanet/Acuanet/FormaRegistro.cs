@@ -16,6 +16,8 @@ namespace Acuanet
         CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
         LecConfigXML cxml = new LecConfigXML();
+        Object guiLock = new Object();
+
 
         bool bantenaE;
         string sTag;
@@ -202,29 +204,39 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                TAG tag = (TAG)e.rxTag;
-                //esta salida deberia de mostrar el tag y el tiempo (que es un int)
-                // System.Console.WriteLine("Tag Recibido Evento recepcion:" + tag.TagOrigId + " Tiempo:" + tag.Time);
-                sTag = tag.TagOrigId;
-                labelCodigoP.Text = sTag;
-                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo: " + tag.Time + " ms " + tag.ApiTimeStampUTC.Millisecond);
-
+                actualizaPantalla((TAG)e.rxTag);
             }
             else
             {
-               MessageBox.Show("Tag Receive Event received: None");
+
             }
         }
 
+        delegate void actualizaPantalla_Delegate(TAG tag);
 
-        private void label4_Click(object sender, EventArgs e)
+        // metodo para actualizar la pantalla con los datos del usuario parte de un tag y recupera la informacion desde la BD 
+        // incluye proteccion de un solo hilo (uno solo pinta completamente la pantalla un hilo)
+        private void actualizaPantalla(TAG tag)
         {
 
-        }
+            if (InvokeRequired)
+            {
+                actualizaPantalla_Delegate task = new actualizaPantalla_Delegate(actualizaPantalla);
+                BeginInvoke(task, new object[] { tag });
+            }
+            else
+            {
+                lock (guiLock)
+                {
+                    if (labelCodigoP.Text.Equals(tag.TagOrigId) == false)
+                    {
+                        //MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
+                        this.labelCodigoP.Text = tag.TagOrigId;
+                    }
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -232,10 +244,7 @@ namespace Acuanet
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
 
         //este metodo recupera los datos y los manda a insertar a la BD
