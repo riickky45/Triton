@@ -174,11 +174,7 @@
             this.cb_categoria.Name = "cb_categoria";
             this.cb_categoria.Size = new System.Drawing.Size(157, 21);
             this.cb_categoria.TabIndex = 15;
-
-
-            
-
-
+            this.cb_categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // checkBox1
             // 

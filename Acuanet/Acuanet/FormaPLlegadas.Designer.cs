@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class PantallaLlegadas
+    partial class FormaPLlegadas
     {
         /// <summary>
         /// Required designer variable.

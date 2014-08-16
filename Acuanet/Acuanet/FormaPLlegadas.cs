@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
-    public partial class PantallaLlegadas : Form
+    public partial class FormaPLlegadas : Form
     {
-        public PantallaLlegadas()
+        public FormaPLlegadas()
         {
             InitializeComponent();
         }

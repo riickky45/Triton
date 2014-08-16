@@ -32,7 +32,7 @@ namespace Acuanet
 
         private void btn_pantalla_Click(object sender, EventArgs e)
         {
-            PantallaLlegadas panLL = new PantallaLlegadas();
+            FormaPLlegadas panLL = new FormaPLlegadas();
             panLL.Show();
         }
 
