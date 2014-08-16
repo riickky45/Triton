@@ -51,14 +51,14 @@ namespace Acuanet
         //metodo que inicia captura 
         public bool iniciaCaptura(){
 
-            server.Stop();
+            server.Start();
             return true;
         }
 
         //metodo que finaliza captura
         public bool finalizaCaptura(){
 
-
+            server.Stop();
             return false;
         }
 

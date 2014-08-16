@@ -63,3 +63,21 @@ C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuan
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csprojResolveAssemblyReference.cache
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\config.xml
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\config_oleada.xml
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe.manifest
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.application
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.pdb
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaPrincipal.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaRegistro.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form3.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Form4.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.EscannerChip.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.PantallaLlegadas.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Properties.Resources.resources
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe.manifest
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.application
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
+C:\Users\alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb

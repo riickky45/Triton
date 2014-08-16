@@ -44,7 +44,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btn_pantalla = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -273,7 +273,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button12);
+            this.groupBox6.Controls.Add(this.btn_pantalla);
             this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Location = new System.Drawing.Point(461, 10);
             this.groupBox6.Name = "groupBox6";
@@ -282,22 +282,22 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Competencia";
             // 
-            // button12
+            // btn_pantalla
             // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Image = global::Acuanet.Properties.Resources.screen_error;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(24, 58);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(197, 39);
-            this.button12.TabIndex = 6;
-            this.button12.Text = "Pantalla de Llegadas";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.btn_pantalla.BackColor = System.Drawing.Color.Transparent;
+            this.btn_pantalla.FlatAppearance.BorderSize = 0;
+            this.btn_pantalla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pantalla.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pantalla.Image = global::Acuanet.Properties.Resources.screen_error;
+            this.btn_pantalla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pantalla.Location = new System.Drawing.Point(24, 58);
+            this.btn_pantalla.Name = "btn_pantalla";
+            this.btn_pantalla.Size = new System.Drawing.Size(197, 39);
+            this.btn_pantalla.TabIndex = 6;
+            this.btn_pantalla.Text = "Pantalla de Llegadas";
+            this.btn_pantalla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_pantalla.UseVisualStyleBackColor = false;
+            this.btn_pantalla.Click += new System.EventHandler(this.btn_pantalla_Click);
             // 
             // button11
             // 
@@ -361,7 +361,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btn_pantalla;
     }
 }
 

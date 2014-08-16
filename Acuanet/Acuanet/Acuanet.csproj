@@ -77,6 +77,12 @@
     <Compile Include="CS461_HL_API.cs" />
     <Compile Include="Lectura.cs" />
     <Compile Include="ModParticipante.cs" />
+    <Compile Include="PantallaLlegadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaLlegadas.Designer.cs">
+      <DependentUpon>PantallaLlegadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Participante.cs" />
     <Compile Include="FormaPrincipal.cs">
       <SubType>Form</SubType>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EscannerChip.resx">
       <DependentUpon>EscannerChip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaLlegadas.resx">
+      <DependentUpon>PantallaLlegadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

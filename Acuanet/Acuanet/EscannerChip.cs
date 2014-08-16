@@ -90,13 +90,18 @@ namespace Acuanet
         {
             lock (this)
             {
-                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
+                if (lbl_id_tag.Text.Equals(tag.TagOrigId) == false)
+                {
+                    MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-                Participante par = modP.recuperaPxTag(tag.TagOrigId);
-                this.lbl_id_tag.Text = tag.TagOrigId;
-                this.lbl_nombre.Text = par.nombre;
-                this.lbl_numero.Text = par.snumero;
-                this.lbl_categoria.Text = par.categoria;
+                    Participante par = modP.recuperaPxTag(tag.TagOrigId);
+                    this.lbl_id_tag.Text = tag.TagOrigId;
+                    this.lbl_nombre.Text = par.nombre;
+                    this.lbl_numero.Text = par.snumero;
+                    this.lbl_categoria.Text = par.categoria;
+                    this.lbl_pais.Text = par.pais;
+                    this.lbl_prueba.Text = par.prueba;
+                }
             }
         }
 
@@ -260,7 +265,7 @@ namespace Acuanet
 
 
        
-
+        //metodo que intercepta el cierre de la ventan y para al servidor
         private void escanerChip_FormClosing(object sender, FormClosingEventArgs e)
         {
             server.Stop();

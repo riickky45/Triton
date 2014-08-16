@@ -30,9 +30,10 @@ namespace Acuanet
 
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void btn_pantalla_Click(object sender, EventArgs e)
         {
-
+            PantallaLlegadas panLL = new PantallaLlegadas();
+            panLL.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
