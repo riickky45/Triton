@@ -74,23 +74,24 @@ namespace Acuanet
         }
 
 
+// Metodo que recupera las categoria en un DataTable (util para trabajar con ComboBox)
         public DataTable obtenDTC(){
 
             string sql = "SELECT nombre,id,descripcion FROM categoria ORDER BY nombre ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
-            while (rdr.Read())
-            {
-                Categoria cat = new Categoria();
-                cat.nombre = rdr.GetString(0);
-                cat.id = System.Convert.ToInt32(rdr.GetString(1));
-                cat.desc = rdr.GetString(2);
+            DataTable dt = new DataTable();
 
-            }
+for(int i=0;i<rdr.FieldCount;i++){
+    dt.Columns.Add(rdr.GetName(i));
+}
+
+dt.Load(rdr);
+            
             rdr.Close();
 
-            return null;
+            return dt;
         }
 
         ~ModCategoria()
