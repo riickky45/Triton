@@ -62,20 +62,21 @@ namespace Acuanet
             return cat;
         }
 
-        
+
         public void creaCategoria(Categoria c)
         {
             //codigo que se conecta y query de insercion
 
-            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";            
+            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
         }
 
 
-// Metodo que recupera las categoria en un DataTable (util para trabajar con ComboBox)
-        public DataTable obtenDTC(){
+        // Metodo que recupera las categoria en un DataTable (util para trabajar con ComboBox)
+        public DataTable obtenDTC()
+        {
 
             string sql = "SELECT nombre,id,descripcion FROM categoria ORDER BY nombre ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
@@ -83,12 +84,13 @@ namespace Acuanet
 
             DataTable dt = new DataTable();
 
-for(int i=0;i<rdr.FieldCount;i++){
-    dt.Columns.Add(rdr.GetName(i));
-}
+            for (int i = 0; i < rdr.FieldCount; i++)
+            {
+                dt.Columns.Add(rdr.GetName(i));
+            }
 
-dt.Load(rdr);
-            
+            dt.Load(rdr);
+
             rdr.Close();
 
             return dt;

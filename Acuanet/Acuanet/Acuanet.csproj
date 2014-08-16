@@ -227,7 +227,9 @@
     <Content Include="config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="config_oleada.xml" />
+    <Content Include="config_oleada.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>

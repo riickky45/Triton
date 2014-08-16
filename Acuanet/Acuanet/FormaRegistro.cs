@@ -32,7 +32,9 @@ namespace Acuanet
         //metodo para configurar la antena al momento de carga
         private void formaRegistro_Load(object sender, EventArgs e)
         {
+
             cargaConfiguracion();
+            cargaConfigInterfaz();
 
             Application.DoEvents();
 
@@ -288,6 +290,24 @@ namespace Acuanet
                 {
                     server.tcp_port = 9090;
                 }
+            }
+        }
+
+        private void cargaConfigInterfaz()
+        {
+            lock(this)
+            {
+                string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
+                + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
+                + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
+                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
+
+                ModCategoria mcat = new ModCategoria(strConexion);
+
+                this.cb_categoria.DataSource = mcat.obtenDTC();
+
+                this.cb_categoria.DisplayMember = "nombre";
+                this.cb_categoria.ValueMember = "id";
             }
         }
 
