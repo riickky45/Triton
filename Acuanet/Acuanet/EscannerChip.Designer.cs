@@ -40,6 +40,8 @@
             this.lbl_id_tag = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
+            this.lbl_pais = new System.Windows.Forms.Label();
+            this.lbl_prueba = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,12 +160,32 @@
             this.lbl_nombre.TabIndex = 13;
             this.lbl_nombre.Text = "Nombre";
             // 
+            // lbl_pais
+            // 
+            this.lbl_pais.AutoSize = true;
+            this.lbl_pais.Location = new System.Drawing.Point(546, 325);
+            this.lbl_pais.Name = "lbl_pais";
+            this.lbl_pais.Size = new System.Drawing.Size(29, 13);
+            this.lbl_pais.TabIndex = 14;
+            this.lbl_pais.Text = "País";
+            // 
+            // lbl_prueba
+            // 
+            this.lbl_prueba.AutoSize = true;
+            this.lbl_prueba.Location = new System.Drawing.Point(546, 367);
+            this.lbl_prueba.Name = "lbl_prueba";
+            this.lbl_prueba.Size = new System.Drawing.Size(41, 13);
+            this.lbl_prueba.TabIndex = 15;
+            this.lbl_prueba.Text = "Prueba";
+            // 
             // EscannerChip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(995, 593);
+            this.Controls.Add(this.lbl_prueba);
+            this.Controls.Add(this.lbl_pais);
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_numero);
             this.Controls.Add(this.lbl_id_tag);
@@ -177,9 +199,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "EscannerChip";
-            this.Text = "Scanner Codigos ";
-            this.Load += new System.EventHandler(this.escanerChip_Load);
+            this.Text = "Escaner Codigos ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.escanerChip_FormClosing);
+            this.Load += new System.EventHandler(this.escanerChip_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,6 +222,8 @@
         private System.Windows.Forms.Label lbl_id_tag;
         private System.Windows.Forms.Label lbl_numero;
         private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.Label lbl_pais;
+        private System.Windows.Forms.Label lbl_prueba;
 
     }
 }

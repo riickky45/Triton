@@ -84,6 +84,22 @@ namespace Acuanet
         }
 
 
+        // metodo para actualizar la pantalla con los datos del usuario parte de un tag y recupera la informacion desde la BD 
+        // incluye proteccion de un solo hilo (uno solo pinta completamente la pantalla un hilo)
+        private void actualizaPantalla(TAG tag)
+        {
+            lock (this)
+            {
+                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
+
+                Participante par = modP.recuperaPxTag(tag.TagOrigId);
+                this.lbl_id_tag.Text = tag.TagOrigId;
+                this.lbl_nombre.Text = par.nombre;
+                this.lbl_numero.Text = par.snumero;
+                this.lbl_categoria.Text = par.categoria;
+            }
+        }
+
         //configurador del lector y la antena 
         #region Configurador Reader
         private bool setupReader()
@@ -234,23 +250,11 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                TAG tag = (TAG)e.rxTag;
-
-                MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
-
-                this.lbl_id_tag.Text = tag.TagOrigId;
-                
-
-                Participante par = modP.recuperaPxTag(tag.TagOrigId);
-
-                this.lbl_nombre.Text = par.nombre;
-                this.lbl_numero.Text = par.snumero;
-                this.lbl_categoria.Text = par.categoria;
-
+                actualizaPantalla((TAG)e.rxTag);
             }
             else
             {
-                //System.Console.WriteLine("Tag Receive Event received: None");
+
             }
         }
 
