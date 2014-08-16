@@ -13,8 +13,9 @@ namespace Acuanet
  
         private LecConfigXML cxml = new LecConfigXML();
         MySqlConnection dbConn;
+        private int id_oleada;
 
-        public LectorLL(int id_oleada)
+        public LectorLL()
         {
 
             string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -26,6 +27,11 @@ namespace Acuanet
             dbConn.Open();
 
           
+        }
+
+        public void ponOleada(int id)
+        {
+            this.id_oleada = id;
         }
 
         public DataTable obtenDatos()

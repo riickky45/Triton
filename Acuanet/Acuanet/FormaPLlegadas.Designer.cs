@@ -34,6 +34,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).BeginInit();
             this.SuspendLayout();
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // dgv_llegadas
             // 
             this.dgv_llegadas.AllowUserToAddRows = false;
@@ -45,13 +50,13 @@
             this.dgv_llegadas.Size = new System.Drawing.Size(1094, 315);
             this.dgv_llegadas.TabIndex = 0;
             // 
-            // PantallaLlegadas
+            // FormaPLlegadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 577);
             this.Controls.Add(this.dgv_llegadas);
-            this.Name = "PantallaLlegadas";
+            this.Name = "FormaPLlegadas";
             this.Text = "PantallaLlegadas";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).EndInit();
             this.ResumeLayout(false);
