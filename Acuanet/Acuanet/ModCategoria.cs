@@ -87,8 +87,6 @@ namespace Acuanet
                 cat.id = System.Convert.ToInt32(rdr.GetString(1));
                 cat.desc = rdr.GetString(2);
 
-                
-
             }
             rdr.Close();
 
