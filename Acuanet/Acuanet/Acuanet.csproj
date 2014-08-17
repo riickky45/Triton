@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categoria.cs" />
+    <Compile Include="InsertaLecturaE2.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
     <Compile Include="ModOleada.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="FormaPLlegadas.Designer.cs">
       <DependentUpon>FormaPLlegadas.cs</DependentUpon>
     </Compile>
+    <Compile Include="OleadaR2.cs" />
     <Compile Include="Participante.cs" />
     <Compile Include="FormaPrincipal.cs">
       <SubType>Form</SubType>
