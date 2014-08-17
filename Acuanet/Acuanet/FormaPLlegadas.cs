@@ -11,23 +11,45 @@ namespace Acuanet
     public partial class FormaPLlegadas : Form
     {
         LectorLL mll = new LectorLL();
+        Object guiLock = new Object();
+
         public FormaPLlegadas()
         {
             InitializeComponent();
         }
 
+        private void frmPL_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        delegate void actualizaGV_Delegate();
 
         private void actualizaGV()
         {
-            lock (this)
+            if (InvokeRequired)
             {
-
+                actualizaGV_Delegate task = new actualizaGV_Delegate(actualizaGV);
+                BeginInvoke(task, new object[] { });
             }
+            else
+            {
+                lock (guiLock)
+                {
+                    this.dgv_llegadas.DataSource = mll.obtenDatos().Tables[0].DefaultView;
+                }
+            }
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            actualizaGV();
+        }
 
+        private void frmPL_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.timer1.Enabled = false;
         }
     }
 }

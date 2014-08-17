@@ -36,10 +36,11 @@ tiempo varchar(256)
 
 );
 
--- Tabla definicion de Oleada
+-- Tabla definicion de Oleada posee el nombre del evento y el momento de inicio
 CREATE TABLE oleada(
 id SERIAL,
-nombre varchar(1024)
+nombre varchar(1024),
+fecha_hora_ini datetime
 );
 
 
@@ -48,7 +49,7 @@ create table tags(
 	id SERIAL,
 	id_tag varchar(512),
 	id_oleada int,
-	fecha_hora date,
+	fecha_hora datetime,
 	milis int,
 	lectura_v bool
 );
