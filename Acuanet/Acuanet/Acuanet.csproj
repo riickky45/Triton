@@ -75,11 +75,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FormaPrincipal.resx</DependentUpon>
     </Compile>
-    <Compile Include="GResultados.cs" />
-    <Compile Include="InsertaLecturaE2.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
-    <Compile Include="ModOleada.cs" />
     <Compile Include="OleadaR.cs" />
     <Compile Include="LecConfigXML.cs" />
     <Compile Include="InsertaLecturaE.cs" />
@@ -92,7 +89,6 @@
     <Compile Include="FormaPLlegadas.Designer.cs">
       <DependentUpon>FormaPLlegadas.cs</DependentUpon>
     </Compile>
-    <Compile Include="OleadaR2.cs" />
     <Compile Include="Participante.cs" />
     <Compile Include="FormaPrincipal.cs">
       <SubType>Form</SubType>
@@ -126,7 +122,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resultado.cs" />
     <EmbeddedResource Include="FormaPrincipal.resx">
       <DependentUpon>FormaPrincipal.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>

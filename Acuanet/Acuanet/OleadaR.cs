@@ -37,7 +37,7 @@ namespace Acuanet
 
             // incia los servicios de la antena
            setupReader();
-           server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
+           server.TagReceiveEvent += new TagReceiveEventHandler(this.AccessControl_TagReceiveEvent);
         }
 
         //metodo para prender antena
@@ -62,8 +62,7 @@ namespace Acuanet
             return false;
         }
 
-        //configurador del lector y la antena 
-        #region Configurador Reader
+         //configurador del lector y la antena 
         private bool setupReader()
         {
             if (reader.connect() == false)
@@ -205,15 +204,15 @@ namespace Acuanet
 
             return true;
         }
-        #endregion
 
         //Metodo para interceptar el evento de llegada de un tag
-        public void Oleada_TagReceiveEvent(object sender, TagReceiveEventArgs e)
+        public void AccessControl_TagReceiveEvent(object sender, TagReceiveEventArgs e)
         {
             if (e.rxTag != null)
             {
                 TAG tag = (TAG)e.rxTag;
-
+                //esta salida deberia de mostrar el tag y el tiempo (que es un int)              
+                //MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId+" Tiempo:"+tag.Time);
 
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
                 InsertaLecturaE inlec = new InsertaLecturaE(tag, id_oleada, strConexion);

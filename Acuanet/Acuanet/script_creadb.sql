@@ -30,21 +30,16 @@ descripcion text
 -- Tabla de resultados finales
 create table resultado(
 id SERIAL,
-id_oleada int,
+id_categoria int,
 id_participante int,
-tiempo varchar(256),
-fecha_hora_ini datetime,
-fecha_hora_fin datetime,
-milis_ini int,
-milis_fin int
+tiempo varchar(256)
+
 );
 
--- Tabla definicion de Oleada posee el nombre del evento y el momento de inicio
+-- Tabla definicion de Oleada
 CREATE TABLE oleada(
 id SERIAL,
-nombre varchar(1024),
-fecha_hora_ini datetime,
-milis_ini int
+nombre varchar(1024)
 );
 
 
@@ -53,7 +48,7 @@ create table tags(
 	id SERIAL,
 	id_tag varchar(512),
 	id_oleada int,
-	fecha_hora datetime,
+	fecha_hora date,
 	milis int,
 	lectura_v bool
 );

@@ -34,17 +34,24 @@ namespace Acuanet
             this.id_oleada = id;
         }
 
-        //Metodo que obtiene los datos en Formato DataSet
-        public DataSet obtenDatos()
+        public DataTable obtenDatos()
         {
 
-            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis as ms FROM participante,tags WHERE participante.id_tag=tags.id_tag ORDER BY  fecha_hora DESC,milis DESC;";
-           
-            MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
-            DataSet dt = new DataSet();
+            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis FROM participantes,tag WHERE participante.id_tag=tag.id_tag ORDER BY  fecha_hora DESC,milis DESC;";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
 
-            datad.Fill(dt);
- 
+            DataTable dt = new DataTable();
+
+            for (int i = 0; i < rdr.FieldCount; i++)
+            {
+                dt.Columns.Add(rdr.GetName(i));
+            }
+
+            dt.Load(rdr);
+
+            rdr.Close();
+
             return dt;
         }
 
