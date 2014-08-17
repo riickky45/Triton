@@ -93,6 +93,16 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap acuanet {
+            get {
+                object obj = ResourceManager.GetObject("acuanet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -173,6 +183,26 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga2 {
+            get {
+                object obj = ResourceManager.GetObject("descarga2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FINA_logo_standard_color_small {
+            get {
+                object obj = ResourceManager.GetObject("FINA_logo_standard_color_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap finalogo {
             get {
                 object obj = ResourceManager.GetObject("finalogo", resourceCulture);
@@ -246,6 +276,16 @@ namespace Acuanet.Properties {
         internal static System.Drawing.Bitmap hand_point_180 {
             get {
                 object obj = ResourceManager.GetObject("hand_point_180", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ico_nadador_travesera {
+            get {
+                object obj = ResourceManager.GetObject("ico-nadador-travesera", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

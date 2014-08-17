@@ -248,6 +248,10 @@
     <None Include="Resources\Fondos Visual Forms.jpg" />
     <None Include="Resources\descarga.jpg" />
     <None Include="Resources\descarga1.jpg" />
+    <None Include="Resources\descarga2.jpg" />
+    <None Include="Resources\FINA_logo_standard_color_small.png" />
+    <None Include="Resources\acuanet.png" />
+    <None Include="Resources\ico-nadador-travesera.png" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>
