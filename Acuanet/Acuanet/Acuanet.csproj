@@ -103,11 +103,11 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="FormaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="FormaCategoria.Designer.cs">
+      <DependentUpon>FormaCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="EscannerChip.cs">
       <SubType>Form</SubType>
@@ -128,8 +128,8 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="FormaCategoria.resx">
+      <DependentUpon>FormaCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EscannerChip.resx">
       <DependentUpon>EscannerChip.cs</DependentUpon>

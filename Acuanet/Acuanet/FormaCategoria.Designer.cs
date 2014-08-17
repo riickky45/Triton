@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class Form4
+    partial class FormaCategoria
     {
         /// <summary>
         /// Required designer variable.

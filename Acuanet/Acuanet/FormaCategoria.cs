@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
-    public partial class Form4 : Form
+    public partial class FormaCategoria : Form
     {
-        public Form4()
+        public FormaCategoria()
         {
             InitializeComponent();
         }

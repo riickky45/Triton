@@ -49,7 +49,7 @@ namespace Acuanet
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form4 miForm4 = new Form4();
+            FormaCategoria miForm4 = new FormaCategoria();
             miForm4.Show();
         }
 

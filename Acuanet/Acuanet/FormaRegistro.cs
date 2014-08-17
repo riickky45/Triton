@@ -204,7 +204,7 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                actualizaPantalla((TAG)e.rxTag);
+                actualizaTag((TAG)e.rxTag);
             }
             else
             {
@@ -212,16 +212,16 @@ namespace Acuanet
             }
         }
 
-        delegate void actualizaPantalla_Delegate(TAG tag);
+        delegate void actualizaTag_Delegate(TAG tag);
 
         // metodo para actualizar la pantalla con los datos del usuario parte de un tag y recupera la informacion desde la BD 
         // incluye proteccion de un solo hilo (uno solo pinta completamente la pantalla un hilo)
-        private void actualizaPantalla(TAG tag)
+        private void actualizaTag(TAG tag)
         {
 
             if (InvokeRequired)
             {
-                actualizaPantalla_Delegate task = new actualizaPantalla_Delegate(actualizaPantalla);
+                actualizaTag_Delegate task = new actualizaTag_Delegate(actualizaTag);
                 BeginInvoke(task, new object[] { tag });
             }
             else
@@ -232,7 +232,7 @@ namespace Acuanet
                     {
                         //MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
-
+                        sTag = tag.TagOrigId;
                         this.labelCodigoP.Text = tag.TagOrigId;
                     }
                 }
@@ -257,6 +257,7 @@ namespace Acuanet
             //se asignana los valores 
             par.nombre = text_nombre.Text;
             par.snumero = txt_numero.Text;
+            par.id_categoria = this.cb_categoria.SelectedIndex;
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
             par.email = txt_email.Text;
@@ -273,7 +274,14 @@ namespace Acuanet
             ModParticipante modp = new ModParticipante(strConexion);
 
             //se crea el particiapante
-            modp.crearP(par);
+            if (modp.crearP(par))
+            {
+                MessageBox.Show("Se creo correctamente el participante", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se creo el participante", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
         }
 
