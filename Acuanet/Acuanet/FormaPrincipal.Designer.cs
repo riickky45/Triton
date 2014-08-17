@@ -41,7 +41,6 @@
             this.btnEAntena = new System.Windows.Forms.Button();
             this.btnOleada = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btn_pantalla = new System.Windows.Forms.Button();
@@ -60,12 +59,13 @@
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Location = new System.Drawing.Point(9, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(197, 157);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Competidores";
+            this.groupBox1.UseWaitCursor = true;
             // 
             // button3
             // 
@@ -81,6 +81,7 @@
             this.button3.Text = "Cargar Registros";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseWaitCursor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
@@ -97,6 +98,7 @@
             this.button2.Text = "Editar Registro";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
@@ -113,13 +115,14 @@
             this.button1.Text = "Nuevo Registro ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Location = new System.Drawing.Point(9, 174);
+            this.groupBox2.Location = new System.Drawing.Point(9, 201);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(197, 56);
             this.groupBox2.TabIndex = 1;
@@ -143,9 +146,10 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Location = new System.Drawing.Point(212, 10);
+            this.groupBox3.Location = new System.Drawing.Point(223, 31);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(232, 103);
             this.groupBox3.TabIndex = 2;
@@ -188,7 +192,7 @@
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.btnEAntena);
             this.groupBox4.Controls.Add(this.btnOleada);
-            this.groupBox4.Location = new System.Drawing.Point(212, 128);
+            this.groupBox4.Location = new System.Drawing.Point(223, 149);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(232, 119);
             this.groupBox4.TabIndex = 3;
@@ -230,30 +234,13 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.button10);
             this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Location = new System.Drawing.Point(234, 263);
+            this.groupBox5.Location = new System.Drawing.Point(223, 283);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(210, 110);
+            this.groupBox5.Size = new System.Drawing.Size(232, 70);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Chips";
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Image = global::Acuanet.Properties.Resources.card_chip_gold;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(19, 64);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(168, 39);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Revisar Chip";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -273,9 +260,10 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.Controls.Add(this.btn_pantalla);
             this.groupBox6.Controls.Add(this.button11);
-            this.groupBox6.Location = new System.Drawing.Point(461, 10);
+            this.groupBox6.Location = new System.Drawing.Point(470, 31);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(222, 110);
             this.groupBox6.TabIndex = 5;
@@ -320,9 +308,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Acuanet.Properties.Resources.logoacuanet;
+            this.BackgroundImage = global::Acuanet.Properties.Resources.Fondos_Visual_Forms;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(717, 412);
+            this.ClientSize = new System.Drawing.Size(720, 395);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -357,7 +345,6 @@
         private System.Windows.Forms.Button btnEAntena;
         private System.Windows.Forms.Button btnOleada;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button11;
