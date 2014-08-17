@@ -46,10 +46,9 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelCodigoP = new System.Windows.Forms.Label();
             this.btnAgregarR = new System.Windows.Forms.Button();
             this.btnEncenderA = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelCodigoP = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +71,6 @@
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Numero :";
-           
             // 
             // label3
             // 
@@ -130,7 +128,6 @@
             this.text_nombre.Name = "text_nombre";
             this.text_nombre.Size = new System.Drawing.Size(260, 20);
             this.text_nombre.TabIndex = 9;
-            
             // 
             // txt_numero
             // 
@@ -169,12 +166,12 @@
             // 
             // cb_categoria
             // 
+            this.cb_categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_categoria.FormattingEnabled = true;
             this.cb_categoria.Location = new System.Drawing.Point(87, 77);
             this.cb_categoria.Name = "cb_categoria";
             this.cb_categoria.Size = new System.Drawing.Size(157, 21);
             this.cb_categoria.TabIndex = 15;
-            this.cb_categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // checkBox1
             // 
@@ -199,15 +196,17 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(149, 15);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(129, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 22);
+            this.label8.Size = new System.Drawing.Size(186, 28);
             this.label8.TabIndex = 18;
             this.label8.Text = "Nuevo Registro";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.cb_categoria);
@@ -231,8 +230,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
+            // labelCodigoP
+            // 
+            this.labelCodigoP.AutoSize = true;
+            this.labelCodigoP.BackColor = System.Drawing.Color.Transparent;
+            this.labelCodigoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCodigoP.Location = new System.Drawing.Point(95, 345);
+            this.labelCodigoP.Name = "labelCodigoP";
+            this.labelCodigoP.Size = new System.Drawing.Size(185, 24);
+            this.labelCodigoP.TabIndex = 30;
+            this.labelCodigoP.Text = "Código de la Pulsera";
+            // 
             // btnAgregarR
             // 
+            this.btnAgregarR.BackColor = System.Drawing.Color.Transparent;
             this.btnAgregarR.FlatAppearance.BorderSize = 0;
             this.btnAgregarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarR.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -243,11 +254,12 @@
             this.btnAgregarR.Size = new System.Drawing.Size(157, 26);
             this.btnAgregarR.TabIndex = 20;
             this.btnAgregarR.Text = "Agregar Registro";
-            this.btnAgregarR.UseVisualStyleBackColor = true;
+            this.btnAgregarR.UseVisualStyleBackColor = false;
             this.btnAgregarR.Click += new System.EventHandler(this.btnAgegarR_Click);
             // 
             // btnEncenderA
             // 
+            this.btnEncenderA.BackColor = System.Drawing.Color.Transparent;
             this.btnEncenderA.FlatAppearance.BorderSize = 0;
             this.btnEncenderA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncenderA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,43 +270,22 @@
             this.btnEncenderA.Size = new System.Drawing.Size(157, 26);
             this.btnEncenderA.TabIndex = 19;
             this.btnEncenderA.Text = "Encender Antena";
-            this.btnEncenderA.UseVisualStyleBackColor = true;
+            this.btnEncenderA.UseVisualStyleBackColor = false;
             this.btnEncenderA.Click += new System.EventHandler(this.btnEncenderA_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Acuanet.Properties.Resources.hand_point_180;
-            this.button1.Location = new System.Drawing.Point(4, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 41);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // labelCodigoP
-            // 
-            this.labelCodigoP.AutoSize = true;
-            this.labelCodigoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCodigoP.Location = new System.Drawing.Point(65, 345);
-            this.labelCodigoP.Name = "labelCodigoP";
-            this.labelCodigoP.Size = new System.Drawing.Size(259, 29);
-            this.labelCodigoP.TabIndex = 30;
-            this.labelCodigoP.Text = "Código de la Pulsera";
             // 
             // FormaRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Acuanet.Properties.Resources.descarga1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(437, 469);
             this.Controls.Add(this.labelCodigoP);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAgregarR);
             this.Controls.Add(this.btnEncenderA);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
             this.Name = "FormaRegistro";
             this.Text = "Registro de Participantes";
             this.Load += new System.EventHandler(this.formaRegistro_Load);
@@ -307,7 +298,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

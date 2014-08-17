@@ -20,6 +20,9 @@ namespace Acuanet
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
+            System.Threading.Thread.Sleep(30000);
+            this.Cursor = Cursors.Default;
             FormaRegistro miForm = new FormaRegistro();
             miForm.Show();
 
@@ -55,6 +58,9 @@ namespace Acuanet
 
         private void button9_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
+            System.Threading.Thread.Sleep(2500);
+            this.Cursor = Cursors.Default;
             EscannerChip miFormEC = new EscannerChip();
             miFormEC.Show();
         }

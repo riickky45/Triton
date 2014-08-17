@@ -246,6 +246,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Fondos Visual Forms.jpg" />
+    <None Include="Resources\descarga.jpg" />
+    <None Include="Resources\descarga1.jpg" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>
