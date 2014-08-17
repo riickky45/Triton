@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categoria.cs" />
+    <Compile Include="GResultados.cs" />
     <Compile Include="InsertaLecturaE2.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
@@ -120,6 +121,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultado.cs" />
     <EmbeddedResource Include="FormaPrincipal.resx">
       <DependentUpon>FormaPrincipal.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>
