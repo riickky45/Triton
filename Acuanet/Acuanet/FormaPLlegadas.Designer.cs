@@ -36,7 +36,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 5000;
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // dgv_llegadas
@@ -58,6 +58,8 @@
             this.Controls.Add(this.dgv_llegadas);
             this.Name = "FormaPLlegadas";
             this.Text = "PantallaLlegadas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPL_FormClosing);
+            this.Load += new System.EventHandler(this.frmPL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).EndInit();
             this.ResumeLayout(false);
 

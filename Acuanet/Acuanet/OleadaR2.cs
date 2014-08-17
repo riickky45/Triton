@@ -5,58 +5,89 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 namespace Acuanet
 {
-
-   
-
-    //esta clase registra una oleada
-    class OleadaR 
+    class OleadaR2
     {
         CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
         LecConfigXML cxml;
 
-        List<Lectura> lLec = new List<Lectura>();
-        
+        MySqlConnection dbConn;
+
+
         int id_oleada;
-        string strConexion;
+
 
         //constructor
-        public OleadaR()
+        public OleadaR2(int id_oleada)
         {
-            id_oleada = 0;
+            this.id_oleada = id_oleada;
+
             //cargamos la configuracion adecuada
             cxml = new LecConfigXML("config_oleada.xml");
 
             //prepara la conexion a la BD
-           strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
-                + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
-                + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
-                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
+            string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
+                  + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
+                  + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
+                  + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
+
+            dbConn = new MySqlConnection(strConexion);
+
 
             // incia los servicios de la antena
-           setupReader();
-           server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
+            if (reader.connect())
+            {
+                setupReader();
+            }
+            else
+            {
+                MessageBox.Show("No se puede conectar con el Lector de la Antena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+            server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
         }
 
-        //metodo para prender antena
-        public bool prendeAntena()
+        private void cargaConfig()
         {
+            lock (this)
+            {
+                reader.login_name = cxml.Text("ACUANET/Reader/Login/Name", "root");
+                reader.login_password = cxml.Text("ACUANET/Reader/Login/Password", "csl2006");
+                reader.http_timeout = cxml.Int16("ACUANET/SocketTimeout/Http", 30000);
+                reader.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                reader.setURI(cxml.Text("ACUANET/Reader/URI", "http://192.168.25.248/"));
+
+                server.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                try
+                {
+                    server.tcp_port = int.Parse(cxml.Text("ACUANET/Application/ServerPort", "9090"));
+                }
+                catch
+                {
+                    server.tcp_port = 9090;
+                }
+            }
+        }
+
+        //metodo que inicia captura 
+        public bool iniciaCaptura()
+        {
+
             reader.purgeAllTags();
             server.Start();
             return true;
         }
 
-        //metodo que inicia captura 
-        public bool iniciaCaptura(){
-
-            server.Start();
-            return true;
-        }
-
         //metodo que finaliza captura
-        public bool finalizaCaptura(){
+        public bool finalizaCaptura()
+        {
 
             server.Stop();
             return false;
@@ -200,9 +231,6 @@ namespace Acuanet
                 return false;
             }
 
-
-
-
             return true;
         }
         #endregion
@@ -212,19 +240,19 @@ namespace Acuanet
         {
             if (e.rxTag != null)
             {
-                TAG tag = (TAG)e.rxTag;
-
-
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
-                InsertaLecturaE inlec = new InsertaLecturaE(tag, id_oleada, strConexion);
+                InsertaLecturaE2 inlec = new InsertaLecturaE2(dbConn,(TAG)e.rxTag, id_oleada);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();
+            }
+           
+        }
 
-            }
-            else
-            {
-                
-            }
+        // destructor libera la memoria y en este caso la conexión a la BD 
+        ~OleadaR2()
+        {
+            if (dbConn != null) dbConn.Close();
+            dbConn = null;
         }
 
 
