@@ -106,9 +106,10 @@ namespace Acuanet
 
 
         // destructor libera la memoria y en este caso la conexión a la BD 
+        // destructor libera la memoria y en este caso la conexión a la BD 
         ~ModParticipante()
         {
-            dbConn.Close();
+            if (this.dbConn != null) dbConn.Close();
             dbConn = null;
         }
     }

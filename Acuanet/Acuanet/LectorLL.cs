@@ -10,7 +10,7 @@ namespace Acuanet
     class LectorLL
     {
 
- 
+
         private LecConfigXML cxml = new LecConfigXML();
         MySqlConnection dbConn;
         private int id_oleada;
@@ -26,7 +26,7 @@ namespace Acuanet
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-          
+
         }
 
         public void ponOleada(int id)
@@ -34,23 +34,16 @@ namespace Acuanet
             this.id_oleada = id;
         }
 
-        public DataTable obtenDatos()
+        //Metodo que obtiene los datos en Formato DataSet
+        public DataSet obtenDatos()
         {
 
-            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis FROM participantes,tag WHERE participante.id_tag=tag.id_tag ORDER BY  fecha_hora DESC,milis DESC;";
-            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
-            MySqlDataReader rdr = cmd.ExecuteReader();
+            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis as ms FROM participante,tags WHERE participante.id_tag=tags.id_tag ORDER BY  fecha_hora DESC,milis DESC;";
 
-            DataTable dt = new DataTable();
+            MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
+            DataSet dt = new DataSet();
 
-            for (int i = 0; i < rdr.FieldCount; i++)
-            {
-                dt.Columns.Add(rdr.GetName(i));
-            }
-
-            dt.Load(rdr);
-
-            rdr.Close();
+            datad.Fill(dt);
 
             return dt;
         }
