@@ -23,9 +23,9 @@ namespace Acuanet
 
 
         //constructor
-        public OleadaR2(int id_oleada)
+        public OleadaR2()
         {
-            this.id_oleada = id_oleada;
+            
 
             //cargamos la configuracion adecuada
             cxml = new LecConfigXML("config_oleada.xml");

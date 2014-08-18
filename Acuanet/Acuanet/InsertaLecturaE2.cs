@@ -27,7 +27,7 @@ namespace Acuanet
         public void insertaTag()
         {
 
-            string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" + id_oleada + ",'" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "'," + tag.ApiTimeStampUTC.Millisecond + ")";
+            string sql = "INSERT INTO pics (id_tag,fecha_hora,milis) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "'," + tag.ApiTimeStampUTC.Millisecond + ")";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
