@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 
 using CSL;
 
+
 namespace Acuanet
 {
     class InsertaLecturaE2

@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Acuanet
 {
-    class ModOleada
+    class Resultado
     {
+        public int id_participante;
+        
 
     }
 }

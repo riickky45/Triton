@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
+
     public partial class FormaPLlegadas : Form
     {
         LectorLL mll = new LectorLL();
