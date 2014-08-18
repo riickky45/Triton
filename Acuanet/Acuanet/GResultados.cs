@@ -37,13 +37,16 @@ namespace Acuanet
         private void obtenParDistxOleada()
         {
 
-            string sql = "SELECT DISTINCT participante.id FROM tags,participante WHERE participante.id_tag=tags.id_tag AND tags.id_oleada=" + this.id_oleada;
+            string sql = "SELECT DISTINCT participante.id  FROM tags,participante WHERE participante.id_tag=tags.id_tag AND tags.id_oleada=" + this.id_oleada;
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
             while (rdr.Read())
             {
-               
+                Resultado res = new Resultado();
+                res.id_participante = System.Convert.ToInt32(rdr.GetString(0));
+
+                lres.Add(res);
 
             }
             rdr.Close();
