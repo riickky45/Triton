@@ -106,11 +106,11 @@
     <Compile Include="FormaRegistro.Designer.cs">
       <DependentUpon>FormaRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="FormaCSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="FormaCSV.Designer.cs">
+      <DependentUpon>FormaCSV.cs</DependentUpon>
     </Compile>
     <Compile Include="FormaCategoria.cs">
       <SubType>Form</SubType>
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="FormaRegistro.resx">
       <DependentUpon>FormaRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="FormaCSV.resx">
+      <DependentUpon>FormaCSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaCategoria.resx">
       <DependentUpon>FormaCategoria.cs</DependentUpon>

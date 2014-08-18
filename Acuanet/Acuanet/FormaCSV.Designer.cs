@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class Form3
+    partial class FormaCSV
     {
         /// <summary>
         /// Required designer variable.
