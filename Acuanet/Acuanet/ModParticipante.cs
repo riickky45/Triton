@@ -49,10 +49,10 @@ namespace Acuanet
 
             //codigo que conecta y query para recuperar participante por id_tag
 
-            string sql = "SELECT participante.nombre,participante.id,numero,pais,sexo,email,direccion,id_tag,prueba,club, categoria.nombre as categroria FROM participante,categoria WHERE id_tag='"+stag_id+"' AND participante.id_categoria=categoria.id_categoria ";
+            //string sql = "SELECT participante.nombre,participante.id,numero,pais,sexo,email,direccion,id_tag,prueba,club, categoria.nombre as categroria FROM participante,categoria WHERE id_tag='"+stag_id+"' AND participante.id_categoria=categoria.id_categoria ";
 
 
-            //string sql = "SELECT participante.nombre,participante.id,numero FROM participante WHERE id_tag='" + stag_id + "'";
+            string sql = "SELECT participante.nombre,participante.id,numero FROM participante WHERE id_tag='" + stag_id + "'";
             
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
@@ -86,7 +86,7 @@ namespace Acuanet
             if (p.nombre.Length == 0) return false;
 
             string sql = "INSERT INTO participante (nombre,numero,prueba,club,direccion,id_tag,pais,sexo,email) VALUES ('" + 
-                p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "','"+p.pais+"','"+p.sexo+"','"+p.email+"')";
+                p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "','"+p.email+"')";
             System.Console.WriteLine(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
           int res=  cmd.ExecuteNonQuery();

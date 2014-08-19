@@ -12,7 +12,7 @@ namespace Acuanet
     {
 
         //OleadaR2 oleada = new OleadaR2();
-        bool bprendAntenaO = true;
+        //bool bprendAntenaO = true;
 
         public FormaPrincipal()
         {
@@ -87,9 +87,10 @@ namespace Acuanet
             }*/
         }
 
-        private void btnOleada_Click(object sender, EventArgs e)
+        /*private void btnOleada_Click(object sender, EventArgs e)
         {
 
         }
+         */
     }
 }

@@ -101,7 +101,7 @@ namespace Acuanet
                 {
                     if (lbl_id_tag.Text.Equals(tag.TagOrigId) == false)
                     {
-                       // MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
+                        //MessageBox.Show("Tag Recibido Evento recepción:" + tag.TagOrigId + " Tiempo:" + tag.Time + " ms" + tag.ApiTimeStampUTC.Millisecond);
 
                         Participante par = modP.recuperaPxTag(tag.TagOrigId);
                         this.lbl_id_tag.Text = tag.TagOrigId;
@@ -110,6 +110,8 @@ namespace Acuanet
                         this.lbl_categoria.Text = par.categoria;
                         this.lbl_pais.Text = par.pais;
                         this.lbl_prueba.Text = par.prueba;
+                        
+                        
                     }
                 }
             }

@@ -35,7 +35,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnEAntena = new System.Windows.Forms.Button();
@@ -145,29 +144,13 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Location = new System.Drawing.Point(223, 31);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(232, 103);
+            this.groupBox3.Size = new System.Drawing.Size(232, 62);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Categorias";
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::Acuanet.Properties.Resources.application_form_edit;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(22, 58);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 39);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Editar Categoria";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -176,7 +159,7 @@
             this.button5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::Acuanet.Properties.Resources.application_form_add;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(22, 19);
+            this.button5.Location = new System.Drawing.Point(22, 17);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(168, 39);
             this.button5.TabIndex = 1;
@@ -190,7 +173,7 @@
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.btnEAntena);
             this.groupBox4.Controls.Add(this.btnOleada);
-            this.groupBox4.Location = new System.Drawing.Point(223, 149);
+            this.groupBox4.Location = new System.Drawing.Point(223, 99);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(232, 119);
             this.groupBox4.TabIndex = 3;
@@ -227,13 +210,12 @@
             this.btnOleada.Text = " Arrancar Oleada";
             this.btnOleada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOleada.UseVisualStyleBackColor = true;
-            this.btnOleada.Click += new System.EventHandler(this.btnOleada_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Location = new System.Drawing.Point(223, 283);
+            this.groupBox5.Location = new System.Drawing.Point(223, 224);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(232, 70);
             this.groupBox5.TabIndex = 4;
@@ -305,7 +287,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Acuanet.Properties.Resources.ico_nadador_travesera;
-            this.pictureBox1.Location = new System.Drawing.Point(518, 185);
+            this.pictureBox1.Location = new System.Drawing.Point(517, 163);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 125);
             this.pictureBox1.TabIndex = 6;
@@ -318,7 +300,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(720, 395);
+            this.ClientSize = new System.Drawing.Size(720, 357);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -349,7 +331,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnEAntena;
