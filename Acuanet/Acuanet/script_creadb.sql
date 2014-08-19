@@ -58,6 +58,7 @@ create table tags(
 	id_oleada int,
 	fecha_hora datetime,
 	milis int,
+	rssi double,
 	lectura_v bool
 );
 
