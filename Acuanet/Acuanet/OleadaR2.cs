@@ -25,7 +25,6 @@ namespace Acuanet
         //constructor
         public OleadaR2()
         {
-            
 
             //cargamos la configuracion adecuada
             cxml = new LecConfigXML("config_oleada.xml");
@@ -38,6 +37,7 @@ namespace Acuanet
 
             dbConn = new MySqlConnection(strConexion);
 
+            this.cargaConfig();
 
             // incia los servicios de la antena
             if (reader.connect())
@@ -48,7 +48,6 @@ namespace Acuanet
             {
                 MessageBox.Show("No se puede conectar con el Lector de la Antena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
 
 
             server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
