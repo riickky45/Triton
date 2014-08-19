@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Acuanet
 {
+    //Esta clase lee las llegadas y genere un DataSet para informar de ellas 
     class LectorLL
     {
 
@@ -38,7 +39,7 @@ namespace Acuanet
         public DataSet obtenDatos()
         {
 
-            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis as ms FROM participante,tags WHERE participante.id_tag=tags.id_tag ORDER BY  fecha_hora DESC,milis DESC;";
+            string sql = "SELECT participante.nombre,participante.id_tag, fecha_hora,milis as ms FROM participante,tags WHERE participante.id_tag=tags.id_tag ORDER BY  fecha_hora DESC,milis DESC LIMIT 20;";
 
             MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
             DataSet dt = new DataSet();
