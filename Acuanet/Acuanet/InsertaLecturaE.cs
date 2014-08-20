@@ -15,7 +15,7 @@ namespace Acuanet
         private List<Lectura> aLectura;
         private string strConexion;
         private int id_oleada;
-        private TAG t;
+        private TAG tag;
 
         //constructor
         public InsertaLecturaE(List<Lectura> aLectura,string strConexion,int evento_id)
@@ -28,7 +28,7 @@ namespace Acuanet
         //constructor
         public InsertaLecturaE(TAG t, int id_oleada, string strConexion)
         {
-            this.t = t;
+            this.tag = t;
             this.id_oleada = id_oleada;
             this.strConexion = strConexion;
         }
@@ -42,8 +42,10 @@ namespace Acuanet
             dbConn.Open();
 
             foreach (Lectura d in aLectura)
-            {               
-                string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" + d.tag.ToString() + ",'" + d.tag.ApiTimeStampUTC + "')";
+            {
+
+                string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi,frecuencia) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','" + tag.RSSI + "','" + tag.Frequency + "')";
+           
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
             }
@@ -58,7 +60,7 @@ namespace Acuanet
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-            string sql = "INSERT INTO pics (id_oleada,id_tag,fecha_hora,milis) VALUES (" +id_oleada+",'"+ t.TagOrigId + "','" + t.ApiTimeStampUTC + "',"+t.ApiTimeStampUTC.Millisecond+")";
+            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi,frecuencia) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','" + tag.RSSI + "','" + tag.Frequency + "')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 

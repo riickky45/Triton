@@ -19,15 +19,15 @@ namespace Acuanet
 
         List<Lectura> lLec = new List<Lectura>();
 
-        int id_oleada;
+       
         string strConexion;
 
         //constructor
         public OleadaR()
         {
-            id_oleada = 0;
+            
             //cargamos la configuracion adecuada
-            cxml = new LecConfigXML("config_oleada.xml");
+            cxml = new LecConfigXML();
 
             //prepara la conexion a la BD
             strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -36,22 +36,50 @@ namespace Acuanet
                  + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
 
             // incia los servicios de la antena
-            setupReader();
+            this.cargaConfig();
+
+            // incia los servicios de la antena
+            if (reader.connect())
+            {
+                setupReader();
+            }
+            else
+            {
+                MessageBox.Show("No se puede conectar con el Lector de la Antena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
         }
 
-        //metodo para prender antena
-        public bool prendeAntena()
+
+        private void cargaConfig()
         {
-            reader.purgeAllTags();
-            server.Start();
-            return true;
+            lock (this)
+            {
+                reader.login_name = cxml.Text("ACUANET/Reader/Login/Name", "root");
+                reader.login_password = cxml.Text("ACUANET/Reader/Login/Password", "csl2006");
+                reader.http_timeout = cxml.Int16("ACUANET/SocketTimeout/Http", 30000);
+                reader.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                reader.setURI(cxml.Text("ACUANET/Reader/URI", "http://192.168.25.248/"));
+
+                server.api_log_level = reader.LogLevel(cxml.Text("ACUANET/Application/LogLevel", "Info"));
+                try
+                {
+                    server.tcp_port = int.Parse(cxml.Text("ACUANET/Application/ServerPort", "9090"));
+                }
+                catch
+                {
+                    server.tcp_port = 9090;
+                }
+            }
         }
+
+       
 
         //metodo que inicia captura 
         public bool iniciaCaptura()
         {
-
+            reader.purgeAllTags();
             server.Start();
             return true;
         }
@@ -218,7 +246,7 @@ namespace Acuanet
 
 
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
-                InsertaLecturaE inlec = new InsertaLecturaE(tag, id_oleada, strConexion);
+                InsertaLecturaE inlec = new InsertaLecturaE(tag, 0, strConexion);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();
 

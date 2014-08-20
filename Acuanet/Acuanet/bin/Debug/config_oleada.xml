@@ -8,14 +8,14 @@
       <Password>csl2006</Password>
     </Login>
     <ModulationProfile>Profile0</ModulationProfile>
-    <PopulationEstimation>70</PopulationEstimation>
+    <PopulationEstimation>32</PopulationEstimation>
     <Session>1</Session>
     <InventorySearchMode>Default</InventorySearchMode>
     <TagIC>NXP</TagIC>
     <AdditionalMemoryBank>Bank0</AdditionalMemoryBank>
     <DuplicationElimination>
       <Method>Autonomous Time Trigger</Method>
-      <Time>5</Time>
+      <Time>100</Time>
       <AntennaPortScheme>false</AntennaPortScheme>
     </DuplicationElimination>
     <ReceiveSensitivity>Maximum sensitivity</ReceiveSensitivity>

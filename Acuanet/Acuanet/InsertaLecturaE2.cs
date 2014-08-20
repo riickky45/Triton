@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+//using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -27,7 +27,8 @@ namespace Acuanet
         public void insertaTag()
         {
 
-            string sql = "INSERT INTO pics (id_tag,fecha_hora,milis,rssi,frecuencia) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "'," + tag.ApiTimeStampUTC.Millisecond + "'"+tag.RSSI+"','"+tag.Frequency+"')";
+            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi,frecuencia) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','"+tag.RSSI+"','"+tag.Frequency+"')";
+            //MessageBox.Show(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
         }

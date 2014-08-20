@@ -11,7 +11,7 @@ namespace Acuanet
     public partial class FormaPrincipal : Form
     {
 
-        OleadaR2 oleada;
+        OleadaR oleada;
         //bool bprendAntenaO = true;
 
         public FormaPrincipal()
@@ -73,7 +73,7 @@ namespace Acuanet
 
         private void btnEAntena_Click(object sender, EventArgs e)
         {
-            oleada = new OleadaR2();
+            oleada = new OleadaR();
 
         }
 
@@ -89,10 +89,6 @@ namespace Acuanet
             this.btnOleada.Text = "PARA";
         }
 
-        /*private void btnOleada_Click(object sender, EventArgs e)
-        {
-
-        }
-         */
+       
     }
 }

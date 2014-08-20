@@ -27,7 +27,7 @@ namespace Acuanet
         {
 
             //cargamos la configuracion adecuada
-            cxml = new LecConfigXML("config_oleada.xml");
+            cxml = new LecConfigXML();
 
             //prepara la conexion a la BD
             string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -36,7 +36,7 @@ namespace Acuanet
                   + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
 
             dbConn = new MySqlConnection(strConexion);
-
+            dbConn.Open();
             this.cargaConfig();
 
             // incia los servicios de la antena
