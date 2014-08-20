@@ -105,7 +105,7 @@ namespace Acuanet
 
                         Participante par = modP.recuperaPxTag(tag.TagOrigId);
                         this.lbl_id_tag.Text = tag.TagOrigId;
-                        this.lbl_nombre.Text = par.nombre;
+                        this.lbl_nombre.Text = par.nombre+tag.RSSI+tag.Frequency;
                         this.lbl_numero.Text = par.snumero;
                         this.lbl_categoria.Text = par.categoria;
                         this.lbl_pais.Text = par.pais;
