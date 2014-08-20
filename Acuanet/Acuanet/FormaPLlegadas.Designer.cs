@@ -32,7 +32,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dgv_llegadas = new System.Windows.Forms.DataGridView();
             this.gbox_estatus = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_numero = new System.Windows.Forms.TextBox();
             this.btn_revisar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).BeginInit();
@@ -58,7 +58,7 @@
             // gbox_estatus
             // 
             this.gbox_estatus.BackColor = System.Drawing.Color.Transparent;
-            this.gbox_estatus.Controls.Add(this.textBox1);
+            this.gbox_estatus.Controls.Add(this.txt_numero);
             this.gbox_estatus.Controls.Add(this.btn_revisar);
             this.gbox_estatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbox_estatus.Location = new System.Drawing.Point(987, 22);
@@ -68,13 +68,13 @@
             this.gbox_estatus.TabStop = false;
             this.gbox_estatus.Text = "Estatus";
             // 
-            // textBox1
+            // txt_numero
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(40, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 29);
-            this.textBox1.TabIndex = 3;
+            this.txt_numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numero.Location = new System.Drawing.Point(40, 30);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(129, 29);
+            this.txt_numero.TabIndex = 3;
             // 
             // btn_revisar
             // 
@@ -84,6 +84,7 @@
             this.btn_revisar.TabIndex = 2;
             this.btn_revisar.Text = "Revisar";
             this.btn_revisar.UseVisualStyleBackColor = true;
+            this.btn_revisar.Click += new System.EventHandler(this.btn_revisar_Click);
             // 
             // groupBox1
             // 
@@ -122,7 +123,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridView dgv_llegadas;
         private System.Windows.Forms.GroupBox gbox_estatus;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.Button btn_revisar;
         private System.Windows.Forms.GroupBox groupBox1;
     }

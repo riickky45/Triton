@@ -55,7 +55,7 @@ milis_ini int
 create table tags(
 	id SERIAL,
 	id_tag varchar(512),
-	id_oleada int,
+
 	fecha_hora datetime,
 	milis int,
 	lectura_v bool

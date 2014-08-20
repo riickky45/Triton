@@ -51,5 +51,12 @@ namespace Acuanet
         {
             this.timer1.Enabled = false;
         }
+
+        private void btn_revisar_Click(object sender, EventArgs e)
+        {
+            if (txt_numero.Text.Length == 0) return;
+            mll.ponNumero(System.Convert.ToInt32(this.txt_numero.Text));
+            txt_numero.Text = "";
+        }
     }
 }
