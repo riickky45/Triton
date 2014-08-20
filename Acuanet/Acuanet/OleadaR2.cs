@@ -19,9 +19,6 @@ namespace Acuanet
         MySqlConnection dbConn;
 
 
-     
-
-
         //constructor
         public OleadaR2()
         {
