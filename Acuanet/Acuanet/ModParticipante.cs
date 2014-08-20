@@ -104,7 +104,6 @@ namespace Acuanet
 
         }
 
-
         // destructor libera la memoria y en este caso la conexión a la BD 
         // destructor libera la memoria y en este caso la conexión a la BD 
         ~ModParticipante()

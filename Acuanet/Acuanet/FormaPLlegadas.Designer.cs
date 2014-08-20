@@ -32,8 +32,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dgv_llegadas = new System.Windows.Forms.DataGridView();
             this.gbox_estatus = new System.Windows.Forms.GroupBox();
-            this.btn_revisar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_revisar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).BeginInit();
             this.gbox_estatus.SuspendLayout();
@@ -68,6 +68,14 @@
             this.gbox_estatus.TabStop = false;
             this.gbox_estatus.Text = "Estatus";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(40, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 29);
+            this.textBox1.TabIndex = 3;
+            // 
             // btn_revisar
             // 
             this.btn_revisar.Location = new System.Drawing.Point(114, 73);
@@ -77,20 +85,13 @@
             this.btn_revisar.Text = "Revisar";
             this.btn_revisar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(40, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 29);
-            this.textBox1.TabIndex = 3;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Location = new System.Drawing.Point(455, 22);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(233, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(422, 111);
+            this.groupBox1.Size = new System.Drawing.Size(644, 111);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultados";

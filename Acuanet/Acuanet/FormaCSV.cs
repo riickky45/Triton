@@ -323,12 +323,12 @@ namespace Acuanet
         {
             //Create data table
             UserInfoTable.Columns.Add("ID", typeof(String));
-            UserInfoTable.Columns.Add("Name", typeof(String));
-            UserInfoTable.Columns.Add("Title", typeof(String));
-            UserInfoTable.Columns.Add("Company", typeof(String));
-            UserInfoTable.Columns.Add("Location", typeof(String));
-            UserInfoTable.Columns.Add("Photo filename", typeof(String));
-            UserInfoTable.Columns.Add("Voice filename", typeof(String));
+            UserInfoTable.Columns.Add("Nombre", typeof(String));
+            UserInfoTable.Columns.Add("Numero", typeof(String));
+            UserInfoTable.Columns.Add("Categoria", typeof(String));
+            UserInfoTable.Columns.Add("Prueba", typeof(String));
+            UserInfoTable.Columns.Add("Club", typeof(String));
+            UserInfoTable.Columns.Add("Direcciòn", typeof(String));
 
             UserInfoTable.PrimaryKey = new DataColumn[] { UserInfoTable.Columns["ID"] };
 

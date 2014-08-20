@@ -30,7 +30,6 @@ namespace Acuanet
             string sql = "INSERT INTO pics (id_tag,fecha_hora,milis,rssi) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "'," + tag.ApiTimeStampUTC.Millisecond + "'"+tag.RSSI+"')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
-            tag.
         }
     }
 }
