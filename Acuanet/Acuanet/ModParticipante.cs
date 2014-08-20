@@ -4,6 +4,8 @@ using System.Text;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
+using System.Data;
+
 
 namespace Acuanet
 {
@@ -102,6 +104,19 @@ namespace Acuanet
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
+        }
+
+        public DataSet obtenDatos()
+        {
+
+            string sql = "SELECT * FROM participante  ORDER BY numero";
+
+            MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
+            DataSet dt = new DataSet();
+
+            datad.Fill(dt);
+
+            return dt;
         }
 
         // destructor libera la memoria y en este caso la conexión a la BD 

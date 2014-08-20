@@ -87,6 +87,12 @@ namespace Acuanet
             }*/
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormaListaP flp = new FormaListaP();
+            flp.Show();
+        }
+
         /*private void btnOleada_Click(object sender, EventArgs e)
         {
 
