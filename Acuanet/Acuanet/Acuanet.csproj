@@ -82,6 +82,11 @@
     <Compile Include="FormaListaP.Designer.cs">
       <DependentUpon>FormaListaP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaPrincipal1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormaPrincipal.resx</DependentUpon>
+    </Compile>
     <Compile Include="GResultados.cs" />
     <Compile Include="InsertaLecturaE2.cs" />
     <Compile Include="LectorLL.cs" />

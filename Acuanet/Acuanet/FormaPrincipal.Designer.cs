@@ -211,6 +211,7 @@
             this.btnOleada.Text = " Arrancar Oleada";
             this.btnOleada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOleada.UseVisualStyleBackColor = true;
+            this.btnOleada.Click += new System.EventHandler(this.btnOleada_Click);
             // 
             // groupBox5
             // 

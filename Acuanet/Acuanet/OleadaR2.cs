@@ -19,7 +19,7 @@ namespace Acuanet
         MySqlConnection dbConn;
 
 
-        int id_oleada;
+     
 
 
         //constructor
@@ -240,7 +240,7 @@ namespace Acuanet
             if (e.rxTag != null)
             {
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
-                InsertaLecturaE2 inlec = new InsertaLecturaE2(dbConn,(TAG)e.rxTag, id_oleada);
+                InsertaLecturaE2 inlec = new InsertaLecturaE2(dbConn,(TAG)e.rxTag);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();
             }

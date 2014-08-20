@@ -30,7 +30,7 @@ descripcion text
 -- Tabla de resultados finales
 create table resultado(
 id SERIAL,
-id_oleada int,
+
 
 id_participante int,
 tiempo varchar(256),
@@ -58,6 +58,8 @@ create table tags(
 
 	fecha_hora datetime,
 	milis int,
+	rssi double,
+	frecuencia double,
 	lectura_v bool
 );
 
