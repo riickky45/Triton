@@ -1,0 +1,9 @@
+diff a/Acuanet/Acuanet/FormaPrincipal.cs b/Acuanet/Acuanet/FormaPrincipal.cs	(rejected hunks)
+@@ -90,6 +90,7 @@
+ +<<<<<<< HEAD
+ +            this.btnOleada.Text = "PARALA";
+ +=======
++             this.btnOleada.Text = "PARALO";
+ +>>>>>>> 1eb40a3fb9e77f4423326b9c194448c0722c2c6f
+          }
+  
