@@ -15,7 +15,7 @@
     <AdditionalMemoryBank>Bank0</AdditionalMemoryBank>
     <DuplicationElimination>
       <Method>Autonomous Time Trigger</Method>
-      <Time>100</Time>
+      <Time>500</Time>
       <AntennaPortScheme>false</AntennaPortScheme>
     </DuplicationElimination>
     <ReceiveSensitivity>Maximum sensitivity</ReceiveSensitivity>

@@ -16,9 +16,6 @@ namespace Acuanet
         LecConfigXML cxml;
         READER_STATUS reader_status;
 
-        List<Lectura> lLec = new List<Lectura>();
-
-       
         string strConexion;
 
         //constructor
@@ -48,11 +45,30 @@ namespace Acuanet
                 MessageBox.Show("No se puede conectar con el Lector de la Antena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            
 
             server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
         }
 
+
+        //metodo que inicia captura 
+        public bool iniciaCaptura()
+        {
+            reader.purgeAllTags();
+            server.Start();
+            return true;
+        }
+
+        //metodo que finaliza captura
+        public bool finalizaCaptura()
+        {
+
+            server.Stop();
+            return false;
+        }
+
+
+        //configurador del lector y la antena 
+        #region Configurador Reader
 
         private void cargaConfig()
         {
@@ -76,26 +92,7 @@ namespace Acuanet
             }
         }
 
-       
 
-        //metodo que inicia captura 
-        public bool iniciaCaptura()
-        {
-            reader.purgeAllTags();
-            server.Start();
-            return true;
-        }
-
-        //metodo que finaliza captura
-        public bool finalizaCaptura()
-        {
-
-            server.Stop();
-            return false;
-        }
-
-        //configurador del lector y la antena 
-        #region Configurador Reader
         private bool setupReader()
         {
             if (reader.connect() == false)
@@ -239,24 +236,18 @@ namespace Acuanet
         }
         #endregion
 
+
         //Metodo para interceptar el evento de llegada de un tag
         public void Oleada_TagReceiveEvent(object sender, TagReceiveEventArgs e)
         {
             if (e.rxTag != null)
             {
-                TAG tag = (TAG)e.rxTag;
-
-
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
-                InsertaLecturaE inlec = new InsertaLecturaE(tag, 0, strConexion);
+                InsertaLecturaE inlec = new InsertaLecturaE((TAG)e.rxTag, 0, strConexion);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();
-
             }
-            else
-            {
 
-            }
         }
 
 
