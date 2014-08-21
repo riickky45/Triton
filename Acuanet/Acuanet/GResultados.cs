@@ -37,7 +37,7 @@ namespace Acuanet
         private void obtenParDistxOleada()
         {
 
-            string sql = "SELECT DISTINCT participante.id  FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
+            string sql = "SELECT DISTINCT participante.id FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -51,6 +51,11 @@ namespace Acuanet
             }
             rdr.Close();
 
+
+        }
+
+        private void obtenLecturasxParId()
+        {
 
         }
 
