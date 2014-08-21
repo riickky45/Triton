@@ -86,7 +86,7 @@ namespace Acuanet
         private void btnOleada_Click(object sender, EventArgs e)
         {
             oleada.iniciaCaptura();
-            this.btnOleada.Text = "PARA";
+            this.btnOleada.Text = "PARALA";
         }
 
        
