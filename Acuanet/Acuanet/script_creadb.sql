@@ -55,7 +55,6 @@ create table tags(
 	fecha_hora datetime,
 	milis int,
 	rssi double,
-	frecuencia double,
 	lectura_v bool
 );
 

@@ -35,6 +35,7 @@ namespace Acuanet
 
 
         //metodo que inserta el array de lectura en la BD
+        #region Insertador de Buffer
         public void insertaLecturaL()
         {
            
@@ -52,7 +53,7 @@ namespace Acuanet
             dbConn.Close();
             dbConn = null;
         }
-
+        #endregion
 
         //metodo que inserta un solo tag en la BD
         public void insertaTag()
@@ -60,7 +61,7 @@ namespace Acuanet
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi,frecuencia) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','" + tag.RSSI + "','" + tag.Frequency + "')";
+            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','" + tag.RSSI + "')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 
