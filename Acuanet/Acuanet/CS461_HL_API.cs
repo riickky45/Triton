@@ -4419,8 +4419,8 @@ namespace CSL
         public string antennas = "";             //"1", "2", "3", "4" combination e.g. "13" will use antenna 1 & 3
         public string filter_op_1 = "";          //"EQUAL", "NOT EQUAL" or "NONE"
         public string filter_op_2 = "";          //"EQUAL", "NOT EQUAL"
-        public string filter1 = "";              //Hex. digit, length = 24. e.g. "AAAAXXXXBBBBXXXXCCCCXXXX" where "X" is don't care
-        public string filter2 = "";              //Hex. digit, length = 24. e.g. "AAAAXXXXBBBBXXXXCCCCXXXX" where "X" is don't care
+        public string filter1 = "";              //Hex. digit, length = 24. e.g. "AAAAXXXXBBBBXXXXCCCCXXXX" where "X" is don'tag care
+        public string filter2 = "";              //Hex. digit, length = 24. e.g. "AAAAXXXXBBBBXXXXCCCCXXXX" where "X" is don'tag care
         public string filter_logic = "NONE";     //Logic operation between filter 1 and 2. "AND" or "NONE"
         public string auto_inc = "false";        //True, False
         public string tag_model = "";            //"NXP", "Monza", "Monaco", "Monza ID"

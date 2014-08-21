@@ -86,3 +86,24 @@ C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe.manifest
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.application
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\config.xml
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\config_oleada.xml
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe.manifest
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.application
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.exe
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Debug\Acuanet.pdb
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csprojResolveAssemblyReference.cache
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.formaEditar.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaPrincipal.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaRegistro.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaCSV.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaCategoria.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.EscannerChip.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaPLlegadas.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.FormaListaP.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.Properties.Resources.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.csproj.GenerateResource.Cache
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe.manifest
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.application
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.exe
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Debug\Acuanet.pdb

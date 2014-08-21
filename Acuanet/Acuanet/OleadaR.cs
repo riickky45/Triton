@@ -243,7 +243,7 @@ namespace Acuanet
             if (e.rxTag != null)
             {
                 // se crea la clase que hace el trabajo de insertar lectura en multihilo
-                InsertaLecturaE inlec = new InsertaLecturaE((TAG)e.rxTag, 0, strConexion);
+                InsertaLecturaE inlec = new InsertaLecturaE((TAG)e.rxTag,  strConexion);
                 Thread T = new Thread(inlec.insertaTag);
                 T.Start();
             }

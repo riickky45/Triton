@@ -54,8 +54,10 @@ namespace Acuanet
 
         }
 
-        private void obtenLecturasxParId()
+
+        private void obtenLecturasxParId(int id)
         {
+            string sql = "SELECT rssi,fecha_hora,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id="+id;
 
         }
 

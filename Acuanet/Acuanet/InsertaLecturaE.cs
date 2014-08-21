@@ -14,22 +14,22 @@ namespace Acuanet
     {
         private List<Lectura> aLectura;
         private string strConexion;
-        private int id_oleada;
+   
         private TAG tag;
 
         //constructor
-        public InsertaLecturaE(List<Lectura> aLectura,string strConexion,int evento_id)
+        public InsertaLecturaE(List<Lectura> aLectura,string strConexion)
         {
             this.aLectura = aLectura;
             this.strConexion=strConexion;
-            this.id_oleada=evento_id;
+            
         }
 
         //constructor
-        public InsertaLecturaE(TAG t, int id_oleada, string strConexion)
+        public InsertaLecturaE(TAG tag, string strConexion)
         {
-            this.tag = t;
-            this.id_oleada = id_oleada;
+            this.tag = tag;
+          
             this.strConexion = strConexion;
         }
 
