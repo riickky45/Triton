@@ -8,14 +8,13 @@ using System.Threading;
 namespace Acuanet
 {
 
-
-
     //esta clase registra una oleada
     class OleadaR
     {
         CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
         LecConfigXML cxml;
+        READER_STATUS reader_status;
 
         List<Lectura> lLec = new List<Lectura>();
 
@@ -42,11 +41,14 @@ namespace Acuanet
             if (reader.connect())
             {
                 setupReader();
+                reader_status = reader.getReaderStatus();
             }
             else
             {
                 MessageBox.Show("No se puede conectar con el Lector de la Antena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            
 
             server.TagReceiveEvent += new TagReceiveEventHandler(this.Oleada_TagReceiveEvent);
         }
