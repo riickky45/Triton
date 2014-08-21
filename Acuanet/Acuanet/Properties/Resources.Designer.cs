@@ -123,26 +123,6 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap app_search_24x24_32 {
-            get {
-                object obj = ResourceManager.GetObject("app-search_24x24-32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap app_search_32x32_32 {
-            get {
-                object obj = ResourceManager.GetObject("app-search_32x32-32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap application_form_add {
             get {
                 object obj = ResourceManager.GetObject("application_form_add", resourceCulture);
@@ -156,26 +136,6 @@ namespace Acuanet.Properties {
         internal static System.Drawing.Bitmap application_form_edit {
             get {
                 object obj = ResourceManager.GetObject("application_form_edit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap applications_32x32_32 {
-            get {
-                object obj = ResourceManager.GetObject("applications_32x32-32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap applications_32x32_321 {
-            get {
-                object obj = ResourceManager.GetObject("applications_32x32-321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +293,26 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lista {
+            get {
+                object obj = ResourceManager.GetObject("lista", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Llegadas {
+            get {
+                object obj = ResourceManager.GetObject("Llegadas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_VERACRUZ_2014 {
             get {
                 object obj = ResourceManager.GetObject("LOGO_VERACRUZ_2014", resourceCulture);
@@ -363,6 +343,26 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Nuevo_registro {
+            get {
+                object obj = ResourceManager.GetObject("Nuevo registro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nuevo_registro1 {
+            get {
+                object obj = ResourceManager.GetObject("Nuevo registro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resultset_next {
             get {
                 object obj = ResourceManager.GetObject("resultset_next", resourceCulture);
@@ -386,6 +386,16 @@ namespace Acuanet.Properties {
         internal static System.Drawing.Bitmap screen_error {
             get {
                 object obj = ResourceManager.GetObject("screen_error", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_32x32_32 {
+            get {
+                object obj = ResourceManager.GetObject("search_32x32-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -274,6 +274,11 @@
     <None Include="Resources\app-search_32x32-32.gif" />
     <None Include="Resources\applications_32x32-32.gif" />
     <None Include="Resources\applications_32x32-321.gif" />
+    <None Include="Resources\search_32x32-32.gif" />
+    <None Include="Resources\Nuevo registro.jpg" />
+    <None Include="Resources\Nuevo registro1.jpg" />
+    <None Include="Resources\lista.jpg" />
+    <None Include="Resources\Llegadas.jpg" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>
