@@ -23,7 +23,7 @@ namespace Acuanet
         {
             
             //cargamos la configuracion adecuada
-            cxml = new LecConfigXML();
+            cxml = new LecConfigXML("config_oleada.xml");
 
             //prepara la conexion a la BD
             strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -152,6 +152,7 @@ namespace Acuanet
             svr.server_port = cxml.Text("ACUANET/Application/ServerPort", "9090");
             svr.mode = "Listening Port on Server Side";
             svr.enable = true;
+            
 
             if (reader.setServerID(svr) == false)
             {
