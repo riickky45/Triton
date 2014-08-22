@@ -9,5 +9,9 @@ namespace Acuanet
         public int id_participante;
 
         public List<Lectura> aLec;
+
+        public double rssi_max;
+        public double tms_max;
+        public double d_min;
     }
 }

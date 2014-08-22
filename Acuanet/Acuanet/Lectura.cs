@@ -16,5 +16,6 @@ namespace Acuanet
         public double tms;
         public double dist;
 
+        public bool bdatoc=false;
     }
 }

@@ -89,6 +89,25 @@ namespace Acuanet
             return i;
         }
 
+
+        //metodo para consultar una propiedad Double
+        public double Double(string key, double defaultValue)
+        {
+            double i;
+
+            node = doc.SelectSingleNode(key);
+            try
+            {
+                i = double.Parse(node.InnerText);
+            }
+            catch
+            {
+                return defaultValue;
+            }
+            return i;
+        }
+
+
         //metodo para consulta una propiedad booleana
         public bool Boolean(string key, bool defaultValue)
         {
