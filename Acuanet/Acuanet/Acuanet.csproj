@@ -59,6 +59,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Acuanet.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -81,6 +84,18 @@
     </Compile>
     <Compile Include="FormaListaP.Designer.cs">
       <DependentUpon>FormaListaP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaOleada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaOleada.Designer.cs">
+      <DependentUpon>FormaOleada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBienvenida.Designer.cs">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="GResultados.cs" />
     <Compile Include="InsertaLecturaE2.cs" />
@@ -137,6 +152,9 @@
     <EmbeddedResource Include="formaEditar.resx">
       <DependentUpon>formaEditar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaOleada.resx">
+      <DependentUpon>FormaOleada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaPrincipal.resx">
       <DependentUpon>FormaPrincipal.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaListaP.resx">
       <DependentUpon>FormaListaP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBienvenida.resx">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,6 +300,7 @@
     <None Include="Resources\Nuevo registro1.jpg" />
     <None Include="Resources\lista.jpg" />
     <None Include="Resources\Llegadas.jpg" />
+    <None Include="Resources\WPGK63UP.jpg" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>
