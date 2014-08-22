@@ -6,10 +6,15 @@ using CSL;
 
 namespace Acuanet
 {
-    //Clase para guardar una lectura de un tag en un evento, este posee toda la información necesaria
+    //Clase para registra la lectura y el tiempo estima posicion y velocidad promedio
     class Lectura
     {
-        public TAG tag;
+        public double rssi;
+        public long tiempo;
+        public int milis;
+
+        public double tms;
+        public double dist;
 
     }
 }

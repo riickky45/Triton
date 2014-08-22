@@ -12,24 +12,17 @@ namespace Acuanet
     //esta clase inserta las Lecturas (en formato Lista) del Evento correspondiente
     class InsertaLecturaE
     {
-        private List<Lectura> aLectura;
+        
         private string strConexion;
    
         private TAG tag;
 
-        //constructor
-        public InsertaLecturaE(List<Lectura> aLectura,string strConexion)
-        {
-            this.aLectura = aLectura;
-            this.strConexion=strConexion;
-            
-        }
+      
 
         //constructor
         public InsertaLecturaE(TAG tag, string strConexion)
         {
-            this.tag = tag;
-          
+            this.tag = tag;          
             this.strConexion = strConexion;
         }
 

@@ -7,7 +7,7 @@ namespace Acuanet
     class Resultado
     {
         public int id_participante;
-        
 
+        public List<Lectura> aLec;
     }
 }
