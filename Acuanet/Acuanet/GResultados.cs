@@ -61,6 +61,19 @@ namespace Acuanet
 
         }
 
+        private double estimaDist(double rssi)
+        {
+            double d=0;
+
+
+            return d;
+        }
+
+        private long estimaTC()
+        {
+            return 0;
+        }
+
 
          // destructor libera la memoria y en este caso la conexión a la BD 
         ~GResultados()
