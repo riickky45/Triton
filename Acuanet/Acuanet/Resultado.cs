@@ -13,5 +13,9 @@ namespace Acuanet
         public double rssi_max;
         public double tms_max;
         public double d_min;
+
+        public double tc_meta;
+
+        public bool blecb = true;
     }
 }

@@ -83,6 +83,9 @@ namespace Acuanet
                 //estimación de la distancia por la intensidad de la señal de respuesta
                 auxl.dist = estimaDist(auxl.rssi);
 
+                // se calcula la distnacia horizontal a la meta
+                auxl.a_dist = Math.Sqrt(auxl.dist * auxl.dist - h * h);
+
                 r.aLec.Add(auxl);
             }
             rdr.Close();
@@ -97,6 +100,10 @@ namespace Acuanet
             return Math.Pow(10,(A-rssi)/(10*n));
         }
 
+        //metodo que estima la distancia compensando desalineacion angular debido a la altura en la que se encuentra la antena
+        private double estimaDistCA(double rssi){
+            return Math.Pow(10,(20*Math.Log10(h)+A-rssi)/(10*n+20));
+        }
 
         //metodo que estima tiempo cruce de meta 
         private long estimaTC(Resultado r)
@@ -107,7 +114,7 @@ namespace Acuanet
             return 0;
         }
 
-        //metodo que determina el valor maximo de rssi y el tiempo y la minima distancia
+        //metodo que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
         private void CalculaMax() {
 
             foreach (Resultado r in this.lRes)
@@ -140,12 +147,23 @@ namespace Acuanet
         
         }
 
+        private void MarcaLecturasBOrd()
+        {
 
+        }
+
+
+        //metodo que escribe resultados en la BD
         private void EscribeRes()
         {
 
         }
 
+
+        public void realizaCalculos()
+        {
+
+        }
 
 
          // destructor libera la memoria y en este caso la conexión a la BD 

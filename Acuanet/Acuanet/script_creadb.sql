@@ -48,14 +48,15 @@ CREATE TABLE oleada(
 );
 
 
--- Tabla general de datos
+-- Tabla general de datos de tags leidos por el recptor en competencia
 create table tags(
 	id SERIAL,
 	id_tag varchar(512),
 	fecha_hora datetime,
 	milis int,
 	rssi double,
-	lectura_v bool
+	lectura_v bool,
+	marca int
 );
 
 
