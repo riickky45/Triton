@@ -22,6 +22,7 @@ namespace Acuanet
         //para metros del modelo
         private double A;
         private int n;
+        private double h;
 
 
         public GResultados(int id_oleada)
@@ -34,6 +35,7 @@ namespace Acuanet
 
             A = cxml.Double("ACUANET/MODELO/A", -69.190);
             n = cxml.Int16("ACUANET/MODELO/n", 2);
+            h = cxml.Int16("ACUANET/MODELO/h", 3);
 
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
