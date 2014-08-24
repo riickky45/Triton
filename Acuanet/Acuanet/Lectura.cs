@@ -14,7 +14,7 @@ namespace Acuanet
         public int milis;
 
         public double tms;
-        public double dist;
+        public double d_dist;
         public double a_dist;
 
         public bool bdatoc=false;

@@ -9,7 +9,7 @@ namespace Acuanet
 {
 
     //Esta clase genera la tabla final de resultados realiza todos los calculos necesarios 
-    class GResultados
+    public partial class GResultados
     {
         LecConfigXML cxml = new LecConfigXML("config_oleada.xml");
 
@@ -69,7 +69,7 @@ namespace Acuanet
 
 
         //método que obtiene las lecturas cronologicas de cada competidor
-        private void obtenLecturasxParId(Resultado r)
+        private void obtenLecturasPar(Resultado r)
         {
             string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante+" ORDER BY fecha_hora,milis";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
@@ -88,15 +88,15 @@ namespace Acuanet
                 //estimación de la distancia por la intensidad de la señal de respuesta
                 if (this.bcomp)
                 {
-                    auxl.dist = estimaDistCA(auxl.rssi);
+                    auxl.d_dist = estimaDistCA(auxl.rssi);
                 }
                 else
                 {
-                    auxl.dist = estimaDist(auxl.rssi);
+                    auxl.d_dist = estimaDist(auxl.rssi);
                 }
 
                 // se calcula la distnacia horizontal a la meta
-                auxl.a_dist = Math.Sqrt(auxl.dist * auxl.dist - h * h);
+                auxl.a_dist = Math.Sqrt(auxl.d_dist * auxl.d_dist - h * h);
 
                 r.aLec.Add(auxl);
             }
@@ -121,7 +121,7 @@ namespace Acuanet
 
 
         //metodo que estima tiempo cruce de meta (promedio de todos los tiempos, con buen orden y sin nodos desordenados)
-        private double estimaTC(Resultado r)
+        private void estimaTCM(Resultado r)
         {
             int numlec = r.aLec.Count-1;
             double res = 0;
@@ -139,38 +139,13 @@ namespace Acuanet
                 }
             }
 
-                return res/numlec;
-        }
-
-
-        //metodo que checa el buen orden de los datos, borra items que no aportan buen orden
-        private void marcaLecturasBOrden()
-        {
-            foreach (Resultado res in lRes)
-            {
-                double rssi_b = res.aLec[0].rssi;
-                foreach (Lectura lec in res.aLec)
-                {
-                    if (lec.rssi >= rssi_b)
-                    {
-                        lec.bdatoc = true;
-                        rssi_b = lec.rssi;
-                    }
-                    else
-                    {
-                        res.aLec.Remove(lec);
-                    }
-                }
-
-            }
-
+            r.tc_meta=(decimal) res/numlec;
         }
 
 
         //metodo que escribe resultados en la BD
-        private void EscribeRes()
+        private void escribeRes()
         {
-
             foreach (Resultado r in lRes)
             {
                 string sql = "INSERT INTO resultado (id_participante,tiempo_meta) VALUES (" + r.id_participante + ",'" + r.tc_meta + "')";
@@ -178,9 +153,6 @@ namespace Acuanet
                 cmd.ExecuteNonQuery();
             }
 
-
-            
-            
         }
 
 
@@ -188,7 +160,6 @@ namespace Acuanet
         {
 
         }
-
 
 
         //metodo que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
@@ -225,9 +196,25 @@ namespace Acuanet
         }
 
 
+        //metodo principal que realiza todos los calculos para cada categoria
         public void realizaCalculos()
         {
+            this.obtenParDistxOleada();
+            foreach (Resultado r in lRes)
+            {
+                this.obtenLecturasPar(r);
+                this.marcaLecturasBOrden(r);
+                if (r.cantidad_aLec == 1)
+                {
+                    this.estimaTCM2(r);
+                }
+                else
+                {
+                    this.estimaTCM(r);
+                }
+            }
 
+            this.escribeRes();
         }
 
 

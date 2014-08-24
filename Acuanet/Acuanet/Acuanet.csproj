@@ -82,6 +82,7 @@
     <Compile Include="FormaListaP.Designer.cs">
       <DependentUpon>FormaListaP.cs</DependentUpon>
     </Compile>
+    <Compile Include="GResultadosProb.cs" />
     <Compile Include="GResultados.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
