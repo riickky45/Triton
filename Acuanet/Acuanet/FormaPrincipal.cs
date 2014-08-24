@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
+
 
 namespace Acuanet
 {
@@ -16,14 +18,15 @@ namespace Acuanet
 
         public FormaPrincipal()
         {
+            
             InitializeComponent();
+            
         }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
-            System.Threading.Thread.Sleep(30000);
-            this.Cursor = Cursors.Default;
             FormaRegistro miForm = new FormaRegistro();
             miForm.Show();
 
