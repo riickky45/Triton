@@ -18,3 +18,4 @@ C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.ex
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache
