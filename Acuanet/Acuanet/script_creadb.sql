@@ -35,7 +35,8 @@ create table resultado(
 	fecha_hora_ini datetime,
 	fecha_hora_fin datetime,
 	milis_ini int,
-	milis_fin int
+	milis_fin int,
+	tiempo_meta NUMERIC(21,10)
 );
 
 -- Tabla definicion de Oleada
