@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace Acuanet
 {
@@ -38,7 +40,7 @@ namespace Acuanet
             if (reader.connect())
             {
                 setupReader();
-                reader_status = reader.getReaderStatus();
+               
             }
             else
             {
@@ -66,6 +68,25 @@ namespace Acuanet
             return false;
         }
 
+
+        //metodo que registra la oleada punto de partida para el evento
+        public void registraOleada(int id_categoria)
+        {
+            reader_status = reader.getReaderStatus();
+
+            DateTime dt = new DateTime();
+
+            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria
+                + ",'" + dt.ToLocalTime() + "'," + dt.ToLocalTime().Millisecond + ",'" + reader_status.UTC_Time.ToLocalTime() + "'," + reader_status.UTC_Time.ToLocalTime().Millisecond+ ");";
+            MySqlConnection dbConn = new MySqlConnection(strConexion);
+            dbConn.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
+
+            dbConn.Close();
+            dbConn = null;
+
+        }
 
         //configurador del lector y la antena 
         #region Configurador Reader

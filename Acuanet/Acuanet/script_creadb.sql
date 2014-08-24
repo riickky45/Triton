@@ -42,10 +42,11 @@ create table resultado(
 -- Tabla definicion de Oleada
 CREATE TABLE oleada(
 	id SERIAL,
-	nombre varchar(1024),
+	id_categoria int,
 	fecha_hora_ini_local datetime,
 	fecha_hora_ini_antena datetime,
-	milis_ini int
+	milis_ini_local int,
+	milis_ini_antena int
 );
 
 
