@@ -104,7 +104,7 @@
     </Compile>
     <Compile Include="GResultadosProb.cs" />
     <Compile Include="GResultados.cs" />
-    <Compile Include="InsertaLecturaE2.cs" />
+    
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
     <Compile Include="ModOleada.cs" />
@@ -120,7 +120,7 @@
     <Compile Include="FormaPLlegadas.Designer.cs">
       <DependentUpon>FormaPLlegadas.cs</DependentUpon>
     </Compile>
-    <Compile Include="OleadaR2.cs" />
+    
     <Compile Include="Participante.cs" />
     <Compile Include="FormaPrincipal.cs">
       <SubType>Form</SubType>
@@ -186,6 +186,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
+      </EmbeddedResource> 
     <EmbeddedResource Include="FormaAvanceRes.resx">
       <DependentUpon>FormaAvanceRes.cs</DependentUpon>
     </EmbeddedResource>
