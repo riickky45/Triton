@@ -90,6 +90,8 @@ namespace Acuanet
         {
             oleada.iniciaCaptura();
             this.btnOleada.Text = "PARALO";
+            FormaOleada formaO = new FormaOleada();
+            formaO.Show();
         }
 
        

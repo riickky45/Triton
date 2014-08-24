@@ -15,7 +15,7 @@
     <AdditionalMemoryBank>Bank0</AdditionalMemoryBank>
     <DuplicationElimination>
       <Method>Autonomous Time Trigger</Method>
-      <Time>100</Time>
+      <Time>500</Time>
       <AntennaPortScheme>false</AntennaPortScheme>
     </DuplicationElimination>
     <ReceiveSensitivity>Maximum sensitivity</ReceiveSensitivity>
@@ -76,5 +76,12 @@
     <SBD_usuario>root</SBD_usuario>
     <SBD_passwd></SBD_passwd>
   </BD>
+
+  <MODELO>
+    <A>-69.90794979</A>
+    <n>2</n>
+    <h>3</h>
+    <compensado>True</compensado>
+  </MODELO>
 
 </ACUANET>

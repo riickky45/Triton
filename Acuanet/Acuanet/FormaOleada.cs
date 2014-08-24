@@ -19,5 +19,8 @@ namespace Acuanet
         {
             label1.Text = DateTime.Now.ToLongTimeString();
         }
+
+        
+
     }
 }
