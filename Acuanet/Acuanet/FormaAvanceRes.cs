@@ -28,33 +28,31 @@ namespace Acuanet
         }
 
 
-        delegate void actualizaPantalla_Delegate();
+        delegate void actualizaPantalla_Delegate(string s);
 
         // metodo para actualizar la pantalla 
-        private void actualizaPantalla()
+        private void actualizaPantalla(string s)
         {
 
             if (InvokeRequired)
             {
                 actualizaPantalla_Delegate task = new actualizaPantalla_Delegate(actualizaPantalla);
-                BeginInvoke(task, new object[] { });
+                BeginInvoke(task, new object[] { s });
             }
             else
             {
                 lock (guiLock)
                 {
-                   //aqui se hace el repintado del label
+                    this.lbl_desct.Text = s;
                 }
             }
         }
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(1000);
+            
                 backgroundWorker1.ReportProgress(i);
-            }
+            
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, System.ComponentModel.ProgressChangedEventArgs e)
@@ -65,7 +63,12 @@ namespace Acuanet
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
-           // this.pgbarRes.Maximum=
+
+            gres.obtenParDistxOleada();
+
+            this.pgbarRes.Maximum = gres.tot_trabajo;
+            this.pgbarRes.Step = 1;
+            this.pgbarRes.Value = gres.rea_trabajo;
 
             backgroundWorker1.RunWorkerAsync();
 

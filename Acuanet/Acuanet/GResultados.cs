@@ -57,7 +57,7 @@ namespace Acuanet
 
 
         //método que obtiene a los participantes de cada oleada distintos, que previamente poseen un registro en la BD
-        private int obtenParDistxOleada()
+        public int obtenParDistxOleada()
         {
             this.accion_trabajo = "Obtenenmos participantes";
 
@@ -217,8 +217,6 @@ namespace Acuanet
         //metodo principal que realiza todos los calculos para cada categoria
         public void realizaCalculos()
         {
-            this.obtenParDistxOleada();
-
 
             foreach (Resultado r in lRes)
             {
@@ -228,12 +226,9 @@ namespace Acuanet
                     this.estimaTCM(r);
                 else
                     this.estimaTCM2(r);
-
             }
 
-
             this.escribeRes();
-
         }
 
 
