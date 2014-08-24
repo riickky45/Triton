@@ -7,11 +7,11 @@ namespace Acuanet
     partial class GResultados
     {
         //metodo que checa el buen orden de los datos, borra items que no aportan buen orden
-        private void marcaLecturasBOrden(Resultado res)
+        private void marcaLecturasBOrden(Resultado r)
         {
 
-            double rssi_b = res.aLec[0].rssi;
-            foreach (Lectura lec in res.aLec)
+            double rssi_b = r.aLec[0].rssi;
+            foreach (Lectura lec in r.aLec)
             {
                 if (lec.rssi >= rssi_b)
                 {
@@ -20,12 +20,12 @@ namespace Acuanet
                 }
                 else
                 {
-                    res.aLec.Remove(lec);
+                    r.aLec.Remove(lec);
                 }
             }
 
-            res.cantidad_aLec = res.aLec.Count;
-
+            r.cantidad_aLec = r.aLec.Count;
+            this.rea_trabajo++;
 
         }
 
@@ -34,6 +34,7 @@ namespace Acuanet
         {
             Lectura lec = r.aLec[0];
             r.tc_meta = (decimal)(lec.tiempo + lec.a_dist / this.obtenVelMasCercano(r));
+            this.rea_trabajo++;
 
         }
 
@@ -71,6 +72,7 @@ namespace Acuanet
 
             return vel;
         }
+
 
         //método que obtiene la minima distancia generalizada entre un Listado de lecturas y una lectura
         private double[] obtenDgV(List<Lectura> alec, Lectura lec)
@@ -116,11 +118,13 @@ namespace Acuanet
             return res;
         }
 
+        //metodo que calcula la Distancia genralizada entre 2 lecturas
         private double obtenDg(Lectura lref1, Lectura lref2)
         {
             return Math.Pow(lref1.d_dist - lref2.d_dist, 2) + Math.Pow(lref1.tiempo - lref2.tiempo, 2);
         }
 
+        //metodo que calcula la velocidad promedio del intervalo entre 2 lecturas
         private double obtenVel(Lectura lref1, Lectura lref2)
         {
             return Math.Abs((lref1.a_dist - lref2.a_dist) / (lref1.tiempo - lref2.tiempo));

@@ -13,9 +13,9 @@ namespace Acuanet
     {
         LecConfigXML cxml = new LecConfigXML("config_oleada.xml");
 
-        MySqlConnection dbConn=null;
+        MySqlConnection dbConn = null;
         List<Resultado> lRes = new List<Resultado>();
-       
+
 
         private string strConexion;
 
@@ -25,9 +25,15 @@ namespace Acuanet
         private double h;
         private bool bcomp;
 
+        //parametros para calcular el avance relativo e informar a la interfaz sobre su avance
+        public string accion_trabajo;
+        public int tot_trabajo;
+        public int total_trabajo = 5;
+        public int rea_trabajo;
+
 
         //constructor
-        public GResultados(int id_oleada)
+        public GResultados()
         {
             strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
                + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
@@ -42,12 +48,19 @@ namespace Acuanet
 
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
+
+            //configuracion para reportar avnace del trabajo
+            this.accion_trabajo = "Conexión a BD";
+            this.tot_trabajo = 0;
+            this.rea_trabajo = 0;
         }
 
 
         //método que obtiene a los participantes de cada oleada distintos, que previamente poseen un registro en la BD
         private int obtenParDistxOleada()
         {
+            this.accion_trabajo = "Obtenenmos participantes";
+
             string sql = "SELECT DISTINCT participante.id,id_categoria,id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
@@ -60,10 +73,10 @@ namespace Acuanet
                 res.id_tag = rdr.GetString(2);
 
                 lRes.Add(res);
-
+                this.rea_trabajo++;
             }
             rdr.Close();
-
+            this.tot_trabajo = this.total_trabajo * lRes.Count;
             return lRes.Count;
         }
 
@@ -71,7 +84,7 @@ namespace Acuanet
         //método que obtiene las lecturas cronologicas de cada competidor
         private void obtenLecturasPar(Resultado r)
         {
-            string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante+" ORDER BY fecha_hora,milis";
+            string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante + " ORDER BY fecha_hora,milis";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -103,54 +116,58 @@ namespace Acuanet
             rdr.Close();
 
             this.CalculaMax();
+            this.rea_trabajo++;
         }
 
 
         //método que obtiene la distancia estimada de acuerdo a la intensidad de la respuesta
         private double estimaDist(double rssi)
-        {            
-            return Math.Pow(10,(A-rssi)/(10*n));
+        {
+            return Math.Pow(10, (A - rssi) / (10 * n));
         }
 
 
         //metodo que estima la distancia compensando desalineacion angular debido a la altura en la que se encuentra la antena
         private double estimaDistCA(double rssi)
         {
-            return Math.Pow(10,(20*Math.Log10(h)+A-rssi)/(10*n+20));
+            return Math.Pow(10, (20 * Math.Log10(h) + A - rssi) / (10 * n + 20));
         }
 
 
         //metodo que estima tiempo cruce de meta (promedio de todos los tiempos, con buen orden y sin nodos desordenados)
         private void estimaTCM(Resultado r)
         {
-            int numlec = r.aLec.Count-1;
+            int numlec = r.aLec.Count - 1;
             double res = 0;
 
             for (int i = 0; i < numlec; i++)
             {
                 Lectura leci = r.aLec[i];
                 if (leci.bdatoc == true)
-                {                                  
-                        Lectura lecj = r.aLec[i+1];
-                        if (lecj.bdatoc == true)
-                        {
-                            res +=lecj.tms+ Math.Abs((lecj.tms - leci.tms) * lecj.a_dist / (lecj.a_dist - leci.a_dist));
-                        }                    
+                {
+                    Lectura lecj = r.aLec[i + 1];
+                    if (lecj.bdatoc == true)
+                    {
+                        res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist / (lecj.a_dist - leci.a_dist));
+                    }
                 }
             }
 
-            r.tc_meta=(decimal) res/numlec;
+            r.tc_meta = (decimal)res / numlec;
+            this.rea_trabajo++;
         }
 
 
         //metodo que escribe resultados en la BD
         private void escribeRes()
         {
+            this.accion_trabajo = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
                 string sql = "INSERT INTO resultado (id_participante,tiempo_meta) VALUES (" + r.id_participante + ",'" + r.tc_meta + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
+                this.rea_trabajo++;
             }
 
         }
@@ -163,7 +180,8 @@ namespace Acuanet
 
 
         //metodo que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
-        private void CalculaMax() {
+        private void CalculaMax()
+        {
 
             foreach (Resultado r in this.lRes)
             {
@@ -192,7 +210,7 @@ namespace Acuanet
                 r.tms_max = tms_max;
                 r.d_min = estimaDist(r.rssi_max);
             }
-        
+
         }
 
 
@@ -200,28 +218,29 @@ namespace Acuanet
         public void realizaCalculos()
         {
             this.obtenParDistxOleada();
+
+
             foreach (Resultado r in lRes)
             {
                 this.obtenLecturasPar(r);
                 this.marcaLecturasBOrden(r);
-                if (r.cantidad_aLec == 1)
-                {
-                    this.estimaTCM2(r);
-                }
-                else
-                {
+                if (r.cantidad_aLec > 1)
                     this.estimaTCM(r);
-                }
+                else
+                    this.estimaTCM2(r);
+
             }
 
+
             this.escribeRes();
+
         }
 
 
-         // destructor libera la memoria y en este caso la conexión a la BD 
+        // destructor libera la memoria y en este caso la conexión a la BD 
         ~GResultados()
         {
-            if(this.dbConn!=null)dbConn.Close();
+            if (this.dbConn != null) dbConn.Close();
             dbConn = null;
         }
 

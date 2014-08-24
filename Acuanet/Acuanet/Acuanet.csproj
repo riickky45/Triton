@@ -82,6 +82,12 @@
     <Compile Include="FormaListaP.Designer.cs">
       <DependentUpon>FormaListaP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaAvanceRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAvanceRes.Designer.cs">
+      <DependentUpon>FormaAvanceRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="GResultadosProb.cs" />
     <Compile Include="GResultados.cs" />
     <Compile Include="LectorLL.cs" />
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaListaP.resx">
       <DependentUpon>FormaListaP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAvanceRes.resx">
+      <DependentUpon>FormaAvanceRes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
