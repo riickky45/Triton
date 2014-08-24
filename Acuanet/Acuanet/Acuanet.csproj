@@ -104,7 +104,6 @@
     </Compile>
     <Compile Include="GResultadosProb.cs" />
     <Compile Include="GResultados.cs" />
-    
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
     <Compile Include="ModOleada.cs" />
@@ -120,7 +119,6 @@
     <Compile Include="FormaPLlegadas.Designer.cs">
       <DependentUpon>FormaPLlegadas.cs</DependentUpon>
     </Compile>
-    
     <Compile Include="Participante.cs" />
     <Compile Include="FormaPrincipal.cs">
       <SubType>Form</SubType>
@@ -186,7 +184,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
-      </EmbeddedResource> 
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaAvanceRes.resx">
       <DependentUpon>FormaAvanceRes.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +308,8 @@
     <None Include="Resources\lista.jpg" />
     <None Include="Resources\Llegadas.jpg" />
     <None Include="Resources\WPGK63UP.jpg" />
+    <None Include="Resources\pause-normal-red_32x32-32.gif" />
+    <None Include="Resources\play-hot_32x32-32.gif" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>
