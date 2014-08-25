@@ -82,41 +82,46 @@ namespace Acuanet
 
 
         //método que obtiene las lecturas cronologicas de cada competidor
-        private void obtenLecturasPar(Resultado r)
+        public void obtenLecturasPar()
         {
-            string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante + " ORDER BY fecha_hora,milis";
-            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
-            MySqlDataReader rdr = cmd.ExecuteReader();
 
-            while (rdr.Read())
+            foreach (Resultado r in lRes)
             {
-                Lectura auxl = new Lectura();
-                auxl.rssi = System.Convert.ToDouble(rdr.GetString(0));
-                auxl.tiempo = System.Convert.ToInt64(rdr.GetString(1));
-                auxl.milis = System.Convert.ToInt32(rdr.GetString(2));
 
-                //tiempo en segundos incluyendo los milisegundos
-                auxl.tms = auxl.tiempo + auxl.milis / 1000.00;
+                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante + " ORDER BY fecha_hora,milis";
+                MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
 
-                //estimación de la distancia por la intensidad de la señal de respuesta
-                if (this.bcomp)
+                while (rdr.Read())
                 {
-                    auxl.d_dist = estimaDistCA(auxl.rssi);
-                }
-                else
-                {
-                    auxl.d_dist = estimaDist(auxl.rssi);
-                }
+                    Lectura auxl = new Lectura();
+                    auxl.rssi = System.Convert.ToDouble(rdr.GetString(0));
+                    auxl.tiempo = System.Convert.ToInt64(rdr.GetString(1));
+                    auxl.milis = System.Convert.ToInt32(rdr.GetString(2));
 
-                // se calcula la distnacia horizontal a la meta
-                auxl.a_dist = Math.Sqrt(auxl.d_dist * auxl.d_dist - h * h);
+                    //tiempo en segundos incluyendo los milisegundos
+                    auxl.tms = auxl.tiempo + auxl.milis / 1000.00;
 
-                r.aLec.Add(auxl);
+                    //estimación de la distancia por la intensidad de la señal de respuesta
+                    if (this.bcomp)
+                    {
+                        auxl.d_dist = estimaDistCA(auxl.rssi);
+                    }
+                    else
+                    {
+                        auxl.d_dist = estimaDist(auxl.rssi);
+                    }
+
+                    // se calcula la distnacia horizontal a la meta
+                    auxl.a_dist = Math.Sqrt(auxl.d_dist * auxl.d_dist - h * h);
+
+                    r.aLec.Add(auxl);
+                }
+                rdr.Close();
+
+                //this.CalculaMax();
+                this.rea_trabajo++;
             }
-            rdr.Close();
-
-            this.CalculaMax();
-            this.rea_trabajo++;
         }
 
 
@@ -159,7 +164,7 @@ namespace Acuanet
 
 
         //metodo que escribe resultados en la BD
-        private void escribeRes()
+        public void escribeRes()
         {
             this.accion_trabajo = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
@@ -215,20 +220,17 @@ namespace Acuanet
 
 
         //metodo principal que realiza todos los calculos para cada categoria
-        public void realizaCalculos()
+        public void estimaTCTodos()
         {
-
+            this.accion_trabajo = "Calculando TCM";
             foreach (Resultado r in lRes)
-            {
-                this.obtenLecturasPar(r);
-                this.marcaLecturasBOrden(r);
+            {                                
                 if (r.cantidad_aLec > 1)
                     this.estimaTCM(r);
                 else
                     this.estimaTCM2(r);
             }
 
-            this.escribeRes();
         }
 
 
