@@ -74,6 +74,8 @@ namespace Acuanet
 
         private void button11_Click(object sender, EventArgs e)
         {
+            FormaAvanceRes formaRes = new FormaAvanceRes();
+            formaRes.Show();
 
         }
 

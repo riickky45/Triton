@@ -274,14 +274,13 @@
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Image = global::Acuanet.Properties.Resources.magnifier;
+            this.button11.Image = global::Acuanet.Properties.Resources.Clipboard_32x32_32;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.Location = new System.Drawing.Point(24, 19);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(168, 39);
             this.button11.TabIndex = 1;
-            this.button11.Text = "Revisar Status ";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button11.Text = "Resultados";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 

@@ -121,12 +121,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(351, 87);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Acuanet.Properties.Resources.Sign_01_32x32_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(334, 78);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(131, 40);
             this.button1.TabIndex = 6;
             this.button1.Text = "Arrancar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormaOleada
@@ -135,7 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(438, 212);
+            this.ClientSize = new System.Drawing.Size(477, 223);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_pause);
             this.Controls.Add(this.btn_play);

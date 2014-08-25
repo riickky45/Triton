@@ -73,5 +73,14 @@ namespace Acuanet
             backgroundWorker1.RunWorkerAsync();
 
         }
+
+        private void btn_tabres_Click(object sender, EventArgs e)
+        {
+            FormaResultados FormaResul = new FormaResultados();
+            FormaResul.Show();
+
+
+
+        }
     }
 }

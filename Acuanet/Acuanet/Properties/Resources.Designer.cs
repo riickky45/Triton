@@ -153,6 +153,36 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clipboard_32x32_32 {
+            get {
+                object obj = ResourceManager.GetObject("Clipboard_32x32-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clipboard_48x48_32 {
+            get {
+                object obj = ResourceManager.GetObject("Clipboard_48x48-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clipboard_48x48_321 {
+            get {
+                object obj = ResourceManager.GetObject("Clipboard_48x48-321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap computer_add {
             get {
                 object obj = ResourceManager.GetObject("computer_add", resourceCulture);
@@ -186,6 +216,16 @@ namespace Acuanet.Properties {
         internal static System.Drawing.Bitmap descarga2 {
             get {
                 object obj = ResourceManager.GetObject("descarga2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Desktop_48x48_32 {
+            get {
+                object obj = ResourceManager.GetObject("Desktop_48x48-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,6 +413,16 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap play_disabled_48x48_32 {
+            get {
+                object obj = ResourceManager.GetObject("play-disabled_48x48-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_hot_32x32_32 {
             get {
                 object obj = ResourceManager.GetObject("play-hot_32x32-32", resourceCulture);
@@ -416,6 +466,26 @@ namespace Acuanet.Properties {
         internal static System.Drawing.Bitmap search_32x32_32 {
             get {
                 object obj = ResourceManager.GetObject("search_32x32-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_01_32x32_32 {
+            get {
+                object obj = ResourceManager.GetObject("Sign 01_32x32-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_08_48x48_32 {
+            get {
+                object obj = ResourceManager.GetObject("Sign 08_48x48-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
