@@ -5155,3 +5155,5 @@
 2014-08-20 18:03:57|<?xml version="1.0"?>
 <CSL><Command>startInventory</Command><Ack>OK:</Ack></CSL>
 
+25/08/2014 05:08:03 p.m.|http://192.168.25.248/API?command=isOnline&session_id=
+

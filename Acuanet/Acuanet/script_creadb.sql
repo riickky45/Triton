@@ -30,13 +30,28 @@ CREATE TABLE categoria(
 -- Tabla de resultados finales
 create table resultado(
 	id SERIAL,
+	posicion int,
 	id_participante int,
 	tiempo varchar(256),
 	fecha_hora_ini datetime,
 	fecha_hora_fin datetime,
 	milis_ini int,
 	milis_fin int,
-	tiempo_meta NUMERIC(21,10)
+	tiempo_meta NUMERIC(23,10)
+);
+
+
+create table resultado_final(
+	id SERIAL,
+	posicion int,
+	id_participante int,
+	tiempo varchar(256),
+	fecha_hora_ini datetime,
+	fecha_hora_fin datetime,
+	milis_ini int,
+	milis_fin int,
+	tiempo_meta NUMERIC(23,10)
+
 );
 
 -- Tabla definicion de Oleada
