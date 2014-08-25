@@ -26,7 +26,7 @@ namespace Acuanet
                 }
 
                 r.cantidad_aLec = r.aLec.Count;
-                this.rea_trabajo++;
+                this.trabajo_rea++;
             }
         }
 
@@ -36,7 +36,7 @@ namespace Acuanet
         {
             Lectura lec = r.aLec[0];
             r.tc_meta = (decimal)(lec.tiempo + lec.a_dist / this.obtenVelMasCercano(r));
-            this.rea_trabajo++;
+            this.trabajo_rea++;
 
         }
 

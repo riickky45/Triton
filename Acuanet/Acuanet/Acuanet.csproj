@@ -116,6 +116,7 @@
     </Compile>
     <Compile Include="GResultadosProb.cs" />
     <Compile Include="GResultados.cs" />
+    <Compile Include="GResultadosTablaHTML.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
     <Compile Include="OleadaR.cs" />

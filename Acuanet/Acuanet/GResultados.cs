@@ -26,10 +26,10 @@ namespace Acuanet
         private bool bcomp;
 
         //parametros para calcular el avance relativo e informar a la interfaz sobre su avance
-        public string accion_trabajo;
-        public int tot_trabajo;
-        public int total_trabajo = 5;
-        public int rea_trabajo;
+        public string trabajo_accion;
+        public int trabajo_tot;
+        public int trabajo_tot_factor = 5;
+        public int trabajo_rea;
 
 
         //constructor
@@ -50,16 +50,16 @@ namespace Acuanet
             dbConn.Open();
 
             //configuracion para reportar avnace del trabajo
-            this.accion_trabajo = "Conexión a BD";
-            this.tot_trabajo = 0;
-            this.rea_trabajo = 0;
+            this.trabajo_accion = "Conexión a BD";
+            this.trabajo_tot = 0;
+            this.trabajo_rea = 0;
         }
 
 
         //método que obtiene a los participantes de cada oleada distintos, que previamente poseen un registro en la BD
         public int obtenParDistxOleada()
         {
-            this.accion_trabajo = "Obtenenmos participantes";
+            this.trabajo_accion = "Obtenenmos participantes";
 
             string sql = "SELECT DISTINCT participante.id,id_categoria,id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
@@ -73,10 +73,10 @@ namespace Acuanet
                 res.id_tag = rdr.GetString(2);
 
                 lRes.Add(res);
-                this.rea_trabajo++;
+                this.trabajo_rea++;
             }
             rdr.Close();
-            this.tot_trabajo = this.total_trabajo * lRes.Count;
+            this.trabajo_tot = this.trabajo_tot_factor * lRes.Count;
             return lRes.Count;
         }
 
@@ -112,7 +112,7 @@ namespace Acuanet
                         auxl.d_dist = estimaDist(auxl.rssi);
                     }
 
-                    // se calcula la distnacia horizontal a la meta
+                    // se calcula la distancia horizontal a la meta
                     auxl.a_dist = Math.Sqrt(auxl.d_dist * auxl.d_dist - h * h);
 
                     r.aLec.Add(auxl);
@@ -120,7 +120,7 @@ namespace Acuanet
                 rdr.Close();
 
                 //this.CalculaMax();
-                this.rea_trabajo++;
+                this.trabajo_rea++;
             }
         }
 
@@ -159,20 +159,20 @@ namespace Acuanet
             }
 
             r.tc_meta = (decimal)res / numlec;
-            this.rea_trabajo++;
+            this.trabajo_rea++;
         }
 
 
         //metodo que escribe resultados en la BD
         public void escribeRes()
         {
-            this.accion_trabajo = "Escribiendo en BD resultados";
+            this.trabajo_accion = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
                 string sql = "INSERT INTO resultado (id_participante,tiempo_meta) VALUES (" + r.id_participante + ",'" + r.tc_meta + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
-                this.rea_trabajo++;
+                this.trabajo_rea++;
             }
 
         }
@@ -180,7 +180,9 @@ namespace Acuanet
 
         public void borraResP()
         {
-
+            string sql = "DELETE FROM resultado;";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
         }
 
 
@@ -222,7 +224,7 @@ namespace Acuanet
         //metodo principal que realiza todos los calculos para cada categoria
         public void estimaTCTodos()
         {
-            this.accion_trabajo = "Calculando TCM";
+            this.trabajo_accion = "Calculando TCM";
             foreach (Resultado r in lRes)
             {                                
                 if (r.cantidad_aLec > 1)

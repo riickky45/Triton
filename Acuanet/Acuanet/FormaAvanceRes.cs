@@ -51,24 +51,37 @@ namespace Acuanet
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
             
-               // backgroundWorker1.ReportProgress(i);
+               backgroundWorker1.ReportProgress(gres.trabajo_rea);
+
+               gres.obtenLecturasPar();
+               backgroundWorker1.ReportProgress(gres.trabajo_rea);
+
+               gres.marcaLecturasBOrden();
+               backgroundWorker1.ReportProgress(gres.trabajo_rea);
+
+               gres.estimaTCTodos();
+               backgroundWorker1.ReportProgress(gres.trabajo_rea);
+
+               gres.escribeRes();
+               backgroundWorker1.ReportProgress(gres.trabajo_rea);
             
         }
 
+        //
         private void backgroundWorker1_ProgressChanged(object sender, System.ComponentModel.ProgressChangedEventArgs e)
         {
             this.pgbarRes.Value = e.ProgressPercentage;
         }
 
-
+        //
         private void btn_inicio_Click(object sender, EventArgs e)
         {
 
             gres.obtenParDistxOleada();
 
-            this.pgbarRes.Maximum = gres.tot_trabajo;
+            this.pgbarRes.Maximum = gres.trabajo_tot;
             this.pgbarRes.Step = 1;
-            this.pgbarRes.Value = gres.rea_trabajo;
+            this.pgbarRes.Value = 0;
 
             backgroundWorker1.RunWorkerAsync();
 
@@ -78,8 +91,6 @@ namespace Acuanet
         {
             FormaResultados FormaResul = new FormaResultados();
             FormaResul.Show();
-
-
 
         }
     }
