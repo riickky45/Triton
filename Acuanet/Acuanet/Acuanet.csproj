@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categoria.cs" />
+    <Compile Include="ClipboardHelper.cs" />
     <Compile Include="formaEditar.cs">
       <SubType>Form</SubType>
     </Compile>
