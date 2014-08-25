@@ -36,6 +36,7 @@
             this.lbl_hora = new System.Windows.Forms.Label();
             this.btn_pause = new System.Windows.Forms.Button();
             this.btn_play = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -99,6 +100,7 @@
             this.btn_pause.Text = "Pausar Oleada";
             this.btn_pause.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_pause.UseVisualStyleBackColor = false;
+            this.btn_pause.Click += new System.EventHandler(this.btn_pause_Click);
             // 
             // btn_play
             // 
@@ -115,6 +117,17 @@
             this.btn_play.Text = "Iniciar Oleada";
             this.btn_play.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_play.UseVisualStyleBackColor = false;
+            this.btn_play.Click += new System.EventHandler(this.btn_play_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(351, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Arrancar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormaOleada
             // 
@@ -123,6 +136,7 @@
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(438, 212);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_pause);
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.lbl_hora);
@@ -145,5 +159,6 @@
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Button btn_pause;
+        private System.Windows.Forms.Button button1;
     }
 }

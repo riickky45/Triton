@@ -206,10 +206,7 @@ namespace Acuanet
             {
                 actualizaTag((TAG)e.rxTag);
             }
-            else
-            {
-
-            }
+           
         }
 
         delegate void actualizaTag_Delegate(TAG tag);
@@ -257,12 +254,23 @@ namespace Acuanet
             //se asignana los valores 
             par.nombre = text_nombre.Text;
             par.snumero = txt_numero.Text;
-            par.id_categoria = this.cb_categoria.SelectedIndex;
+           // par.id_categoria = System.Convert.ToInt16(this.cb_categoria.ValueMember);
+           
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
             par.email = txt_email.Text;
             par.prueba = txt_prueba.Text;
             par.id_tag = sTag;
+
+            par.sexo = "F";
+            if (this.radioM.Checked)
+            {
+                par.sexo = "M";
+            }
+           
+            par.pais = tb_pais.Text;
+
+
             
 
             //se prepara la conexion a la BD

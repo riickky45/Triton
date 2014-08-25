@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-
+using System.Windows.Forms;
 using System.Data;
 
 
@@ -87,9 +87,9 @@ namespace Acuanet
 
             if (p.nombre.Length == 0) return false;
 
-            string sql = "INSERT INTO participante (nombre,numero,prueba,club,direccion,id_tag,pais,sexo,email) VALUES ('" + 
-                p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "','"+p.email+"')";
-            System.Console.WriteLine(sql);
+            string sql = "INSERT INTO participante (nombre,numero,prueba,club,direccion,id_tag,pais,sexo,email,id_categoria) VALUES ('" +
+                p.nombre + "','" + p.snumero + "','" + p.prueba + "','" + p.sclub + "','" + p.direcc + "','" + p.id_tag + "','" + p.pais + "','" + p.sexo + "','" + p.email + "',"+p.id_categoria+")";
+            //MessageBox.Show(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
           int res=  cmd.ExecuteNonQuery();
           return (res == 1) ? true : false;

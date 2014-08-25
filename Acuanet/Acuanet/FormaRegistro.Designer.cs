@@ -44,11 +44,13 @@
             this.cb_categoria = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelCodigoP = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioF = new System.Windows.Forms.RadioButton();
+            this.radioM = new System.Windows.Forms.RadioButton();
             this.btnAgregarR = new System.Windows.Forms.Button();
             this.btnEncenderA = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tb_pais = new System.Windows.Forms.TextBox();
+            this.pais = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +73,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Numero :";
+            this.label2.Text = "Número :";
             // 
             // label3
             // 
@@ -81,7 +83,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Categoria :";
+            this.label3.Text = "Categoría :";
             // 
             // label4
             // 
@@ -177,9 +179,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.pais);
+            this.groupBox1.Controls.Add(this.tb_pais);
             this.groupBox1.Controls.Add(this.labelCodigoP);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioF);
+            this.groupBox1.Controls.Add(this.radioM);
             this.groupBox1.Controls.Add(this.cb_categoria);
             this.groupBox1.Controls.Add(this.txt_direccion);
             this.groupBox1.Controls.Add(this.txt_email);
@@ -196,7 +200,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 55);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(401, 313);
+            this.groupBox1.Size = new System.Drawing.Size(401, 328);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
@@ -206,33 +210,33 @@
             this.labelCodigoP.AutoSize = true;
             this.labelCodigoP.BackColor = System.Drawing.Color.Transparent;
             this.labelCodigoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCodigoP.Location = new System.Drawing.Point(106, 257);
+            this.labelCodigoP.Location = new System.Drawing.Point(115, 277);
             this.labelCodigoP.Name = "labelCodigoP";
             this.labelCodigoP.Size = new System.Drawing.Size(185, 24);
             this.labelCodigoP.TabIndex = 30;
             this.labelCodigoP.Text = "Código de la Pulsera";
             // 
-            // radioButton2
+            // radioF
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(321, 92);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(31, 17);
-            this.radioButton2.TabIndex = 19;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "F";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioF.AutoSize = true;
+            this.radioF.Location = new System.Drawing.Point(321, 92);
+            this.radioF.Name = "radioF";
+            this.radioF.Size = new System.Drawing.Size(31, 17);
+            this.radioF.TabIndex = 19;
+            this.radioF.Text = "F";
+            this.radioF.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioM
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(269, 92);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(34, 17);
-            this.radioButton1.TabIndex = 18;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "M";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioM.AutoSize = true;
+            this.radioM.Checked = true;
+            this.radioM.Location = new System.Drawing.Point(269, 92);
+            this.radioM.Name = "radioM";
+            this.radioM.Size = new System.Drawing.Size(34, 17);
+            this.radioM.TabIndex = 18;
+            this.radioM.TabStop = true;
+            this.radioM.Text = "M";
+            this.radioM.UseVisualStyleBackColor = true;
             // 
             // btnAgregarR
             // 
@@ -274,6 +278,23 @@
             this.pictureBox1.Size = new System.Drawing.Size(347, 50);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            // 
+            // tb_pais
+            // 
+            this.tb_pais.Location = new System.Drawing.Point(93, 234);
+            this.tb_pais.Name = "tb_pais";
+            this.tb_pais.Size = new System.Drawing.Size(264, 20);
+            this.tb_pais.TabIndex = 31;
+            // 
+            // pais
+            // 
+            this.pais.AutoSize = true;
+            this.pais.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pais.Location = new System.Drawing.Point(46, 234);
+            this.pais.Name = "pais";
+            this.pais.Size = new System.Drawing.Size(41, 17);
+            this.pais.TabIndex = 32;
+            this.pais.Text = "País :";
             // 
             // FormaRegistro
             // 
@@ -317,8 +338,10 @@
         private System.Windows.Forms.Button btnAgregarR;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelCodigoP;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioF;
+        private System.Windows.Forms.RadioButton radioM;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label pais;
+        private System.Windows.Forms.TextBox tb_pais;
     }
 }

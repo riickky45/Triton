@@ -25,7 +25,7 @@ namespace Acuanet
         {
             
             //cargamos la configuracion adecuada
-            cxml = new LecConfigXML("config_oleada.xml");
+            cxml = new LecConfigXML();
 
             //prepara la conexion a la BD
             strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
@@ -76,8 +76,14 @@ namespace Acuanet
 
             DateTime dt = new DateTime();
 
-            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria
-                + ",'" + dt.ToLocalTime() + "'," + dt.ToLocalTime().Millisecond + ",'" + reader_status.UTC_Time.ToLocalTime() + "'," + reader_status.UTC_Time.ToLocalTime().Millisecond+ ");";
+            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria+ ",'" + dt.ToLocalTime() + "'," + dt.ToLocalTime().Millisecond + ",'" + reader_status.UTC_Time.ToLocalTime() + "'," + reader_status.UTC_Time.ToLocalTime().Millisecond+ ");";
+
+
+            //string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria
+            //    + ",'" + dt + "'," + dt.Millisecond + ",'" + dt + "'," + dt.Millisecond + ");";
+           
+            
+            
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);

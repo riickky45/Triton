@@ -51,7 +51,7 @@ namespace Acuanet
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
             
-                backgroundWorker1.ReportProgress(i);
+               // backgroundWorker1.ReportProgress(i);
             
         }
 
