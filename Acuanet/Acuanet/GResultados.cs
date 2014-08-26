@@ -61,7 +61,7 @@ namespace Acuanet
         {
             this.trabajo_accion = "Obtenenmos participantes";
 
-            string sql = "SELECT DISTINCT participante.id,id_categoria,id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
+            string sql = "SELECT DISTINCT participante.id,id_categoria,participante.id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -71,6 +71,8 @@ namespace Acuanet
                 res.id_participante = System.Convert.ToInt32(rdr.GetString(0));
                 res.id_categoria = System.Convert.ToInt32(rdr.GetString(1));
                 res.id_tag = rdr.GetString(2);
+
+                res.aLec = new List<Lectura>();
 
                 lRes.Add(res);
                 this.trabajo_rea++;
@@ -88,34 +90,36 @@ namespace Acuanet
             foreach (Resultado r in lRes)
             {
 
-                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participanete_id=" + r.id_participante + " ORDER BY fecha_hora,milis";
+                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
                 {
-                    Lectura auxl = new Lectura();
-                    auxl.rssi = System.Convert.ToDouble(rdr.GetString(0));
-                    auxl.tiempo = System.Convert.ToInt64(rdr.GetString(1));
-                    auxl.milis = System.Convert.ToInt32(rdr.GetString(2));
+                    Lectura auxlec = new Lectura();
+                    auxlec.rssi = System.Convert.ToDouble(rdr.GetString(0));
+                    auxlec.tiempo = System.Convert.ToInt64(rdr.GetString(1));
+                    auxlec.milis = System.Convert.ToInt32(rdr.GetString(2));
 
                     //tiempo en segundos incluyendo los milisegundos
-                    auxl.tms = auxl.tiempo + auxl.milis / 1000.00;
+                    auxlec.tms = auxlec.tiempo + auxlec.milis / 1000.00;
 
                     //estimación de la distancia por la intensidad de la señal de respuesta
                     if (this.bcomp)
                     {
-                        auxl.d_dist = estimaDistCA(auxl.rssi);
+                        auxlec.d_dist = estimaDistCA(auxlec.rssi);
                     }
                     else
                     {
-                        auxl.d_dist = estimaDist(auxl.rssi);
+                        auxlec.d_dist = estimaDist(auxlec.rssi);
                     }
 
                     // se calcula la distancia horizontal a la meta
-                    auxl.a_dist = Math.Sqrt(auxl.d_dist * auxl.d_dist - h * h);
+                    auxlec.a_dist = Math.Sqrt(auxlec.d_dist * auxlec.d_dist - h * h);
 
-                    r.aLec.Add(auxl);
+                   
+
+                    r.aLec.Add(auxlec);
                 }
                 rdr.Close();
 
@@ -158,7 +162,7 @@ namespace Acuanet
                 }
             }
 
-            r.tc_meta = (decimal)res / numlec;
+            r.tc_meta = (decimal)res / (decimal)numlec;
             this.trabajo_rea++;
         }
 
