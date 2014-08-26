@@ -332,6 +332,7 @@
     <None Include="Resources\Sign 01_32x32-32.gif" />
     <None Include="Resources\Clipboard_48x48-321.gif" />
     <None Include="Resources\Clipboard_32x32-32.gif" />
+    <None Include="Resources\Print_32x32-32.gif" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>

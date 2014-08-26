@@ -433,6 +433,16 @@ namespace Acuanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Print_32x32_32 {
+            get {
+                object obj = ResourceManager.GetObject("Print_32x32-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resultset_next {
             get {
                 object obj = ResourceManager.GetObject("resultset_next", resourceCulture);
