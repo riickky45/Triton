@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_resultados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_resultados
             // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-4, 143);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(833, 461);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_resultados.AllowUserToDeleteRows = false;
+            this.dgv_resultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_resultados.Location = new System.Drawing.Point(-4, 143);
+            this.dgv_resultados.Name = "dgv_resultados";
+            this.dgv_resultados.ReadOnly = true;
+            this.dgv_resultados.Size = new System.Drawing.Size(833, 461);
+            this.dgv_resultados.TabIndex = 0;
             // 
             // label1
             // 
@@ -72,10 +72,10 @@
             this.ClientSize = new System.Drawing.Size(827, 603);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_resultados);
             this.Name = "FormaResultados";
             this.Text = "FormaResultados";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,7 +83,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_resultados;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
     }
