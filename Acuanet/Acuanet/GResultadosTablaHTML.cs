@@ -14,13 +14,14 @@ namespace Acuanet
     class GResultadosTablaHTML
     {
         MySqlConnection dbConn = null;
-        LecConfigXML cxml = new LecConfigXML("config_oleada.xml");
+        LecConfigXML cxml = new LecConfigXML();
 
         private int id_categoria;
 
 
         public GResultadosTablaHTML(int id_categoria)
         {
+            this.id_categoria = id_categoria;
 
             string strConexion = "server=" + cxml.Text("ACUANET/BD/SBD_ip", "127.0.0.1")
                 + ";uid=" + cxml.Text("ACUANET/BD/SBD_usuario", "root")
@@ -43,7 +44,14 @@ namespace Acuanet
             sbHTML.Append("<th>Posición</th><th>Nombre (número)</th><th>Tiempo</th>");
             sbHTML.Append("</tr><tbody>");
 
-            string sql = "SELECT posicion,participante.nombre,particpante.numero,tiempo FROM resultado_final,participante WHERE participante.id=resultado_final.id_participante AND resultado_final.id_categoria=" + id_categoria + " ORDER BY tiempo_meta";
+            string sqc = "";
+            if (id_categoria > 0)
+            {
+                sqc = " AND resultado_final.id_categoria=" + id_categoria;
+            }
+
+            string sql = "SELECT posicion,participante.nombre,participante.numero,tiempo FROM resultado_final,participante WHERE participante.id=resultado_final.id_participante " + sqc + " ORDER BY tiempo_meta";
+           
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 

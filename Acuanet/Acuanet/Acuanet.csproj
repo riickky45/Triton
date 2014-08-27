@@ -96,11 +96,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FormaPrincipal.resx</DependentUpon>
     </Compile>
-    <Compile Include="FormaResultados.cs">
+    <Compile Include="FormaResultado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormaResultados.Designer.cs">
-      <DependentUpon>FormaResultados.cs</DependentUpon>
+    <Compile Include="FormaResultado.Designer.cs">
+      <DependentUpon>FormaResultado.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBienvenida.cs">
       <SubType>Form</SubType>
@@ -119,7 +119,7 @@
     <Compile Include="GResultadosTablaHTML.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
-    <Compile Include="ModResultados.cs" />
+    <Compile Include="ModResultado.cs" />
     <Compile Include="OleadaR.cs" />
     <Compile Include="LecConfigXML.cs" />
     <Compile Include="InsertaLecturaE.cs" />
@@ -195,8 +195,8 @@
     <EmbeddedResource Include="FormaListaP.resx">
       <DependentUpon>FormaListaP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormaResultados.resx">
-      <DependentUpon>FormaResultados.cs</DependentUpon>
+    <EmbeddedResource Include="FormaResultado.resx">
+      <DependentUpon>FormaResultado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>

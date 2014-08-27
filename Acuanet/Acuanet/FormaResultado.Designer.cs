@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class FormaResultados
+    partial class FormaResultado
     {
         /// <summary>
         /// Required designer variable.
@@ -31,9 +31,8 @@
             this.dgv_resultados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnimpresion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).BeginInit();
-
             this.SuspendLayout();
             // 
             // dgv_resultados
@@ -65,36 +64,38 @@
             this.textBox1.Size = new System.Drawing.Size(275, 22);
             this.textBox1.TabIndex = 2;
             // 
-            // button1
+            // btnimpresion
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Acuanet.Properties.Resources.Print_32x32_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(526, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Imprimir Resultados";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnimpresion.BackColor = System.Drawing.Color.Transparent;
+            this.btnimpresion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnimpresion.FlatAppearance.BorderSize = 0;
+            this.btnimpresion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnimpresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnimpresion.Image = global::Acuanet.Properties.Resources.Print_32x32_32;
+            this.btnimpresion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnimpresion.Location = new System.Drawing.Point(526, 79);
+            this.btnimpresion.Name = "btnimpresion";
+            this.btnimpresion.Size = new System.Drawing.Size(186, 43);
+            this.btnimpresion.TabIndex = 3;
+            this.btnimpresion.Text = "Imprimir Resultados";
+            this.btnimpresion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnimpresion.UseVisualStyleBackColor = false;
+            this.btnimpresion.Click += new System.EventHandler(this.btnimpresion_Click);
             // 
-            // FormaResultados
+            // FormaResultado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(827, 603);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnimpresion);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_resultados);
-            this.Name = "FormaResultados";
+            this.Name = "FormaResultado";
             this.Text = "FormaResultados";
+            this.Load += new System.EventHandler(this.frmResultado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,6 +107,6 @@
         private System.Windows.Forms.DataGridView dgv_resultados;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnimpresion;
     }
 }
