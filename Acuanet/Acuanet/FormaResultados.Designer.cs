@@ -31,12 +31,9 @@
             this.dgv_resultados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).BeginInit();
->>>>>>> 96f514c28ef036fd765a333bebbe62d2da891315
+
             this.SuspendLayout();
             // 
             // dgv_resultados
