@@ -73,11 +73,11 @@
   <ItemGroup>
     <Compile Include="Categoria.cs" />
     <Compile Include="ClipboardHelper.cs" />
-    <Compile Include="formaEditar.cs">
+    <Compile Include="FormaEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formaEditar.Designer.cs">
-      <DependentUpon>formaEditar.cs</DependentUpon>
+    <Compile Include="FormaEditar.Designer.cs">
+      <DependentUpon>FormaEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormaListaP.cs">
       <SubType>Form</SubType>
@@ -166,8 +166,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resultado.cs" />
-    <EmbeddedResource Include="formaEditar.resx">
-      <DependentUpon>formaEditar.cs</DependentUpon>
+    <EmbeddedResource Include="FormaEditar.resx">
+      <DependentUpon>FormaEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaOleada.resx">
       <DependentUpon>FormaOleada.cs</DependentUpon>
