@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace Acuanet
 {
-
+    //Esta clase genera el HTML y lo manda al clipboard
     class GResultadosTablaHTML
     {
         MySqlConnection dbConn = null;
@@ -18,7 +18,7 @@ namespace Acuanet
 
         private int id_categoria;
 
-
+        //
         public GResultadosTablaHTML(int id_categoria)
         {
             this.id_categoria = id_categoria;
@@ -35,6 +35,7 @@ namespace Acuanet
         }
 
 
+        //
         private void generaHTML()
         {
             StringBuilder sbHTML = new StringBuilder();
@@ -65,14 +66,13 @@ namespace Acuanet
 
             sbHTML.Append("</tbody></table>");
 
-            //evnio al Clipboard
+            //envio al Clipboard
             ClipboardHelper.CopyToClipboard(sbHTML.ToString(), "Tabla de resultados: ");
 
         }
 
 
-
-
+        //
         ~GResultadosTablaHTML()
         {
             if (this.dbConn != null) dbConn.Close();

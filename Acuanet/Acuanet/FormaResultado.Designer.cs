@@ -94,7 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_resultados);
             this.Name = "FormaResultado";
-            this.Text = "FormaResultados";
+            this.Text = "Resultados";
             this.Load += new System.EventHandler(this.frmResultado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).EndInit();
             this.ResumeLayout(false);

@@ -17,7 +17,7 @@ namespace Acuanet
         ModResultado modr;
         int id_categoria;
 
-
+        //
         public FormaResultado()
         {
             id_categoria = 0;
@@ -32,6 +32,7 @@ namespace Acuanet
             InitializeComponent();
         }
 
+        //
         private void frmResultado_Load(object sender, EventArgs e)
         {
             actualizaGV();
@@ -56,6 +57,7 @@ namespace Acuanet
 
         }
 
+        //
         private void btnimpresion_Click(object sender, EventArgs e)
         {
             GResultadosTablaHTML grt = new GResultadosTablaHTML(id_categoria);
