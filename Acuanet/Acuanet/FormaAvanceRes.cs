@@ -50,19 +50,24 @@ namespace Acuanet
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            
+
+               this.actualizaPantalla(gres.trabajo_accion);
                backgroundWorker1.ReportProgress(gres.trabajo_rea);
 
                gres.obtenLecturasPar();
+               this.actualizaPantalla(gres.trabajo_accion);
                backgroundWorker1.ReportProgress(gres.trabajo_rea);
 
                gres.marcaLecturasBOrden();
+               this.actualizaPantalla(gres.trabajo_accion);
                backgroundWorker1.ReportProgress(gres.trabajo_rea);
 
                gres.estimaTCTodos();
+               this.actualizaPantalla(gres.trabajo_accion);
                backgroundWorker1.ReportProgress(gres.trabajo_rea);
 
                gres.escribeRes();
+               this.actualizaPantalla(gres.trabajo_accion);
                backgroundWorker1.ReportProgress(gres.trabajo_rea);
             
         }

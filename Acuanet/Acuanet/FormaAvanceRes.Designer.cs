@@ -49,9 +49,8 @@
             this.lbl_desct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_desct.Location = new System.Drawing.Point(47, 128);
             this.lbl_desct.Name = "lbl_desct";
-            this.lbl_desct.Size = new System.Drawing.Size(45, 16);
+            this.lbl_desct.Size = new System.Drawing.Size(0, 16);
             this.lbl_desct.TabIndex = 1;
-            this.lbl_desct.Text = "label1";
             // 
             // btn_tabres
             // 
