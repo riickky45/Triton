@@ -59,7 +59,7 @@ namespace Acuanet
         //método que obtiene a los participantes de cada oleada distintos, que previamente poseen un registro en la BD
         public int obtenParDistxOleada()
         {
-            this.trabajo_accion = "Obtenenmos participantes";
+            this.trabajo_accion = "Obtenemos participantes";
 
             string sql = "SELECT DISTINCT participante.id,id_categoria,participante.id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);

@@ -28,8 +28,8 @@ namespace Acuanet
                 sqc = " AND resultado_final.id_categoria=" + id_categoria;
             }
             
-            string sql = "SELECT posicion,participante.nombre,participante.numero,tiempo FROM resultado_final,participante WHERE participante.id=resultado_final.id_participante " + sqc + " ORDER BY tiempo_meta";
-            MessageBox.Show(sql);
+            string sql = "SELECT posicion,participante.nombre,participante.numero,tiempo FROM resultado,participante WHERE participante.id=resultado.id_participante " + sqc + " ORDER BY tiempo_meta";
+           // MessageBox.Show(sql);
 
             MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
             DataSet dt = new DataSet();

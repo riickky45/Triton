@@ -81,7 +81,7 @@ namespace Acuanet
         //
         private void btn_inicio_Click(object sender, EventArgs e)
         {
-
+            gres.borraResP();
             gres.obtenParDistxOleada();
 
             this.pgbarRes.Maximum = gres.trabajo_tot;
