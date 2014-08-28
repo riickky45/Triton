@@ -11,7 +11,7 @@ namespace Acuanet
         {
             foreach (Resultado r in lRes)
             {
-                double rssi_b = r.aLec[0].rssi;
+                decimal rssi_b = r.aLec[0].rssi;
                 foreach (Lectura lec in r.aLec)
                 {
                     if (lec.rssi >= rssi_b)
@@ -42,11 +42,11 @@ namespace Acuanet
 
 
         //metodo que obtiene la velocidad promedio del participante mas cercano en la misma categoria
-        private double obtenVelMasCercano(Resultado r)
+        private decimal obtenVelMasCercano(Resultado r)
         {
-            double vel = 0;
-            double dist = -1;
-            double[] res;
+            decimal vel = 0;
+            decimal dist = -1;
+            decimal[] res;
 
             for (int i = 0; i < lRes.Count; i++)
             {
@@ -77,14 +77,14 @@ namespace Acuanet
 
 
         //método que obtiene la minima distancia generalizada entre un Listado de lecturas y una lectura
-        private double[] obtenDgV(List<Lectura> alec, Lectura lec)
+        private decimal[] obtenDgV(List<Lectura> alec, Lectura lec)
         {
-            double[] res = new double[2];
+            decimal[] res = new decimal[2];
 
 
 
             res[0] = this.obtenDg(alec[0], lec);
-            double daux = res[0];
+            decimal daux = res[0];
 
 
             for (int i = 0; i < alec.Count; i++)
@@ -129,14 +129,14 @@ namespace Acuanet
 
 
         //metodo que calcula la Distancia genralizada entre 2 lecturas
-        private double obtenDg(Lectura lref1, Lectura lref2)
+        private decimal obtenDg(Lectura lref1, Lectura lref2)
         {
-            return Math.Pow(lref1.d_dist - lref2.d_dist, 2) + Math.Pow(lref1.tiempo - lref2.tiempo, 2);
+            return (decimal)Math.Pow((double)lref1.d_dist - (double)lref2.d_dist, 2) +(decimal)Math.Pow((double)lref1.tiempo - (double)lref2.tiempo, 2);
         }
 
 
         //metodo que calcula la velocidad promedio del intervalo entre 2 lecturas
-        private double obtenVel(Lectura lref1, Lectura lref2)
+        private decimal obtenVel(Lectura lref1, Lectura lref2)
         {
             return Math.Abs((lref1.a_dist - lref2.a_dist) / (lref1.tiempo - lref2.tiempo));
         }

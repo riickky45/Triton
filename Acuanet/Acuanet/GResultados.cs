@@ -20,9 +20,9 @@ namespace Acuanet
         private string strConexion;
 
         //para metros del modelo
-        private double A;
+        private decimal A;
         private int n;
-        private double h;
+        private decimal h;
         private bool bcomp;
 
         //parametros para calcular el avance relativo e informar a la interfaz sobre su avance
@@ -41,7 +41,7 @@ namespace Acuanet
                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
 
 
-            A = cxml.Double("ACUANET/MODELO/A", -69.190);
+            A = (decimal)cxml.Double("ACUANET/MODELO/A", -69.190);
             n = cxml.Int16("ACUANET/MODELO/n", 2);
             h = cxml.Int16("ACUANET/MODELO/h", 3);
             bcomp = cxml.Boolean("ACUANET/MODELO/compensado", false);
@@ -49,7 +49,7 @@ namespace Acuanet
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-            //configuracion para reportar avnace del trabajo
+            //configuracion para reportar avance del trabajo
             this.trabajo_accion = "Conexión a BD";
             this.trabajo_tot = 0;
             this.trabajo_rea = 0;
@@ -97,12 +97,12 @@ namespace Acuanet
                 while (rdr.Read())
                 {
                     Lectura auxlec = new Lectura();
-                    auxlec.rssi = System.Convert.ToDouble(rdr.GetString(0));
+                    auxlec.rssi = System.Convert.ToDecimal(rdr.GetString(0));
                     auxlec.tiempo = System.Convert.ToInt64(rdr.GetString(1));
                     auxlec.milis = System.Convert.ToInt32(rdr.GetString(2));
 
                     //tiempo en segundos incluyendo los milisegundos
-                    auxlec.tms = auxlec.tiempo + auxlec.milis / 1000.00;
+                    auxlec.tms = auxlec.tiempo + (decimal)(auxlec.milis / 1000.00);
 
                     //estimación de la distancia por la intensidad de la señal de respuesta
                     if (this.bcomp)
@@ -114,8 +114,10 @@ namespace Acuanet
                         auxlec.d_dist = estimaDist(auxlec.rssi);
                     }
 
+
+
                     // se calcula la distancia horizontal a la meta
-                    auxlec.a_dist = Math.Sqrt(auxlec.d_dist * auxlec.d_dist - h * h);
+                    auxlec.a_dist =(decimal) Math.Sqrt((double)(auxlec.d_dist * auxlec.d_dist - h * h));
 
                    
 
@@ -130,24 +132,26 @@ namespace Acuanet
 
 
         //método que obtiene la distancia estimada de acuerdo a la intensidad de la respuesta
-        private double estimaDist(double rssi)
+        private decimal estimaDist(decimal rssi)
         {
-            return Math.Pow(10, (A - rssi) / (10 * n));
+            double arg = ((double)A - (double)rssi) / (10 * n);
+            return (decimal)Math.Pow(10, arg);
+            
         }
 
 
         //metodo que estima la distancia compensando desalineacion angular debido a la altura en la que se encuentra la antena
-        private double estimaDistCA(double rssi)
-        {
-            return Math.Pow(10, (20 * Math.Log10(h) + A - rssi) / (10 * n + 20));
+        private decimal estimaDistCA(decimal rssi)
+        {            
+            return (decimal)Math.Pow(10, (20 * Math.Log10((double)h) + (double)A - (double)rssi) / (10 * n + 20));
         }
 
 
-        //metodo que estima tiempo cruce de meta (promedio de todos los tiempos, con buen orden y sin nodos desordenados)
+        //método que estima tiempo cruce de meta (promedio de todos los tiempos, con buen orden y sin nodos desordenados)
         private void estimaTCM(Resultado r)
         {
             int numlec = r.aLec.Count - 1;
-            double res = 0;
+            decimal res = 0;
 
             for (int i = 0; i < numlec; i++)
             {
@@ -157,7 +161,7 @@ namespace Acuanet
                     Lectura lecj = r.aLec[i + 1];
                     if (lecj.bdatoc == true)
                     {
-                        res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist / (lecj.a_dist - leci.a_dist));
+                        res += lecj.tms + Math.Abs((decimal)(lecj.tms - leci.tms) * (decimal)lecj.a_dist / (decimal)(lecj.a_dist - leci.a_dist));
                     }
                 }
             }
@@ -181,7 +185,7 @@ namespace Acuanet
 
         }
 
-
+        //método que borra los anteriores calculos 
         public void borraResP()
         {
             string sql = "DELETE FROM resultado;";
@@ -190,15 +194,15 @@ namespace Acuanet
         }
 
 
-        //metodo que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
+        //método que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
         private void CalculaMax()
         {
 
             foreach (Resultado r in this.lRes)
             {
                 bool bpv = true;
-                double rssi_max = 0;
-                double tms_max = 0;
+                decimal rssi_max = 0;
+                decimal tms_max = 0;
                 foreach (Lectura lec in r.aLec)
                 {
                     if (bpv)
@@ -225,7 +229,7 @@ namespace Acuanet
         }
 
 
-        //metodo principal que realiza todos los calculos para cada categoria
+        //método principal que realiza todos los calculos para cada categoria
         public void estimaTCTodos()
         {
             this.trabajo_accion = "Calculando TCM";
@@ -240,7 +244,7 @@ namespace Acuanet
         }
 
 
-        // destructor libera la memoria y en este caso la conexión a la BD 
+        //destructor libera la memoria y en este caso la conexión a la BD 
         ~GResultados()
         {
             if (this.dbConn != null) dbConn.Close();

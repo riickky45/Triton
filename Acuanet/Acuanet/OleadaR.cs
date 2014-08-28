@@ -74,15 +74,9 @@ namespace Acuanet
         {
             reader_status = reader.getReaderStatus();
 
-            DateTime dt = new DateTime();
+            DateTime dt = DateTime.Now;
 
-            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria+ ",'" + dt.ToLocalTime() + "'," + dt.ToLocalTime().Millisecond + ",'" + reader_status.UTC_Time.ToLocalTime() + "'," + reader_status.UTC_Time.ToLocalTime().Millisecond+ ");";
-
-
-            //string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria
-            //    + ",'" + dt + "'," + dt.Millisecond + ",'" + dt + "'," + dt.Millisecond + ");";
-           
-            
+            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToLocalTime() + "'," + reader_status.UTC_Time.ToLocalTime().Millisecond + ");";
             
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
