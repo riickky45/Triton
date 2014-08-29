@@ -112,7 +112,7 @@ namespace Acuanet
                     double dtori = System.Convert.ToInt64(rdr.GetString(3)) + (System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
 
                   
-                    //tiempo en segundos incluyendo los milisegundos
+                    //tiempo en segundos incluyendo los milisegundos relativo al momento de inicio de la antena
                     auxlec.tms = auxlec.tiempo + (auxlec.milis / 1000.00) - dtori;
 
                     //estimación de la distancia por la intensidad de la señal de respuesta
