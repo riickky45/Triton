@@ -33,8 +33,8 @@ create table resultado(
 	posicion int,
 	id_participante int,
 	tiempo varchar(256),
-	fecha_hora_ini datetime,
-	fecha_hora_fin datetime,
+	fecha_hora_ini datetime(2),
+	fecha_hora_fin datetime(2),
 	milis_ini int,
 	milis_fin int,
 	tiempo_meta NUMERIC(23,10)
@@ -46,8 +46,8 @@ create table resultado_final(
 	posicion int,
 	id_participante int,
 	tiempo varchar(256),
-	fecha_hora_ini datetime,
-	fecha_hora_fin datetime,
+	fecha_hora_ini datetime(2),
+	fecha_hora_fin datetime(2),
 	milis_ini int,
 	milis_fin int,
 	tiempo_meta NUMERIC(23,10)

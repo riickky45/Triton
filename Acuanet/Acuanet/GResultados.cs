@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -20,9 +20,9 @@ namespace Acuanet
         private string strConexion;
 
         //para metros del modelo
-        private decimal A;
+        private double A;
         private int n;
-        private decimal h;
+        private double h;
         private bool bcomp;
 
         //parametros para calcular el avance relativo e informar a la interfaz sobre su avance
@@ -31,6 +31,8 @@ namespace Acuanet
         public int trabajo_tot_factor = 5;
         public int trabajo_rea;
 
+
+        
 
         //constructor
         public GResultados()
@@ -41,10 +43,12 @@ namespace Acuanet
                + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
 
 
-            A = (decimal)cxml.Double("ACUANET/MODELO/A", -69.190);
+            A = cxml.Double("ACUANET/MODELO/A", -69.190);
             n = cxml.Int16("ACUANET/MODELO/n", 2);
             h = cxml.Int16("ACUANET/MODELO/h", 3);
             bcomp = cxml.Boolean("ACUANET/MODELO/compensado", false);
+
+           // MessageBox.Show("bcomp: " + bcomp+" A: "+A+" h: "+h);
 
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
@@ -61,7 +65,7 @@ namespace Acuanet
         {
             this.trabajo_accion = "Obtenemos participantes";
 
-            string sql = "SELECT DISTINCT participante.id,id_categoria,participante.id_tag FROM tags,participante WHERE participante.id_tag=tags.id_tag ";
+            string sql = "SELECT DISTINCT participante.id,participante.id_categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local FROM tags,participante,oleada WHERE oleada.id_categoria=participante.id_categoria AND participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -71,6 +75,9 @@ namespace Acuanet
                 res.id_participante = System.Convert.ToInt32(rdr.GetString(0));
                 res.id_categoria = System.Convert.ToInt32(rdr.GetString(1));
                 res.id_tag = rdr.GetString(2);
+
+                res.tiempo_ini_local = System.Convert.ToInt64(rdr.GetString(3));
+                res.milis_ini_local = System.Convert.ToInt16(rdr.GetString(4));
 
                 res.aLec = new List<Lectura>();
 
@@ -97,14 +104,16 @@ namespace Acuanet
                 while (rdr.Read())
                 {
                     Lectura auxlec = new Lectura();
-                    auxlec.rssi = System.Convert.ToDecimal(rdr.GetString(0));
+                    auxlec.rssi = System.Convert.ToDouble(rdr.GetString(0));
                     auxlec.tiempo = System.Convert.ToInt64(rdr.GetString(1));
                     auxlec.milis = System.Convert.ToInt32(rdr.GetString(2));
 
-                    decimal dtori = System.Convert.ToInt64(rdr.GetString(3)) + (decimal)(System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
+                    //tiempo origen de la antena
+                    double dtori = System.Convert.ToInt64(rdr.GetString(3)) + (System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
 
+                  
                     //tiempo en segundos incluyendo los milisegundos
-                    auxlec.tms = auxlec.tiempo + (decimal)(auxlec.milis / 1000.00) - dtori;
+                    auxlec.tms = auxlec.tiempo + (auxlec.milis / 1000.00) - dtori;
 
                     //estimación de la distancia por la intensidad de la señal de respuesta
                     if (this.bcomp)
@@ -117,7 +126,7 @@ namespace Acuanet
                     }
 
                     // se calcula la distancia horizontal a la meta
-                    auxlec.a_dist =(decimal) Math.Sqrt((double)(auxlec.d_dist * auxlec.d_dist - h * h));
+                    auxlec.a_dist = Math.Sqrt(auxlec.d_dist * auxlec.d_dist - h * h);
                   
                     r.aLec.Add(auxlec);
                 }
@@ -130,18 +139,18 @@ namespace Acuanet
 
 
         //método que obtiene la distancia estimada de acuerdo a la intensidad de la respuesta
-        private decimal estimaDist(decimal rssi)
+        private double estimaDist(double rssi)
         {
-            double arg = ((double)A - (double)rssi) / (10 * n);
-            return (decimal)Math.Pow(10, arg);
+           
+            return Math.Pow(10, (A - rssi) / (10 * n));
             
         }
 
 
         //metodo que estima la distancia compensando desalineacion angular debido a la altura en la que se encuentra la antena
-        private decimal estimaDistCA(decimal rssi)
+        private double estimaDistCA(double rssi)
         {            
-            return (decimal)Math.Pow(10, (20 * Math.Log10((double)h) + (double)A - (double)rssi) / (10 * n + 20));
+            return Math.Pow(10, (20 * Math.Log10(h) + A - rssi) / (10 * n + 20));
         }
 
 
@@ -149,7 +158,7 @@ namespace Acuanet
         private void estimaTCM(Resultado r)
         {
             int numlec = r.aLec.Count - 1;
-            decimal res = 0;
+            double res = 0;
 
             for (int i = 0; i < numlec; i++)
             {
@@ -159,12 +168,15 @@ namespace Acuanet
                     Lectura lecj = r.aLec[i + 1];
                     if (lecj.bdatoc == true)
                     {
-                        res += lecj.tms + Math.Abs((decimal)(lecj.tms - leci.tms) * (decimal)lecj.a_dist / (decimal)(lecj.a_dist - leci.a_dist));
+                        res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist /(lecj.a_dist - leci.a_dist));
                     }
                 }
             }
 
-            r.tc_meta = (decimal)res / (decimal)numlec;
+            r.tc_meta = res / numlec;
+
+            r.tc_meta_local =r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
+
             this.trabajo_rea++;
         }
 
@@ -175,7 +187,26 @@ namespace Acuanet
             this.trabajo_accion = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
-                string sql = "INSERT INTO resultado (id_participante,tiempo_meta) VALUES (" + r.id_participante + ",'" + r.tc_meta + "')";
+
+                DateTime dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
+                DateTime dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
+
+                
+
+                string sfecha_hora_ini=dt_ini.ToString("yyyy-MM-dd HH:mm:ss")+"."+Math.Round(r.milis_ini_local/10.0,0);
+              
+
+                int milis_fin =(int) Math.Truncate((r.tc_meta_local - Math.Truncate(r.tc_meta_local)) * 1000);
+
+                string sfecha_hora_fin = dt_fin.ToString("yyyy-MM-dd HH:mm:ss") + "." + Math.Round(milis_fin / 10.0, 0);
+
+
+                TimeSpan td = dt_fin - dt_ini;
+                string stiempo = td.ToString();
+
+
+                string sql = "INSERT INTO resultado (id_participante,tiempo_meta,fecha_hora_ini,milis_ini,fecha_hora_fin,milis_fin,tiempo) VALUES (" 
+                    + r.id_participante + ",'" + r.tc_meta_local + "','"+sfecha_hora_ini+"',"+r.milis_ini_local+",'"+sfecha_hora_fin+"',"+milis_fin+",'"+stiempo+"')";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
                 this.trabajo_rea++;
@@ -199,8 +230,8 @@ namespace Acuanet
             foreach (Resultado r in this.lRes)
             {
                 bool bpv = true;
-                decimal rssi_max = 0;
-                decimal tms_max = 0;
+                double rssi_max = 0;
+                double tms_max = 0;
                 foreach (Lectura lec in r.aLec)
                 {
                     if (bpv)
@@ -241,6 +272,14 @@ namespace Acuanet
 
         }
 
+        //metodo estatico que permite obtener el tiempo Unix Time a DateTime
+        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
+        {
+            // Unix timestamp is seconds past epoch
+            System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+            return dtDateTime;
+        }
 
         //destructor libera la memoria y en este caso la conexión a la BD 
         ~GResultados()

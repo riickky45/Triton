@@ -14,12 +14,21 @@ namespace Acuanet
         public int cantidad_aLec = 0;
 
         //ultima lectura
-        public decimal rssi_max;
-        public decimal tms_max;
-        public decimal d_min;
+        public double rssi_max;
+        public double tms_max;
+        public double d_min;
+
+        //tiempo local de la categoria
+        public long tiempo_ini_local;
+        public int milis_ini_local;
+
 
         //tiempo de cruce de la meta
-        public decimal tc_meta;
+        public double tc_meta;
+
+        //tiempo de cruce de la meta local
+        public double tc_meta_local;
+
 
         public bool blecb = true;
     }
