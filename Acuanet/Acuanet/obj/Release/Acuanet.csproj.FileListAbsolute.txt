@@ -19,3 +19,27 @@ C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.ap
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\config.xml
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\Acuanet.application
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\Acuanet.pdb
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaEditar.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaOleada.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPrincipal.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaRegistro.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCSV.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCategoria.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.EscannerChip.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPLlegadas.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaListaP.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaResultado.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormBienvenida.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaAvanceRes.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.Properties.Resources.resources
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csproj.GenerateResource.Cache
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manifest
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
+C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb

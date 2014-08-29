@@ -90,7 +90,7 @@ namespace Acuanet
             foreach (Resultado r in lRes)
             {
 
-                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis FROM tags,participante WHERE participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
+                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis,UNIX_TIMESTAMP(fecha_hora_ini_antena) as tiempo_ini_antena,milis_ini_antena  FROM tags,participante,oleada WHERE oleada.id_categoria=participante.id_categoria AND participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -101,8 +101,10 @@ namespace Acuanet
                     auxlec.tiempo = System.Convert.ToInt64(rdr.GetString(1));
                     auxlec.milis = System.Convert.ToInt32(rdr.GetString(2));
 
+                    decimal dtori = System.Convert.ToInt64(rdr.GetString(3)) + (decimal)(System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
+
                     //tiempo en segundos incluyendo los milisegundos
-                    auxlec.tms = auxlec.tiempo + (decimal)(auxlec.milis / 1000.00);
+                    auxlec.tms = auxlec.tiempo + (decimal)(auxlec.milis / 1000.00) - dtori;
 
                     //estimación de la distancia por la intensidad de la señal de respuesta
                     if (this.bcomp)
@@ -114,13 +116,9 @@ namespace Acuanet
                         auxlec.d_dist = estimaDist(auxlec.rssi);
                     }
 
-
-
                     // se calcula la distancia horizontal a la meta
                     auxlec.a_dist =(decimal) Math.Sqrt((double)(auxlec.d_dist * auxlec.d_dist - h * h));
-
-                   
-
+                  
                     r.aLec.Add(auxlec);
                 }
                 rdr.Close();

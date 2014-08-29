@@ -81,15 +81,11 @@ namespace Acuanet
         {
             decimal[] res = new decimal[2];
 
-
-
             res[0] = this.obtenDg(alec[0], lec);
             decimal daux = res[0];
 
-
             for (int i = 0; i < alec.Count; i++)
             {
-
 
                 daux = this.obtenDg(alec[i], lec);
 

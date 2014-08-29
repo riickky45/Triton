@@ -80,8 +80,8 @@
   <MODELO>
     <A>-69.90794979</A>
     <n>2</n>
-    <h>3</h>
-    <compensado>True</compensado>
+    <h>0</h>
+    <compensado>False</compensado>
   </MODELO>
 
 </ACUANET>
