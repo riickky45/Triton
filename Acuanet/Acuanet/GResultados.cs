@@ -191,6 +191,7 @@ namespace Acuanet
                 DateTime dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
                 DateTime dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
 
+                double ts_ini=(r.tiempo_ini_local + (double)r.milis_ini_local / 1000.00);
                 
 
                 string sfecha_hora_ini=dt_ini.ToString("yyyy-MM-dd HH:mm:ss")+"."+Math.Round(r.milis_ini_local/10.0,0);
@@ -201,12 +202,11 @@ namespace Acuanet
                 string sfecha_hora_fin = dt_fin.ToString("yyyy-MM-dd HH:mm:ss") + "." + Math.Round(milis_fin / 10.0, 0);
 
 
-                TimeSpan td = dt_fin - dt_ini;
-                string stiempo = td.ToString();
+                string stiempo = GResultados.ConvierteUTS2String(r.tc_meta_local-ts_ini);
 
 
-                string sql = "INSERT INTO resultado (id_participante,tiempo_meta,fecha_hora_ini,milis_ini,fecha_hora_fin,milis_fin,tiempo) VALUES (" 
-                    + r.id_participante + ",'" + r.tc_meta_local + "','"+sfecha_hora_ini+"',"+r.milis_ini_local+",'"+sfecha_hora_fin+"',"+milis_fin+",'"+stiempo+"')";
+                string sql = "INSERT INTO resultado (id_participante,tiempo_meta,fecha_hora_ini,milis_ini,fecha_hora_fin,milis_fin,tiempo,tiempo_ini) VALUES ("
+                    + r.id_participante + ",'" + r.tc_meta_local + "','" + sfecha_hora_ini + "'," + r.milis_ini_local + ",'" + sfecha_hora_fin + "'," + milis_fin + ",'" + stiempo + "'," + ts_ini + ")";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
                 this.trabajo_rea++;
@@ -272,13 +272,37 @@ namespace Acuanet
 
         }
 
-        //metodo estatico que permite obtener el tiempo Unix Time a DateTime
+        //método estatico que permite obtener el tiempo Unix Time a DateTime
         public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
         {
             // Unix timestamp is seconds past epoch
             System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
             dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
             return dtDateTime;
+        }
+
+        //método que convierte una diferencia timestamp en horas:minutos:segundos.centesimas(redondeadas al entero mas cercano)
+        public static string ConvierteUTS2String(double unixTimeStamp)
+        {
+
+            StringBuilder sb = new StringBuilder();
+
+
+            double parte_dec = unixTimeStamp - Math.Truncate(unixTimeStamp);
+            double parte_ent = Math.Truncate(unixTimeStamp);
+
+            double horas = Math.Truncate(parte_ent / 3600);
+
+            double parte_min_seg = parte_ent - 3600 * horas;
+
+            double minutos = Math.Truncate(parte_min_seg / 60);
+
+            double segundos = parte_min_seg - 60 * minutos;
+
+
+            sb.Append(String.Format("{0}:{1}:{2}.{3}",horas,minutos,segundos,Math.Round(parte_dec*100)));
+
+            return sb.ToString();
         }
 
         //destructor libera la memoria y en este caso la conexión a la BD 
