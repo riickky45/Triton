@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Windows.Forms;
 
 using MySql.Data;
 using MySql.Data.MySqlClient;
@@ -51,16 +51,17 @@ namespace Acuanet
                 sqc = " AND resultado_final.id_categoria=" + id_categoria;
             }
 
-            string sql = "SELECT posicion,participante.nombre,participante.numero,tiempo FROM resultado,participante WHERE participante.id=resultado.id_participante " + sqc + " ORDER BY tiempo_meta";
-           
+            string sql = "SELECT 1 as posicion,participante.nombre,participante.numero,tiempo FROM resultado,participante WHERE participante.id=resultado.id_participante " + sqc + " ORDER BY tiempo_meta";
+            MessageBox.Show(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
-
+            int posicion = 1;
             while (rdr.Read())
             {
                 sbHTML.Append("<tr>");
-                sbHTML.Append(String.Format("<td align=\"center\">{0}</td><td>{1} ({2})</td><td align=\"right\">{3}</td>", rdr.GetString(0), rdr.GetString(1), rdr.GetString(2), rdr.GetString(3)));
+                sbHTML.Append(String.Format("<td align=\"center\">{0}</td><td>{1} ({2})</td><td align=\"right\">{3}</td>", posicion, rdr.GetString(1), rdr.GetString(2), rdr.GetString(3)));
                 sbHTML.Append("</tr>");
+                posicion++;
             }
             rdr.Close();
 

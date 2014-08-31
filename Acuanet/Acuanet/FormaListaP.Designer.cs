@@ -30,7 +30,7 @@
         {
             this.dgv_listap = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_nombreP = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,14 +63,15 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Buscar Participante";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txt_nombreP
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(559, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 26);
-            this.textBox1.TabIndex = 2;
+            this.txt_nombreP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombreP.Location = new System.Drawing.Point(559, 56);
+            this.txt_nombreP.Name = "txt_nombreP";
+            this.txt_nombreP.Size = new System.Drawing.Size(288, 26);
+            this.txt_nombreP.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -89,7 +90,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(879, 494);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nombreP);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_listap);
             this.Name = "FormaListaP";
@@ -106,7 +107,7 @@
 
         private System.Windows.Forms.DataGridView dgv_listap;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_nombreP;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

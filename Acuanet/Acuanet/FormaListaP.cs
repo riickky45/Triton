@@ -14,6 +14,7 @@ namespace Acuanet
         private LecConfigXML cxml = new LecConfigXML();
         ModParticipante modp;
         Object guiLock = new Object();
+        LectorLL mll = new LectorLL();
 
         public FormaListaP()
         {
@@ -49,6 +50,11 @@ namespace Acuanet
                 }
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

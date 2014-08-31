@@ -21,13 +21,26 @@ namespace Acuanet
                     }
                     else
                     {
-                        r.aLec.Remove(lec);
+                       // r.aLec.Remove(lec);
                     }
                 }
 
-                r.cantidad_aLec = r.aLec.Count;
+                for (int i = 0; i < r.aLec.Count; i++)
+                {
+                    if (r.aLec[i].bdatoc == false)
+                    {
+                        r.aLec.Remove(r.aLec[i]);
+                    }
+                }
+
+
+                    r.cantidad_aLec = r.aLec.Count;
                 this.trabajo_rea++;
             }
+
+
+
+
         }
 
 

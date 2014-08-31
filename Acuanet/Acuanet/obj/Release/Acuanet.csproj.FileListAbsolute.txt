@@ -1,24 +1,3 @@
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config.xml
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.application
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.pdb
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.formaEditar.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPrincipal.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaRegistro.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCSV.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCategoria.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.EscannerChip.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPLlegadas.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaListaP.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.Properties.Resources.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csproj.GenerateResource.Cache
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manifest
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\config.xml
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest

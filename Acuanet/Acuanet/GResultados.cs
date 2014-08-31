@@ -97,7 +97,7 @@ namespace Acuanet
             foreach (Resultado r in lRes)
             {
 
-                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis,UNIX_TIMESTAMP(fecha_hora_ini_antena) as tiempo_ini_antena,milis_ini_antena  FROM tags,participante,oleada WHERE oleada.id_categoria=participante.id_categoria AND participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
+                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local  FROM tags,participante,oleada WHERE oleada.id_categoria=participante.id_categoria AND participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -110,7 +110,7 @@ namespace Acuanet
 
                     //tiempo origen de la antena
                     double dtori = System.Convert.ToInt64(rdr.GetString(3)) + (System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
-
+                    
                   
                     //tiempo en segundos incluyendo los milisegundos relativo al momento de inicio de la antena
                     auxlec.tms = auxlec.tiempo + (auxlec.milis / 1000.00) - dtori;
@@ -131,6 +131,8 @@ namespace Acuanet
                     r.aLec.Add(auxlec);
                 }
                 rdr.Close();
+
+               // MessageBox.Show(r.id_participante + " " + r.aLec.Count);
 
                 //this.CalculaMax();
                 this.trabajo_rea++;
@@ -187,8 +189,9 @@ namespace Acuanet
             this.trabajo_accion = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
-
+                //MessageBox.Show(""+r.tiempo_ini_local);
                 DateTime dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
+                //MessageBox.Show(""+r.tc_meta_local);
                 DateTime dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
 
                 double ts_ini=(r.tiempo_ini_local + (double)r.milis_ini_local / 1000.00);
@@ -300,7 +303,7 @@ namespace Acuanet
             double segundos = parte_min_seg - 60 * minutos;
 
 
-            sb.Append(String.Format("{0}:{1}:{2}.{3}",horas,minutos,segundos,Math.Round(parte_dec*100)));
+            sb.Append(String.Format("{0}:{1:00}:{2:00}.{3:00}",horas,minutos,segundos,Math.Round(parte_dec*100)));
 
             return sb.ToString();
         }

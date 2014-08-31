@@ -11,13 +11,13 @@ namespace Acuanet
         public string snumero;
         public string sclub;
         public string id_tag;
+        public string pais;
+        public string prueba;
         public string direcc;
         public string sexo;
-        public string categoria;
+        //public string categoria;
         public int id_categoria;
         public string email;
-        public string prueba;
-        public string pais;
 
     }
 }

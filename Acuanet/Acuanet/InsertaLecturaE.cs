@@ -33,7 +33,10 @@ namespace Acuanet
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
 
-            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi) VALUES ('" + tag.TagOrigId + "','" + tag.ApiTimeStampUTC + "','" + tag.ApiTimeStampUTC.Millisecond + "','" + tag.RSSI + "')";
+            
+
+            string sql = "INSERT INTO tags (id_tag,fecha_hora,milis,rssi) VALUES ('" + tag.TagOrigId + "','" 
+                + tag.ApiTimeStampUTC.ToLocalTime() + "','" + tag.ApiTimeStampUTC.ToLocalTime().Millisecond + "','" + tag.RSSI + "')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
 

@@ -107,7 +107,7 @@ namespace Acuanet
                         this.lbl_id_tag.Text = tag.TagOrigId;
                         this.lbl_nombre.Text = par.nombre;
                         this.lbl_numero.Text = par.snumero;
-                        this.lbl_categoria.Text = par.categoria;
+                        //this.lbl_categoria.Text = par.categoria;
                         this.lbl_pais.Text = par.pais;
                         this.lbl_prueba.Text = par.prueba;
                         
