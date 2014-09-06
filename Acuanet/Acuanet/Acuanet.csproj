@@ -119,6 +119,7 @@
     <Compile Include="GResultadosTablaHTML.cs" />
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
+    <Compile Include="ModOleada.cs" />
     <Compile Include="ModResultado.cs" />
     <Compile Include="RegSalida.cs" />
     <Compile Include="LecConfigXML.cs" />
