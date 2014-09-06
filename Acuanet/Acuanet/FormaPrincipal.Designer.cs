@@ -192,7 +192,7 @@
             this.btncrearOleada.Name = "btncrearOleada";
             this.btncrearOleada.Size = new System.Drawing.Size(168, 39);
             this.btncrearOleada.TabIndex = 2;
-            this.btncrearOleada.Text = "Encender Antena";
+            this.btncrearOleada.Text = "Crear Oleada";
             this.btncrearOleada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncrearOleada.UseVisualStyleBackColor = true;
             this.btncrearOleada.Click += new System.EventHandler(this.btnEAntena_Click);

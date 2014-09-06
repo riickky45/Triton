@@ -81,7 +81,8 @@ namespace Acuanet
 
         private void btnEAntena_Click(object sender, EventArgs e)
         {
-            
+            CreaOleada btncreaOleda = new CreaOleada();
+            btncreaOleda.Show();
 
         }
 

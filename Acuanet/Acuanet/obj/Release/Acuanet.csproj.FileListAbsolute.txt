@@ -47,3 +47,4 @@ C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.ex
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaSalida.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.CreaOleada.resources
