@@ -37,7 +37,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnEAntena = new System.Windows.Forms.Button();
+            this.btncrearOleada = new System.Windows.Forms.Button();
             this.btnOleada = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
@@ -145,10 +145,11 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.btncrearOleada);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Location = new System.Drawing.Point(223, 31);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(232, 62);
+            this.groupBox3.Size = new System.Drawing.Size(232, 103);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Categorias";
@@ -172,30 +173,29 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.btnEAntena);
             this.groupBox4.Controls.Add(this.btnOleada);
-            this.groupBox4.Location = new System.Drawing.Point(223, 99);
+            this.groupBox4.Location = new System.Drawing.Point(223, 149);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(232, 119);
+            this.groupBox4.Size = new System.Drawing.Size(232, 69);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Arrancar Competencia";
             // 
-            // btnEAntena
+            // btncrearOleada
             // 
-            this.btnEAntena.FlatAppearance.BorderSize = 0;
-            this.btnEAntena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEAntena.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEAntena.Image = global::Acuanet.Properties.Resources.transmit_blue1;
-            this.btnEAntena.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEAntena.Location = new System.Drawing.Point(22, 64);
-            this.btnEAntena.Name = "btnEAntena";
-            this.btnEAntena.Size = new System.Drawing.Size(168, 39);
-            this.btnEAntena.TabIndex = 2;
-            this.btnEAntena.Text = "Encender Antena";
-            this.btnEAntena.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEAntena.UseVisualStyleBackColor = true;
-            this.btnEAntena.Click += new System.EventHandler(this.btnEAntena_Click);
+            this.btncrearOleada.FlatAppearance.BorderSize = 0;
+            this.btncrearOleada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncrearOleada.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrearOleada.Image = global::Acuanet.Properties.Resources.transmit_blue1;
+            this.btncrearOleada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncrearOleada.Location = new System.Drawing.Point(22, 58);
+            this.btncrearOleada.Name = "btncrearOleada";
+            this.btncrearOleada.Size = new System.Drawing.Size(168, 39);
+            this.btncrearOleada.TabIndex = 2;
+            this.btncrearOleada.Text = "Encender Antena";
+            this.btncrearOleada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncrearOleada.UseVisualStyleBackColor = true;
+            this.btncrearOleada.Click += new System.EventHandler(this.btnEAntena_Click);
             // 
             // btnOleada
             // 
@@ -334,7 +334,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnEAntena;
+        private System.Windows.Forms.Button btncrearOleada;
         private System.Windows.Forms.Button btnOleada;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button9;
