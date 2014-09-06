@@ -93,9 +93,9 @@ namespace Acuanet
 
         private void btnOleada_Click(object sender, EventArgs e)
         {
-           // oleada.iniciaCaptura();
+           // salida.iniciaCaptura();
            
-            FormaOleada formaO = new FormaOleada();
+            FormaSalida formaO = new FormaSalida();
             formaO.Show();
         }
 

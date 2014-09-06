@@ -10,8 +10,8 @@ using MySql.Data.MySqlClient;
 namespace Acuanet
 {
 
-    //esta clase registra una oleada
-    class OleadaR
+    //esta clase registra una salida
+    class RegSalida
     {
         CS461_HL_API reader = new CS461_HL_API();
         TrustedServer server = new TrustedServer();
@@ -21,7 +21,7 @@ namespace Acuanet
         string strConexion;
 
         //constructor
-        public OleadaR()
+        public RegSalida()
         {
             
             //cargamos la configuracion adecuada
@@ -69,14 +69,14 @@ namespace Acuanet
         }
 
 
-        //metodo que registra la oleada punto de partida para el evento
-        public void registraOleada(int id_categoria)
+        //metodo que registra la salida punto de partida para el evento
+        public void registraSalida(int id_categoria)
         {
             reader_status = reader.getReaderStatus();
 
             DateTime dt = DateTime.Now;
       
-            string sql = "INSERT INTO oleada (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
+            string sql = "INSERT INTO salida (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
             
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();

@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace Acuanet
 {
-    public partial class FormaOleada : Form
+    public partial class FormaSalida : Form
     {
 
-        OleadaR oleada;
+        RegSalida salida;
 
 
-        public FormaOleada()
+        public FormaSalida()
         {
             InitializeComponent();
-            oleada = new OleadaR();
+            salida = new RegSalida();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -27,17 +27,17 @@ namespace Acuanet
 
         private void btn_play_Click(object sender, EventArgs e)
         {
-            oleada.iniciaCaptura();
+            salida.iniciaCaptura();
         }
 
         private void btn_pause_Click(object sender, EventArgs e)
         {
-            oleada.finalizaCaptura();
+            salida.finalizaCaptura();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            oleada.registraOleada(this.cb_categoriaO.SelectedIndex);
+            salida.registraSalida(this.cb_categoriaO.SelectedIndex);
         }
 
         

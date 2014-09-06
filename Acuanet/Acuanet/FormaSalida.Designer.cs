@@ -1,6 +1,6 @@
 ﻿namespace Acuanet
 {
-    partial class FormaOleada
+    partial class FormaSalida
     {
         /// <summary>
         /// Required designer variable.
@@ -71,9 +71,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 25);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Categoria :";
+            this.label2.Text = "Oleada :";
             // 
             // lbl_hora
             // 
@@ -137,7 +137,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormaOleada
+            // FormaSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cb_categoriaO);
             this.Controls.Add(this.label1);
-            this.Name = "FormaOleada";
+            this.Name = "FormaSalida";
             this.Text = "FormaOleada";
             this.ResumeLayout(false);
             this.PerformLayout();

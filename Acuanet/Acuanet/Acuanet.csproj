@@ -85,11 +85,11 @@
     <Compile Include="FormaListaP.Designer.cs">
       <DependentUpon>FormaListaP.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormaOleada.cs">
+    <Compile Include="FormaSalida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormaOleada.Designer.cs">
-      <DependentUpon>FormaOleada.cs</DependentUpon>
+    <Compile Include="FormaSalida.Designer.cs">
+      <DependentUpon>FormaSalida.cs</DependentUpon>
     </Compile>
     <Compile Include="FormaPrincipal1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,7 +120,7 @@
     <Compile Include="LectorLL.cs" />
     <Compile Include="ModCategoria.cs" />
     <Compile Include="ModResultado.cs" />
-    <Compile Include="OleadaR.cs" />
+    <Compile Include="RegSalida.cs" />
     <Compile Include="LecConfigXML.cs" />
     <Compile Include="InsertaLecturaE.cs" />
     <Compile Include="CS461_HL_API.cs" />
@@ -169,8 +169,8 @@
     <EmbeddedResource Include="FormaEditar.resx">
       <DependentUpon>FormaEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormaOleada.resx">
-      <DependentUpon>FormaOleada.cs</DependentUpon>
+    <EmbeddedResource Include="FormaSalida.resx">
+      <DependentUpon>FormaSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaPrincipal.resx">
       <DependentUpon>FormaPrincipal.cs</DependentUpon>
