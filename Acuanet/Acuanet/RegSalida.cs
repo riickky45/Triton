@@ -7,6 +7,10 @@ using System.Threading;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
+using System.Net;
+using System.Net.Sockets;
+using System.IO;
+
 namespace Acuanet
 {
 
@@ -72,9 +76,13 @@ namespace Acuanet
         //metodo que registra la salida punto de partida para el evento
         public void registraSalida(int id_categoria)
         {
+            
+            
             reader_status = reader.getReaderStatus();
-
+            
             DateTime dt = DateTime.Now;
+
+            this.ponReloj(dt);
       
             string sql = "INSERT INTO salida (categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
             
@@ -86,6 +94,24 @@ namespace Acuanet
             dbConn.Close();
             dbConn = null;
 
+        }
+
+        private void ponReloj(DateTime dt_local){
+            String scmd = "setDateTime";
+            StringBuilder sbReq = new StringBuilder();
+
+            sbReq.Append(String.Format("{0}API?command={1}&session_id={2}", reader.getURI(), scmd, reader.session_id));
+
+
+            string sfh = "&Year=" + dt_local.Year + "&Month=" + dt_local.Month +
+                "&Day=" + dt_local.Day + "&Hour=" + dt_local.Hour + "&Minute=" + dt_local.Minute + "&Second=" + dt_local.Second + "";
+
+               sbReq.Append(sfh);
+           
+
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(sbReq.ToString());
+            req.Timeout = 30;
+        
         }
 
         //configurador del lector y la antena 
