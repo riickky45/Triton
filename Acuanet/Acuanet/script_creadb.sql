@@ -77,4 +77,9 @@ create table tags(
 	marca int
 );
 
-
+create table oleada (
+id SERIAL,
+categoria varchar(256),
+nombre varchar(256),
+id_oleada int
+);

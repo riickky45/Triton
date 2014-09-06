@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ACUANET>
+  <Reader>
+    <Model>ACUANET-2</Model>
+    <URI>http://192.168.25.248/</URI>
+    <Login>
+      <Name>root</Name>
+      <Password>csl2006</Password>
+    </Login>
+    <ModulationProfile>Profile0</ModulationProfile>
+    <PopulationEstimation>32</PopulationEstimation>
+    <Session>1</Session>
+    <InventorySearchMode>Default</InventorySearchMode>
+    <TagIC>NXP</TagIC>
+    <AdditionalMemoryBank>Bank0</AdditionalMemoryBank>
+    <DuplicationElimination>
+      <Method>Autonomous Time Trigger</Method>
+      <Time>500</Time>
+      <AntennaPortScheme>false</AntennaPortScheme>
+    </DuplicationElimination>
+    <ReceiveSensitivity>Maximum sensitivity</ReceiveSensitivity>
+    <Antennas>
+      <Ant1>
+        <Enabled>true</Enabled>
+        <Power>30.00</Power>
+        <RSSI>-30</RSSI>
+      </Ant1>
+      <Ant2>
+        <Enabled>false</Enabled>
+        <Power>30.00</Power>
+        <RSSI>-40</RSSI>
+      </Ant2>
+      <Ant3>
+        <Enabled>false</Enabled>
+        <Power>30.00</Power>
+        <RSSI>-50</RSSI>
+      </Ant3>
+      <Ant4>
+        <Enabled>false</Enabled>
+        <Power>30.00</Power>
+        <RSSI>-60</RSSI>
+      </Ant4>
+    </Antennas>
+    <KillSetting>
+      <Power>30.00</Power>
+      <Antennas>
+        <Ant1>
+          <Enabled>True</Enabled>
+        </Ant1>
+        <Ant2>
+          <Enabled>False</Enabled>
+        </Ant2>
+        <Ant3>
+          <Enabled>False</Enabled>
+        </Ant3>
+        <Ant4>
+          <Enabled>False</Enabled>
+        </Ant4>
+      </Antennas>
+    </KillSetting>
+  </Reader>
+  <SocketTimeout>
+    <Http>30000</Http>
+    <Tcp>30000</Tcp>
+  </SocketTimeout>
+  <Application>
+    <LogLevel>Verbose</LogLevel>
+    <ServerPort>9092</ServerPort>
+    <LocalIP>192.168.25.1</LocalIP>
+  </Application>
+
+  <BD>
+    <SBD_ip>127.0.0.1</SBD_ip>
+    <SDB_port>3306</SDB_port>
+    <SBD_bdn>ntritondb</SBD_bdn>
+    <SBD_usuario>root</SBD_usuario>
+    <SBD_passwd></SBD_passwd>
+  </BD>
+
+  <MODELO>
+    <A>-20.5433</A>
+    <n>2.04796</n>
+    <h>0</h>
+    <compensado>False</compensado>
+  </MODELO>
+
+</ACUANET>

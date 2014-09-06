@@ -76,7 +76,7 @@ namespace Acuanet
 
             DateTime dt = DateTime.Now;
       
-            string sql = "INSERT INTO salida (id_categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
+            string sql = "INSERT INTO salida (categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
             
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();

@@ -19386,3 +19386,79 @@ cmd=tagEndNtf
 
 2014-08-30 19:24:03|Accept Connection Error
 
+2014-09-03 13:20:51|Wait for client...
+
+2014-09-03 13:20:51|Connected from 192.168.25.248:1290. 1 active clients
+
+2014-09-03 13:20:51|Wait for client...
+
+2014-09-03 13:20:57|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E20020840103021814408174&rssi=-68&time=1409725327&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=671007
+cmd=tagEndNtf
+
+
+2014-09-03 13:20:57|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E20020840103021814408174&rssi=-70&time=1409725327&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=822564
+cmd=tagEndNtf
+
+
+2014-09-03 13:21:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E20020840103022024401D9C&rssi=-67&time=1409725331&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=699220
+cmd=tagEndNtf
+
+
+2014-09-03 13:21:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302202500172A&rssi=-67&time=1409725335&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=524681
+cmd=tagEndNtf
+
+
+2014-09-03 13:21:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302202500172A&rssi=-68&time=1409725336&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=092495
+cmd=tagEndNtf
+
+
+2014-09-03 13:21:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302202500172A&rssi=-70&time=1409725336&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=521249
+cmd=tagEndNtf
+
+
+2014-09-03 13:21:09|stop client connection. 1 active client.
+
+2014-09-03 13:21:09|Receive data Error. 0 active clients
+
+2014-09-03 13:21:09|Accept Connection Error
+
+2014-09-03 13:22:57|Wait for client...
+
+2014-09-03 13:22:59|Connected from 192.168.25.248:1342. 1 active clients
+
+2014-09-03 13:22:59|Wait for client...
+
+2014-09-03 13:23:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302181020AC5A&rssi=-66&time=1409725451&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=924757
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302181020AC5A&rssi=-65&time=1409725452&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=071847
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-63&time=1409725455&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=633537
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-66&time=1409725455&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=910446
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E20020840103021814408174&rssi=-62&time=1409725459&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=425326
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E20020840103021814408174&rssi=-55&time=1409725459&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=745183
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E20020840103021814408174&rssi=-72&time=1409725460&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=842020
+cmd=tagEndNtf
+
+
+2014-09-03 13:23:14|stop client connection. 1 active client.
+
+2014-09-03 13:23:14|Receive data Error. 0 active clients
+
+2014-09-03 13:23:14|Accept Connection Error
+
