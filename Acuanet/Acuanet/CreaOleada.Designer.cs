@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.gb_categoria = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.gb_categoria.SuspendLayout();
             this.SuspendLayout();
@@ -56,13 +57,24 @@
             // gb_categoria
             // 
             this.gb_categoria.BackColor = System.Drawing.Color.Transparent;
+            this.gb_categoria.Controls.Add(this.button1);
             this.gb_categoria.Controls.Add(this.listBox1);
             this.gb_categoria.Location = new System.Drawing.Point(12, 62);
             this.gb_categoria.Name = "gb_categoria";
-            this.gb_categoria.Size = new System.Drawing.Size(220, 168);
+            this.gb_categoria.Size = new System.Drawing.Size(381, 168);
             this.gb_categoria.TabIndex = 12;
             this.gb_categoria.TabStop = false;
             this.gb_categoria.Text = "Categorias :";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(245, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 35);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Crear Categoria";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox1
             // 
@@ -72,10 +84,10 @@
             "Categoria2",
             "Categoria3 ",
             "Categoria4"});
-            this.listBox1.Location = new System.Drawing.Point(47, 45);
+            this.listBox1.Location = new System.Drawing.Point(17, 19);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBox1.Size = new System.Drawing.Size(121, 95);
+            this.listBox1.Size = new System.Drawing.Size(183, 134);
             this.listBox1.TabIndex = 13;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -102,5 +114,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox gb_categoria;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

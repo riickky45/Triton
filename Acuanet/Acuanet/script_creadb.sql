@@ -9,7 +9,7 @@ CREATE TABLE participante(
 	id SERIAL,
 	nombre varchar(512),
 	numero varchar(256),
-	id_categoria int,	
+	categoria varchar(256),	
 	rama char(1),
 	id_tag varchar(512),
 	direccion text,
@@ -79,7 +79,14 @@ create table tags(
 
 create table oleada (
 id SERIAL,
-categoria varchar(256),
 nombre varchar(256),
 id_oleada int
+);
+
+
+create table oleadacat(
+id SERIAL,
+oleada varchar(256),
+categoria varchar(256)
+
 );

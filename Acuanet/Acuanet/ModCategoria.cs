@@ -78,7 +78,28 @@ namespace Acuanet
         public DataTable obtenDTC()
         {
 
-            string sql = "SELECT nombre,id,descripcion FROM categoria ORDER BY nombre ";
+            string sql = "SELECT nombre FROM categoria ORDER BY nombre ";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+
+            for (int i = 0; i < rdr.FieldCount; i++)
+            {
+                dt.Columns.Add(rdr.GetName(i));
+            }
+
+            dt.Load(rdr);
+
+            rdr.Close();
+
+            return dt;
+        }
+
+        public DataTable obtenDTCsinO()
+        {
+
+            string sql = "SELECT nombre FROM categoria LEFT JOIN  oleadacat  ON categoria.nombre=oleadacat.categoria WHERE oleadacat.oleada IS NULL";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 

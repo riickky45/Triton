@@ -248,7 +248,7 @@ namespace Acuanet
             //se asignana los valores 
             par.nombre = txt_nombre.Text;
             par.snumero = txt_numero.Text;
-            par.id_categoria = this.cb_categoria.SelectedIndex;
+            par.categoria = this.cb_categoria.SelectedItem.ToString();
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
             par.email = txt_email.Text;

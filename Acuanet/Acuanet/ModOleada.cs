@@ -23,7 +23,7 @@ namespace Acuanet
         public DataTable obtenDTC()
         {
 
-            string sql = "SELECT nombre,id,descripcion FROM oleada ORDER BY nombre ";
+            string sql = "SELECT nombre FROM oleada ORDER BY nombre ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -40,6 +40,29 @@ namespace Acuanet
 
             return dt;
         }
+
+
+        public bool crearOleada(string snombre_oleada, List<string> lista_cat)
+        {
+
+
+            string sql = "INSERT INTO  oleada (nombre) VALUES ('" + snombre_oleada + "')";
+            MySqlCommand cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
+
+
+            foreach (string scat in lista_cat)
+            {
+                sql = "INSERT INTO  oleadacat (oleada,categoria) VALUES ('"+snombre_oleada+"','"+scat+"')";
+             cmd = new MySqlCommand(sql, dbConn);
+                cmd.ExecuteNonQuery();
+
+            }
+
+
+            return true;
+        }
+
 
         //destructor de oleada
         ~ModOleada()

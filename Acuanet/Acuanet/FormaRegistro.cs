@@ -254,7 +254,7 @@ namespace Acuanet
             //se asignana los valores 
             par.nombre = text_nombre.Text;
             par.snumero = txt_numero.Text;
-           // par.id_categoria = System.Convert.ToInt16(this.cb_categoria.ValueMember);
+           par.categoria = this.cb_categoria.SelectedValue.ToString();
            
             par.sclub = txt_club.Text;
             par.direcc = txt_direccion.Text;
@@ -332,7 +332,7 @@ namespace Acuanet
                 this.cb_categoria.DataSource = mcat.obtenDTC();
 
                 this.cb_categoria.DisplayMember = "nombre";
-                this.cb_categoria.ValueMember = "id";
+                this.cb_categoria.ValueMember = "nombre";
             }
         }
 
