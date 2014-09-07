@@ -58,7 +58,7 @@ create table resultado_final(
 -- Tabla definicion de Oleada
 CREATE TABLE salida(
 	id SERIAL,
-	categoria varchar(256),
+	oleada varchar(256),
 	fecha_hora_ini_local datetime,
 	fecha_hora_ini_antena datetime,
 	milis_ini_local int,

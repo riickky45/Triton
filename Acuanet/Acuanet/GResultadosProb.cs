@@ -65,7 +65,7 @@ namespace Acuanet
             for (int i = 0; i < lRes.Count; i++)
             {
                 Resultado rb = lRes[i];
-                if (rb.id_categoria == r.id_categoria && rb.cantidad_aLec > 1 && !rb.Equals(r))
+                if (rb.categoria.Equals(r.categoria) && rb.cantidad_aLec > 1 && !rb.Equals(r))
                 {
 
                     res = this.obtenDgV(rb.aLec, r.aLec[0]);

@@ -65,7 +65,7 @@ namespace Acuanet
         {
             this.trabajo_accion = "Obtenemos participantes";
 
-            string sql = "SELECT DISTINCT participante.id,participante.categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local FROM tags,participante,salida WHERE salida.id_categoria=participante.categoria AND participante.id_tag=tags.id_tag ";
+            string sql = "SELECT DISTINCT participante.id,participante.categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local,oleadacat.oleada FROM tags,participante,oleadacat,salida WHERE salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria AND participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -73,11 +73,12 @@ namespace Acuanet
             {
                 Resultado res = new Resultado();
                 res.id_participante = System.Convert.ToInt32(rdr.GetString(0));
-                res.id_categoria = System.Convert.ToInt32(rdr.GetString(1));
+                res.categoria = rdr.GetString(1);
                 res.id_tag = rdr.GetString(2);
 
                 res.tiempo_ini_local = System.Convert.ToInt64(rdr.GetString(3));
                 res.milis_ini_local = System.Convert.ToInt16(rdr.GetString(4));
+                res.oleada = rdr.GetString(5);
 
                 res.aLec = new List<Lectura>();
 
@@ -97,7 +98,7 @@ namespace Acuanet
             foreach (Resultado r in lRes)
             {
 
-                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local  FROM tags,participante,salida WHERE salida.categoria=participante.categoria AND participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
+                string sql = "SELECT rssi,UNIX_TIMESTAMP(fecha_hora) as tiempo,milis,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local  FROM tags,participante,salida,oleadacat WHERE salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria AND participante.id_tag=tags.id_tag AND participante.id=" + r.id_participante + " ORDER BY fecha_hora,milis";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 

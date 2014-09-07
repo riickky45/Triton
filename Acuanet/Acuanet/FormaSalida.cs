@@ -54,7 +54,8 @@ namespace Acuanet
 
         private void button1_Click(object sender, EventArgs e)
         {
-            salida.registraSalida(this.cb_categoriaO.SelectedIndex);
+            DataRowView dr = (DataRowView)this.cb_categoriaO.SelectedItem;
+            salida.registraSalida(dr["nombre"].ToString());
         }
 
         

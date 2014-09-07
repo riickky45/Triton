@@ -74,7 +74,7 @@ namespace Acuanet
 
 
         //metodo que registra la salida punto de partida para el evento
-        public void registraSalida(int id_categoria)
+        public void registraSalida(string soleada)
         {
             
             
@@ -84,7 +84,7 @@ namespace Acuanet
 
             this.ponReloj(dt);
       
-            string sql = "INSERT INTO salida (categoria,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES (" + id_categoria + ",'" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
+            string sql = "INSERT INTO salida (oleada,fecha_hora_ini_local,milis_ini_local,fecha_hora_ini_antena,milis_ini_antena) VALUES ('" + soleada + "','" + dt.ToString("yyyy-MM-dd HH:mm:ss") + "'," + dt.Millisecond + ",'" + reader_status.UTC_Time.ToUniversalTime() + "'," + reader_status.UTC_Time.ToUniversalTime().Millisecond + ");";
             
             MySqlConnection dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
