@@ -150,5 +150,41 @@ namespace Acuanet
         {
             return Math.Abs((lref1.a_dist - lref2.a_dist) / (lref1.tiempo - lref2.tiempo));
         }
+
+
+        //método que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
+        private void CalculaMax()
+        {
+
+            foreach (Resultado r in this.lRes)
+            {
+                bool bpv = true;
+                double rssi_max = 0;
+                double tms_max = 0;
+                foreach (Lectura lec in r.aLec)
+                {
+                    if (bpv)
+                    {
+                        rssi_max = lec.rssi;
+                        tms_max = lec.tms;
+                        bpv = false;
+                    }
+                    else
+                    {
+                        if (rssi_max < lec.rssi)
+                        {
+                            rssi_max = lec.rssi;
+                            tms_max = lec.tms;
+                        }
+                    }
+                }
+
+                r.rssi_max = rssi_max;
+                r.tms_max = tms_max;
+                r.d_min = estimaDist(r.rssi_max);
+            }
+
+        }
+
     }
 }

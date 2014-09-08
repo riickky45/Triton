@@ -53,7 +53,7 @@ namespace Acuanet
                 qc = "participante.numero=" + this.numero;
             }
 
-            string sql = "SELECT participante.numero,participante.nombre,categoria.nombre,participante.id_tag,fecha_hora,milis as ms FROM participante,tags,categoria WHERE categoria.nombre=participante.categoria AND participante.id_tag=tags.id_tag AND "+qc+" ORDER BY  fecha_hora DESC,milis DESC;";
+            string sql = "SELECT participante.numero,participante.nombre,categoria.nombre as categoria,participante.id_tag,fecha_hora,milis as ms FROM participante,tags,categoria WHERE categoria.nombre=participante.categoria AND participante.id_tag=tags.id_tag AND "+qc+" ORDER BY  fecha_hora DESC,milis DESC;";
            
             MySqlDataAdapter datad = new MySqlDataAdapter(sql, dbConn);
             DataSet dt = new DataSet();

@@ -7,6 +7,8 @@ namespace Acuanet
     class Resultado
     {
         public int id_participante;
+        public string snumero;
+        public string nombre;
         public string categoria;
         public string oleada;
         public string id_tag;
@@ -31,6 +33,19 @@ namespace Acuanet
         public double tc_meta_local;
 
 
+        //variables que se calculan e imprimen en BD
+        public string stiempo;
+        public string sfecha_hora_ini;
+        public string sfecha_hora_fin;
+
+        public double ts_ini;
+        public int milis_fin;
+
+        public DateTime dt_ini;
+        public DateTime dt_fin;
+
+
+        //checado de bool
         public bool blecb = true;
     }
 }

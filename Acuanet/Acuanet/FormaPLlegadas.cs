@@ -10,7 +10,9 @@ namespace Acuanet
 {
     public partial class FormaPLlegadas : Form
     {
-        LectorLL mll = new LectorLL();
+        //LectorLL gres_pre = new LectorLL();
+        GResultados gres_pre = new GResultados();
+
         Object guiLock = new Object();
 
         public FormaPLlegadas()
@@ -36,7 +38,7 @@ namespace Acuanet
             {
                 lock (guiLock)
                 {
-                    this.dgv_llegadas.DataSource = mll.obtenDatos().Tables[0].DefaultView;
+                    this.dgv_llegadas.DataSource = gres_pre.obtenResPreliminares().Tables[0].DefaultView;
                 }
             }
 
@@ -55,7 +57,7 @@ namespace Acuanet
         private void btn_revisar_Click(object sender, EventArgs e)
         {
             if (txt_numero.Text.Length == 0) return;
-            mll.ponNumero(System.Convert.ToInt32(this.txt_numero.Text));
+            gres_pre.ponNumero(System.Convert.ToInt32(this.txt_numero.Text));
             txt_numero.Text = "";
         }
     }

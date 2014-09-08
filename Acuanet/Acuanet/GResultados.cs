@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -31,8 +32,8 @@ namespace Acuanet
         public int trabajo_tot_factor = 5;
         public int trabajo_rea;
 
+        private int numero_filtro;
 
-        
 
         //constructor
         public GResultados()
@@ -48,7 +49,7 @@ namespace Acuanet
             h = cxml.Int16("ACUANET/MODELO/h", 3);
             bcomp = cxml.Boolean("ACUANET/MODELO/compensado", false);
 
-           // MessageBox.Show("bcomp: " + bcomp+" A: "+A+" h: "+h);
+            // MessageBox.Show("bcomp: " + bcomp+" A: "+A+" h: "+h);
 
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
@@ -65,7 +66,7 @@ namespace Acuanet
         {
             this.trabajo_accion = "Obtenemos participantes";
 
-            string sql = "SELECT DISTINCT participante.id,participante.categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local,oleadacat.oleada FROM tags,participante,oleadacat,salida WHERE salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria AND participante.id_tag=tags.id_tag ";
+            string sql = "SELECT DISTINCT participante.id,participante.categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local,oleadacat.oleada,participante.numero,participante.nombre FROM tags,participante,oleadacat,salida WHERE salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria AND participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -79,6 +80,9 @@ namespace Acuanet
                 res.tiempo_ini_local = System.Convert.ToInt64(rdr.GetString(3));
                 res.milis_ini_local = System.Convert.ToInt16(rdr.GetString(4));
                 res.oleada = rdr.GetString(5);
+                res.snumero = rdr.GetString(6);
+                res.nombre = rdr.GetString(7);
+
 
                 res.aLec = new List<Lectura>();
 
@@ -111,8 +115,8 @@ namespace Acuanet
 
                     //tiempo origen de la antena
                     double dtori = System.Convert.ToInt64(rdr.GetString(3)) + (System.Convert.ToInt32(rdr.GetString(4)) / 1000.00);
-                    
-                  
+
+
                     //tiempo en segundos incluyendo los milisegundos relativo al momento de inicio de la antena
                     auxlec.tms = auxlec.tiempo + (auxlec.milis / 1000.00) - dtori;
 
@@ -128,12 +132,12 @@ namespace Acuanet
 
                     // se calcula la distancia horizontal a la meta
                     auxlec.a_dist = Math.Sqrt(auxlec.d_dist * auxlec.d_dist - h * h);
-                  
+
                     r.aLec.Add(auxlec);
                 }
                 rdr.Close();
 
-               // MessageBox.Show(r.id_participante + " " + r.aLec.Count);
+                // MessageBox.Show(r.id_participante + " " + r.aLec.Count);
 
                 //this.CalculaMax();
                 this.trabajo_rea++;
@@ -144,15 +148,15 @@ namespace Acuanet
         //método que obtiene la distancia estimada de acuerdo a la intensidad de la respuesta
         private double estimaDist(double rssi)
         {
-           
+
             return Math.Pow(10, (A - rssi) / (10 * n));
-            
+
         }
 
 
         //metodo que estima la distancia compensando desalineacion angular debido a la altura en la que se encuentra la antena
         private double estimaDistCA(double rssi)
-        {            
+        {
             return Math.Pow(10, (20 * Math.Log10(h) + A - rssi) / (10 * n + 20));
         }
 
@@ -171,14 +175,14 @@ namespace Acuanet
                     Lectura lecj = r.aLec[i + 1];
                     if (lecj.bdatoc == true)
                     {
-                        res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist /(lecj.a_dist - leci.a_dist));
+                        res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist / (lecj.a_dist - leci.a_dist));
                     }
                 }
             }
 
             r.tc_meta = res / numlec;
 
-            r.tc_meta_local =r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
+            r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
 
             this.trabajo_rea++;
         }
@@ -190,6 +194,7 @@ namespace Acuanet
             this.trabajo_accion = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
+                /*
                 //MessageBox.Show(""+r.tiempo_ini_local);
                 DateTime dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
                 //MessageBox.Show(""+r.tc_meta_local);
@@ -207,14 +212,39 @@ namespace Acuanet
 
 
                 string stiempo = GResultados.ConvierteUTS2String(r.tc_meta_local-ts_ini);
+                */
+                this.calculoTiemposFinales(r);
 
 
                 string sql = "INSERT INTO resultado (id_participante,tiempo_meta,fecha_hora_ini,milis_ini,fecha_hora_fin,milis_fin,tiempo,tiempo_ini) VALUES ("
-                    + r.id_participante + ",'" + r.tc_meta_local + "','" + sfecha_hora_ini + "'," + r.milis_ini_local + ",'" + sfecha_hora_fin + "'," + milis_fin + ",'" + stiempo + "'," + ts_ini + ")";
+                    + r.id_participante + ",'" + r.tc_meta_local + "','" + r.sfecha_hora_ini + "'," + r.milis_ini_local + ",'" + r.sfecha_hora_fin + "'," + r.milis_fin + ",'" + r.stiempo + "'," + r.ts_ini + ")";
                 MySqlCommand cmd = new MySqlCommand(sql, dbConn);
                 cmd.ExecuteNonQuery();
                 this.trabajo_rea++;
             }
+
+        }
+
+        //metodo que calcula todos los tiempos involucrados y los prepara para su insercion
+        private void calculoTiemposFinales(Resultado r)
+        {
+
+            r.dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
+
+            r.dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
+
+            r.ts_ini = (r.tiempo_ini_local + (double)r.milis_ini_local / 1000.00);
+
+
+            r.sfecha_hora_ini = r.dt_ini.ToString("yyyy-MM-dd HH:mm:ss") + "." + Math.Round(r.milis_ini_local / 10.0, 0);
+
+
+            r.milis_fin = (int)Math.Truncate((r.tc_meta_local - Math.Truncate(r.tc_meta_local)) * 1000);
+
+            r.sfecha_hora_fin = r.dt_fin.ToString("yyyy-MM-dd HH:mm:ss") + "." + Math.Round(r.milis_fin / 10.0, 0);
+
+
+            r.stiempo = GResultados.ConvierteUTS2String(r.tc_meta_local - r.ts_ini);
 
         }
 
@@ -227,47 +257,12 @@ namespace Acuanet
         }
 
 
-        //método que determina el valor maximo de rssi y el tiempo y la minima distancia puede ser no utilizado
-        private void CalculaMax()
-        {
-
-            foreach (Resultado r in this.lRes)
-            {
-                bool bpv = true;
-                double rssi_max = 0;
-                double tms_max = 0;
-                foreach (Lectura lec in r.aLec)
-                {
-                    if (bpv)
-                    {
-                        rssi_max = lec.rssi;
-                        tms_max = lec.tms;
-                        bpv = false;
-                    }
-                    else
-                    {
-                        if (rssi_max < lec.rssi)
-                        {
-                            rssi_max = lec.rssi;
-                            tms_max = lec.tms;
-                        }
-                    }
-                }
-
-                r.rssi_max = rssi_max;
-                r.tms_max = tms_max;
-                r.d_min = estimaDist(r.rssi_max);
-            }
-
-        }
-
-
         //método principal que realiza todos los calculos para cada categoria
         public void estimaTCTodos()
         {
             this.trabajo_accion = "Calculando TCM";
             foreach (Resultado r in lRes)
-            {                                
+            {
                 if (r.cantidad_aLec > 1)
                     this.estimaTCM(r);
                 else
@@ -304,9 +299,59 @@ namespace Acuanet
             double segundos = parte_min_seg - 60 * minutos;
 
 
-            sb.Append(String.Format("{0}:{1:00}:{2:00}.{3:00}",horas,minutos,segundos,Math.Round(parte_dec*100)));
+            sb.Append(String.Format("{0}:{1:00}:{2:00}.{3:00}", horas, minutos, segundos, Math.Round(parte_dec * 100)));
 
             return sb.ToString();
+        }
+
+        //metodo que calcula dinamicamente con resultados preliminares toda la algoritmia involucrada para estimar resultado, reporta 1 solo dato por participante y aproxima consistentemente el resultado
+        public DataSet obtenResPreliminares()
+        {
+
+            this.obtenParDistxOleada();
+            this.obtenLecturasPar();
+            this.marcaLecturasBOrden();
+            this.estimaTCTodos();
+
+            DataTable dtable = new DataTable("resultados_preliminares");
+
+            dtable.Columns.Add("Número");
+            dtable.Columns.Add("Nombre");
+            dtable.Columns.Add("Categoría");
+            dtable.Columns.Add("Tag");
+            dtable.Columns.Add("Tiempo ECM");
+
+            
+
+            foreach (Resultado r in this.lRes)
+            {
+                if (numero_filtro > 0)
+                {
+                    if (numero_filtro == System.Convert.ToInt64(r.snumero))
+                    {
+                        this.calculoTiemposFinales(r);
+                        dtable.Rows.Add(r.snumero, r.nombre, r.categoria, r.id_tag, r.stiempo);
+                    }
+                }
+                else
+                {
+                    this.calculoTiemposFinales(r);
+                    dtable.Rows.Add(r.snumero, r.nombre, r.categoria, r.id_tag, r.stiempo);
+                }
+
+            }
+
+
+            DataSet dtset = new DataSet();
+            dtset.Tables.Add(dtable);
+
+            return dtset;
+        }
+
+
+        public void ponNumero(int num)
+        {
+            this.numero_filtro = num;
         }
 
         //destructor libera la memoria y en este caso la conexión a la BD 
