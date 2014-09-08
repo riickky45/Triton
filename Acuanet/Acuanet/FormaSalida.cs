@@ -15,8 +15,9 @@ namespace Acuanet
 
         LecConfigXML cxml = new LecConfigXML();
         ModOleada modo;
+        Object guiLock = new Object();
         string strConexion;
-
+        
 
         public FormaSalida()
         {
@@ -28,12 +29,14 @@ namespace Acuanet
            + ";pwd=" + cxml.Text("ACUANET/BD/SBD_passwd", "")
            + ";database=" + cxml.Text("ACUANET/BD/SBD_bdn", "ntritondb");
 
+            
+            
             modo = new ModOleada(strConexion);
             this.cb_categoriaO.DataSource = modo.obtenDTC();
 
             this.cb_categoriaO.DisplayMember = "nombre";
             this.cb_categoriaO.ValueMember = "nombre";
-
+            this.dgb_Oleada.DataSource = modo.obtenSalida().Tables[0].DefaultView;
 
         }
 
@@ -57,6 +60,7 @@ namespace Acuanet
             DataRowView dr = (DataRowView)this.cb_categoriaO.SelectedItem;
             salida.registraSalida(dr["nombre"].ToString());
         }
+
 
         
 

@@ -37,6 +37,10 @@
             this.btn_pause = new System.Windows.Forms.Button();
             this.btn_play = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgb_Oleada = new System.Windows.Forms.DataGridView();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgb_Oleada)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -137,13 +141,36 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.dgb_Oleada);
+            this.groupBox1.Location = new System.Drawing.Point(12, 214);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(460, 187);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Oleadas Arrancadas";
+            // 
+            // dgb_Oleada
+            // 
+            this.dgb_Oleada.AllowUserToAddRows = false;
+            this.dgb_Oleada.AllowUserToDeleteRows = false;
+            this.dgb_Oleada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgb_Oleada.Location = new System.Drawing.Point(12, 18);
+            this.dgb_Oleada.Name = "dgb_Oleada";
+            this.dgb_Oleada.ReadOnly = true;
+            this.dgb_Oleada.Size = new System.Drawing.Size(438, 162);
+            this.dgb_Oleada.TabIndex = 0;
+            // 
             // FormaSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(477, 223);
+            this.ClientSize = new System.Drawing.Size(484, 413);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_pause);
             this.Controls.Add(this.btn_play);
@@ -153,6 +180,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FormaSalida";
             this.Text = "FormaOleada";
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgb_Oleada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +197,7 @@
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Button btn_pause;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgb_Oleada;
     }
 }

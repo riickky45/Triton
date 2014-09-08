@@ -42,6 +42,20 @@ namespace Acuanet
         }
 
 
+        public DataSet obtenSalida()
+        {
+
+            string sql = "SELECT * FROM salida";
+
+            MySqlDataAdapter dataS = new MySqlDataAdapter(sql, dbConn);
+            DataSet dts = new DataSet();
+
+            dataS.Fill(dts);
+
+            return dts;
+        }
+
+
         public bool crearOleada(string snombre_oleada, List<string> lista_cat)
         {
 
