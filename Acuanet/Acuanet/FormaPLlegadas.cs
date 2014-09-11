@@ -38,7 +38,11 @@ namespace Acuanet
             {
                 lock (guiLock)
                 {
-                    this.dgv_llegadas.DataSource = gres_pre.obtenResPreliminares().Tables[0].DefaultView;
+                    DataSet dt=gres_pre.obtenResPreliminares();
+                    if (dt != null)
+                    {
+                        this.dgv_llegadas.DataSource = dt.Tables[0].DefaultView;
+                    }
                 }
             }
 

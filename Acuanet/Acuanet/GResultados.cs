@@ -228,7 +228,7 @@ namespace Acuanet
         //metodo que calcula todos los tiempos involucrados y los prepara para su insercion
         private void calculoTiemposFinales(Resultado r)
         {
-
+            
             r.dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
 
             r.dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
@@ -309,8 +309,10 @@ namespace Acuanet
         {
 
             this.obtenParDistxOleada();
+            if (lRes.Count == 0) return null;
             this.obtenLecturasPar();
             this.marcaLecturasBOrden();
+            
             this.estimaTCTodos();
 
             DataTable dtable = new DataTable("resultados_preliminares");
@@ -344,6 +346,8 @@ namespace Acuanet
 
             DataSet dtset = new DataSet();
             dtset.Tables.Add(dtable);
+
+            lRes.Clear();
 
             return dtset;
         }
