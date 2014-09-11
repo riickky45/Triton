@@ -43,14 +43,14 @@
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.cb_categoria = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pais = new System.Windows.Forms.Label();
+            this.tb_pais = new System.Windows.Forms.TextBox();
             this.labelCodigoP = new System.Windows.Forms.Label();
             this.radioF = new System.Windows.Forms.RadioButton();
             this.radioM = new System.Windows.Forms.RadioButton();
             this.btnAgregarR = new System.Windows.Forms.Button();
             this.btnEncenderA = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tb_pais = new System.Windows.Forms.TextBox();
-            this.pais = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -198,12 +198,29 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 55);
+            this.groupBox1.Location = new System.Drawing.Point(12, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(401, 328);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // pais
+            // 
+            this.pais.AutoSize = true;
+            this.pais.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pais.Location = new System.Drawing.Point(46, 234);
+            this.pais.Name = "pais";
+            this.pais.Size = new System.Drawing.Size(41, 17);
+            this.pais.TabIndex = 32;
+            this.pais.Text = "País :";
+            // 
+            // tb_pais
+            // 
+            this.tb_pais.Location = new System.Drawing.Point(93, 234);
+            this.tb_pais.Name = "tb_pais";
+            this.tb_pais.Size = new System.Drawing.Size(264, 20);
+            this.tb_pais.TabIndex = 31;
             // 
             // labelCodigoP
             // 
@@ -273,28 +290,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Acuanet.Properties.Resources.Nuevo_registro;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(49, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(347, 50);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
-            // 
-            // tb_pais
-            // 
-            this.tb_pais.Location = new System.Drawing.Point(93, 234);
-            this.tb_pais.Name = "tb_pais";
-            this.tb_pais.Size = new System.Drawing.Size(264, 20);
-            this.tb_pais.TabIndex = 31;
-            // 
-            // pais
-            // 
-            this.pais.AutoSize = true;
-            this.pais.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pais.Location = new System.Drawing.Point(46, 234);
-            this.pais.Name = "pais";
-            this.pais.Size = new System.Drawing.Size(41, 17);
-            this.pais.TabIndex = 32;
-            this.pais.Text = "País :";
             // 
             // FormaRegistro
             // 
@@ -308,6 +308,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAgregarR);
             this.Controls.Add(this.btnEncenderA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaRegistro";
             this.Text = "Registro de Participantes";
             this.Load += new System.EventHandler(this.formaRegistro_Load);

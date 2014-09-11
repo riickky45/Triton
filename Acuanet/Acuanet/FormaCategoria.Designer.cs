@@ -30,12 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtb_nombre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_categoria = new System.Windows.Forms.DataGridView();
+            this.text_descrip = new System.Windows.Forms.TextBox();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_categoria)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,17 +61,17 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Descripcion :";
             // 
-            // textBox1
+            // txtb_nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtb_nombre.Location = new System.Drawing.Point(87, 8);
+            this.txtb_nombre.Name = "txtb_nombre";
+            this.txtb_nombre.Size = new System.Drawing.Size(260, 20);
+            this.txtb_nombre.TabIndex = 10;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgv_categoria);
             this.groupBox1.Location = new System.Drawing.Point(19, 99);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(396, 133);
@@ -78,20 +79,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorias actuales";
             // 
-            // textBox2
+            // dgv_categoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
-            this.textBox2.TabIndex = 12;
+            this.dgv_categoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_categoria.Location = new System.Drawing.Point(6, 19);
+            this.dgv_categoria.Name = "dgv_categoria";
+            this.dgv_categoria.Size = new System.Drawing.Size(384, 108);
+            this.dgv_categoria.TabIndex = 0;
             // 
-            // dataGridView1
+            // text_descrip
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(384, 108);
-            this.dataGridView1.TabIndex = 0;
+            this.text_descrip.Location = new System.Drawing.Point(109, 56);
+            this.text_descrip.Name = "text_descrip";
+            this.text_descrip.Size = new System.Drawing.Size(260, 20);
+            this.text_descrip.TabIndex = 12;
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Location = new System.Drawing.Point(312, 248);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(103, 31);
+            this.btn_agregar.TabIndex = 13;
+            this.btn_agregar.Text = "button1";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // FormaCategoria
             // 
@@ -99,16 +110,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
-            this.ClientSize = new System.Drawing.Size(435, 242);
-            this.Controls.Add(this.textBox2);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(444, 291);
+            this.Controls.Add(this.btn_agregar);
+            this.Controls.Add(this.text_descrip);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtb_nombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormaCategoria";
             this.Text = "Crear Categoria";
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_categoria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,10 +131,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtb_nombre;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DataGridView dgv_categoria;
+        private System.Windows.Forms.TextBox text_descrip;
+        private System.Windows.Forms.Button btn_agregar;
 
     }
 }
