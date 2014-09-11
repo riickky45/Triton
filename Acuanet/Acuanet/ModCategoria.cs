@@ -63,14 +63,15 @@ namespace Acuanet
         }
 
 
-        public void creaCategoria(Categoria c)
+        public bool creaCat( Categoria c)
         {
             //codigo que se conecta y query de insercion
-
-            string sql = "INSERT INTO categoria (nombre,desc) VALUES ('" + c.nombre + "','" + c.desc + "')";
+            if (c.nombre.Length == 0) return false;
+            string sql = "INSERT INTO categoria (nombre) VALUES ('" + c.nombre + "')";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
-            cmd.ExecuteNonQuery();
-
+            int res = cmd.ExecuteNonQuery();
+            return (res == 1) ? true : false;
+            
         }
 
 
@@ -94,6 +95,19 @@ namespace Acuanet
             rdr.Close();
 
             return dt;
+        }
+
+        public DataSet obtenCategoriadgv()
+        {
+
+            string sql = "SELECT * FROM categoria";
+
+            MySqlDataAdapter dataS = new MySqlDataAdapter(sql, dbConn);
+            DataSet dts = new DataSet();
+
+            dataS.Fill(dts);
+
+            return dts;
         }
 
         public DataTable obtenDTCsinO()
