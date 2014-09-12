@@ -22,7 +22,7 @@ namespace Acuanet
 
         //para metros del modelo
         private double A;
-        private int n;
+        private double n;
         private double h;
         private bool bcomp;
 
@@ -45,11 +45,11 @@ namespace Acuanet
 
 
             A = cxml.Double("ACUANET/MODELO/A", -69.190);
-            n = cxml.Int16("ACUANET/MODELO/n", 2);
+            n = cxml.Double("ACUANET/MODELO/n", 2);
             h = cxml.Int16("ACUANET/MODELO/h", 3);
             bcomp = cxml.Boolean("ACUANET/MODELO/compensado", false);
 
-            // MessageBox.Show("bcomp: " + bcomp+" A: "+A+" h: "+h);
+            // MessageBox.Show("bcomp: " + bcomp+" A: "+A+" h: "+h+" n: "+n);
 
             dbConn = new MySqlConnection(strConexion);
             dbConn.Open();
@@ -165,6 +165,7 @@ namespace Acuanet
         private void estimaTCM(Resultado r)
         {
             int numlec = r.aLec.Count - 1;
+            int numlec_efe = 0;
             double res = 0;
 
             for (int i = 0; i < numlec; i++)
@@ -173,17 +174,25 @@ namespace Acuanet
                 if (leci.bdatoc == true)
                 {
                     Lectura lecj = r.aLec[i + 1];
-                    if (lecj.bdatoc == true)
+                    if (lecj.bdatoc == true && lecj.a_dist != leci.a_dist)
                     {
                         res += lecj.tms + Math.Abs((lecj.tms - leci.tms) * lecj.a_dist / (lecj.a_dist - leci.a_dist));
+                        numlec_efe++;
                     }
                 }
             }
 
-            r.tc_meta = res / numlec;
-
+            if (numlec_efe > 0)
+            {
+                r.tc_meta = res / numlec_efe;
+            }
+            else
+            {
+                r.tc_meta = 0;
+            }
+               
             r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
-
+            
             this.trabajo_rea++;
         }
 
@@ -194,25 +203,7 @@ namespace Acuanet
             this.trabajo_accion = "Escribiendo en BD resultados";
             foreach (Resultado r in lRes)
             {
-                /*
-                //MessageBox.Show(""+r.tiempo_ini_local);
-                DateTime dt_ini = GResultados.UnixTimeStampToDateTime(r.tiempo_ini_local);
-                //MessageBox.Show(""+r.tc_meta_local);
-                DateTime dt_fin = GResultados.UnixTimeStampToDateTime(Math.Truncate(r.tc_meta_local));
-
-                double ts_ini=(r.tiempo_ini_local + (double)r.milis_ini_local / 1000.00);
                 
-
-                string sfecha_hora_ini=dt_ini.ToString("yyyy-MM-dd HH:mm:ss")+"."+Math.Round(r.milis_ini_local/10.0,0);
-              
-
-                int milis_fin =(int) Math.Truncate((r.tc_meta_local - Math.Truncate(r.tc_meta_local)) * 1000);
-
-                string sfecha_hora_fin = dt_fin.ToString("yyyy-MM-dd HH:mm:ss") + "." + Math.Round(milis_fin / 10.0, 0);
-
-
-                string stiempo = GResultados.ConvierteUTS2String(r.tc_meta_local-ts_ini);
-                */
                 this.calculoTiemposFinales(r);
 
 
@@ -266,7 +257,9 @@ namespace Acuanet
                 if (r.cantidad_aLec > 1)
                     this.estimaTCM(r);
                 else
-                    this.estimaTCM2(r);
+                {
+                  if(lRes.Count>1)this.estimaTCM2(r);
+                }
             }
 
         }
@@ -311,8 +304,10 @@ namespace Acuanet
             this.obtenParDistxOleada();
             if (lRes.Count == 0) return null;
             this.obtenLecturasPar();
-            this.marcaLecturasBOrden();
-            
+           int clBO=this.marcaLecturasBOrden();
+
+           if (clBO <= 2) return null;
+
             this.estimaTCTodos();
 
             DataTable dtable = new DataTable("resultados_preliminares");

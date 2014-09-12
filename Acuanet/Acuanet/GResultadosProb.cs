@@ -7,8 +7,9 @@ namespace Acuanet
     partial class GResultados
     {
         //metodo que checa el buen orden de los datos, borra items que no aportan buen orden
-        public void marcaLecturasBOrden()
+        public int marcaLecturasBOrden()
         {
+            int cantidadlecBO = 0;
             foreach (Resultado r in lRes)
             {
                 double rssi_b = r.aLec[0].rssi;
@@ -18,6 +19,7 @@ namespace Acuanet
                     {
                         lec.bdatoc = true;
                         rssi_b = lec.rssi;
+                        cantidadlecBO++;
                     }
                     else
                     {
@@ -39,7 +41,7 @@ namespace Acuanet
             }
 
 
-
+            return cantidadlecBO;
 
         }
 
@@ -48,7 +50,14 @@ namespace Acuanet
         private void estimaTCM2(Resultado r)
         {
             Lectura lec = r.aLec[0];
-            r.tc_meta = (lec.tiempo + lec.a_dist / this.obtenVelMasCercano(r));
+            if (lRes.Count > 2)
+            {
+                r.tc_meta = (lec.tiempo + lec.a_dist / this.obtenVelMasCercano(r));
+            }
+            else
+            {
+                r.tc_meta = (lec.tiempo + lec.a_dist / 2); //el 2 es velocidad tipica : 2m/s
+            }
             r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
             this.trabajo_rea++;
 
