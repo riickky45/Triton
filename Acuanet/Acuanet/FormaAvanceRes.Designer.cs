@@ -91,11 +91,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
-            this.ClientSize = new System.Drawing.Size(503, 202);
+            this.ClientSize = new System.Drawing.Size(488, 177);
             this.Controls.Add(this.btn_tabres);
             this.Controls.Add(this.btn_iniciar);
             this.Controls.Add(this.lbl_desct);
             this.Controls.Add(this.pgbarRes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaAvanceRes";
             this.Text = "Cálculo de Resultados";
             this.ResumeLayout(false);

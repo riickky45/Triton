@@ -34,7 +34,6 @@
             this.gbox_estatus = new System.Windows.Forms.GroupBox();
             this.txt_numero = new System.Windows.Forms.TextBox();
             this.btn_revisar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_llegadas)).BeginInit();
             this.gbox_estatus.SuspendLayout();
@@ -50,6 +49,7 @@
             // 
             this.dgv_llegadas.AllowUserToAddRows = false;
             this.dgv_llegadas.AllowUserToDeleteRows = false;
+            this.dgv_llegadas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgv_llegadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_llegadas.Location = new System.Drawing.Point(12, 173);
             this.dgv_llegadas.Name = "dgv_llegadas";
@@ -63,9 +63,9 @@
             this.gbox_estatus.Controls.Add(this.txt_numero);
             this.gbox_estatus.Controls.Add(this.btn_revisar);
             this.gbox_estatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbox_estatus.Location = new System.Drawing.Point(987, 22);
+            this.gbox_estatus.Location = new System.Drawing.Point(893, 25);
             this.gbox_estatus.Name = "gbox_estatus";
-            this.gbox_estatus.Size = new System.Drawing.Size(205, 111);
+            this.gbox_estatus.Size = new System.Drawing.Size(213, 111);
             this.gbox_estatus.TabIndex = 1;
             this.gbox_estatus.TabStop = false;
             this.gbox_estatus.Text = "Estatus";
@@ -88,17 +88,6 @@
             this.btn_revisar.UseVisualStyleBackColor = true;
             this.btn_revisar.Click += new System.EventHandler(this.btn_revisar_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(388, 22);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(545, 111);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Resultados";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Acuanet.Properties.Resources.Llegadas;
@@ -116,7 +105,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1204, 577);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbox_estatus);
             this.Controls.Add(this.dgv_llegadas);
             this.Name = "FormaPLlegadas";
@@ -138,7 +126,6 @@
         private System.Windows.Forms.GroupBox gbox_estatus;
         private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.Button btn_revisar;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -344,6 +344,10 @@
     <None Include="Resources\Clipboard_48x48-321.gif" />
     <None Include="Resources\Clipboard_32x32-32.gif" />
     <None Include="Resources\Print_32x32-32.gif" />
+    <None Include="Resources\Lacuanet.png" />
+    <None Include="Resources\acuanet1.png" />
+    <None Include="Resources\kuser_32x32-32.ico" />
+    <None Include="Resources\3floppy_mount_32x32-32.ico" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>

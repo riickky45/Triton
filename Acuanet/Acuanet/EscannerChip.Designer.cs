@@ -220,6 +220,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EscannerChip";
             this.Text = "Escaner Codigos ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.escanerChip_FormClosing);

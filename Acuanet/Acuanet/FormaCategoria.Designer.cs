@@ -81,8 +81,9 @@
             // 
             // dgv_categoria
             // 
+            this.dgv_categoria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgv_categoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_categoria.Location = new System.Drawing.Point(6, 19);
+            this.dgv_categoria.Location = new System.Drawing.Point(7, 19);
             this.dgv_categoria.Name = "dgv_categoria";
             this.dgv_categoria.Size = new System.Drawing.Size(384, 108);
             this.dgv_categoria.TabIndex = 0;
@@ -96,12 +97,19 @@
             // 
             // btn_agregar
             // 
+            this.btn_agregar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_agregar.BackgroundImage = global::Acuanet.Properties.Resources._3floppy_mount_32x32_32;
+            this.btn_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_agregar.FlatAppearance.BorderSize = 0;
+            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_agregar.Location = new System.Drawing.Point(312, 248);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(103, 31);
             this.btn_agregar.TabIndex = 13;
-            this.btn_agregar.Text = "button1";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Text = "Guardar";
+            this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // FormaCategoria
@@ -118,6 +126,7 @@
             this.Controls.Add(this.txtb_nombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaCategoria";
             this.Text = "Crear Categoria";
             this.groupBox1.ResumeLayout(false);

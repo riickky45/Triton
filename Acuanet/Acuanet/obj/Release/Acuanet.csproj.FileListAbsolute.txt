@@ -73,3 +73,4 @@ C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manife
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache

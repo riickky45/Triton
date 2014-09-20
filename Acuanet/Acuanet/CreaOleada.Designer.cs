@@ -68,11 +68,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(245, 118);
+            this.button1.BackgroundImage = global::Acuanet.Properties.Resources.kuser_32x32_32;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(218, 118);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 35);
+            this.button1.Size = new System.Drawing.Size(157, 35);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Crear Categoria";
+            this.button1.Text = "Crear Oleada";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -100,6 +106,7 @@
             this.Controls.Add(this.gb_categoria);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CreaOleada";
             this.Text = "CreaOleada";
             this.gb_categoria.ResumeLayout(false);

@@ -100,6 +100,10 @@ namespace Acuanet
             formaO.Show();
         }
 
+        
+
+
+
        
     }
 }
