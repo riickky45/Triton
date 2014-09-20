@@ -15,7 +15,7 @@ namespace Acuanet
         LecConfigXML cxml = new LecConfigXML("config_oleada.xml");
 
         MySqlConnection dbConn = null;
-        List<Resultado> lRes = new List<Resultado>();
+        List<Resultado> lRes ;
 
 
         private string strConexion;
@@ -64,8 +64,9 @@ namespace Acuanet
         //método que obtiene a los participantes de cada salida distintos, que previamente poseen un registro en la BD
         public int obtenParDistxOleada()
         {
-            this.trabajo_accion = "Obtenemos participantes";
 
+            this.trabajo_accion = "Obtenemos participantes";
+            lRes = new List<Resultado>();
             string sql = "SELECT DISTINCT participante.id,participante.categoria,participante.id_tag,UNIX_TIMESTAMP(fecha_hora_ini_local) as tiempo_ini_local,milis_ini_local,oleadacat.oleada,participante.numero,participante.nombre FROM tags,participante,oleadacat,salida WHERE salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria AND participante.id_tag=tags.id_tag ";
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
@@ -343,6 +344,7 @@ namespace Acuanet
             dtset.Tables.Add(dtable);
 
             lRes.Clear();
+            lRes = null;
 
             return dtset;
         }

@@ -21,10 +21,7 @@ namespace Acuanet
                         rssi_b = lec.rssi;
                         cantidadlecBO++;
                     }
-                    else
-                    {
-                       // r.aLec.Remove(lec);
-                    }
+                    
                 }
 
                 for (int i = 0; i < r.aLec.Count; i++)
@@ -52,7 +49,9 @@ namespace Acuanet
             Lectura lec = r.aLec[0];
             if (lRes.Count > 2)
             {
-                r.tc_meta = (lec.tiempo + lec.a_dist / this.obtenVelMasCercano(r));
+                double vel=this.obtenVelMasCercano(r);
+                vel=(vel<=0)?2.00:vel;
+                r.tc_meta = (lec.tiempo + lec.a_dist /vel );
             }
             else
             {
