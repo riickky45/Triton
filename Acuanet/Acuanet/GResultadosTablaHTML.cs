@@ -39,11 +39,9 @@ namespace Acuanet
         private void generaHTML()
         {
             StringBuilder sbHTML = new StringBuilder();
-            sbHTML.Append("<table>");
+            sbHTML.Append("<table><tbody>");
 
-            sbHTML.Append("<tr>");
-            sbHTML.Append("<th>Posición</th><th>Nombre (número)</th><th>Tiempo</th>");
-            sbHTML.Append("</tr><tbody>");
+            
 
             string sqc = "";
             if (id_categoria > 0)
@@ -51,15 +49,34 @@ namespace Acuanet
                 sqc = " AND resultado_final.id_categoria=" + id_categoria;
             }
 
-            string sql = "SELECT 1 as posicion,participante.nombre,participante.numero,tiempo FROM resultado,participante WHERE participante.id=resultado.id_participante ORDER BY tiempo_meta";
-            MessageBox.Show(sql);
+            string sql = "SELECT 1 as posicion, participante.nombre,participante.numero,tiempo,oleadacat.categoria,oleadacat.oleada FROM resultado,participante,salida,oleadacat WHERE participante.id=resultado.id_participante AND salida.oleada=oleadacat.oleada AND oleadacat.categoria=participante.categoria  ORDER BY salida.fecha_hora_ini_local,oleadacat.categoria,tiempo_meta";
+            //MessageBox.Show(sql);
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
-            int posicion = 1;
+            int posicion = 0;
+
+            string stexto_oleada = "";
+
+
             while (rdr.Read())
             {
+
+                if (!stexto_oleada.Equals(rdr.GetString(5)))
+                {
+                    stexto_oleada = rdr.GetString(5);
+                    sbHTML.Append("<tr>");
+                    sbHTML.Append("<td colspan=\"4\"><h2>"+stexto_oleada+"</h2></td>");
+                    sbHTML.Append("</tr>");
+                    posicion = 1;
+
+                    sbHTML.Append("<tr>");
+                    sbHTML.Append("<th>Posición</th><th>Nombre (número)</th><th>Categoriia</th><th>Tiempo</th>");
+                    sbHTML.Append("</tr>");
+                }
+
+
                 sbHTML.Append("<tr>");
-                sbHTML.Append(String.Format("<td align=\"center\">{0}</td><td>{1} ({2})</td><td align=\"right\">{3}</td>", posicion, rdr.GetString(1), rdr.GetString(2), rdr.GetString(3)));
+                sbHTML.Append(String.Format("<td align=\"center\">{0}</td><td>{1} ({2})</td><td align=\"center\">{3}</td><td align=\"right\">{4}</td>", posicion, rdr.GetString(1), rdr.GetString(2), rdr.GetString(4), rdr.GetString(3)));
                 sbHTML.Append("</tr>");
                 posicion++;
             }
@@ -69,7 +86,7 @@ namespace Acuanet
 
             //envio al Clipboard
             ClipboardHelper.CopyToClipboard(sbHTML.ToString(), "Tabla de resultados: ");
-
+            MessageBox.Show("Ya");
         }
 
 
