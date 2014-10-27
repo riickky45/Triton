@@ -39,6 +39,7 @@ namespace Acuanet
             if (modC.creaCat(Cat))
             {
                 MessageBox.Show("Se creo correctamente la Categoria", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.dgv_categoria.DataSource = modC.obtenCategoriadgv().Tables[0].DefaultView;
             }
             else
             {

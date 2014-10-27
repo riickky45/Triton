@@ -156,6 +156,7 @@
             // 
             this.dgb_Oleada.AllowUserToAddRows = false;
             this.dgb_Oleada.AllowUserToDeleteRows = false;
+            this.dgb_Oleada.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgb_Oleada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgb_Oleada.Location = new System.Drawing.Point(12, 18);
             this.dgb_Oleada.Name = "dgb_Oleada";
@@ -178,6 +179,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cb_categoriaO);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaSalida";
             this.Text = "FormaOleada";
             this.groupBox1.ResumeLayout(false);

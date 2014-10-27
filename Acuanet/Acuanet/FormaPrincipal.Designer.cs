@@ -43,6 +43,7 @@
             this.btn_pantalla = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.llegadasm = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -259,6 +260,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // llegadasm
+            // 
+            this.llegadasm.FlatAppearance.BorderSize = 0;
+            this.llegadasm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.llegadasm.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llegadasm.Image = global::Acuanet.Properties.Resources.advanced_data_grid;
+            this.llegadasm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llegadasm.Location = new System.Drawing.Point(17, 251);
+            this.llegadasm.Name = "llegadasm";
+            this.llegadasm.Size = new System.Drawing.Size(183, 41);
+            this.llegadasm.TabIndex = 7;
+            this.llegadasm.Text = "Llegadas manuales";
+            this.llegadasm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.llegadasm.UseVisualStyleBackColor = true;
+            this.llegadasm.Click += new System.EventHandler(this.llegadasm_Click);
+            // 
             // FormaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +283,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(720, 331);
+            this.ClientSize = new System.Drawing.Size(720, 365);
+            this.Controls.Add(this.llegadasm);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -306,6 +324,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btn_pantalla;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button llegadasm;
     }
 }
 

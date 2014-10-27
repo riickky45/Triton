@@ -38,6 +38,7 @@
             // dgv_resultados
             // 
             this.dgv_resultados.AllowUserToDeleteRows = false;
+            this.dgv_resultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgv_resultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_resultados.Location = new System.Drawing.Point(-4, 143);
             this.dgv_resultados.Name = "dgv_resultados";
@@ -93,7 +94,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_resultados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormaResultado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultados";
             this.Load += new System.EventHandler(this.frmResultado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultados)).EndInit();

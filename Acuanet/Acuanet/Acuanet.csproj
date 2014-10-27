@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\a\</PublishUrl>
+    <PublishUrl>C:\Users\Ricardo Sanchez\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -61,6 +61,9 @@
   </PropertyGroup>
   <PropertyGroup>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoAcuanet.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -97,11 +100,6 @@
     <Compile Include="FormaSalida.Designer.cs">
       <DependentUpon>FormaSalida.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormaPrincipal1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FormaPrincipal.resx</DependentUpon>
-    </Compile>
     <Compile Include="FormaResultado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +122,12 @@
     <Compile Include="GResultados.cs" />
     <Compile Include="GResultadosTablaHTML.cs" />
     <Compile Include="LectorLL.cs" />
+    <Compile Include="LlegadasManuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LlegadasManuales.Designer.cs">
+      <DependentUpon>LlegadasManuales.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModCategoria.cs" />
     <Compile Include="ModOleada.cs" />
     <Compile Include="ModResultado.cs" />
@@ -213,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaAvanceRes.resx">
       <DependentUpon>FormaAvanceRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LlegadasManuales.resx">
+      <DependentUpon>LlegadasManuales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -313,6 +320,7 @@
   <ItemGroup>
     <Content Include="config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="config_oleada.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -348,6 +356,7 @@
     <None Include="Resources\acuanet1.png" />
     <None Include="Resources\kuser_32x32-32.ico" />
     <None Include="Resources\3floppy_mount_32x32-32.ico" />
+    <Content Include="LogoAcuanet.ico" />
     <Content Include="script_creadb.sql" />
   </ItemGroup>
   <ItemGroup>

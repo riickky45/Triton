@@ -48,6 +48,18 @@ namespace Acuanet
         private void btn_play_Click(object sender, EventArgs e)
         {
             salida.iniciaCaptura();
+
+            if
+               (salida.iniciaCaptura())
+            {
+                MessageBox.Show("Inicio de captura de resultados", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            else
+            {
+                MessageBox.Show("No se pueden empezar a Capturar los resultados", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            
         }
 
         private void btn_pause_Click(object sender, EventArgs e)
@@ -59,6 +71,8 @@ namespace Acuanet
         {
             DataRowView dr = (DataRowView)this.cb_categoriaO.SelectedItem;
             salida.registraSalida(dr["nombre"].ToString());
+            this.dgb_Oleada.DataSource = modo.obtenSalida().Tables[0].DefaultView;
+
         }
 
 

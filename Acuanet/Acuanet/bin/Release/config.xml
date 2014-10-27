@@ -26,13 +26,13 @@
         <RSSI>-30</RSSI>
       </Ant1>
       <Ant2>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Power>30.00</Power>
         <RSSI>-40</RSSI>
       </Ant2>
       <Ant3>
         <Enabled>false</Enabled>
-        <Power>30.00</Power>
+        <Power>30.00</Power> 
         <RSSI>-50</RSSI>
       </Ant3>
       <Ant4>

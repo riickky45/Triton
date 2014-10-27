@@ -22,31 +22,6 @@ C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\Alfonso\Documents\GitHub\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config.xml
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.application
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.pdb
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.CreaOleada.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaEditar.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaSalida.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPrincipal.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaRegistro.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCSV.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCategoria.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.EscannerChip.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPLlegadas.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaListaP.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaResultado.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormBienvenida.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaAvanceRes.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.Properties.Resources.resources
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csproj.GenerateResource.Cache
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manifest
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
-C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\bin\Release\config.xml
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest
@@ -73,4 +48,30 @@ C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manife
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
 C:\Users\alfonso\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.CreaOleada.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaEditar.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaSalida.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPrincipal.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaRegistro.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCSV.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaCategoria.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.EscannerChip.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaPLlegadas.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaListaP.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaResultado.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormBienvenida.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.FormaAvanceRes.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.LlegadasManuales.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.Properties.Resources.resources
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csproj.GenerateResource.Cache
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config.xml
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\config_oleada.xml
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe.manifest
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.application
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.exe
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\bin\Release\Acuanet.pdb
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe.manifest
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.application
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.exe
+C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.pdb
 C:\Users\Ricardo Sanchez\Documents\Triton\Acuanet\Acuanet\obj\Release\Acuanet.csprojResolveAssemblyReference.cache

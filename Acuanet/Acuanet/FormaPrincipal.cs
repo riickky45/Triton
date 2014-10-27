@@ -100,6 +100,12 @@ namespace Acuanet
             formaO.Show();
         }
 
+        private void llegadasm_Click(object sender, EventArgs e)
+        {
+            LlegadasManuales formaM = new LlegadasManuales();
+             formaM.Show();
+        }
+
         
 
 

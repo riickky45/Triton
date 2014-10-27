@@ -54,7 +54,7 @@ namespace Acuanet
             //string sql = "SELECT participante.nombre,participante.id,numero,pais,sexo,email,direccion,id_tag,prueba,club, categoria.nombre as categroria FROM participante,categoria WHERE id_tag='"+stag_id+"' AND participante.id_categoria=categoria.id_categoria ";
 
 
-            string sql = "SELECT participante.nombre,participante.id,numero FROM participante WHERE id_tag='" + stag_id + "'";
+            string sql = "SELECT participante.nombre,participante.id,numero,pais,prueba FROM participante WHERE id_tag='" + stag_id + "'";
             
             MySqlCommand cmd = new MySqlCommand(sql, dbConn);
             MySqlDataReader rdr = cmd.ExecuteReader();
@@ -64,14 +64,14 @@ namespace Acuanet
                 par.nombre = rdr.GetString(0);
                 par.id = System.Convert.ToInt32(rdr.GetString(1));
                 par.snumero = rdr.GetString(2);
-              /*  par.pais=rdr.GetString(3);
+                par.pais=rdr.GetString(3);
                 par.sexo=rdr.GetString(4);
-                par.email=rdr.GetString(5);
-                par.direcc=rdr.GetString(6);
-                par.id_tag=rdr.GetString(7);
-                par.prueba=rdr.GetString(8);
-                par.sclub=rdr.GetString(9);
-                par.categoria=rdr.GetString(10);*/
+                //par.email=rdr.GetString(5);
+                //par.direcc=rdr.GetString(6);
+                //par.id_tag=rdr.GetString(7);
+                //par.prueba=rdr.GetString(8);
+                //par.sclub=rdr.GetString(9);
+                //par.categoria=rdr.GetString(10);
 
             }
             rdr.Close();

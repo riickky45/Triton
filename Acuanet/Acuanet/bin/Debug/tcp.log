@@ -19462,3 +19462,1547 @@ cmd=tagEndNtf
 
 2014-09-03 13:23:14|Accept Connection Error
 
+2014-09-20 15:24:24|Wait for client...
+
+2014-09-20 15:24:26|Wait for client...
+
+2014-09-20 15:24:26|Connected from 192.168.25.248:1437. 1 active clients
+
+2014-09-20 15:24:26|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411201612&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=584973
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201612&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=567355
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411201613&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=044775
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411201613&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=191650
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411201613&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=532967
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201613&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=527575
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201614&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=011800
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-73&time=1411201614&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=198156
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201614&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=495175
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411201614&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=607833
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-73&time=1411201614&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=971694
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-64&time=1411201614&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=974867
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201615&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=447403
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:30|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411201615&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=820681
+cmd=tagEndNtf
+
+
+2014-09-20 15:24:30|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-69&time=1411201615&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=928977
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-65&time=1411201615&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=941885
+cmd=tagEndNtf
+
+
+2014-09-20 15:25:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411201616&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=412475
+cmd=tagEndNtf
+
+
+2014-09-20 15:25:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411201616&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=637395
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201616&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=885336
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411201617&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=031432
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411201617&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=368173
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capt
+
+2014-09-20 15:25:03|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-65&time=1411201617&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=376256
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411201617&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=845850
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411201618&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=040585
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-72&time=1411201618&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=330870
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-62&time=1411201618&cnt=1&bank
+
+2014-09-20 15:25:14|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-62&time=1411201618&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=333736
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411201618&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=821308
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201618&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=808366
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411201619&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=303284
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411201619&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=285570
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=Acc
+
+2014-09-20 15:25:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-66&time=1411201619&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=768772
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-69&time=1411201620&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=067604
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411201620&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=249942
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411201620&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=246403
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag
+
+2014-09-20 15:26:38|Connected from 192.168.25.248:1438. 2 active clients
+
+2014-09-20 15:26:38|Wait for client...
+
+2014-09-20 15:26:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-71&time=1411201620&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=725800
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-64&time=1411201620&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=730042
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-66&time=1411201621&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=211993
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411201621&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=483921
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411201621&cnt=1&bank0=0000000000000000&freq
+
+2014-09-20 16:17:57|Wait for client...
+
+2014-09-20 16:17:58|Wait for client...
+
+2014-09-20 16:17:58|Connected from 192.168.25.248:2842. 1 active clients
+
+2014-09-20 16:17:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411204824&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=843852
+cmd=tagEndNtf
+
+
+2014-09-20 16:17:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204824&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=835868
+cmd=tagEndNtf
+
+
+2014-09-20 16:17:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-73&time=1411204825&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=323764
+cmd=tagEndNtf
+
+
+2014-09-20 16:17:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204825&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=318761
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-72&time=1411204825&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=806210
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204825&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=811399
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204826&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=301183
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204826&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=288583
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204826&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=766535
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204827&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=056355
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411204827&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=252229
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204827&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=254980
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-69&time=1411204827&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=725732
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204827&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=729717
+cmd=tagEndNtf
+
+
+2014-09-20 16:18:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-71&time=1411204828&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=213597
+cmd=tagEndNtf
+
+
+2014-09-20 16:19:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204828&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=210213
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204828&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=687030
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204829&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=084619
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411204829&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=168507
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Captu
+
+2014-09-20 16:19:43|Wait for client...
+
+2014-09-20 16:19:43|Connected from 192.168.25.248:2843. 2 active clients
+
+2014-09-20 16:19:48|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411204921&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=697760
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204921&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=694995
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411204922&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=168746
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204922&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=171901
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Captur
+
+2014-09-20 16:19:48|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204829&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=165775
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411204829&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=697452
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204829&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=648963
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204830&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=141794
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204830&cnt=1&bank0
+
+2014-09-20 16:19:52|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204922&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=649556
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204922&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=774971
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-69&time=1411204923&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=129853
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204923&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=132762
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204923&cnt=1&bank0=
+
+2014-09-20 16:19:53|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204830&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=515404
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204830&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=622588
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204830&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=619560
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411204831&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=061468
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-64&time=1411204831&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=073090
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessCon
+
+2014-09-20 16:20:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-69&time=1411204923&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=609809
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204923&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=605252
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411204924&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=097739
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204924&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=086399
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204924&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=593660
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessCon
+
+2014-09-20 16:20:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204831&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=575716
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411204831&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=717811
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-71&time=1411204832&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=063319
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411204832&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=060447
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E
+
+2014-09-20 16:20:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411204924&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=575235
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411204925&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=058541
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204925&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=061987
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204925&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=545065
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id
+
+2014-09-20 16:20:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411204832&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=545481
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411204832&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=537834
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-69&time=1411204833&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=015870
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411204833&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=024618
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411204833&cnt=1&bank0=0000000000000000&freq=1045&
+
+2014-09-20 16:28:48|Wait for client...
+
+2014-09-20 16:28:49|Connected from 192.168.25.248:2911. 1 active clients
+
+2014-09-20 16:28:49|Wait for client...
+
+2014-09-20 16:28:49|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205475&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=626408
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-70&time=1411205475&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=726851
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-64&time=1411205475&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=730533
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205476&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=212733
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205476&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=209478
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205476&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=696539
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205477&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=056671
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205477&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=178691
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-62&time=1411205477&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=181954
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205477&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=670084
+cmd=tagEndNtf
+
+
+2014-09-20 16:28:52|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205477&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=666586
+cmd=tagEndNtf
+
+
+2014-09-20 16:29:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-69&time=1411205478&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=139640
+cmd=tagEndNtf
+
+
+2014-09-20 16:29:20|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205478&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=136546
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205478&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=620848
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205479&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=101631
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205479&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=100310
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Captu
+
+2014-09-20 16:30:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205479&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=579395
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205479&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=698651
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411205480&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=057952
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-64&time=1411205480&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=065238
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205480&cnt=1&bank
+
+2014-09-20 16:30:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205480&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=542661
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205480&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=537859
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205481&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=017312
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-65&time=1411205481&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=020469
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205481&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=499253
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessC
+
+2014-09-20 16:30:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205481&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=496373
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205481&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=982582
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205481&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=976980
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-72&time=1411205482&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=461104
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id
+
+2014-09-20 16:30:21|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411205482&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=463877
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205482&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=945644
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205482&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=941408
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205483&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=419263
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205483&cnt=1&bank0=0000000000000000&freq=1
+
+2014-09-20 16:30:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205483&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=415233
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-73&time=1411205483&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=900831
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205483&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=897114
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-73&time=1411205484&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=380036
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411205484&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=382732
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_i
+
+2014-09-20 16:30:33|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205484&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=857392
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205484&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=965312
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-68&time=1411205485&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=339213
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205485&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=335868
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E20020840103022125501
+
+2014-09-20 16:30:44|Wait for client...
+
+2014-09-20 16:30:44|Connected from 192.168.25.248:2912. 2 active clients
+
+2014-09-20 16:30:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-72&time=1411205485&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=816603
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-62&time=1411205485&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=820882
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205486&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=306665
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411205486&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=315518
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205486&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=78638
+
+2014-09-20 16:30:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205587&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=563882
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-62&time=1411205587&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=564064
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205588&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=042139
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205588&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=322382
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Captu
+
+2014-09-20 16:30:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205486&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=786389
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205487&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=200747
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205487&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=274476
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205487&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=271673
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205487&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=752575
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Ante
+
+2014-09-20 16:30:49|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205588&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=515476
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-61&time=1411205588&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=518924
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205589&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=000964
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205588&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=997472
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205589&cnt=1&ban
+
+2014-09-20 16:30:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205487&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=748608
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205488&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=232884
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205488&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=228998
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411205488&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=709483
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=141120
+
+2014-09-20 16:30:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-71&time=1411205489&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=209034
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205489&cnt=1&bank0=0000000000000000&freq=1295&PC=3000&usec=189725
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205489&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=667926
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205489&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=823718
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205490&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=147718
+cmd=tagEndNtf
+cmd=evtN
+
+2014-09-20 16:30:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205589&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=485191
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411205589&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=489948
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411205589&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=972150
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205590&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=331268
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-72&time=1411205590&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=445299
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=Access
+
+2014-09-20 16:33:13|Wait for client...
+
+2014-09-20 16:33:13|Wait for client...
+
+2014-09-20 16:33:13|Connected from 192.168.25.248:2955. 1 active clients
+
+2014-09-20 16:33:14|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205740&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=397431
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:14|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-64&time=1411205740&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=401267
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205740&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=880032
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E200208401030221255011EB&rssi=-72&time=1411205740&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=947856
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-73&time=1411205741&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=355760
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-62&time=1411205741&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=359119
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411205741&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=837643
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-66&time=1411205741&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=848505
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411205742&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=317519
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E200208401030221255011EB&rssi=-70&time=1411205742&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=614827
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-71&time=1411205742&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=799180
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-64&time=1411205742&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=807147
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E200208401030221255011EB&rssi=-70&time=1411205743&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=276275
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-62&time=1411205743&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=278879
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E200208401030221255011EB&rssi=-70&time=1411205743&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=764088
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-63&time=1411205743&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=766893
+cmd=tagEndNtf
+
+
+2014-09-20 16:33:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411205744&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=235563
+cmd=tagEndNtf
+
+
+2014-09-20 16:35:40|Wait for client...
+
+2014-09-20 16:35:40|Wait for client...
+
+2014-09-20 16:35:40|Connected from 192.168.25.248:2988. 1 active clients
+
+2014-09-20 16:36:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-68&time=1411205915&cnt=1&bank0=Failed: other reader error&freq=1195&PC=3000&usec=920418
+cmd=tagEndNtf
+
+
+2014-09-20 16:36:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411205916&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=259443
+cmd=tagEndNtf
+
+
+2014-09-20 16:36:54|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-53&time=1411205916&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=735217
+cmd=tagEndNtf
+
+
+2014-09-20 16:36:54|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-60&time=1411205917&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=223669
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-55&time=1411205917&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=697091
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-57&time=1411205918&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=175221
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-55&time=1411205918&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=664549
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capt
+
+2014-09-20 16:37:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-60&time=1411205919&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=141051
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-53&time=1411205919&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=617479
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411205920&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=105644
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-58&time=1411205920&cnt=1&bank0=0000000000000000&freq=1005&PC=3000&usec=581275
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-54&time=1411205921&cnt=1&ban
+
+2014-09-20 16:37:12|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-54&time=1411205921&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=061591
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-55&time=1411205921&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=538412
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-59&time=1411205922&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=020728
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-53&time=1411205922&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=498182
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-67&time=1411205923&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=032284
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:26|Wait for client...
+
+2014-09-20 16:42:28|Wait for client...
+
+2014-09-20 16:42:28|Connected from 192.168.25.248:3045. 1 active clients
+
+2014-09-20 16:42:34|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-67&time=1411206300&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=312330
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:34|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-69&time=1411206300&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=425539
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:35|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-71&time=1411206300&cnt=1&bank0=0000000000000000&freq=1055&PC=3000&usec=923577
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:35|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-52&time=1411206301&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=394617
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:36|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-54&time=1411206301&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=871056
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:36|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-53&time=1411206302&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=351137
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:37|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-54&time=1411206302&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=835281
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:37|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-52&time=1411206303&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=309191
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-55&time=1411206303&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=793537
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-52&time=1411206304&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=266067
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:39|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-52&time=1411206304&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=748777
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:39|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-54&time=1411206305&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=231527
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-53&time=1411206305&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=709318
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-56&time=1411206306&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=192584
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-52&time=1411206306&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=667743
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-55&time=1411206307&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=153529
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-55&time=1411206307&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=626424
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-51&time=1411206308&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=110613
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-57&time=1411206308&cnt=1&bank0=0000000000000000&freq=1335&PC=3000&usec=592604
+cmd=tagEndNtf
+
+
+2014-09-20 16:42:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-54&time=1411206309&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=070340
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-70&time=1411206387&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=645235
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-66&time=1411206387&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=753352
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-67&time=1411206388&cnt=1&bank0=0000000000000000&freq=1295&PC=3000&usec=231759
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:03|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-69&time=1411206388&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=750499
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-68&time=1411206390&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=626894
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206391&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=106835
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-67&time=1411206391&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=876346
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206392&cnt=1&bank0=0000000000000000&freq=1055&PC=3000&usec=067623
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206392&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=551773
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-66&time=1411206393&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=027683
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206393&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=501862
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206393&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=989458
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206394&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=635053
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206394&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=948298
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-69&time=1411206395&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=426188
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206395&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=913015
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206396&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=393469
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:11|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-70&time=1411206397&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=349933
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:20|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-71&time=1411206406&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=596161
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:21|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-71&time=1411206407&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=643216
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:22|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-70&time=1411206407&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=910658
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:22|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206408&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=387774
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206408&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=866267
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206409&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=347023
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:24|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206409&cnt=1&bank0=0000000000000000&freq=1335&PC=3000&usec=828079
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:24|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206410&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=313237
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:25|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206410&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=786931
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:25|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206411&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=266155
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:26|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206411&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=754102
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:26|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206412&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=231382
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206412&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=712045
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206413&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=190539
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206413&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=675034
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206414&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=154134
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:28|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206414&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=630808
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206415&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=106347
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:29|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206415&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=595089
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:30|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206416&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=073177
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:30|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206416&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=551692
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:31|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206417&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=032847
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:31|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206417&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=511622
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:32|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206417&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=987937
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:32|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206418&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=474429
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:33|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206418&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=949953
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:33|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206419&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=429243
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:34|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206419&cnt=1&bank0=0000000000000000&freq=1335&PC=3000&usec=906829
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:34|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206420&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=393558
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:35|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206420&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=869003
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:35|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206421&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=349125
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:36|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206421&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=825917
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:36|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206422&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=311634
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:37|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206422&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=786483
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:37|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206423&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=267613
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206423&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=754278
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206424&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=231936
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:39|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206424&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=710905
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:39|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206425&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=189324
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206425&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=666272
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206426&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=151349
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206426&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=627099
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206427&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=107191
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206427&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=591245
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206428&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=066255
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411206428&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=553688
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206429&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=030570
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206429&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=509098
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206429&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=989325
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206430&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=473231
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206430&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=946897
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206431&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=428980
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206431&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=906311
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206432&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=387635
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206432&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=875217
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206433&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=350697
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:48|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206433&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=830432
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:48|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206434&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=310579
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:49|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206434&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=788566
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:49|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206435&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=274149
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206435&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=747000
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:50|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206436&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=225680
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206436&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=707910
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:51|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206437&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=193097
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:52|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206437&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=670240
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:52|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206438&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=152042
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:52|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206438&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=626621
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:53|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206439&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=106120
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:53|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206439&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=585889
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:54|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206440&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=070216
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:54|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206440&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=550467
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:55|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206441&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=029742
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:55|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206441&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=511715
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:56|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206441&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=988825
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:56|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206442&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=465493
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:57|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206442&cnt=1&bank0=0000000000000000&freq=1245&PC=3000&usec=953087
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:57|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206443&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=426876
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:58|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206443&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=914270
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:58|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206444&cnt=1&bank0=0000000000000000&freq=1175&PC=3000&usec=386294
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206444&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=867439
+cmd=tagEndNtf
+
+
+2014-09-20 16:44:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206445&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=346630
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-60&time=1411206445&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=830694
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206446&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=316309
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206446&cnt=1&bank0=0000000000000000&freq=1255&PC=3000&usec=795729
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206447&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=270620
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206447&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=746131
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206448&cnt=1&bank0=0000000000000000&freq=1015&PC=3000&usec=235001
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:03|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206448&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=710883
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:03|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206449&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=186567
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206449&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=671392
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206450&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=152697
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:04|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206450&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=625875
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206451&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=108381
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206451&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=588337
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206452&cnt=1&bank0=0000000000000000&freq=1265&PC=3000&usec=073678
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:06|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206452&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=550765
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206453&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=026741
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206453&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=505817
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206453&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=986381
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206454&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=472088
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206454&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=945930
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:09|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206455&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=432216
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206455&cnt=1&bank0=0000000000000000&freq=1155&PC=3000&usec=912388
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:10|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206456&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=390166
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:11|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206456&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=870181
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:11|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206457&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=347548
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:12|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206457&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=826704
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:12|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206458&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=313673
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:13|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206458&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=793951
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:13|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206459&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=268826
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:14|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206459&cnt=1&bank0=0000000000000000&freq=885&PC=3000&usec=747478
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:14|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206460&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=228985
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-65&time=1411206460&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=714049
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:15|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206461&cnt=1&bank0=0000000000000000&freq=975&PC=3000&usec=194698
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206461&cnt=1&bank0=0000000000000000&freq=1325&PC=3000&usec=669835
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206462&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=154058
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:16|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206462&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=633633
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206463&cnt=1&bank0=0000000000000000&freq=865&PC=3000&usec=111054
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:17|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206463&cnt=1&bank0=0000000000000000&freq=1165&PC=3000&usec=588432
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206464&cnt=1&bank0=0000000000000000&freq=1115&PC=3000&usec=073484
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:18|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-64&time=1411206464&cnt=1&bank0=0000000000000000&freq=1145&PC=3000&usec=548783
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:19|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206465&cnt=1&bank0=0000000000000000&freq=925&PC=3000&usec=031576
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:19|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206465&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=506950
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:20|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206465&cnt=1&bank0=0000000000000000&freq=1025&PC=3000&usec=990382
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:20|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206466&cnt=1&bank0=0000000000000000&freq=895&PC=3000&usec=467150
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:21|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206466&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=948188
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:21|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206467&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=427880
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:22|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-65&time=1411206467&cnt=1&bank0=0000000000000000&freq=1035&PC=3000&usec=910770
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:22|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-65&time=1411206468&cnt=1&bank0=0000000000000000&freq=945&PC=3000&usec=386354
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206468&cnt=1&bank0=0000000000000000&freq=1345&PC=3000&usec=874349
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-63&time=1411206469&cnt=1&bank0=0000000000000000&freq=935&PC=3000&usec=348548
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:24|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-62&time=1411206469&cnt=1&bank0=0000000000000000&freq=1305&PC=3000&usec=826176
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:24|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411206470&cnt=1&bank0=0000000000000000&freq=1275&PC=3000&usec=306216
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:25|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-68&time=1411206470&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=791064
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:58|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-62&time=1411206504&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=392694
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-68&time=1411206504&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=869112
+cmd=tagEndNtf
+
+
+2014-09-20 16:45:59|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-69&time=1411206505&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=353166
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-68&time=1411206505&cnt=1&bank0=0000000000000000&freq=1195&PC=3000&usec=933773
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:00|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-70&time=1411206506&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=307793
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:01|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-72&time=1411206506&cnt=1&bank0=Failed: CRC error&freq=985&PC=3000&usec=805576
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-72&time=1411206508&cnt=1&bank0=0000000000000000&freq=1075&PC=3000&usec=128082
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-72&time=1411206508&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=233942
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:02|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-67&time=1411206508&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=546381
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:03|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-70&time=1411206508&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=723941
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-70&time=1411206508&cnt=1&bank0=0000000000000000&freq=1285&PC=3000&usec=708674
+cmd=tagEndNtf
+
+
+2014-09-20 16:46:05|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-63&time=1411206509&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=191544
+cmd=tagEndNtf
+
+
+2014-09-20 17:26:18|Wait for client...
+
+2014-09-20 17:26:20|Wait for client...
+
+2014-09-20 17:26:20|Connected from 192.168.25.248:4155. 1 active clients
+
+2014-09-20 17:26:23|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-68&time=1411208929&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=133800
+cmd=tagEndNtf
+
+
+2014-09-20 17:26:27|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-56&time=1411208933&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=032322
+cmd=tagEndNtf
+
+
+2014-09-20 18:01:58|Wait for client...
+
+2014-09-20 18:02:00|Wait for client...
+
+2014-09-20 18:02:00|Connected from 192.168.25.248:4940. 1 active clients
+
+2014-09-20 18:02:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-74&time=1411211072&cnt=1&bank0=Failed: CRC error&freq=1135&PC=3000&usec=785293
+cmd=tagEndNtf
+
+
+2014-09-20 18:02:07|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-70&time=1411211073&cnt=1&bank0=Failed: other reader error&freq=905&PC=3000&usec=141997
+cmd=tagEndNtf
+
+
+2014-09-20 18:02:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-70&time=1411211073&cnt=1&bank0=Failed: other reader error&freq=1095&PC=3000&usec=514606
+cmd=tagEndNtf
+
+
+2014-09-20 18:02:08|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-67&time=1411211073&cnt=1&bank0=0000000000000000&freq=855&PC=3000&usec=606850
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:31|Wait for client...
+
+2014-09-20 18:03:32|Wait for client...
+
+2014-09-20 18:03:32|Connected from 192.168.25.248:4975. 1 active clients
+
+2014-09-20 18:03:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-70&time=1411211163&cnt=1&bank0=0000000000000000&freq=1235&PC=3000&usec=838451
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:38|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-72&time=1411211164&cnt=1&bank0=0000000000000000&freq=1295&PC=3000&usec=163478
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-68&time=1411211165&cnt=1&bank0=0000000000000000&freq=965&PC=3000&usec=801878
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302192690074D&rssi=-70&time=1411211165&cnt=1&bank0=0000000000000000&freq=1105&PC=3000&usec=918815
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:40|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-67&time=1411211166&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=080610
+cmd=tagEndNtf
+cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302192690074D&rssi=-73&time=1411211166&cnt=1&bank0=0000000000000000&freq=955&PC=3000&usec=083574
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-67&time=1411211166&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=560799
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-72&time=1411211166&cnt=1&bank0=0000000000000000&freq=1125&PC=3000&usec=557920
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-68&time=1411211167&cnt=1&bank0=0000000000000000&freq=1135&PC=3000&usec=037540
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:41|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-69&time=1411211167&cnt=1&bank0=0000000000000000&freq=905&PC=3000&usec=223146
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-67&time=1411211167&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=522103
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-64&time=1411211167&cnt=1&bank0=0000000000000000&freq=1095&PC=3000&usec=519114
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-65&time=1411211168&cnt=1&bank0=0000000000000000&freq=1055&PC=3000&usec=005672
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:42|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-53&time=1411211167&cnt=1&bank0=0000000000000000&freq=1055&PC=3000&usec=996629
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-61&time=1411211168&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=481541
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302192690074D&rssi=-55&time=1411211168&cnt=1&bank0=0000000000000000&freq=1045&PC=3000&usec=485189
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-60&time=1411211168&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=963826
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:43|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-54&time=1411211168&cnt=1&bank0=0000000000000000&freq=1085&PC=3000&usec=960920
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-60&time=1411211169&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=443912
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-55&time=1411211169&cnt=1&bank0=0000000000000000&freq=1205&PC=3000&usec=439846
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-60&time=1411211169&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=932847
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:44|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-54&time=1411211169&cnt=1&bank0=0000000000000000&freq=1185&PC=3000&usec=916848
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-64&time=1411211170&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=403862
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-55&time=1411211170&cnt=1&bank0=0000000000000000&freq=915&PC=3000&usec=400535
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302201220995E&rssi=-64&time=1411211170&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=881215
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:45|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302192690074D&rssi=-55&time=1411211170&cnt=1&bank0=0000000000000000&freq=1225&PC=3000&usec=878316
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-64&time=1411211171&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=367525
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-55&time=1411211171&cnt=1&bank0=0000000000000000&freq=985&PC=3000&usec=358460
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-69&time=1411211171&cnt=1&bank0=0000000000000000&freq=875&PC=3000&usec=835185
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:46|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302192690074D&rssi=-66&time=1411211172&cnt=1&bank0=0000000000000000&freq=1315&PC=3000&usec=100581
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-72&time=1411211172&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=318637
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B1&tag_id=E2002084010302201220995E&rssi=-70&time=1411211172&cnt=1&bank0=0000000000000000&freq=995&PC=3000&usec=482212
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A0&tag_id=E2002084010302201220995E&rssi=-64&time=1411211172&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=800331
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=A1&tag_id=E2002084010302192690074D&rssi=-69&time=1411211172&cnt=1&bank0=0000000000000000&freq=1065&PC=3000&usec=803637
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:47|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302192690074D&rssi=-70&time=1411211173&cnt=1&bank0=Failed: other reader error&freq=1285&PC=3000&usec=280031
+cmd=tagEndNtf
+
+
+2014-09-20 18:03:49|cmd=evtNtf&evt_id=AccessControlDemoEvent&src_ip=192.168.25.248&ant=Antenna1&cp_id=Capture Point 1&idx=B0&tag_id=E2002084010302201220995E&rssi=-67&time=1411211174&cnt=1&bank0=0000000000000000&freq=1215&PC=3000&usec=614438
+cmd=tagEndNtf
+
+

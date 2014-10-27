@@ -49,7 +49,16 @@ namespace Acuanet
 
             ModOleada modol = new ModOleada(strConexion);
 
-            modol.crearOleada(this.textBox1.Text, lista_cat);
+           if 
+               ( modol.crearOleada(this.textBox1.Text, lista_cat))
+
+            {
+                MessageBox.Show("Se creo correctamente la Oleada", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se creo la Oleada", "Notificacioon", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
         }
     }
