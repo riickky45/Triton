@@ -50,6 +50,7 @@
             this.tb_numero.Name = "tb_numero";
             this.tb_numero.Size = new System.Drawing.Size(100, 31);
             this.tb_numero.TabIndex = 2;
+            this.tb_numero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_numero_KeyPress);
             // 
             // label1
             // 

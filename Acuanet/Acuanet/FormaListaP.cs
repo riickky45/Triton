@@ -54,7 +54,17 @@ namespace Acuanet
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            
+        }
+
+        private void imp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://localhost/participante.php"); 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

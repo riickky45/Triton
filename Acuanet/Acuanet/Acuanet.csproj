@@ -156,12 +156,6 @@
     <Compile Include="FormaRegistro.Designer.cs">
       <DependentUpon>FormaRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormaCSV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormaCSV.Designer.cs">
-      <DependentUpon>FormaCSV.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,9 +187,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormaRegistro.resx">
       <DependentUpon>FormaRegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormaCSV.resx">
-      <DependentUpon>FormaCSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaCategoria.resx">
       <DependentUpon>FormaCategoria.cs</DependentUpon>
@@ -324,6 +315,7 @@
     </Content>
     <Content Include="config_oleada.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Resources\Fondos Visual Forms.jpg" />
     <None Include="Resources\descarga.jpg" />

@@ -182,9 +182,9 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Location = new System.Drawing.Point(477, 207);
+            this.groupBox5.Location = new System.Drawing.Point(9, 236);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(232, 70);
+            this.groupBox5.Size = new System.Drawing.Size(197, 70);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Chips";
@@ -208,11 +208,12 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox6.Controls.Add(this.llegadasm);
             this.groupBox6.Controls.Add(this.btn_pantalla);
             this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Location = new System.Drawing.Point(477, 91);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(231, 110);
+            this.groupBox6.Size = new System.Drawing.Size(231, 150);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Competencia";
@@ -262,18 +263,19 @@
             // 
             // llegadasm
             // 
+            this.llegadasm.BackColor = System.Drawing.Color.Transparent;
             this.llegadasm.FlatAppearance.BorderSize = 0;
             this.llegadasm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.llegadasm.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llegadasm.Image = global::Acuanet.Properties.Resources.advanced_data_grid;
+            this.llegadasm.Image = global::Acuanet.Properties.Resources.application_form_edit;
             this.llegadasm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.llegadasm.Location = new System.Drawing.Point(17, 251);
+            this.llegadasm.Location = new System.Drawing.Point(24, 98);
             this.llegadasm.Name = "llegadasm";
             this.llegadasm.Size = new System.Drawing.Size(183, 41);
             this.llegadasm.TabIndex = 7;
             this.llegadasm.Text = "Llegadas manuales";
             this.llegadasm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.llegadasm.UseVisualStyleBackColor = true;
+            this.llegadasm.UseVisualStyleBackColor = false;
             this.llegadasm.Click += new System.EventHandler(this.llegadasm_Click);
             // 
             // FormaPrincipal
@@ -283,11 +285,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Acuanet.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(720, 365);
-            this.Controls.Add(this.llegadasm);
+            this.ClientSize = new System.Drawing.Size(720, 333);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

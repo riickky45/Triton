@@ -48,7 +48,7 @@
           <Enabled>True</Enabled>
         </Ant1>
         <Ant2>
-          <Enabled>False</Enabled>
+          <Enabled>True</Enabled>
         </Ant2>
         <Ant3>
           <Enabled>False</Enabled>

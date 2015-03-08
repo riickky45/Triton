@@ -71,7 +71,7 @@ namespace Acuanet
         {
             DataRowView dr = (DataRowView)this.cb_categoriaO.SelectedItem;
             salida.registraSalida(dr["nombre"].ToString());
-            this.dgb_Oleada.DataSource = modo.obtenSalida().Tables[0].DefaultView;
+           
 
         }
 

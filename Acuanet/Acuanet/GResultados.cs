@@ -61,7 +61,8 @@ namespace Acuanet
         }
 
 
-        //método que obtiene a los participantes de cada salida distintos, que previamente poseen un registro en la BD
+        //método que obtiene a los participantes de cada salida distintos, 
+        //que previamente poseen un registro en la BD
         public int obtenParDistxOleada()
         {
 
@@ -259,7 +260,9 @@ namespace Acuanet
                     this.estimaTCM(r);
                 else
                 {
-                  if(lRes.Count>1)this.estimaTCM2(r);
+                 
+                    //if(lRes.Count>1)this.estimaTCM2(r);
+                    this.estimaTCM2(r);
                 }
             }
 
@@ -298,7 +301,8 @@ namespace Acuanet
             return sb.ToString();
         }
 
-        //metodo que calcula dinamicamente con resultados preliminares toda la algoritmia involucrada para estimar resultado, reporta 1 solo dato por participante y aproxima consistentemente el resultado
+        //metodo que calcula dinamicamente con resultados preliminares toda la algoritmia involucrada para estimar resultado,
+        //reporta 1 solo dato por participante y aproxima consistentemente el resultado
         public DataSet obtenResPreliminares()
         {
 

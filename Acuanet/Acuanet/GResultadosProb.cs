@@ -47,7 +47,7 @@ namespace Acuanet
         private void estimaTCM2(Resultado r)
         {
             Lectura lec = r.aLec[0];
-            if (lRes.Count > 2)
+            if (lRes.Count >= 2)
             {
                 double vel=this.obtenVelMasCercano(r);
                 vel=(vel<=0)?2.00:vel;
@@ -149,7 +149,8 @@ namespace Acuanet
         //metodo que calcula la Distancia genralizada entre 2 lecturas
         private double obtenDg(Lectura lref1, Lectura lref2)
         {
-            return Math.Pow(lref1.d_dist - lref2.d_dist, 2) +Math.Pow(lref1.tiempo - lref2.tiempo, 2);
+           // return Math.Pow(lref1.d_dist - lref2.d_dist, 2) +Math.Pow(lref1.tiempo - lref2.tiempo, 2);
+            return Math.Pow(lref1.d_dist - lref2.d_dist, 2);
         }
 
 

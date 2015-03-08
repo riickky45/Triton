@@ -53,8 +53,7 @@ namespace Acuanet
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormaCSV miForm1 = new FormaCSV();
-            miForm1.Show();
+          
         }
 
         private void button5_Click(object sender, EventArgs e)
