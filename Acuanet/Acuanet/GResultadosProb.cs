@@ -57,7 +57,10 @@ namespace Acuanet
             {
                 r.tc_meta = (lec.tiempo + lec.a_dist / 2); //el 2 es velocidad tipica : 2m/s
             }
-            r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
+           // r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
+
+            r.tc_meta_local = r.tc_meta + r.milis_ini_local / 1000;
+
             this.trabajo_rea++;
 
         }

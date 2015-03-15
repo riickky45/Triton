@@ -22,7 +22,7 @@
     <Antennas>
       <Ant1>
         <Enabled>true</Enabled>
-        <Power>30.00</Power>
+        <Power>15.00</Power>
         <RSSI>-30</RSSI>
       </Ant1>
       <Ant2>
