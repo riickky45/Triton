@@ -12,10 +12,14 @@ namespace Acuanet
             int cantidadlecBO = 0;
             foreach (Resultado r in lRes)
             {
-                double rssi_b = r.aLec[0].rssi;
+                int indice_ini = this.indiceMaxCantLec(r.aLec);
+                double rssi_b = r.aLec[indice_ini].rssi;
+
+                //double rssi_b = r.aLec[0].rssi;
+
                 foreach (Lectura lec in r.aLec)
                 {
-                    if (lec.rssi >= rssi_b)
+                    if (lec.rssi > rssi_b) // Solo mayor que ya que no hace sentido la igualdad
                     {
                         lec.bdatoc = true;
                         rssi_b = lec.rssi;
@@ -42,6 +46,43 @@ namespace Acuanet
 
         }
 
+        /**
+         * Metodo que determina el punto de arranque de las lecturas para cada participante
+         * 
+         */
+        private int indiceMaxCantLec(List<Lectura> aLec){
+            
+            int[] indice = new int [aLec.Count];
+
+            for (int i = 0; i < aLec.Count; i++)
+            {
+                double ri=aLec[i].rssi;
+
+                for (int j = 0; j < aLec.Count; j++)
+                {
+                    double rj=aLec[j].rssi;
+                    if (rj > ri) //Quitamos igualdad nos quedas con las lecturas logicas en orden temporal
+                    {
+                        indice[i]++;
+                    }
+                }
+            }
+
+            int indice_max = 0;
+            int valor_max = 0;
+
+            for (int i = 0; i < aLec.Count; i++)
+            {
+                if (valor_max < indice[i])
+                {
+                    valor_max = indice[i];
+                    indice_max = i;
+                }
+            }
+
+
+                return indice_max;
+        }
 
         //metodo que asigna el Tiempo de Cruce de Meta cuando solo hay una lectura de un participante 
         private void estimaTCM2(Resultado r)
@@ -59,7 +100,7 @@ namespace Acuanet
             }
            // r.tc_meta_local = r.tc_meta + r.tiempo_ini_local + r.milis_ini_local / 1000;
 
-            r.tc_meta_local = r.tc_meta + r.milis_ini_local / 1000;
+            r.tc_meta_local = r.tc_meta;
 
             this.trabajo_rea++;
 

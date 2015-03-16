@@ -151,7 +151,7 @@ namespace Acuanet
         private double estimaDist(double rssi)
         {
 
-            return Math.Pow(10, (A - rssi) / (10 * n));
+            return Math.Pow(10, (A - rssi) / (10 * n))/100.00;
 
         }
 
